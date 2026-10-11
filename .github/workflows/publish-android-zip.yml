@@ -1,0 +1,35 @@
+name: Publish Android ZIP download alternative
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: android-v0.1.0-experimental
+      - name: Verify existing APK and package without changing it
+        run: |
+          cd Android/downloads/0.1.0-experimental
+          sha256sum --check SHA256SUMS
+          python3 - <<'PY'
+          import hashlib, pathlib, zipfile
+          apk = pathlib.Path('Psyduck-Save-Editor-0.1.0.apk')
+          name = 'Psyduck-Save-Editor-0.1.0-Android.zip'
+          expected = 'e8845fa42849886995f2caac73c5b8b1e2db3cb362e78eef90b43f0de3df5d5b'
+          with zipfile.ZipFile(name, 'w', zipfile.ZIP_DEFLATED) as archive:
+              archive.write(apk, apk.name)
+              archive.write('SHA256SUMS')
+              archive.writestr('INSTALL.txt', 'Extract this ZIP using Samsung My Files, then tap Psyduck-Save-Editor-0.1.0.apk to install. This is the same signed APK as the original release. Android 8 or newer is required. Back up your game saves before editing. Source and license: https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/tree/android-v0.1.0-experimental/Android\n')
+          with zipfile.ZipFile(name) as archive:
+              if hashlib.sha256(archive.read(apk.name)).hexdigest() != expected:
+                  raise ValueError('Packaged APK checksum mismatch')
+          print('Verified ZIP preserves the signed APK exactly.')
+          PY
+      - name: Attach alternative ZIP without replacing existing files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload android-v0.1.0-experimental Android/downloads/0.1.0-experimental/Psyduck-Save-Editor-0.1.0-Android.zip --repo "$GITHUB_REPOSITORY"
