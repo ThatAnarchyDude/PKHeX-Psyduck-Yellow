@@ -46,3 +46,73 @@ if b'open save' not in xml().lower():
     raise RuntimeError('Editor did not resume after cancelling file selection.')
 (output / 'result.txt').write_text('PASS: Android 16 APK installation, app launch, system file picker, cancellation/resume.\n')
 print((output / 'result.txt').read_text())
+
+# Complete an edit through Android's document providers using synthetic data.
+fixture = root / 'Android/artifacts/synthetic-test.sav'
+if fixture.exists():
+    def nodes():
+        return list(ET.fromstring(xml()).iter('node'))
+
+    def tap(node):
+        coords = list(map(int, re.findall(r'\d+', node.attrib['bounds'])))
+        adb('shell', 'input', 'tap', str((coords[0]+coords[2])//2), str((coords[1]+coords[3])//2))
+
+    def find(text, scroll=False):
+        for attempt in range(12):
+            current = nodes()
+            for node in current:
+                if node.attrib.get('text', '').lower() == text.lower():
+                    return node
+            if scroll:
+                adb('shell', 'input', 'swipe', '160', '500', '160', '160', '250')
+            time.sleep(1)
+        (output / 'failure.xml').write_bytes(xml())
+        (output / 'failure.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+        raise RuntimeError('Could not locate Android control: ' + text)
+
+    adb('push', str(fixture), '/sdcard/Download/synthetic-test.sav')
+    tap(find('Open save'))
+    time.sleep(2)
+    roots = next(n for n in nodes() if n.attrib.get('content-desc', '').lower() == 'show roots')
+    tap(roots)
+    tap(find('Downloads'))
+    tap(find('synthetic-test.sav'))
+    for attempt in range(8):
+        screen = xml()
+        if b'Trainer: TEST' in screen:
+            break
+        time.sleep(2)
+    else:
+        (output / 'import-failure.xml').write_bytes(screen)
+        (output / 'import-failure.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+        raise RuntimeError('Save import did not show the synthetic trainer.')
+    (output / 'import.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+    field = None
+    for attempt in range(12):
+        current = nodes()
+        for i, node in enumerate(current):
+            if node.attrib.get('text', '') == 'Level (1–100)' and i+1 < len(current):
+                candidate = current[i+1]
+                if candidate.attrib.get('class') == 'android.widget.EditText':
+                    field = candidate
+                    break
+        if field is not None:
+            break
+        adb('shell', 'input', 'swipe', '160', '500', '160', '160', '250')
+    if field is None:
+        raise RuntimeError('Level edit field did not appear.')
+    tap(field)
+    adb('shell', 'input', 'keyevent', 'KEYCODE_MOVE_END')
+    adb('shell', 'input', 'keyevent', 'KEYCODE_DEL')
+    adb('shell', 'input', 'text', '6')
+    ime = adb('shell', 'dumpsys', 'input_method').lower()
+    if b'inputshown=true' in ime or b'inputshown: true' in ime:
+        adb('shell', 'input', 'keyevent', 'BACK')
+    tap(find('Export edited copy', scroll=True))
+    tap(find('Save'))
+    time.sleep(2)
+    adb('pull', '/sdcard/Download/synthetic-test-edited.sav', str(output / 'ui-export.sav'))
+    subprocess.run(['dotnet', 'run', '--project', str(root / 'Android/EditorProbe'), '-c', 'Release',
+                    '--', '--verify-ui-export', str(output / 'ui-export.sav')], check=True)
+    (output / 'result.txt').write_text('PASS: Android 16 installation, launch, document picker, cancellation, synthetic save import, level edit, exported-copy checksum and level-6 reload.\n')
+    print((output / 'result.txt').read_text())

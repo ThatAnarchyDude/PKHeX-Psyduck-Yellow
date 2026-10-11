@@ -2,6 +2,33 @@
 using PKHeX.Core;
 using PsyduckSaveEditor;
 
+if (args.Length == 2 && args[0] == "--create-fixture")
+{
+    byte[] container = new byte[524288];
+    foreach (int offset in new[] {0, 0x40000})
+    {
+        System.Buffers.Binary.BinaryPrimitives.WriteUInt32LittleEndian(container.AsSpan(offset + SAV4HGSS.GeneralSize - 12), SAV4HGSS.GeneralSize);
+        System.Buffers.Binary.BinaryPrimitives.WriteUInt32LittleEndian(container.AsSpan(offset + SAV4HGSS.GeneralSize - 8), SAV4.MAGIC_JAPAN_INTL);
+    }
+    var save = new SAV4HGSS(container) { Version = GameVersion.HG, OT = "TEST", Language = 2, ID32 = 123456 };
+    var pk = new PK4 { Species = 54, Version = GameVersion.HG, Language = 2, ID32 = save.ID32,
+        PID = 12345678, Gender = 0, Nickname = "PSYDUCK", IsNicknamed = true,
+        OriginalTrainerName = "TEST", CurrentLevel = 5, CurrentFriendship = 40 };
+    pk.Ability = pk.PersonalInfo.GetAbilityAtIndex(0);
+    pk.ResetPartyStats();
+    save.PartyData = new[] { pk };
+    File.WriteAllBytes(args[1], save.Write().ToArray());
+    Console.WriteLine("Synthetic UI fixture created; party: " + new SaveSession(File.ReadAllBytes(args[1])).Save.PartyCount);
+    return;
+}
+if (args.Length == 2 && args[0] == "--verify-ui-export")
+{
+    var save = new SaveSession(File.ReadAllBytes(args[1]));
+    if (save.GetParty(0).CurrentLevel != 6 || save.GetParty(0).Nickname != "PSYDUCK")
+        throw new Exception("Android UI edits did not survive export.");
+    Console.WriteLine("PASS: Android UI exported a valid save with the requested level-6 party member.");
+    return;
+}
 if (args.Length != 1) throw new ArgumentException("Provide a private HGSS .sav/.dsv fixture path.");
 var source = File.ReadAllBytes(args[0]);
 int checks = 0;

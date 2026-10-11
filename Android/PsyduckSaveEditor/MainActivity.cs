@@ -49,6 +49,11 @@ public sealed class MainActivity : Activity
         root = new LinearLayout(this) { Orientation = Orientation.Vertical };
         int pad = (int)(16 * Resources!.DisplayMetrics!.Density);
         root.SetPadding(pad, pad, pad, pad); scroll.AddView(root); SetContentView(scroll);
+        scroll.Post(() =>
+        {
+            if (OperatingSystem.IsAndroidVersionAtLeast(30))
+                Window?.InsetsController?.SetSystemBarsAppearance(8 | 16, 8 | 16); // Light-theme system bars.
+        });
         Label("Psyduck Save Editor", 24);
         Label("Unofficial Android prototype • PKHeX.Core • GPLv3", 13);
         Label("Open an emulator's in-game .sav or .dsv save. ROMs and emulator save states cannot be edited. Export makes a separate copy.");

@@ -28,16 +28,23 @@ jobs:
           ANDROID_SDK_ROOT: ${{ github.workspace }}/.tools/android-sdk
           JAVA_HOME: ${{ github.workspace }}/.tools/jdk/jdk-21.0.12.1+1
         run: python3 Android/scripts/build.py
+      - name: Generate synthetic save for document-provider tests
+        run: dotnet run --project Android/EditorProbe -c Release -- --create-fixture Android/artifacts/synthetic-test.sav
       - uses: actions/upload-artifact@v4
         with:
           name: Psyduck-Save-Editor-Android-experimental
-          path: Android/artifacts/Psyduck-Save-Editor-0.1.0.apk
+          path: |
+            Android/artifacts/Psyduck-Save-Editor-0.1.0.apk
+            Android/artifacts/synthetic-test.sav
   android-launch:
     needs: build
     if: always() && !cancelled() && (needs.build.result == 'success' || (github.event_name == 'workflow_dispatch' && inputs.build_run != ''))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
       - uses: actions/download-artifact@v4
         with:
           name: Psyduck-Save-Editor-Android-experimental
@@ -62,4 +69,7 @@ jobs:
         if: always()
         with:
           name: Android-16-launch-evidence
-          path: Android/artifacts/smoke/
+          path: |
+            Android/artifacts/smoke/*.png
+            Android/artifacts/smoke/*.xml
+            Android/artifacts/smoke/*.txt
