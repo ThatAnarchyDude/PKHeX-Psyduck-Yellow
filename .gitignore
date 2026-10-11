@@ -232,3 +232,12 @@ pingme.txt
 #################
 
 *.userprefs
+
+# Private Android toolchain, save fixtures, and signing credentials
+.tools/
+Android/artifacts/
+*.keystore
+*.jks
+*.sav
+*.dsv
+*.nds

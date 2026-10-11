@@ -19,3 +19,10 @@ This documentation does not represent a modified application release.
 PKHeX's upstream license and contributor notices remain in place. Its Core
 package declares GPL-3.0-or-later; project plugin/probe source uses that license.
 No ROMs, player saves or credentials are distributed through these repositories.
+
+## Android save editor
+
+A native Android interface for Psyduck Yellow and HeartGold/SoulSilver emulator
+saves is being developed in [Android](Android/README.md). It reuses PKHeX.Core
+and is independent of the Windows plugin. Initial features focus on party edits
+and safe save-copy export.

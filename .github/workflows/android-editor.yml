@@ -1,0 +1,28 @@
+name: Android save editor
+on:
+  workflow_dispatch:
+  push:
+    paths: ['Android/**', '.github/workflows/android-editor.yml']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Install Android workload
+        run: dotnet workload install android --skip-manifest-update
+      - name: Verify workload package signatures
+        run: python3 Android/scripts/verify_workload.py
+      - name: Install checksum-verified SDK and JDK
+        run: python3 Android/scripts/install_sdk.py
+      - name: Build signed development APK
+        env:
+          ANDROID_SDK_ROOT: ${{ github.workspace }}/.tools/android-sdk
+          JAVA_HOME: ${{ github.workspace }}/.tools/jdk/jdk-21.0.12.1+1
+        run: python3 Android/scripts/build.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Psyduck-Save-Editor-Android-experimental
+          path: Android/artifacts/Psyduck-Save-Editor-0.1.0.apk
