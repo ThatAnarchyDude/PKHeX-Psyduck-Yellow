@@ -22,10 +22,13 @@ adb('shell', 'am', 'start', '-n', 'org.psyduckyellow.saveeditor/crc6475fe615b484
 for attempt in range(12):
     time.sleep(2)
     screen = xml()
-    if b'Open save' in screen:
+    (output / 'last-screen.xml').write_bytes(screen)
+    if b'open save' in screen.lower():
         break
 else:
-    raise RuntimeError('Editor home screen did not appear.')
+    (output / 'failed-home.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+    (output / 'logcat.txt').write_bytes(adb('logcat', '-d'))
+    raise RuntimeError('Editor home screen did not appear; see captured screen/logcat.')
 (output / 'home.xml').write_bytes(screen)
 (output / 'home.png').write_bytes(adb('exec-out', 'screencap', '-p'))
 node = next(n for n in ET.fromstring(screen).iter('node') if n.attrib.get('text', '').lower() == 'open save')
@@ -39,7 +42,7 @@ if b'com.android.documentsui' not in picker:
     raise RuntimeError('Android system file picker did not open.')
 adb('shell', 'input', 'keyevent', 'BACK')
 time.sleep(2)
-if b'Open save' not in xml():
+if b'open save' not in xml().lower():
     raise RuntimeError('Editor did not resume after cancelling file selection.')
 (output / 'result.txt').write_text('PASS: Android 16 APK installation, app launch, system file picker, cancellation/resume.\n')
 print((output / 'result.txt').read_text())

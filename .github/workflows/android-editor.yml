@@ -1,10 +1,16 @@
 name: Android save editor
 on:
   workflow_dispatch:
+    inputs:
+      build_run:
+        description: Reuse a successful APK build run for runtime checks (optional)
+        required: false
+        default: ""
   push:
-    paths: ['Android/**', '.github/workflows/android-editor.yml']
+    paths: ['Android/EditorModel/**', 'Android/EditorProbe/**', 'Android/PsyduckSaveEditor/**', 'Android/scripts/**', '.github/workflows/android-editor.yml']
 jobs:
   build:
+    if: github.event_name != 'workflow_dispatch' || inputs.build_run == ''
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,6 +34,7 @@ jobs:
           path: Android/artifacts/Psyduck-Save-Editor-0.1.0.apk
   android-launch:
     needs: build
+    if: always() && !cancelled() && (needs.build.result == 'success' || (github.event_name == 'workflow_dispatch' && inputs.build_run != ''))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,6 +42,8 @@ jobs:
         with:
           name: Psyduck-Save-Editor-Android-experimental
           path: Android/artifacts
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.build_run || github.run_id }}
       - name: Enable Android hardware acceleration
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
