@@ -23,8 +23,21 @@ be edited yet. This app does not change the ROM or its shiny encounter odds.
 
 Android 8 or newer is required. Android 16 / Samsung One UI 8.5 is the owner's
 primary target. The APK includes ARM64, ARM32 and x86-64 code. Download the APK
-from [the Android release page](https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/releases/tag/android-v0.1.0-experimental) and allow installation from that
+from [the Android release page](https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/releases/tag/android-v0.1.1-experimental) and allow installation from that
 browser/file manager if prompted. Developer Options are not required.
+
+Version 0.1.0 passed Android 16 emulator checks but the owner reported that it
+closed immediately on their Samsung phone. Version 0.1.1 provides a conservative
+interpreter runtime configuration and managed startup error reporting. This is
+a compatibility attempt, not a confirmed fix for that device. Download the ZIP
+if a direct APK download stalls; extract it and tap the APK to install/update.
+The locally published update uses the same signing key as 0.1.0.
+
+If the app opens, **Share startup diagnostics** provides Android version,
+device model, process architecture and any captured managed startup error.
+It does not include a game save or trainer details. It opens Android's share
+chooser; nothing is uploaded automatically. Native runtime failures before the
+activity starts cannot be captured by this managed diagnostic screen.
 
 1. Save normally in the game, then close the emulator.
 2. Keep a backup of the emulator's `.sav` or `.dsv` file. Export/copy it to a

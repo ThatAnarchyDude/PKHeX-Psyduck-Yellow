@@ -27,5 +27,16 @@ jobs:
         run: |
           cd "$(dirname "$APK_PATH")"
           sha256sum --check SHA256SUMS
+          APK_BASENAME="$(basename "$APK_PATH")" python3 - <<'PY'
+          import os, pathlib, zipfile, hashlib
+          apk = pathlib.Path(os.environ['APK_BASENAME'])
+          archive = apk.with_name(apk.stem + '-Android.zip')
+          with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
+              z.write(apk, apk.name)
+              z.write('SHA256SUMS')
+              z.writestr('INSTALL.txt', 'Extract this ZIP using My Files, then tap the APK to install or update. Keep your original game saves backed up. This is an experimental compatibility build; physical-device startup still needs verification. If the app opens, Share startup diagnostics provides a report without your save contents. Source and GPL license: https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/tree/master/Android\n')
+          with zipfile.ZipFile(archive) as z:
+              assert hashlib.sha256(z.read(apk.name)).digest() == hashlib.sha256(apk.read_bytes()).digest()
+          PY
           cd "$GITHUB_WORKSPACE"
-          gh release upload "$RELEASE_TAG" "$APK_PATH" "$(dirname "$APK_PATH")/SHA256SUMS" --repo "$GITHUB_REPOSITORY"
+          gh release upload "$RELEASE_TAG" "$APK_PATH" "${APK_PATH%.apk}-Android.zip" "$(dirname "$APK_PATH")/SHA256SUMS" --repo "$GITHUB_REPOSITORY"

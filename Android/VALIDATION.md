@@ -27,3 +27,22 @@ Pokémon nickname and level. No user save was uploaded for this test.
 The slow software emulator in this cloud machine completed APK installation;
 its interface was too slow for reliable interaction. The successful interface
 checks above used GitHub's hardware-accelerated Android 16 emulator instead.
+
+## Physical-device report and 0.1.1 compatibility build
+
+The owner subsequently reported that 0.1.0 closed immediately on their Android
+16 Samsung phone. The emulator result above does not establish physical-device
+compatibility. No crash stack trace from that device is available yet.
+
+Version 0.1.1 uses the Mono interpreter, disables generated native marshal
+methods and assembly-store mapping, and adds managed startup diagnostics.
+These are compatibility changes, not a proven diagnosis of the device crash.
+Failures before the managed activity starts still need Android crash logging.
+
+- Local Release build: passed with zero warnings/errors.
+- Valid v2/v3 signature; certificate matches the published 0.1.0 APK.
+- Version code 2; minimum SDK 26; target SDK 36.
+- ZIP alignment and all 191 packaged ARM64 ELF libraries passed 16 KB checks.
+- Published APK SHA256: `e457b27b7412d884b6573e03efb23aa1b5a093964e8ea84da6f1808d65ee08c9`.
+- [Expanded Android 16 verification run](https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/actions/runs/38180556331): includes five cold starts and diagnostic sharing, plus save import/edit/export.
+- Owner's phone: awaiting a new test of 0.1.1; no claim of a confirmed fix.
