@@ -29,6 +29,17 @@ if (args.Length == 2 && args[0] == "--verify-ui-export")
     Console.WriteLine("PASS: Android UI exported a valid save with the requested level-6 party member.");
     return;
 }
+if (args.Length == 2 && args[0] == "--verify-party-export")
+{
+    var model = new SaveSession(File.ReadAllBytes(args[1]));
+    var first = model.GetParty(0); var second = model.GetParty(1);
+    if (model.Save.PartyCount != 2 || first.CurrentLevel != 6 || first.HeldItem != 234 || second.Species != 133 || second.CurrentLevel != 5 || second.Move1 != 98)
+        throw new Exception("Party/item/move UI changes did not survive export.");
+    if (model.Save.GetPartySlotAtIndex(2).Species != 0 || second.Move1_PP != second.GetMovePP(98, 0))
+        throw new Exception("Removed slot or move PP is incorrect.");
+    Console.WriteLine("PASS: Android UI created and removed party entries, assigned Leftovers, edited moves and exported a valid two-Pokémon party.");
+    return;
+}
 if (args.Length != 1) throw new ArgumentException("Provide a private HGSS .sav/.dsv fixture path.");
 var source = File.ReadAllBytes(args[0]);
 int checks = 0;
@@ -80,6 +91,43 @@ foreach (byte[] input in new[] { source, source[..524288] })
     }
     try { model.EditParty(0, 101, 255, [31,31,31,31,31,31], original.Ability); throw new Exception("Invalid level accepted."); }
     catch (ArgumentException) { checks++; }
+
+    // Party changes must survive real save serialization without changing story state.
+    var team = new SaveSession(input) { PsyduckProfile = true };
+    var keep = Enumerable.Range(0, team.Save.PartyCount).Select(i => team.GetParty(i).Data.ToArray()).ToArray();
+    int countBefore = team.Save.PartyCount;
+    int added = team.AddPokemon(133, 5, 1, 3, true);
+    var eevee = team.GetParty(added);
+    Check(added == countBefore && team.Save.PartyCount == countBefore + 1, "Adding Pokémon did not update party count.");
+    Check(eevee.Species == 133 && eevee.Gender == 1 && (int)eevee.Nature == 3 && team.IsShiny(eevee), "Created identity does not match requested properties.");
+    Check(EntityGender.GetFromPIDAndRatio(eevee.PID, eevee.PersonalInfo.Gender) == eevee.Gender, "Created PID/gender mismatch.");
+    Check(eevee.Move1 != 0 && eevee.Stat_HPCurrent == eevee.Stat_HPMax && eevee.OriginalTrainerName == team.Save.OT, "Created Pokémon lacks usable moves/stats/OT.");
+    int[] newIVs = [eevee.IV_HP,eevee.IV_ATK,eevee.IV_DEF,eevee.IV_SPA,eevee.IV_SPD,eevee.IV_SPE];
+    team.EditParty(added, 5, eevee.CurrentFriendship, newIVs, eevee.Ability, 234);
+    Check(team.GetParty(added).HeldItem == 234 && team.GetParty(added).PID == eevee.PID, "Held-item edit changed identity.");
+    team.EditMoves(added, [98,0,33,0]);
+    Check(team.GetParty(added).Move2 == 33 && team.GetParty(added).Move3 == 0 && team.GetParty(added).Move1_PP == team.GetParty(added).GetMovePP(98,0), "Moves were not compacted or PP reset.");
+    var partyReload = new SaveSession(team.Export());
+    Check(partyReload.Save.PartyCount == countBefore + 1 && partyReload.GetParty(added).HeldItem == 234 && partyReload.GetParty(added).Move1 == 98, "Added Pokémon, item or moves lost on reload.");
+    for(int i=0;i<countBefore;i++) Check(team.GetParty(i).Data.SequenceEqual(keep[i]), "Adding a party member changed an existing Pokémon.");
+    Check(team.Save.General.Slice(0xDE4,1100).SequenceEqual(progress) && team.Save.General.Slice(0x12B8,0x338).SequenceEqual(dex), "Party edit changed story/Pokédex.");
+    var shifted = team.GetParty(1).Data.ToArray();
+    team.RemovePokemon(0);
+    Check(team.GetParty(0).Data.SequenceEqual(shifted) && team.Save.GetPartySlotAtIndex(team.Save.PartyCount).Species == 0, "Removing a member did not compact or clear the party.");
+    while(team.Save.PartyCount < 6) team.AddPokemon(54, 5);
+    Check(new SaveSession(team.Export()).Save.PartyCount == 6, "Full six-member party lost on reload.");
+    var beforeRejected = team.Export();
+    try { team.AddPokemon(54,5); throw new Exception("Seventh Pokémon accepted."); } catch(InvalidOperationException) {checks++;}
+    Check(team.Export().SequenceEqual(beforeRejected), "Rejected seventh member changed the save.");
+    while(team.Save.PartyCount > 1) team.RemovePokemon(team.Save.PartyCount-1);
+    try {team.RemovePokemon(0);throw new Exception("Final party member removed.");}catch(InvalidOperationException){checks++;}
+    try {team.AddPokemon(493,5,1);throw new Exception("Genderless species accepted as female.");}catch(ArgumentException){checks++;}
+    try {team.AddPokemon(494,5);throw new Exception("Unsupported species accepted.");}catch(ArgumentException){checks++;}
+    try {team.EditMoves(0,[98,98,0,0]);throw new Exception("Duplicate moves accepted.");}catch(ArgumentException){checks++;}
+    var lead=team.GetParty(0);int[] leadIVs=[lead.IV_HP,lead.IV_ATK,lead.IV_DEF,lead.IV_SPA,lead.IV_SPD,lead.IV_SPE];
+    try {team.EditParty(0,lead.CurrentLevel,lead.CurrentFriendship,leadIVs,lead.Ability,450);throw new Exception("Key item assigned as held item.");}catch(ArgumentException){checks++;}
+    team.EditParty(0,lead.CurrentLevel,lead.CurrentFriendship,leadIVs,lead.Ability,0);
+    Check(team.GetParty(0).HeldItem==0,"Held item could not be cleared.");
 }
 try { new SaveSession(new byte[42]); throw new Exception("Malformed file accepted."); }
 catch (InvalidDataException) { checks++; }

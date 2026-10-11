@@ -5,7 +5,7 @@
     <AndroidManifest>AndroidManifest.xml</AndroidManifest>
     <OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings>
     <ApplicationId>org.psyduckyellow.saveeditor</ApplicationId>
-    <ApplicationVersion>2</ApplicationVersion><ApplicationDisplayVersion>0.1.1</ApplicationDisplayVersion>
+    <ApplicationVersion>3</ApplicationVersion><ApplicationDisplayVersion>0.1.2</ApplicationDisplayVersion>
     <RuntimeIdentifiers>android-arm64;android-arm;android-x64</RuntimeIdentifiers>
     <AndroidPackageFormats>apk</AndroidPackageFormats>
     <PublishTrimmed>false</PublishTrimmed>

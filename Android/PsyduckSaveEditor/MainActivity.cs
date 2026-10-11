@@ -19,12 +19,13 @@ public sealed class MainActivity : Activity
     private EditText level = null!, friendship = null!;
     private EditText[] ivs = [];
     private Spinner ability = null!;
+    private AutoCompleteTextView heldItem = null!;
     private int[] abilities = [];
     private bool rendering;
     private string startupStage = "Activity created";
     private string DiagnosticPath => Path.Combine(FilesDir!.AbsolutePath, "startup-diagnostics.txt");
     private string Diagnostics(string? error = null) =>
-        $"Psyduck Save Editor 0.1.1\nAndroid API: {Build.VERSION.SdkInt}\n" +
+        $"Psyduck Save Editor 0.1.2\nAndroid API: {(int)Build.VERSION.SdkInt}\n" +
         $"Manufacturer: {Build.Manufacturer}\nModel: {Build.Model}\n" +
         $"Supported ABIs: {string.Join(", ", Build.SupportedAbis ?? [])}\n" +
         $"Process architecture: {System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture}\n" +
@@ -106,6 +107,8 @@ public sealed class MainActivity : Activity
         status = Label("");
         if (session is null) { rendering = false; return; }
         Label($"Trainer: {session.Save.OT}   •   Party: {session.Save.PartyCount}\n{name}");
+        Label($"Party slots used: {session.Save.PartyCount}/6");
+        Button("Add Pokémon", (_, _) => Guard(() => { if (session.Save.PartyCount > 0) Apply(); AddPokemonDialog(); }));
         var profile = new Switch(this) { Text = "Psyduck Yellow custom rules", Checked = session.PsyduckProfile };
         root.AddView(profile);
         profile.CheckedChange += (_, e) => { if (!rendering) { Guard(() => { if (session.Save.PartyCount > 0) Apply(); session.PsyduckProfile = e.IsChecked; }); Render(); } };
@@ -119,6 +122,12 @@ public sealed class MainActivity : Activity
             root.AddView(party); party.SetSelection(slot);
             party.ItemSelected += (_, e) => { if (!rendering && e.Position != slot) { Guard(() => { Apply(); slot = e.Position; }); Render(); } };
             var pk = session.GetParty(slot);
+            Button("Remove selected Pokémon", (_, _) => new AlertDialog.Builder(this)!.SetTitle("Remove from party?")!
+                .SetMessage("This removes the selected Pokémon from the exported save, without moving it to a PC box. Keep your original backup.")!
+                .SetNegativeButton("Cancel", (_, _) => { })!.SetPositiveButton("Remove", (_, _) => Guard(() =>
+                {
+                    session.RemovePokemon(slot); slot = Math.Max(0, slot - 1); Persist(); Render();
+                }))!.Show());
             Label($"{GameInfo.Strings.Species[pk.Species]} • {(pk.Gender == 0 ? "Male" : pk.Gender == 1 ? "Female" : "Genderless")}\nShiny: {(session.IsShiny(pk) ? "Yes" : "No")} • Nature: {pk.Nature}");
             Label("Identity, gender, shiny value, story progress and Pokédex remain unchanged. Changing level or IVs recomputes stats and heals this Pokémon.", 13);
             level = Number("Level (1–100)", pk.CurrentLevel);
@@ -131,6 +140,9 @@ public sealed class MainActivity : Activity
             ability.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem,
                 abilities.Select(a => GameInfo.Strings.Ability[a]).ToArray());
             root.AddView(ability); ability.SetSelection(Array.IndexOf(abilities, pk.Ability));
+            Label("Held item (name or ID; None removes it)");
+            heldItem = ChoiceField(root, session.HeldItemChoices(pk), ItemNames, pk.HeldItem);
+            Button("Edit moves", (_, _) => Guard(() => { Apply(); EditMovesDialog(); }));
             Button("Apply party edits", (_, _) => Guard(() => { Apply(); Render(); status.Text = "Edits applied. Export a copy to use them in your emulator."; }));
         }
         Button("Export edited copy", (_, _) => Guard(() =>
@@ -141,15 +153,80 @@ public sealed class MainActivity : Activity
             intent.PutExtra(Intent.ExtraTitle, Path.GetFileNameWithoutExtension(name) + "-edited" + Path.GetExtension(name));
             StartActivityForResult(intent, 2);
         }));
-        Label("Keep your original save backup. Close your emulator before replacing its save, then launch through the game's Continue option. This first version edits party level, friendship, IVs and abilities; boxes, bags and legality tools come later.", 13);
+        Label("Keep your original save backup. Close your emulator before replacing its save, then launch through Continue. Created Pokémon are for customized play/testing; official encounter legality is not guaranteed. Boxes, bags and legality tools come later.", 13);
         rendering = false;
     }
     private void Apply()
     {
         if (session is null) return;
         int Parse(EditText field) => int.TryParse(field.Text, out var value) ? value : throw new ArgumentException("Enter a whole number in each field.");
-        session.EditParty(slot, Parse(level), Parse(friendship), ivs.Select(Parse).ToArray(), abilities[ability.SelectedItemPosition]);
-        File.WriteAllBytes(SessionPath, session.Export());
+        session.EditParty(slot, Parse(level), Parse(friendship), ivs.Select(Parse).ToArray(), abilities[ability.SelectedItemPosition],
+            ParseChoice(heldItem, session.HeldItemChoices(session.GetParty(slot)), ItemNames));
+        Persist();
+    }
+    private void Persist() => File.WriteAllBytes(SessionPath, session!.Export());
+    private static string[] ItemNames => GameInfo.Strings.GetItemStrings(EntityContext.Gen4, GameVersion.HG);
+    private static string ChoiceName(int id, IReadOnlyList<string> names) => id == 0 ? "None" : id < names.Count ? names[id] : "Existing custom item";
+    private AutoCompleteTextView ChoiceField(LinearLayout container, int[] ids, IReadOnlyList<string> names, int selected)
+    {
+        var view = new AutoCompleteTextView(this) { Threshold = 1, Text = $"{selected}: {ChoiceName(selected, names)}" };
+        view.SetSingleLine(true);
+        view.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleDropDownItem1Line,
+            ids.Select(id => $"{id}: {ChoiceName(id, names)}").ToArray());
+        container.AddView(view); return view;
+    }
+    private static int ParseChoice(AutoCompleteTextView field, int[] ids, IReadOnlyList<string> names)
+    {
+        var text = (field.Text ?? "").Trim();
+        if (int.TryParse(text.Split(':')[0], out int id) && ids.Contains(id)) return id;
+        foreach (int option in ids) if (string.Equals(text, ChoiceName(option, names), StringComparison.OrdinalIgnoreCase)) return option;
+        throw new ArgumentException("Select a suggestion or enter a supported name or ID.");
+    }
+    private void AddPokemonDialog()
+    {
+        if (session!.Save.PartyCount >= 6) throw new InvalidOperationException("Your party already has six Pokémon.");
+        var layout = new LinearLayout(this) { Orientation = Orientation.Vertical }; layout.SetPadding(24, 8, 24, 8);
+        layout.AddView(new TextView(this) { Text = "Species (name or National Dex ID)" });
+        int[] speciesIds = Enumerable.Range(1, 493).ToArray();
+        var species = ChoiceField(layout, speciesIds, GameInfo.Strings.Species, 54);
+        layout.AddView(new TextView(this) { Text = "Starting level (1–100)" });
+        var startLevel = new EditText(this) { Text = "5", InputType = Android.Text.InputTypes.ClassNumber }; layout.AddView(startLevel);
+        var gender = new Spinner(this);
+        gender.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, new[] { "Species default gender", "Male", "Female", "Genderless" }); layout.AddView(gender);
+        var nature = new Spinner(this);
+        nature.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, GameInfo.Strings.Natures.Take(25).ToArray()); layout.AddView(nature);
+        var shiny = new CheckBox(this) { Text = "Shiny" }; layout.AddView(shiny);
+        layout.AddView(new TextView(this) { Text = "Random IVs and normal HeartGold level-up moves are generated. You can edit them afterward. Story and Pokédex progress are unchanged.", TextSize = 13 });
+        var scroll = new ScrollView(this); scroll.AddView(layout);
+        var dialog = new AlertDialog.Builder(this)!.SetTitle("Add Pokémon")!.SetView(scroll)!.SetNegativeButton("Cancel", (_, _) => { })!.SetPositiveButton("Add", (_, _) => { })!.Create()!;
+        dialog.Show();
+        dialog.GetButton((int)DialogButtonType.Positive)!.Click += (_, _) => Guard(() =>
+        {
+            if (!int.TryParse(startLevel.Text, out int value)) throw new ArgumentException("Enter a whole-number level.");
+            slot = session.AddPokemon((ushort)ParseChoice(species, speciesIds, GameInfo.Strings.Species), value,
+                gender.SelectedItemPosition == 0 ? null : (byte)(gender.SelectedItemPosition - 1), nature.SelectedItemPosition, shiny.Checked);
+            Persist(); dialog.Dismiss(); Render(); status.Text = "Pokémon added. Export a copy to use the new party.";
+        });
+    }
+    private void EditMovesDialog()
+    {
+        var pk = session!.GetParty(slot); int[] moveIds = Enumerable.Range(0, 468).ToArray();
+        var layout = new LinearLayout(this) { Orientation = Orientation.Vertical }; layout.SetPadding(24, 8, 24, 8);
+        ushort[] current = [pk.Move1, pk.Move2, pk.Move3, pk.Move4];
+        var fields = new AutoCompleteTextView[4];
+        for (int i = 0; i < fields.Length; i++)
+        {
+            layout.AddView(new TextView(this) { Text = $"Move {i + 1} (name or ID; None clears it)" });
+            fields[i] = ChoiceField(layout, moveIds, GameInfo.Strings.Move, current[i]);
+        }
+        layout.AddView(new TextView(this) { Text = "Move PP is reset to its normal maximum. Move compatibility and official legality are not checked.", TextSize = 13 });
+        var dialog = new AlertDialog.Builder(this)!.SetTitle("Edit moves")!.SetView(layout)!.SetNegativeButton("Cancel", (_, _) => { })!.SetPositiveButton("Apply moves", (_, _) => { })!.Create()!;
+        dialog.Show();
+        dialog.GetButton((int)DialogButtonType.Positive)!.Click += (_, _) => Guard(() =>
+        {
+            session.EditMoves(slot, fields.Select(f => (ushort)ParseChoice(f, moveIds, GameInfo.Strings.Move)).ToArray());
+            Persist(); dialog.Dismiss(); Render(); status.Text = "Moves updated. Export a copy to use them.";
+        });
     }
     private void Open()
     {

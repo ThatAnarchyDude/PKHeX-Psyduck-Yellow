@@ -128,11 +128,51 @@ if fixture.exists():
     ime = adb('shell', 'dumpsys', 'input_method').lower()
     if b'inputshown=true' in ime or b'inputshown: true' in ime:
         adb('shell', 'input', 'keyevent', 'BACK')
+    def labeled_field(label):
+        for attempt in range(15):
+            current = nodes()
+            for i, node in enumerate(current):
+                if node.attrib.get('text', '') == label and i+1 < len(current):
+                    candidate = current[i+1]
+                    if candidate.attrib.get('class', '').endswith(('EditText', 'AutoCompleteTextView')):
+                        return candidate
+            adb('shell', 'input', 'swipe', '160', '500', '160', '160', '250')
+        raise RuntimeError('Could not locate field: ' + label)
+
+    def replace_field(node, value):
+        tap(node)
+        adb('shell', 'input', 'keyevent', 'KEYCODE_MOVE_END')
+        old = node.attrib.get('text', '')
+        if old: adb('shell', 'input', 'keyevent', *(['KEYCODE_DEL'] * len(old)))
+        adb('shell', 'input', 'text', value)
+        for _ in range(2):
+            ime = adb('shell', 'dumpsys', 'input_method').lower()
+            if b'inputshown=true' not in ime and b'inputshown: true' not in ime:
+                break
+            adb('shell', 'input', 'keyevent', 'BACK')
+
+    def top():
+        for _ in range(7): adb('shell', 'input', 'swipe', '160', '160', '160', '600', '150')
+
+    replace_field(labeled_field('Held item (name or ID; None removes it)'), '234')
+    top(); tap(find('Add Pokémon', scroll=True))
+    replace_field(labeled_field('Species (name or National Dex ID)'), '133')
+    tap(find('Add'))
+    time.sleep(2)
+    tap(find('Add Pokémon', scroll=True)); tap(find('Add'))
+    time.sleep(2)
+    tap(find('Remove selected Pokémon', scroll=True)); tap(find('Remove'))
+    time.sleep(2)
+    tap(find('Edit moves', scroll=True))
+    replace_field(labeled_field('Move 1 (name or ID; None clears it)'), '98')
+    tap(find('Apply moves'))
+    time.sleep(2)
+    (output / 'party-edited.png').write_bytes(adb('exec-out', 'screencap', '-p'))
     tap(find('Export edited copy', scroll=True))
     tap(find('Save'))
     time.sleep(2)
     adb('pull', '/sdcard/Download/synthetic-test-edited.sav', str(output / 'ui-export.sav'))
     subprocess.run(['dotnet', 'run', '--project', str(root / 'Android/EditorProbe'), '-c', 'Release',
-                    '--', '--verify-ui-export', str(output / 'ui-export.sav')], check=True)
-    (output / 'result.txt').write_text('PASS: Android 16 installation, launch, document picker, cancellation, synthetic save import, level edit, exported-copy checksum and level-6 reload.\n')
+                    '--', '--verify-party-export', str(output / 'ui-export.sav')], check=True)
+    (output / 'result.txt').write_text('PASS: Android 16 installation, five cold launches, diagnostic sharing, save import, level edit, held item, party addition/removal, move edit and validated two-member party export.\n')
     print((output / 'result.txt').read_text())
