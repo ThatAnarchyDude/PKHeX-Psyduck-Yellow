@@ -34,7 +34,7 @@ jobs:
         with:
           name: Psyduck-Save-Editor-Android-experimental
           path: |
-            Android/artifacts/Psyduck-Save-Editor-0.1.0.apk
+            Android/artifacts/Psyduck-Save-Editor-*.apk
             Android/artifacts/synthetic-test.sav
   android-launch:
     needs: build

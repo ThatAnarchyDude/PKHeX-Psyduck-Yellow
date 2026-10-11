@@ -21,24 +21,67 @@ public sealed class MainActivity : Activity
     private Spinner ability = null!;
     private int[] abilities = [];
     private bool rendering;
+    private string startupStage = "Activity created";
+    private string DiagnosticPath => Path.Combine(FilesDir!.AbsolutePath, "startup-diagnostics.txt");
+    private string Diagnostics(string? error = null) =>
+        $"Psyduck Save Editor 0.1.1\nAndroid API: {Build.VERSION.SdkInt}\n" +
+        $"Manufacturer: {Build.Manufacturer}\nModel: {Build.Model}\n" +
+        $"Supported ABIs: {string.Join(", ", Build.SupportedAbis ?? [])}\n" +
+        $"Process architecture: {System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture}\n" +
+        $"Stage: {startupStage}\n{error ?? "No managed startup error captured."}\n";
     private string SessionPath => Path.Combine(FilesDir!.AbsolutePath, "session.bin");
     protected override void OnCreate(Bundle? state)
     {
         base.OnCreate(state);
-        if (state?.GetBoolean("loaded") == true && File.Exists(SessionPath))
+        try
         {
-            try { session = new(File.ReadAllBytes(SessionPath)); session.PsyduckProfile = state.GetBoolean("profile"); name = state.GetString("name") ?? name; }
-            catch { session = null; }
+            startupStage = "Restoring editor session";
+            if (state?.GetBoolean("loaded") == true && File.Exists(SessionPath))
+            {
+                try { session = new(File.ReadAllBytes(SessionPath)); session.PsyduckProfile = state.GetBoolean("profile"); name = state.GetString("name") ?? name; }
+                catch { session = null; }
+            }
+            startupStage = "Building home screen";
+            Render();
+            startupStage = "Home screen ready";
+            File.WriteAllText(DiagnosticPath, Diagnostics());
         }
-        Render();
+        catch (Exception e)
+        {
+            ShowStartupFailure(e);
+        }
+    }
+    private void ShareDiagnostics()
+    {
+        var report = File.Exists(DiagnosticPath) ? File.ReadAllText(DiagnosticPath) : Diagnostics();
+        var intent = new Intent(Intent.ActionSend);
+        intent.SetType("text/plain"); intent.PutExtra(Intent.ExtraText, report);
+        StartActivity(Intent.CreateChooser(intent, "Share startup diagnostics"));
+    }
+    private void ShowStartupFailure(Exception error)
+    {
+        var report = Diagnostics(error.ToString());
+        Android.Util.Log.Error("PsyduckSaveEditor", report);
+        try { File.WriteAllText(DiagnosticPath, report); } catch { }
+        var scroll = new ScrollView(this);
+        root = new LinearLayout(this) { Orientation = Orientation.Vertical };
+        root.SetPadding(24, 48, 24, 24); scroll.AddView(root); SetContentView(scroll);
+        Label("Startup could not finish", 22);
+        Label("No game save was changed. Share the report below so we can investigate.");
+        Label(report, 13);
+        Button("Share startup diagnostics", (_, _) => Guard(ShareDiagnostics));
     }
     protected override void OnSaveInstanceState(Bundle state)
     {
-        if (session is not null)
+        try
         {
-            File.WriteAllBytes(SessionPath, session.Export());
-            state.PutBoolean("loaded", true); state.PutBoolean("profile", session.PsyduckProfile); state.PutString("name", name);
+            if (session is not null)
+            {
+                File.WriteAllBytes(SessionPath, session.Export());
+                state.PutBoolean("loaded", true); state.PutBoolean("profile", session.PsyduckProfile); state.PutString("name", name);
+            }
         }
+        catch (Exception e) { Android.Util.Log.Error("PsyduckSaveEditor", "Session persistence failed: " + e.Message); }
         base.OnSaveInstanceState(state);
     }
     private void Render()
@@ -58,7 +101,8 @@ public sealed class MainActivity : Activity
         Label("Unofficial Android prototype • PKHeX.Core • GPLv3", 13);
         Label("Open an emulator's in-game .sav or .dsv save. ROMs and emulator save states cannot be edited. Export makes a separate copy.");
         Button("Open save", (_, _) => Open());
-        Button("Source code and instructions", (_, _) => StartActivity(new Intent(Intent.ActionView, Android.Net.Uri.Parse("https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/tree/master/Android"))));
+        Button("Source code and instructions", (_, _) => Guard(() => StartActivity(new Intent(Intent.ActionView, Android.Net.Uri.Parse("https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/tree/master/Android")))));
+        Button("Share startup diagnostics", (_, _) => Guard(ShareDiagnostics));
         status = Label("");
         if (session is null) { rendering = false; return; }
         Label($"Trainer: {session.Save.OT}   •   Party: {session.Save.PartyCount}\n{name}");

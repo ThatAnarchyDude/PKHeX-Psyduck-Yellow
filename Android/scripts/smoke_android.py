@@ -17,7 +17,10 @@ def xml():
     adb('shell', 'uiautomator', 'dump', '/sdcard/psyduck-window.xml')
     return adb('shell', 'cat', '/sdcard/psyduck-window.xml')
 
-adb('install', '-r', str(root / 'Android/artifacts/Psyduck-Save-Editor-0.1.0.apk'))
+apks = list((root / 'Android/artifacts').glob('Psyduck-Save-Editor-*.apk'))
+if len(apks) != 1:
+    raise RuntimeError('Expected exactly one APK for this test run.')
+adb('install', '-r', str(apks[0]))
 adb('shell', 'am', 'start', '-n', 'org.psyduckyellow.saveeditor/crc6475fe615b484c1a11.MainActivity')
 for attempt in range(12):
     time.sleep(2)
@@ -44,6 +47,23 @@ adb('shell', 'input', 'keyevent', 'BACK')
 time.sleep(2)
 if b'open save' not in xml().lower():
     raise RuntimeError('Editor did not resume after cancelling file selection.')
+# Exercise the new support path and repeated cold launches reported by the owner.
+node = next(n for n in ET.fromstring(xml()).iter('node') if n.attrib.get('text', '').lower() == 'share startup diagnostics')
+coords = list(map(int, re.findall(r'\d+', node.attrib['bounds'])))
+adb('shell', 'input', 'tap', str((coords[0]+coords[2])//2), str((coords[1]+coords[3])//2))
+time.sleep(2)
+chooser = xml()
+(output / 'diagnostic-share.xml').write_bytes(chooser)
+if b'org.psyduckyellow.saveeditor' in chooser and b'open save' in chooser.lower():
+    raise RuntimeError('Startup diagnostic share chooser did not open.')
+adb('shell', 'input', 'keyevent', 'BACK')
+for attempt in range(5):
+    adb('shell', 'am', 'force-stop', 'org.psyduckyellow.saveeditor')
+    adb('shell', 'am', 'start', '-n', 'org.psyduckyellow.saveeditor/crc6475fe615b484c1a11.MainActivity')
+    time.sleep(3)
+    if b'open save' not in xml().lower():
+        (output / 'logcat.txt').write_bytes(adb('logcat', '-d'))
+        raise RuntimeError(f'Editor failed cold launch {attempt + 1}.')
 (output / 'result.txt').write_text('PASS: Android 16 APK installation, app launch, system file picker, cancellation/resume.\n')
 print((output / 'result.txt').read_text())
 

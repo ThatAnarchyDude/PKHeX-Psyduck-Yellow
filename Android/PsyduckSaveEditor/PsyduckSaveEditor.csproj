@@ -5,13 +5,18 @@
     <AndroidManifest>AndroidManifest.xml</AndroidManifest>
     <OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings>
     <ApplicationId>org.psyduckyellow.saveeditor</ApplicationId>
-    <ApplicationVersion>1</ApplicationVersion><ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>2</ApplicationVersion><ApplicationDisplayVersion>0.1.1</ApplicationDisplayVersion>
     <RuntimeIdentifiers>android-arm64;android-arm;android-x64</RuntimeIdentifiers>
     <AndroidPackageFormats>apk</AndroidPackageFormats>
     <PublishTrimmed>false</PublishTrimmed>
     <RunAOTCompilation>false</RunAOTCompilation>
     <AndroidLinkMode>None</AndroidLinkMode>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <!-- Conservative startup path for physical devices; no generated native
+         marshal methods, assembly-store mapping or managed JIT are needed. -->
+    <AndroidUseInterpreter>true</AndroidUseInterpreter>
+    <AndroidEnableMarshalMethods>false</AndroidEnableMarshalMethods>
+    <AndroidUseAssemblyStore>false</AndroidUseAssemblyStore>
   </PropertyGroup>
   <ItemGroup><ProjectReference Include="../EditorModel/EditorModel.csproj" /></ItemGroup>
 </Project>

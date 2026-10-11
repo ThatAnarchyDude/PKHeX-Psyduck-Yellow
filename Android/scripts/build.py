@@ -4,6 +4,7 @@ from pathlib import Path
 import os
 import shutil
 import subprocess
+import xml.etree.ElementTree as ET
 
 root = Path(__file__).resolve().parents[2]
 sdk = os.environ.get('ANDROID_SDK_ROOT') or os.environ.get('ANDROID_HOME')
@@ -25,7 +26,8 @@ subprocess.run(['dotnet', 'build', str(root / 'Android/PsyduckSaveEditor/Psyduck
 apk = root / 'Android/PsyduckSaveEditor/bin/Release/net10.0-android/org.psyduckyellow.saveeditor-Signed.apk'
 if not apk.exists():
     raise SystemExit('Build succeeded but expected signed APK is missing.')
-output = root / 'Android/artifacts/Psyduck-Save-Editor-0.1.0.apk'
+version = ET.parse(root / 'Android/PsyduckSaveEditor/PsyduckSaveEditor.csproj').findtext('.//ApplicationDisplayVersion')
+output = root / f'Android/artifacts/Psyduck-Save-Editor-{version}.apk'
 output.parent.mkdir(parents=True, exist_ok=True)
 shutil.copy2(apk, output)
 subprocess.run([str(Path(sdk) / 'build-tools/36.0.0/apksigner'), 'verify', '--verbose', str(output)], check=True)
