@@ -1,0 +1,51 @@
+name: Publish requested testing save
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release receiving new assets (never overwritten)
+        required: true
+      archive:
+        description: Base64 ZIP of a newly generated, nonpersonal testing save
+        required: true
+      sha256:
+        description: Expected SHA256 of the ZIP
+        required: true
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate the requested save package
+        env:
+          SAVE_ARCHIVE: ${{ inputs.archive }}
+          EXPECTED_SHA256: ${{ inputs.sha256 }}
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, io, os, pathlib, zipfile
+          raw = base64.b64decode(os.environ['SAVE_ARCHIVE'], validate=True)
+          if hashlib.sha256(raw).hexdigest() != os.environ['EXPECTED_SHA256']:
+              raise ValueError('Archive checksum mismatch')
+          folder = pathlib.Path('testing-save'); folder.mkdir()
+          (folder/'prototype-0022-bedroom-start.zip').write_bytes(raw)
+          allowed = {'prototype-0022-bedroom-start.dsv': 524410,
+                     'prototype-0022-bedroom-start.sav': 524288,
+                     'README.txt': None, 'SHA256SUMS.txt': None}
+          with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+              if set(archive.namelist()) != set(allowed) or len(archive.infolist()) != 4:
+                  raise ValueError('Unexpected package contents')
+              for item in archive.infolist():
+                  size = allowed[item.filename]
+                  if item.file_size > 600000 or (size is not None and item.file_size != size):
+                      raise ValueError('Unexpected file size')
+                  (folder/item.filename).write_bytes(archive.read(item))
+          PY
+          cd testing-save
+          sha256sum --check SHA256SUMS.txt
+      - name: Attach new files without replacing any existing asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          gh release upload "$RELEASE_TAG" testing-save/prototype-0022-bedroom-start.zip testing-save/*.dsv testing-save/*.sav --repo "$GITHUB_REPOSITORY"
