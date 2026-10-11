@@ -1,0 +1,31 @@
+name: Publish verified Android package
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing experimental release tag
+        required: true
+        default: android-v0.1.0-experimental
+      package:
+        description: APK path in that tagged source
+        required: true
+        default: Android/downloads/0.1.0-experimental/Psyduck-Save-Editor-0.1.0.apk
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - name: Verify and attach the existing signed package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          APK_PATH: ${{ inputs.package }}
+        run: |
+          cd "$(dirname "$APK_PATH")"
+          sha256sum --check SHA256SUMS
+          cd "$GITHUB_WORKSPACE"
+          gh release upload "$RELEASE_TAG" "$APK_PATH" "$(dirname "$APK_PATH")/SHA256SUMS" --repo "$GITHUB_REPOSITORY"

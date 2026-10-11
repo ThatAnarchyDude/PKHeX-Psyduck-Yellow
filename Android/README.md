@@ -23,7 +23,7 @@ be edited yet. This app does not change the ROM or its shiny encounter odds.
 
 Android 8 or newer is required. Android 16 / Samsung One UI 8.5 is the owner's
 primary target. The APK includes ARM64, ARM32 and x86-64 code. Download the APK
-from the project's release instructions and allow installation from that
+from [the Android release page](https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/releases/tag/android-v0.1.0-experimental) and allow installation from that
 browser/file manager if prompted. Developer Options are not required.
 
 1. Save normally in the game, then close the emulator.
@@ -74,3 +74,11 @@ PKHeX and this derivative are distributed under GPL-3.0-or-later; see
 contributors. This project is an independent adaptation and is not an official
 PKHeX Android release. Complete corresponding source is in this repository,
 including the PKHeX.Core version used by each tagged Android release.
+
+Validation details are in [VALIDATION.md](VALIDATION.md).
+
+## Preview
+
+![Android editor home screen](screenshots/home.png)
+
+![Imported synthetic test save](screenshots/import.png)
