@@ -12,8 +12,8 @@
 - APK includes ARM64, ARM32 and x86-64; min SDK 26, target SDK 36 (Android 16).
 - Independent GitHub Actions build: [passed](https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/actions/runs/38176511011).
 
-The exact Samsung One UI 8.5 device still requires an installation/playtest by
-its owner. Android platform emulator validation is recorded separately below.
+These 0.1.0 emulator results did not establish physical-device compatibility.
+Later device reports and Android emulator checks are recorded below.
 
 ## Android 16 interface and export checks
 
@@ -45,4 +45,22 @@ Failures before the managed activity starts still need Android crash logging.
 - ZIP alignment and all 191 packaged ARM64 ELF libraries passed 16 KB checks.
 - Published APK SHA256: `e457b27b7412d884b6573e03efb23aa1b5a093964e8ea84da6f1808d65ee08c9`.
 - [Expanded Android 16 verification run](https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/actions/runs/38180556331): includes five cold starts and diagnostic sharing, plus save import/edit/export.
-- Owner's phone: awaiting a new test of 0.1.1; no claim of a confirmed fix.
+- Owner's phone: subsequently confirmed 0.1.1 works, with ARM64 home-screen diagnostics and in-game screenshots.
+
+## 0.1.2 party management, held items and moves
+
+- Release build passed with zero warnings/errors; valid v2/v3 signature, same
+  update certificate and version code 3.
+- All 191 packaged ARM64 ELF libraries and APK ZIP alignment passed 16 KB checks.
+- **94 save-model assertions passed**, including .sav/.dsv reloads, party size,
+  slot compaction, untouched members, shiny/gender/nature consistency, items,
+  move PP and unchanged quest/Pokédex state. A seventh party member, removal
+  of the last member, incompatible gender, unsupported species, duplicate
+  moves and key-item holding are rejected.
+- An edited private prototype-0022 save loaded through native DS Continue.
+  RAM and the party screen showed three members. The added female shiny Eevee's
+  summary displayed Leftovers correctly. No state/RAM edits were used for this check.
+- [Expanded Android interface checks](https://github.com/ThatAnarchyDude/PKHeX-Psyduck-Yellow/actions/runs/38184727927) exercise party creation/removal, held-item assignment, move editing and exported-save validation.
+- APK SHA256: `c69cf74b250e7b415ad94673baf7dce95cac2a6c92763a11aa0235d972a0b8df`.
+- Version 0.1.2 retains the interpreter/runtime configuration confirmed by the
+  owner in 0.1.1; the updated interface still needs their physical-device test.
