@@ -41,3 +41,7 @@ The release tag and its source archives contain the complete corresponding appli
 The Items editor now includes the player''s PC storage in the active Psyduck Yellow profile. Prototype0029 supports ten physical saved stacks, up to999 of each. All ten are editable regardless of badges. PC edits are separate from the Bag. Existing items and story state are preserved; new PC contents are marked initialized so the first login does not overwrite them.
 
 The approved next game prototype will start at20 usable in-game slots and unlock5 per distinct Kanto badge, up to60. PKHeX will expose all60 independently of badges once that game save layout is implemented. That expansion and layout are pending; this editor does not write invented extra rows into0029 saves.
+
+
+## Resizable main window (v3)
+Drag the window edges to resize, or use the standard Windows maximize button. The Pokemon and save panes expand with the available space, while the menu keeps its normal height. The minimum size preserves the original usable layout. Maximize uses Windows'' normal desktop working area, keeping the visible taskbar available; this is not a full-screen mode.

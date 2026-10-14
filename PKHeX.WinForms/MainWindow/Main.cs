@@ -38,6 +38,8 @@ public partial class Main : Form
         }
 #endif
         FormInitializeSecond();
+        MinimumSize = Size;
+        splitContainer1.Panel2MinSize = splitContainer1.Panel2.Width;
     }
 
     #region Important Variables
