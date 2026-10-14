@@ -113,9 +113,11 @@ public sealed partial class SAV_Inventory : Form
             tab.Controls.Add(dgv);
             tabControl1.TabPages.Add(tab);
             tabControl1.ShowToolTips = true;
-            tab.ToolTipText = pouch.Type.ToString();
+            tab.ToolTipText = pouch.Type == InventoryType.PCItems && savProfilePC() ? $"{Origin.OT}'s PC — {pouch.Items.Length} slots" : pouch.Type.ToString();
         }
     }
+
+    private bool savProfilePC() => Origin is SAV4HGSS { IsPsyduckYellow0029: true };
 
     private DoubleBufferedDataGridView GetDGV(InventoryPouch pouch)
     {

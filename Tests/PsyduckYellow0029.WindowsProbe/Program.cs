@@ -43,6 +43,8 @@ internal static class Probe
             Console.WriteLine($"Native editor species {species}: HA, PID and shiny preserved.");
         }
         using var inventory = new SAV_Inventory(save);
+        var grids = Field<Dictionary<InventoryType, DataGridView>>(inventory, "ControlGrids");
+        Check(grids.ContainsKey(InventoryType.PCItems) && grids[InventoryType.PCItems].Rows.Count == 10, "PC inventory tab/rows missing");
         var names = Field<string[]>(inventory, "itemlist");
         Check(names[114] == "Shiny Charm" && names[121] == "Friendship Charm", "Inventory names failed");
         Check(names[115] == "TM34 Bide" && names[123] == "TM19 Seismic Toss", "Custom TM name failed");

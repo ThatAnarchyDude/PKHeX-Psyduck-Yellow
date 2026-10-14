@@ -11,6 +11,24 @@ Require(new PK4 { Species = 55, IsPsyduckYellow0029 = true }.PersonalInfo.Type2 
 Require(new PK4 { Species = 55 }.PersonalInfo.Type2 == (byte)MoveType.Water, "Golduck typing leaked into retail");
 Require(PsyduckYellow0029.CanLearnCustomTM(54, 69), "Psyduck Seismic Toss compatibility missing");
 Require(!PsyduckYellow0029.CanLearnCustomTM(129, 69), "Impossible Seismic Toss compatibility accepted");
+// The PC is stored outside the Bag in 0029's script variables.
+var pcSave = new SAV4HGSS { Version = GameVersion.PY };
+var beforePC = pcSave.General.ToArray();
+var pcBag = pcSave.Inventory;
+var pc = pcBag.GetPouch(InventoryType.PCItems);
+Require(pc.Items.Length == 10, "Legacy PC capacity incorrect");
+pc.Items[0] = pc.GetEmpty(17, 12);
+pc.Items[9] = pc.GetEmpty(85, 999);
+pcBag.CopyTo(pcSave);
+Require(pcSave.Inventory.GetPouch(InventoryType.PCItems).Items[9].Count == 999, "PC edit did not persist");
+Require(pcSave.GetWork(0x4152 - 0x4000) == 17 && pcSave.GetWork(0x4153 - 0x4000) == 12, "PC item mapping incorrect");
+Require(pcSave.GetWork(0x4166 - 0x4000) == 1, "PC login would overwrite edited items");
+for(int i=0;i<beforePC.Length;i++)
+    if(i < 0x1088 || i >= 0x1088 + 42) Require(pcSave.General[i] == beforePC[i], "PC edit changed unrelated save data");
+pcSave.Badges16 = 255;
+Require(pcSave.Inventory.GetPouch(InventoryType.PCItems).Items.Length == 10, "Editor incorrectly gates PC rows by badges");
+Require(!new SAV4HGSS().Inventory.Pouches.Any(p => p.Type == InventoryType.PCItems), "Project PC tab leaked into retail");
+Console.WriteLine("PC inventory mapping, all legacy slots, 999 quantities, Bag/story preservation, initialization and retail isolation: PASS");
 var trainer = new SAV4HGSS { Version = GameVersion.HG, OT = "TEST", TID16 = 12345, SID16 = 54321, Language = 2 };
 foreach (var encounter in PsyduckYellow0029.Starters)
 {

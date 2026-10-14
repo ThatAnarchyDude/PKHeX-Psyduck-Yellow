@@ -36,3 +36,8 @@ No ROMs, player saves or credentials are included. Publication of this editor is
 ## Source and license
 
 The release tag and its source archives contain the complete corresponding application source and tests. Original PKHeX contributor notices and LICENSE are retained (GPL-3.0-or-later). Local base commit: a7eeac285796385e001ed714b53f3f149e823a4c. Local branch: codex/psyduck-yellow-0029-support. Build using .NET SDK 10: dotnet publish PKHeX.WinForms/PKHeX.WinForms.csproj -c Release -p:PublishReadyToRun=false.
+
+## PC item tab (v2)
+The Items editor now includes the player''s PC storage in the active Psyduck Yellow profile. Prototype0029 supports ten physical saved stacks, up to999 of each. All ten are editable regardless of badges. PC edits are separate from the Bag. Existing items and story state are preserved; new PC contents are marked initialized so the first login does not overwrite them.
+
+The approved next game prototype will start at20 usable in-game slots and unlock5 per distinct Kanto badge, up to60. PKHeX will expose all60 independently of badges once that game save layout is implemented. That expansion and layout are pending; this editor does not write invented extra rows into0029 saves.

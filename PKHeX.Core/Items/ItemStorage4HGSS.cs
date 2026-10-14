@@ -22,6 +22,16 @@ public sealed class ItemStorage4HGSS : ItemStorage4, IItemStorage
         return items.ToArray();
     }
 
+    private static readonly ushort[] ProjectPCItems = GetProjectPCItems();
+    private static ushort[] GetProjectPCItems()
+    {
+        var all = new System.Collections.Generic.SortedSet<ushort>();
+        foreach (var type in new[] { InventoryType.Items, InventoryType.Medicine, InventoryType.Balls, InventoryType.TMHMs, InventoryType.Berries, InventoryType.MailItems, InventoryType.BattleItems })
+            foreach (var item in PsyduckYellow.GetItems(type)) all.Add(item);
+        all.Add(114); all.Add(121);
+        var result = new ushort[all.Count]; all.CopyTo(result); return result;
+    }
+
     public static ReadOnlySpan<ushort> KeyHGSS =>
     [
                             434, 435,      437,
@@ -44,6 +54,7 @@ public sealed class ItemStorage4HGSS : ItemStorage4, IItemStorage
 
     public ReadOnlySpan<ushort> GetItems(InventoryType type) => type switch
     {
+        InventoryType.PCItems when ProjectProfile => ProjectPCItems,
         InventoryType.Items => ProjectProfile ? ProjectGeneral : GeneralPt,
         InventoryType.KeyItems => ProjectProfile ? ProjectKeys : KeyHGSS,
         InventoryType.TMHMs => ProjectProfile ? ProjectMachines : Machine,
