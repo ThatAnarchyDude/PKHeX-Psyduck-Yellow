@@ -24,21 +24,21 @@ jobs:
         run: |
           Copy-Item PSYDUCK-YELLOW.md release/app/README.md
           Copy-Item LICENSE release/app/LICENSE
-          Compress-Archive -Path release/app/* -DestinationPath release/PKHeX-Psyduck-Yellow-0029-v3.zip
-          (Get-FileHash release/PKHeX-Psyduck-Yellow-0029-v3.zip -Algorithm SHA256).Hash.ToLower() + '  PKHeX-Psyduck-Yellow-0029-v3.zip' | Set-Content release/SHA256SUMS
+          Compress-Archive -Path release/app/* -DestinationPath release/PKHeX-Psyduck-Yellow-0029-v4.zip
+          (Get-FileHash release/PKHeX-Psyduck-Yellow-0029-v4.zip -Algorithm SHA256).Hash.ToLower() + '  PKHeX-Psyduck-Yellow-0029-v4.zip' | Set-Content release/SHA256SUMS
       - name: Publish verified release
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const tag = 'pkhex-py0029-v3';
+            const tag = 'pkhex-py0029-v4';
             const release = await github.rest.repos.createRelease({
               ...context.repo, tag_name: tag, target_commitish: context.sha,
-              name: 'Full PKHeX — Psyduck Yellow prototype 0029 support v3 — resizable window',
+              name: 'Full PKHeX — Psyduck Yellow prototype 0029 support v4 — proportional interface scaling',
               body: fs.readFileSync('PSYDUCK-YELLOW.md', 'utf8'),
               draft: false, prerelease: true
             });
-            for (const name of ['PKHeX-Psyduck-Yellow-0029-v3.zip', 'SHA256SUMS']) {
+            for (const name of ['PKHeX-Psyduck-Yellow-0029-v4.zip', 'SHA256SUMS']) {
               await github.rest.repos.uploadReleaseAsset({ ...context.repo,
                 release_id: release.data.id, name,
                 data: fs.readFileSync('release/' + name) });

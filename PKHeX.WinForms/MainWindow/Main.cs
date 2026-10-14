@@ -40,6 +40,7 @@ public partial class Main : Form
         FormInitializeSecond();
         MinimumSize = Size;
         splitContainer1.Panel2MinSize = splitContainer1.Panel2.Width;
+        InitializeWholeWindowScaling();
     }
 
     #region Important Variables
@@ -765,7 +766,7 @@ public partial class Main : Form
         ParseSettings.InitFromSaveFileData(sav); // physical GB, no longer used in logic
         RecentTrainerCache.SetRecentTrainer(sav);
         SpriteUtil.Initialize(sav); // refresh sprite generator
-        dragout.Size = new Size(SpriteUtil.Spriter.Width, SpriteUtil.Spriter.Height);
+        dragout.Size = ScaleSize(new Size(SpriteUtil.Spriter.Width, SpriteUtil.Spriter.Height), WholeWindowScale);
 
         // clean fields
         Menu_ExportSAV.Enabled = sav.State.Exportable;
@@ -793,6 +794,7 @@ public partial class Main : Form
 
     private void ResetSAVPKMEditors(SaveFile sav)
     {
+        RestoreZoomForLayoutChange();
         C_SAV.SetEditEnvironment(new SaveDataEditor<PictureBox>(sav, PKME_Tabs));
 
         var pk = sav.LoadTemplate(TemplatePath);
@@ -826,6 +828,7 @@ public partial class Main : Form
         sav.State.Edited = false;
         foreach (var p in Plugins)
             p.NotifySaveLoaded();
+        UpdateWholeWindowScale();
     }
 
     private static string GetProgramTitle()
@@ -1001,6 +1004,7 @@ public partial class Main : Form
 
     private void ApplyMainLanguage(int index)
     {
+        RestoreZoomForLayoutChange();
         if ((uint)index < GameLanguage.LanguageCount)
             CurrentLanguage = GameLanguage.LanguageCode(index);
 
@@ -1032,6 +1036,7 @@ public partial class Main : Form
 
         foreach (var plugin in Plugins)
             plugin.NotifyDisplayLanguageChanged(lang);
+        UpdateWholeWindowScale();
     }
 
     private void UpdateLanguageMenuChecks(int index)

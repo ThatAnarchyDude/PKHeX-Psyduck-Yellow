@@ -43,5 +43,8 @@ The Items editor now includes the player''s PC storage in the active Psyduck Yel
 The approved next game prototype will start at20 usable in-game slots and unlock5 per distinct Kanto badge, up to60. PKHeX will expose all60 independently of badges once that game save layout is implemented. That expansion and layout are pending; this editor does not write invented extra rows into0029 saves.
 
 
-## Resizable main window (v3)
-Drag the window edges to resize, or use the standard Windows maximize button. The Pokemon and save panes expand with the available space, while the menu keeps its normal height. The minimum size preserves the original usable layout. Maximize uses Windows'' normal desktop working area, keeping the visible taskbar available; this is not a full-screen mode.
+## Whole-interface scaling (v4)
+
+Drag the window edges or use the standard Windows maximize button. Text, controls, menu icons, spacing and Pokemon images enlarge together from their original dimensions. At 150% of the default client size, the interface uses a 150% scale. If width and height grow by different amounts, one uniform factor fits the complete interface without clipping or distorting images; unused space is centered around it. Windows' normal working area keeps the visible taskbar available.
+
+Returning the window to its original size restores original fonts and geometry. Saving/loading and changing display language rebuild the layout at its native size before reapplying zoom, avoiding accumulated rounding and font drift. This scales the live native editor, rather than displaying an enlarged screenshot. Manual resizing is included.
