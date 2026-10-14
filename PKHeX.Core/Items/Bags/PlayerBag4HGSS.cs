@@ -9,7 +9,7 @@ public sealed class PlayerBag4HGSS : PlayerBag
     private const int BaseOffset = 0x644;
 
     public override IReadOnlyList<InventoryPouch4> Pouches { get; } = GetPouches(ItemStorage4HGSS.Instance);
-    public override ItemStorage4HGSS Info => ItemStorage4HGSS.Instance;
+    public override ItemStorage4HGSS Info { get; } = ItemStorage4HGSS.Instance;
 
     private static InventoryPouch4[] GetPouches(ItemStorage4HGSS info) =>
     [
@@ -23,7 +23,12 @@ public sealed class PlayerBag4HGSS : PlayerBag
         new(0x720, 999, info, BattleItems),
     ];
 
-    public PlayerBag4HGSS(SAV4HGSS sav) : this(sav.General[BaseOffset..]) { }
+    public PlayerBag4HGSS(SAV4HGSS sav)
+    {
+        Info = sav.IsPsyduckYellow0029 ? ItemStorage4HGSS.PsyduckYellow : ItemStorage4HGSS.Instance;
+        Pouches = GetPouches(Info);
+        Pouches.LoadAll(sav.General[BaseOffset..]);
+    }
     public PlayerBag4HGSS(ReadOnlySpan<byte> data) => Pouches.LoadAll(data);
 
     public override void CopyTo(SaveFile sav) => CopyTo((SAV4HGSS)sav);

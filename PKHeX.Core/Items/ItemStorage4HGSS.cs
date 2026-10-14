@@ -8,6 +8,19 @@ namespace PKHeX.Core;
 public sealed class ItemStorage4HGSS : ItemStorage4, IItemStorage
 {
     public static readonly ItemStorage4HGSS Instance = new();
+    public static readonly ItemStorage4HGSS PsyduckYellow = new(true);
+    private readonly bool ProjectProfile;
+    private static readonly ushort[] ProjectKeys = [.. KeyHGSS, 114, 121];
+    private static readonly ushort[] ProjectGeneral = GetProjectGeneral();
+    private static readonly ushort[] ProjectMachines = [.. Machine, 115, 116, 117, 118, 119, 120, 123];
+    public ItemStorage4HGSS(bool projectProfile = false) => ProjectProfile = projectProfile;
+    private static ushort[] GetProjectGeneral()
+    {
+        var items = new System.Collections.Generic.List<ushort>();
+        foreach (var item in GeneralPt)
+            if (item is not (>= 114 and <= 121) and not 123) items.Add(item);
+        return items.ToArray();
+    }
 
     public static ReadOnlySpan<ushort> KeyHGSS =>
     [
@@ -31,9 +44,9 @@ public sealed class ItemStorage4HGSS : ItemStorage4, IItemStorage
 
     public ReadOnlySpan<ushort> GetItems(InventoryType type) => type switch
     {
-        InventoryType.Items => GeneralPt,
-        InventoryType.KeyItems => KeyHGSS,
-        InventoryType.TMHMs => Machine,
+        InventoryType.Items => ProjectProfile ? ProjectGeneral : GeneralPt,
+        InventoryType.KeyItems => ProjectProfile ? ProjectKeys : KeyHGSS,
+        InventoryType.TMHMs => ProjectProfile ? ProjectMachines : Machine,
         InventoryType.MailItems => Mail,
         InventoryType.Medicine => Medicine,
         InventoryType.Berries => Berry,

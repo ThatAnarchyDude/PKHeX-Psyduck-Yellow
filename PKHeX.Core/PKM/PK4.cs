@@ -17,7 +17,7 @@ public sealed class PK4 : G4PKM
     public override int SIZE_PARTY => PokeCrypto.SIZE_4PARTY;
     public override int SIZE_STORED => PokeCrypto.SIZE_4STORED;
     public override EntityContext Context => EntityContext.Gen4;
-    public override PersonalInfo4 PersonalInfo => PersonalTable.HGSS.GetFormEntry(Species, Form);
+    public override PersonalInfo4 PersonalInfo => (IsPsyduckYellow0029 ? PsyduckYellow0029.Personal : PersonalTable.HGSS).GetFormEntry(Species, Form);
 
     public PK4() : base(PokeCrypto.SIZE_4PARTY) { }
     public PK4(Memory<byte> data) : base(DecryptParty(data)) { }
@@ -33,7 +33,10 @@ public sealed class PK4 : G4PKM
         return result;
     }
 
-    public override PK4 Clone() => new(Data.ToArray());
+    // Profile metadata is intentionally never stored in the Pokemon/save bytes.
+    public bool IsPsyduckYellow0029 { get; set; }
+    public override bool IsShiny => IsPsyduckYellow0029 ? ShinyXor < 16 : base.IsShiny;
+    public override PK4 Clone() => new(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029 };
 
     // Structure
     public override uint PID { get => ReadUInt32LittleEndian(Data); set => WriteUInt32LittleEndian(Data, value); }
@@ -198,7 +201,20 @@ public sealed class PK4 : G4PKM
     }
 
     // 0x5E unused
-    public override GameVersion Version { get => (GameVersion)Data[0x5F]; set => Data[0x5F] = (byte)value; }
+    public GameVersion ApplicationVersion => IsPsyduckYellow0029 ? GameVersion.PY : Version;
+    public override GameVersion Version
+    {
+        get => (GameVersion)Data[0x5F];
+        set
+        {
+            if (value == GameVersion.PY)
+            {
+                IsPsyduckYellow0029 = true;
+                value = GameVersion.HG;
+            }
+            Data[0x5F] = (byte)value;
+        }
+    }
     private byte RIB8 { get => Data[0x60]; set => Data[0x60] = value; } // Sinnoh 3
     private byte RIB9 { get => Data[0x61]; set => Data[0x61] = value; } // Sinnoh 4
     private byte RIBA { get => Data[0x62]; set => Data[0x62] = value; } // Sinnoh 5

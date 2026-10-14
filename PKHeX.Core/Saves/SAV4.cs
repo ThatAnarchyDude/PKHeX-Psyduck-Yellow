@@ -87,7 +87,7 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
 
     public sealed override int SIZE_STORED => PokeCrypto.SIZE_4STORED;
     public sealed override int SIZE_PARTY => PokeCrypto.SIZE_4PARTY;
-    public sealed override PK4 BlankPKM => new();
+    public sealed override PK4 BlankPKM => new() { IsPsyduckYellow0029 = this is SAV4HGSS { IsPsyduckYellow0029: true } };
     public sealed override Type PKMType => typeof(PK4);
 
     public sealed override int BoxCount => 18;
@@ -398,7 +398,7 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
     }
     #endregion
 
-    protected sealed override PK4 GetPKM(Memory<byte> data) => new(data);
+    protected sealed override PK4 GetPKM(Memory<byte> data) => new(data) { IsPsyduckYellow0029 = this is SAV4HGSS { IsPsyduckYellow0029: true } };
     protected sealed override void DecryptPKM(Span<byte> data) => PokeCrypto.Decrypt45(data);
 
     protected override void SetPKM(PKM pk, bool isParty = false)

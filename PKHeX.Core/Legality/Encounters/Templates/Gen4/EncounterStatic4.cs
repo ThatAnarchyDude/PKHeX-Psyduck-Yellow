@@ -21,6 +21,7 @@ public sealed record EncounterStatic4(GameVersion Version)
 
     public Ball FixedBall { get; init; }
     public bool FatefulEncounter { get; init; }
+    public bool IsPsyduckYellowStarter { get; init; }
 
     public required ushort Species { get; init; }
     public required byte Level { get; init; }
@@ -31,7 +32,7 @@ public sealed record EncounterStatic4(GameVersion Version)
     public ushort EggLocation { get; init; }
     public byte Gender { get; init; } = FixedGenderUtil.GenderRandom;
 
-    public string Name => "Static Encounter";
+    public string Name => IsPsyduckYellowStarter ? "Psyduck Yellow 0029 starter gift" : "Static Encounter";
     public string LongName => Name;
     public byte LevelMin => Level;
     public byte LevelMax => Level;
@@ -53,11 +54,14 @@ public sealed record EncounterStatic4(GameVersion Version)
 
     public PK4 ConvertToPKM(ITrainerInfo tr, EncounterCriteria criteria)
     {
+        if (IsPsyduckYellowStarter && Gender is 0 or 1)
+            criteria = criteria with { Gender = (Gender)Gender };
         int language = (int)Language.GetSafeLanguage456((LanguageID)tr.Language);
         var version = this.GetCompatibleVersion(tr.Version);
         var pi = PersonalTable.HGSS[Species];
         var pk = new PK4
         {
+            IsPsyduckYellow0029 = IsPsyduckYellowStarter,
             Species = Species,
             Form = Form,
             CurrentLevel = LevelMin,
@@ -97,6 +101,8 @@ public sealed record EncounterStatic4(GameVersion Version)
         else
             EncounterUtil.SetEncounterMoves(pk, version, LevelMin);
 
+        if (IsPsyduckYellowStarter && Species == (ushort)Core.Species.Togepi)
+            pk.SetMoves(new Moveset((ushort)Move.Tackle, (ushort)Move.Growl, (ushort)Move.Charm, 0));
         pk.ResetPartyStats();
         return pk;
     }
@@ -385,6 +391,8 @@ public sealed record EncounterStatic4(GameVersion Version)
 
     public RandomCorrelationRating IsCompatible(PIDType type, PKM pk)
     {
+        if (IsPsyduckYellowStarter && PsyduckYellow0029.IsEnabled(pk))
+            return Match;
         if (Species == (int)Core.Species.Pichu)
             return type is PIDType.Pokewalker ? Match : Mismatch;
         if (Shiny == Shiny.Always)
@@ -398,6 +406,8 @@ public sealed record EncounterStatic4(GameVersion Version)
 
     public PIDType GetSuggestedCorrelation()
     {
+        if (IsPsyduckYellowStarter)
+            return PIDType.None;
         if (Species == (int)Core.Species.Pichu)
             return PIDType.Pokewalker;
         if (Shiny == Shiny.Always)

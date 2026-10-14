@@ -405,6 +405,8 @@ public partial class PKMEditor
     {
         var pi = pk.PersonalInfo;
         var ability = pk.Ability;
+        if (PsyduckYellow0029.IsEnabled(pk) && ability != 0 && ability == PsyduckYellow0029.GetHiddenAbility(pk.Species))
+            return 2;
         int abilityIndex = pi.GetIndexOfAbility(ability);
         if (abilityIndex >= 2)
             return 2;

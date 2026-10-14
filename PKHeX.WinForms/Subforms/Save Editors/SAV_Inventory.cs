@@ -25,6 +25,8 @@ public sealed partial class SAV_Inventory : Form
         WinFormsUtil.TranslateInterface(this, Main.CurrentLanguage);
         Origin = sav;
         itemlist = [.. GameInfo.Strings.GetItemStrings(sav.Context, sav.Version)]; // copy
+        if (sav is SAV4HGSS { IsPsyduckYellow0029: true })
+            itemlist = PsyduckYellow0029.GetItemNames(itemlist);
 
         for (int i = 0; i < itemlist.Length; i++)
         {

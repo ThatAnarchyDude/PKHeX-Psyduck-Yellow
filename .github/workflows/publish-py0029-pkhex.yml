@@ -1,0 +1,45 @@
+name: Publish full PKHeX Psyduck Yellow 0029
+on:
+  push:
+    branches: [codex/psyduck-yellow-0029-support]
+    paths-ignore: ['Android/**']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Core legality regressions
+        run: dotnet run --project Tests/PsyduckYellow0029.Probe -c Release
+      - name: Full Windows editor regressions
+        run: dotnet run --project Tests/PsyduckYellow0029.WindowsProbe -c Release
+      - name: Publish application
+        run: dotnet publish PKHeX.WinForms/PKHeX.WinForms.csproj -c Release -p:PublishReadyToRun=false -p:PublishSingleFile=true --self-contained false -o release/app
+      - name: Package application and license
+        shell: pwsh
+        run: |
+          Copy-Item PSYDUCK-YELLOW.md release/app/README.md
+          Copy-Item LICENSE release/app/LICENSE
+          Compress-Archive -Path release/app/* -DestinationPath release/PKHeX-Psyduck-Yellow-0029-v1.zip
+          (Get-FileHash release/PKHeX-Psyduck-Yellow-0029-v1.zip -Algorithm SHA256).Hash.ToLower() + '  PKHeX-Psyduck-Yellow-0029-v1.zip' | Set-Content release/SHA256SUMS
+      - name: Publish verified release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const tag = 'pkhex-py0029-v1';
+            const release = await github.rest.repos.createRelease({
+              ...context.repo, tag_name: tag, target_commitish: context.sha,
+              name: 'Full PKHeX — Psyduck Yellow prototype 0029 support v1',
+              body: fs.readFileSync('PSYDUCK-YELLOW.md', 'utf8'),
+              draft: false, prerelease: true
+            });
+            for (const name of ['PKHeX-Psyduck-Yellow-0029-v1.zip', 'SHA256SUMS']) {
+              await github.rest.repos.uploadReleaseAsset({ ...context.repo,
+                release_id: release.data.id, name,
+                data: fs.readFileSync('release/' + name) });
+            }

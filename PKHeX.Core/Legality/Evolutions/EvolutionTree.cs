@@ -34,6 +34,17 @@ public sealed class EvolutionTree : EvolutionNetwork
         return EvolutionSet.GetArray(bla, levelUp);
     }
 
+    public static readonly EvolutionTree PsyduckYellow0029 = GetPsyduckYellow0029();
+    private static EvolutionTree GetPsyduckYellow0029()
+    {
+        var entries = Get("g4", "g4"u8);
+        static EvolutionMethod Stone(ushort species, ushort item) => new(species, item, 0, EvolutionType.UseItem, 0, 0);
+        entries[54] = [Stone(55, 81)]; // Moon Stone; the level evolution is removed in 0029.
+        entries[133] = [.. entries[133], Stone(196, 109), Stone(197, 108), Stone(470, 85), Stone(471, 246)];
+        entries[175] = [.. entries[175], Stone(176, 109)];
+        return GetViaSpecies(PersonalTable.HGSS, entries);
+    }
+
     private EvolutionTree(IEvolutionForward forward, IEvolutionReverse reverse) : base(forward, reverse) { }
 
     private static EvolutionTree GetViaSpecies(IPersonalTable t, EvolutionMethod[][] entries)

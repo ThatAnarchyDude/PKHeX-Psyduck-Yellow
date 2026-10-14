@@ -33,6 +33,10 @@ public sealed class AbilityVerifier : Verifier
         if (pk is PK5 pk5 && IsEdgeCaseBasculin(data, pk5, out var basc))
             return basc;
 
+        // This exception belongs only to a matched custom starter, never to retail HGSS.
+        if (PsyduckYellow0029.IsEnabled(pk) && data.EncounterMatch is EncounterStatic4 { IsPsyduckYellowStarter: true }
+            && pk.Ability == PsyduckYellow0029.GetHiddenAbility(pk.Species) && pk.Ability != 0)
+            return VALID;
         var abilities = (IPersonalAbility12)data.PersonalInfo;
 
         // Check ability is possible (within bounds)

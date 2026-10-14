@@ -308,6 +308,16 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             CB_ExtraBytes.SelectedIndex = 0;
     }
 
+    public PKM PrepareForPsyduckYellowProfile(bool enabled)
+    {
+        var rawAbility = Entity.Ability;
+        var pk = CurrentPKM;
+        // Retail ability lists clamp an unsupported HA when first loading a custom save.
+        if (enabled && rawAbility != 0 && rawAbility == PsyduckYellow0029.GetHiddenAbility(pk.Species))
+            pk.Ability = rawAbility;
+        return pk;
+    }
+
     public void PopulateFields(PKM pk, bool focus = true, bool skipConversionCheck = false) => LoadFieldsFromPKM(pk, focus, skipConversionCheck);
 
     private void LoadFieldsFromPKM(PKM pk, bool focus = true, bool skipConversionCheck = true)
@@ -326,6 +336,8 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         FieldsLoaded = false;
 
         Entity = pk.Clone();
+        if (Entity is PK4 projectPK)
+            projectPK.IsPsyduckYellow0029 = RequestSaveFile is SAV4HGSS { IsPsyduckYellow0029: true };
 
 #if !DEBUG
             try { GetFieldsfromPKM(); }
@@ -510,6 +522,8 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         var items = GameInfo.FilteredSources.GetAbilityList(Entity.PersonalInfo);
         if (Entity is { Context: EntityContext.Gen5, Species: (ushort)Species.Basculin, Form: 1 })
             items = [.. items, FilteredGameDataSource.GetAbilityItem(GameInfo.Strings.abilitylist, (int)Ability.Reckless, '*')];
+        if (PsyduckYellow0029.IsEnabled(Entity) && PsyduckYellow0029.GetHiddenAbility(Entity.Species) is > 0 and var hidden)
+            items = [.. items, FilteredGameDataSource.GetAbilityItem(GameInfo.Strings.abilitylist, hidden, 'H')];
         CB_Ability.DataSource = items;
         CB_Ability.SelectedIndex = Math.Clamp(ability, 0, items.Count - 1); // restore original index if available
         FieldsLoaded = tmp;

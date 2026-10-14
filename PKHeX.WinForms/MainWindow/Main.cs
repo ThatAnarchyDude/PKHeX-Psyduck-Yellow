@@ -29,6 +29,7 @@ public partial class Main : Form
             AutoScaleMode = AutoScaleMode.Font;
         C_SAV.SetEditEnvironment(new SaveDataEditor<PictureBox>(FakeSaveFile.Default, PKME_Tabs));
         FormLoadAddEvents();
+        InitializePsyduckYellowProfile();
 #if DEBUG // translation updater -- all controls are added at this point -- call translate now
         if (DevUtil.IsUpdatingTranslations)
         {
@@ -845,7 +846,7 @@ public partial class Main : Form
         if (sav is ISaveFileRevision rev)
             type += rev.SaveRevisionString;
 
-        var title = GetProgramTitle() + $" - {type}: ";
+        var title = GetProgramTitle() + (sav is SAV4HGSS { IsPsyduckYellow0029: true } ? " — " + PsyduckYellow0029.Name : "") + $" - {type}: ";
         var version = GameInfo.GetVersionName(sav.Version);
         if (Settings.Privacy.HideSAVDetails)
             return title + $"[{version}]";

@@ -24,11 +24,26 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         Dex = new Zukan4(this, GeneralBuffer[PokeDex..]);
     }
 
-    public override Zukan4 Dex { get; }
-    protected override SAV4 CloneInternal4() => State.Exportable ? new SAV4HGSS(Data.ToArray()) : new SAV4HGSS();
+    public bool IsPsyduckYellow0029 { get; set; }
 
-    public override GameVersion Version { get => (GameVersion)ROMCode; set => ROMCode = (byte)value; }
-    public override PersonalTable4 Personal => PersonalTable.HGSS;
+    public override Zukan4 Dex { get; }
+    protected override SAV4 CloneInternal4() => State.Exportable ? new SAV4HGSS(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029 } : new SAV4HGSS { IsPsyduckYellow0029 = IsPsyduckYellow0029 };
+
+    public GameVersion ApplicationVersion => IsPsyduckYellow0029 ? GameVersion.PY : Version;
+    public override GameVersion Version
+    {
+        get => (GameVersion)ROMCode;
+        set
+        {
+            if (value == GameVersion.PY)
+            {
+                IsPsyduckYellow0029 = true;
+                value = GameVersion.HG;
+            }
+            ROMCode = (byte)value;
+        }
+    }
+    public override PersonalTable4 Personal => IsPsyduckYellow0029 ? PsyduckYellow0029.Personal : PersonalTable.HGSS;
     public override ReadOnlySpan<ushort> HeldItems => Legal.HeldItems_HGSS;
     public override int MaxItemID => Legal.MaxItemID_4_HGSS;
     public const int GeneralSize = 0xF628;

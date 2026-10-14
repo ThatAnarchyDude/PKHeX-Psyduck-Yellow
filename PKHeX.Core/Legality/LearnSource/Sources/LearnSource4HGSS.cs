@@ -51,6 +51,9 @@ public sealed class LearnSource4HGSS : ILearnSource<PersonalInfo4>, IEggSource
 
     public MoveLearnInfo GetCanLearn(PKM pk, PersonalInfo4 pi, EvoCriteria evo, ushort move, MoveSourceType types = MoveSourceType.All, LearnOption option = LearnOption.Current)
     {
+        if (PsyduckYellow0029.IsEnabled(pk) && evo.Species == (ushort)Species.Togepi && move == (ushort)Move.Tackle
+            && types.HasFlag(MoveSourceType.LevelUp))
+            return new(LevelUp, Game, 1);
         if (types.HasFlag(MoveSourceType.LevelUp))
         {
             var learn = GetLearnset(evo.Species, evo.Form);
@@ -60,6 +63,8 @@ public sealed class LearnSource4HGSS : ILearnSource<PersonalInfo4>, IEggSource
 
         if (types.HasFlag(MoveSourceType.Machine))
         {
+            if (PsyduckYellow0029.IsEnabled(pk) && PsyduckYellow0029.CanLearnCustomTM(evo.Species, move))
+                return new(TMHM, Game);
             if (GetIsTM(pi, move))
                 return new(TMHM, Game);
             if ((move is (int)Move.Whirlpool || pk.Format == Generation) && GetIsHM(pi, move))
