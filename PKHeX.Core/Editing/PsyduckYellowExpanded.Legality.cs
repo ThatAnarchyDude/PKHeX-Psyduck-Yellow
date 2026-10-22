@@ -15,6 +15,13 @@ public static partial class PsyduckYellowExpanded
     public const ushort MegaPsyduck = 1564;
     public const ushort Eonite = 3145;
     public const ushort Psyduckite = 3146;
+    public const ushort Novareonite = 3147;
+    /// <summary>First and last of the starter Eevee line's species: for each Eeveelution a starter species followed by its Mega copy; the last pair is the Novareon stand-in.</summary>
+    public const ushort StarterLineFirst = 1565;
+    public const ushort StarterLineLast = 1582;
+    private const ushort NovareonFirst = 1581;
+    /// <summary>Ordinary internal species behind each starter-line pair (Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon, then Umbreon for Novareon).</summary>
+    private static readonly ushort[] LineBases = [134, 135, 136, 196, 197, 470, 471, 750, 197];
 
     private static readonly Lazy<Learnset[]> LearnsetData = new(LoadLearnsets);
     /// <summary>Level-up learnsets read from the expanded game's ROM, indexed by internal species.</summary>
@@ -48,6 +55,12 @@ public static partial class PsyduckYellowExpanded
         names[MegaEevee] = "Eevee (Mega)";
         names[StarterPsyduck] = "Psyduck (Starter)";
         names[MegaPsyduck] = "Psyduck (Mega)";
+        for (int i = 0; i < StarterLineLast - StarterLineFirst + 1; i++)
+        {
+            var species = StarterLineFirst + i;
+            var name = species >= NovareonFirst ? "Novareon" : names[LineBases[i / 2]];
+            names[species] = name + (i % 2 == 0 ? " (Starter)" : " (Mega)");
+        }
         return names;
     }
 
@@ -62,16 +75,20 @@ public static partial class PsyduckYellowExpanded
         {
             StarterEevee or MegaEevee => (ushort)Species.Eevee,
             StarterPsyduck or MegaPsyduck => (ushort)Species.Psyduck,
+            >= StarterLineFirst and <= StarterLineLast => LineBases[(pk.Species - StarterLineFirst) / 2],
             _ => pk.Species,
         };
         if (species is 0 or > Legal.MaxSpeciesID_4)
             return false;
         if (pk.Move1 > Legal.MaxMoveID_4 || pk.Move2 > Legal.MaxMoveID_4 || pk.Move3 > Legal.MaxMoveID_4 || pk.Move4 > Legal.MaxMoveID_4)
             return false;
-        // Psyduckite belongs to the starter Psyduck only; Eonite to the Eevee family (starter copies included).
+        // Psyduckite belongs to the starter Psyduck only; Eonite to the Eevee family (starter copies included) and the starter line's Eeveelutions;
+        // Novareonite to the starter Novareon stand-in only.
         var megaStone = (pk.HeldItem == Psyduckite && pk.Species is StarterPsyduck or MegaPsyduck)
+                     || (pk.HeldItem == Eonite && pk.Species is >= StarterLineFirst and < NovareonFirst)
+                     || (pk.HeldItem == Novareonite && pk.Species is >= NovareonFirst and <= StarterLineLast)
                      || (pk.HeldItem == Eonite && (pk.Species is StarterEevee or MegaEevee || species is (ushort)Species.Eevee or (ushort)Species.Vaporeon or (ushort)Species.Jolteon or (ushort)Species.Flareon or (ushort)Species.Espeon or (ushort)Species.Umbreon or (ushort)Species.Leafeon or (ushort)Species.Glaceon));
-        var isStone = pk.HeldItem is Eonite or Psyduckite;
+        var isStone = pk.HeldItem is Eonite or Psyduckite or Novareonite;
         if (pk.Ability > Legal.MaxAbilityID_4 || (pk.HeldItem > Legal.MaxItemID_4_HGSS && !isStone))
             return false;
 
