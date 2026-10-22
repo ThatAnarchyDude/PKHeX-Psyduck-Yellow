@@ -1886,13 +1886,14 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             return;
 
         var (text, value) = item;
-        var valid = LegalMoveSource.Info.CanLearn((ushort)value) && !HaX;
+        var expanded = Entity is PK4 { IsExpandedEngine: true }; // retail move tables don't cover Psyduck Yellow move IDs
+        var valid = !expanded && LegalMoveSource.Info.CanLearn((ushort)value) && !HaX;
 
         var highlight = (e.State & DrawItemState.Selected) != 0;
         var brush = highlight ? SystemBrushes.MenuHighlight : (valid ? BrushLegal : SystemBrushes.ControlLightLight);
         var textColor = highlight && !Application.IsDarkModeEnabled ? SystemColors.HighlightText : SystemColors.ControlText;
 
-        var type = MoveInfo.GetType((ushort)value, Entity.Context);
+        var type = expanded && value < PsyduckYellowExpanded.MoveTypes.Length ? PsyduckYellowExpanded.MoveTypes[value] : MoveInfo.GetType((ushort)value, Entity.Context);
         var moveTypeIcon = TypeSpriteUtil.GetTypeSpriteIconSmall(type);
         DrawMoveRectangle(e, brush, text, textColor, moveTypeIcon);
     }

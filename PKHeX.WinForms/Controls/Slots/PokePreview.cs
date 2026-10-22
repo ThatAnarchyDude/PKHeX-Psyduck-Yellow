@@ -108,10 +108,13 @@ public sealed partial class PokePreview : Form
 
     private void AppendMoveLine(PKM pk, GameStrings strings, ReadOnlySpan<string> names, EntityContext context, ushort move, bool valid)
     {
+        var expanded = pk is PK4 { IsExpandedEngine: true }; // Psyduck Yellow has its own move names/types
+        if (expanded)
+            names = PsyduckYellowExpanded.MoveNames;
         if (move == 0 || move >= names.Length)
             return;
 
-        byte type = MoveInfo.GetType(move, context);
+        byte type = expanded && move < PsyduckYellowExpanded.MoveTypes.Length ? PsyduckYellowExpanded.MoveTypes[move] : MoveInfo.GetType(move, context);
         var name = names[move];
         if (move == (int)PKHeX.Core.Move.HiddenPower && pk.Context is not EntityContext.Gen8a)
         {
