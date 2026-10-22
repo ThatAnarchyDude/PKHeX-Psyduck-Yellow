@@ -12,14 +12,15 @@ public sealed class FilteredGameDataSource
     public FilteredGameDataSource(SaveFile sav, GameDataSource source, bool HaX = false)
     {
         Source = source;
-        Species = GetFilteredSpecies(sav, source.SpeciesDataSource, HaX);
-        Moves = GetFilteredMoves(sav, sav.Context, source, HaX);
+        var py = sav is SAV4PY; // Psyduck Yellow carries its own species/move/item/ability tables
+        Species = py ? Util.GetCBList(PsyduckYellowExpanded.SpeciesNames) : GetFilteredSpecies(sav, source.SpeciesDataSource, HaX);
+        Moves = py ? Util.GetCBList(PsyduckYellowExpanded.MoveNames) : GetFilteredMoves(sav, sav.Context, source, HaX);
         Relearn = sav is SAV7SM sm
             ? GetFilteredMoves(sm.Context, source, HaX, Legal.MaxMoveID_7_USUM) // allow for US/UM relearn move limits on S/M
             : Moves.ToList();
         if (sav.Generation > 1)
         {
-            var items = Source.GetItemDataSource(sav.Version, sav.Context, sav.HeldItems, HaX);
+            var items = py ? Util.GetCBList(PsyduckYellowExpanded.ItemNames) : Source.GetItemDataSource(sav.Version, sav.Context, sav.HeldItems, HaX);
             items.RemoveAll(i => i.Value > sav.MaxItemID);
             Items = items;
         }
@@ -36,7 +37,7 @@ public sealed class FilteredGameDataSource
 
         Languages = Source.LanguageDataSource(sav.Generation, sav.Context);
         Balls = Source.BallDataSource.Where(b => b.Value <= sav.MaxBallID).ToList();
-        Abilities = Source.AbilityDataSource.Where(a => a.Value <= sav.MaxAbilityID).ToList();
+        Abilities = py ? Util.GetCBList(PsyduckYellowExpanded.AbilityNames) : Source.AbilityDataSource.Where(a => a.Value <= sav.MaxAbilityID).ToList();
 
         G4GroundTiles = Source.GroundTileDataSource;
         ConsoleRegions = Source.Regions;

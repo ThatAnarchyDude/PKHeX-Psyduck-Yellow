@@ -792,7 +792,7 @@ public sealed class GameStrings : IBasicStrings
         }
     }
 
-    public string[] GetItemStrings(EntityContext context, GameVersion version = GameVersion.Any) => context switch
+    public string[] GetItemStrings(EntityContext context, GameVersion version = GameVersion.Any) => version == GameVersion.PY ? PsyduckYellowExpanded.ItemNames : context switch
     {
         EntityContext.Gen1 => g1items,
         EntityContext.Gen2 => g2items,

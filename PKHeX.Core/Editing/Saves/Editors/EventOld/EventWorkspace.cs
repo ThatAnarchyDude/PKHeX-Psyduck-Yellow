@@ -37,6 +37,7 @@ public sealed class EventWorkspace<TSave, TWork> where TSave : class, IEventFlag
         D or P or DP => "dp",
         Pt or DPPt => "pt",
         HG or SS or HGSS => "hgss",
+        PY => "py",
         B or W or BW => "bw",
         B2 or W2 or B2W2 => "b2w2",
         R or S or RS => "rs",
