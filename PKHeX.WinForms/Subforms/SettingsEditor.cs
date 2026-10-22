@@ -27,7 +27,9 @@ public partial class SettingsEditor : Form
         {
             static bool IsInvalidSaveFileVersion(GameVersion value) => value is 0 or GameVersion.GO or GameVersion.CP;
             CB_Blank.InitializeBinding();
-            CB_Blank.DataSource = GameInfo.Sources.VersionDataSource.Where(z => !IsInvalidSaveFileVersion((GameVersion)z.Value)).ToList();
+            var blankGames = GameInfo.Sources.VersionDataSource.Where(z => !IsInvalidSaveFileVersion((GameVersion)z.Value)).ToList();
+            blankGames.Add(new ComboItem(GameInfo.GetVersionName(GameVersion.PY), (int)GameVersion.PY)); // application-only game; never an origin game
+            CB_Blank.DataSource = blankGames;
             CB_Blank.SelectedValue = (int)s.Startup.DefaultSaveVersion;
             CB_Blank.SelectedValueChanged += (_, _) =>
             {

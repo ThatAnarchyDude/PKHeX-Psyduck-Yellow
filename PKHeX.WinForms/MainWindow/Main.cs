@@ -852,7 +852,7 @@ public partial class Main : Form
             type += rev.SaveRevisionString;
 
         var title = GetProgramTitle() + (sav is SAV4HGSS { IsPsyduckYellow0029: true } projectSave ? " — " + projectSave.ProjectProfileName : "") + $" - {type}: ";
-        var version = GameInfo.GetVersionName(sav is SAV4HGSS { IsPsyduckYellow0029: true } ? GameVersion.PY : sav.Version);
+        var version = GameInfo.GetVersionName(sav.Version);
         if (Settings.Privacy.HideSAVDetails)
             return title + $"[{version}]";
         if (!sav.State.Exportable) // Blank save file

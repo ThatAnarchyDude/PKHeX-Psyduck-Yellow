@@ -243,10 +243,7 @@ public sealed class PK4 : G4PKM, IHyperTrain
         set
         {
             if (value == GameVersion.PY)
-            {
-                IsPsyduckYellow0029 = true;
-                value = GameVersion.HG;
-            }
+                IsPsyduckYellow0029 = true; // Psyduck Yellow is a valid origin game; stored as-is
             Data[0x5F] = (byte)value;
         }
     }

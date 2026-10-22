@@ -7,7 +7,7 @@ namespace PKHeX.Core;
 /// <summary>
 /// <see cref="SaveFile"/> format for <see cref="GameVersion.HGSS"/>
 /// </summary>
-public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
+public class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
 {
     public SAV4HGSS() : base(GeneralSize, StorageSize)
     {
@@ -17,9 +17,21 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         Dex = new Zukan4(this, GeneralBuffer[L(PokeDex)..]);
     }
 
-    public SAV4HGSS(Memory<byte> data) : this(data, PsyduckYellowExpanded.IsExpandedSave(data.Span)) { }
+    public SAV4HGSS(Memory<byte> data) : this(data, false) { }
 
-    private SAV4HGSS(Memory<byte> data, bool expanded) : base(data,
+    /// <summary>Blank expanded-engine (Psyduck Yellow) save; see <see cref="SAV4PY"/>.</summary>
+    protected SAV4HGSS(bool expandedBlank) : base(PsyduckYellowExpanded.GeneralSize, PsyduckYellowExpanded.StorageSize)
+    {
+        IsExpandedEngine = expandedBlank;
+        IsPsyduckYellow0029 = expandedBlank;
+        Initialize();
+        Version = GameVersion.HGSS;
+        Mystery = new MysteryBlock4HGSS(this, GeneralBuffer.Slice(OffsetMystery, MysteryBlock4HGSS.Size));
+        Dex = new Zukan4(this, GeneralBuffer[L(PokeDex)..]);
+        ClearBoxes();
+    }
+
+    protected SAV4HGSS(Memory<byte> data, bool expanded) : base(data,
         expanded ? PsyduckYellowExpanded.GeneralSize : GeneralSize,
         expanded ? PsyduckYellowExpanded.StorageSize : StorageSize,
         expanded ? PsyduckYellowExpanded.StorageStart : GeneralSize + GeneralGap, expanded)

@@ -170,6 +170,7 @@ public static class SaveUtil
         if (IsG3(data, out var smallOffset)) return GetVersionG3SAV(data[smallOffset..]);
         if (IsG4DP(data)) return DP;
         if (IsG4Pt(data)) return Pt;
+        if (IsG4PY(data)) return PY;
         if (IsG4HGSS(data)) return HGSS;
         if (IsG5BW(data)) return BW;
         if (IsG5B2W2(data)) return B2W2;
@@ -376,7 +377,8 @@ public static class SaveUtil
 
     private static bool IsG4DP(ReadOnlySpan<byte> data) => data.Length == SIZE_G4RAW && IsValidGeneralFooter2(data, SAV4DP.GeneralSize);
     private static bool IsG4Pt(ReadOnlySpan<byte> data) => data.Length == SIZE_G4RAW && IsValidGeneralFooter2(data, SAV4Pt.GeneralSize);
-    private static bool IsG4HGSS(ReadOnlySpan<byte> data) => data.Length == SIZE_G4RAW && (IsValidGeneralFooter2(data, SAV4HGSS.GeneralSize) || PsyduckYellowExpanded.IsExpandedSave(data));
+    private static bool IsG4HGSS(ReadOnlySpan<byte> data) => data.Length == SIZE_G4RAW && IsValidGeneralFooter2(data, SAV4HGSS.GeneralSize);
+    private static bool IsG4PY(ReadOnlySpan<byte> data) => PsyduckYellowExpanded.IsExpandedSave(data);
     private static bool IsG4BR(ReadOnlySpan<byte> data) => data.Length == SIZE_G4BR && SAV4BR.IsValidSaveFile(data);
     private static bool IsG5BW(ReadOnlySpan<byte> data) => data.Length == SIZE_G5RAW && IsValidFooter5(data, SIZE_G5BW, 0x8C);
     private static bool IsG5B2W2(ReadOnlySpan<byte> data) => data.Length == SIZE_G5RAW && IsValidFooter5(data, SIZE_G5B2W2, 0x94);
@@ -643,6 +645,7 @@ public static class SaveUtil
         DP => new SAV4DP(data),
         Pt => new SAV4Pt(data),
         HGSS => new SAV4HGSS(data),
+        PY => new SAV4PY(data),
 
         BW => new SAV5BW(data),
         B2W2 => new SAV5B2W2(data),

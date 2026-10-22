@@ -52,7 +52,7 @@ public static class GameUtil
         // Gen4
         D or P => DP,
         Pt => Pt,
-        HG or SS => HGSS,
+        HG or SS or PY => HGSS,
 
         // Gen5
         B or W => BW,
@@ -133,7 +133,7 @@ public static class GameUtil
         /// <summary>
         /// Indicates if the <see cref="GameVersion"/> value is a value used by the games or is an aggregate indicator.
         /// </summary>
-        public bool IsValidSavedVersion() => version is > 0 and <= HighestGameID;
+        public bool IsValidSavedVersion() => version is (> 0 and <= HighestGameID) or PY;
 
         /// <summary>
         /// Converts the <see cref="version"/> to <see cref="EntityContext"/> based on the Entity version ID origins.
@@ -141,7 +141,7 @@ public static class GameUtil
         public EntityContext GetContextFromSaved() => version switch
         {
             S or R or E or FR or LG or CXD or FRX or LGX => EntityContext.Gen3,
-            D or P or Pt or HG or SS or BATREV => EntityContext.Gen4,
+            D or P or Pt or HG or SS or BATREV or PY => EntityContext.Gen4,
             B or W or B2 or W2 => EntityContext.Gen5,
             X or Y or AS or OR => EntityContext.Gen6,
             SN or MN or US or UM => EntityContext.Gen7,
@@ -166,6 +166,7 @@ public static class GameUtil
             GD or SI or C        => Legal.MaxSpeciesID_2,
             S or R or E or FR or LG or CXD => Legal.MaxSpeciesID_3,
             D or P or Pt or HG or SS       => Legal.MaxSpeciesID_4,
+            PY       => PsyduckYellowExpanded.MaxSpecies,
             B or W or B2 or W2 => Legal.MaxSpeciesID_5,
             X or Y or AS or OR => Legal.MaxSpeciesID_6,
             GP or GE => Legal.MaxSpeciesID_7b,
@@ -196,7 +197,7 @@ public static class GameUtil
         public bool IsGen1() => version is RD or GN or BU or YW;
         public bool IsGen2() => version is GD or SI or C;
         public bool IsGen3() => version is S or R or E or FR or LG or CXD or (FRX or LGX);
-        public bool IsGen4() => version is HG or SS or D or P or Pt;
+        public bool IsGen4() => version is HG or SS or D or P or Pt or PY;
         public bool IsGen5() => version is W or B or W2 or B2;
         public bool IsGen6() => version is X or Y or AS or OR;
         public bool IsGen7() => version is SN or MN or US or UM;
@@ -233,7 +234,7 @@ public static class GameUtil
             DP     => version1 is D or P,
             HGSS   => version1 is HG or SS,
             DPPt   => version1 is D or P or Pt or DP,
-            Gen4   => version1 is D or P or Pt or HG or SS or BATREV or DP or HGSS or DPPt,
+            Gen4   => version1 is D or P or Pt or HG or SS or BATREV or DP or HGSS or DPPt or PY,
 
             BW     => version1 is B or W,
             B2W2   => version1 is B2 or W2,

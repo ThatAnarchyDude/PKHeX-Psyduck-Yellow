@@ -29,7 +29,10 @@ public sealed class FilteredGameDataSource
         }
 
         var gamelist = GameUtil.GetVersionsWithinRange(sav, sav.Context).ToList();
-        Games = Source.VersionDataSource.Where(g => gamelist.Contains((GameVersion)g.Value) || g.Value == 0).ToList();
+        var games = Source.VersionDataSource.Where(g => gamelist.Contains((GameVersion)g.Value) || g.Value == 0).ToList();
+        if (sav is SAV4HGSS { IsPsyduckYellow0029: true })
+            games.Add(new ComboItem(GameInfo.GetVersionName(GameVersion.PY), (int)GameVersion.PY)); // Psyduck Yellow is a valid origin game
+        Games = games;
 
         Languages = Source.LanguageDataSource(sav.Generation, sav.Context);
         Balls = Source.BallDataSource.Where(b => b.Value <= sav.MaxBallID).ToList();

@@ -22,6 +22,9 @@ public enum SaveFileType : byte
     DP,
     Pt,
     HGSS,
+
+    /// <summary>Psyduck Yellow (expanded hg-engine HeartGold), <see cref="SAV4PY"/>.</summary>
+    PY,
     BW,
     B2W2,
     XY,
@@ -62,6 +65,7 @@ public static class SaveFileTypeExtensions
         /// <returns>Corresponding <see cref="Core.SaveFileType"/> for the given <paramref name="version"/>.</returns>
         public SaveFileType SaveFileType => version switch
         {
+            GameVersion.PY => PY,
             > GameUtil.HighestGameID => 0,
             GameVersion.RD or GameVersion.GN or GameVersion.YW or GameVersion.BU => RBY,
             GameVersion.GD or GameVersion.SI or GameVersion.C => GSC,
@@ -96,7 +100,7 @@ public static class SaveFileTypeExtensions
             RBY or Stadium1J or Stadium1 => EntityContext.Gen1,
             GSC or Stadium2 => EntityContext.Gen2,
             RS or Emerald or FRLG => EntityContext.Gen3,
-            DP or Pt or HGSS => EntityContext.Gen4,
+            DP or Pt or HGSS or PY => EntityContext.Gen4,
             BW or B2W2 => EntityContext.Gen5,
             XY or AO or AODemo => EntityContext.Gen6,
             SM or USUM => EntityContext.Gen7,
