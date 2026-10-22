@@ -288,7 +288,7 @@ public sealed class MetDataSource(GameStrings s)
         FR or LG when context == EntityContext.Gen3 => Partition1(MetGen3, IsMetLocation3FRLG),
         D or P   when context == EntityContext.Gen4 => Partition2(MetGen4, IsMetLocation4DP, 4),
         Pt       when context == EntityContext.Gen4 => Partition2(MetGen4, IsMetLocation4Pt, 4),
-        HG or SS when context == EntityContext.Gen4 => Partition2(MetGen4, IsMetLocation4HGSS, 4),
+        HG or SS or PY when context == EntityContext.Gen4 => Partition2(MetGen4, IsMetLocation4HGSS, 4),
 
         B  or W  => Partition2(MetGen5, IsMetLocation5BW), // Abyssal Ruins
         B2 or W2 => MetGen5,

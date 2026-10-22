@@ -45,6 +45,6 @@ public static partial class PsyduckYellow0029
     {
         Species = species, Level = 5, Location = 138, FixedBall = Ball.Poke,
         Gender = species switch { 54 => 0, 133 => 1, _ => FixedGenderUtil.GenderRandom },
-        GroundTile = GroundTileAllowed.Max_Pt, IsPsyduckYellowStarter = true,
+        GroundTile = GroundTileAllowed.Building | GroundTileAllowed.Max_Pt, IsPsyduckYellowStarter = true, // gifted indoors; older builds wrote "Unspecific"
     };
 }
