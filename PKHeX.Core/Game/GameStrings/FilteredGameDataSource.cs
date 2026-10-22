@@ -13,7 +13,7 @@ public sealed class FilteredGameDataSource
     {
         Source = source;
         var py = sav is SAV4PY; // Psyduck Yellow carries its own species/move/item/ability tables
-        Species = py ? Util.GetCBList(PsyduckYellowExpanded.SpeciesNames) : GetFilteredSpecies(sav, source.SpeciesDataSource, HaX);
+        Species = py ? GetPsyduckYellowSpecies() : GetFilteredSpecies(sav, source.SpeciesDataSource, HaX);
         Moves = py ? Util.GetCBList(PsyduckYellowExpanded.MoveNames) : GetFilteredMoves(sav, sav.Context, source, HaX);
         Relearn = sav is SAV7SM sm
             ? GetFilteredMoves(sm.Context, source, HaX, Legal.MaxMoveID_7_USUM) // allow for US/UM relearn move limits on S/M
@@ -42,6 +42,13 @@ public sealed class FilteredGameDataSource
         G4GroundTiles = Source.GroundTileDataSource;
         ConsoleRegions = Source.Regions;
         Natures = Source.NatureDataSource;
+    }
+
+    private static List<ComboItem> GetPsyduckYellowSpecies()
+    {
+        var list = Util.GetCBList(PsyduckYellowExpanded.GetSpeciesDisplayNames());
+        list.RemoveAll(s => s.Value != 0 && string.IsNullOrEmpty(s.Text)); // unused placeholder slots
+        return list;
     }
 
     private static List<ComboItem> GetFilteredSpecies<TSave>(TSave sav, IReadOnlyList<ComboItem> source, bool HaX = false) where TSave : IGameValueLimit

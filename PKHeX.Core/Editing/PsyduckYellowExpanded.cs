@@ -5,7 +5,7 @@ namespace PKHeX.Core;
 /// <summary>Verified prototype 0038 hg-engine layout, separate from retail HGSS.</summary>
 public static partial class PsyduckYellowExpanded
 {
-    public const string Name = "Psyduck Yellow 0040 Expanded Engine";
+    public const string Name = "Psyduck Yellow Expanded Engine";
     public const int GeneralSize = 0xFFA0;
     public const int StorageSize = 0x1E4FC;
     public const int StorageStart = 0x10000;

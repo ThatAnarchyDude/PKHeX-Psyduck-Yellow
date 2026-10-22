@@ -19,7 +19,7 @@ public static partial class PsyduckYellowExpanded
     }
     private static PersonalTable4 CreatePersonalTable()
     {
-        var data = Util.GetBinaryResource("personal_psyduck0040");
+        var data = Util.GetBinaryResource("personal_psyduck_expanded");
         var table = new PersonalTable4(data, (ushort)(data.Length / PersonalInfo4.SIZE - 1), FormMap);
         for (int i = 0; i < table.Count; i++)
         {

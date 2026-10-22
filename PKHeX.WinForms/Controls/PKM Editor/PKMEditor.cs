@@ -2396,7 +2396,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             SetIfDifferentCount(source.Moves, cb.CB_Move, force);
         if (sav is SAV4HGSS { IsExpandedEngine: true })
         {
-            SetIfDifferentCount(Util.GetCBList(PsyduckYellowExpanded.SpeciesNames), CB_Species, true);
+            SetIfDifferentCount(source.Species, CB_Species, true);
             SetIfDifferentCount(Util.GetCBList(PsyduckYellowExpanded.ItemNames), CB_HeldItem, true);
             SetIfDifferentCount(Util.GetCBList(PsyduckYellowExpanded.AbilityNames), DEV_Ability, true);
             var moves = Util.GetCBList(PsyduckYellowExpanded.MoveNames);
