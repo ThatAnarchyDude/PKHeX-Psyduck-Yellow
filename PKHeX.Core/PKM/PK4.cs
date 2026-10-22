@@ -36,9 +36,11 @@ public sealed class PK4 : G4PKM, IHyperTrain
     // Profile metadata is intentionally never stored in the Pokemon/save bytes.
     public bool IsPsyduckYellow0029 { get; set; }
     public bool IsExpandedEngine { get; set; }
+    /// <summary>Set on the retail-shaped copy used for legality of expanded-engine Pokémon (not stored).</summary>
+    public bool IsExpandedLegalityView { get; set; }
     public override int GetBasePP(ushort move) => IsExpandedEngine && move < PsyduckYellowExpanded.MovePP.Length ? PsyduckYellowExpanded.MovePP[move] : base.GetBasePP(move);
     public override bool IsShiny => IsPsyduckYellow0029 ? ShinyXor < 16 : base.IsShiny;
-    public override PK4 Clone() => new(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029, IsExpandedEngine = IsExpandedEngine };
+    public override PK4 Clone() => new(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029, IsExpandedEngine = IsExpandedEngine, IsExpandedLegalityView = IsExpandedLegalityView };
 
     // Structure
     public override uint PID { get => ReadUInt32LittleEndian(Data); set => WriteUInt32LittleEndian(Data, value); }

@@ -23,6 +23,11 @@ public sealed class LearnSource4HGSS : ILearnSource<PersonalInfo4>, IEggSource
 
     public Learnset GetLearnset(ushort species, byte form) => Learnsets[Personal.GetFormIndex(species, form)];
 
+    /// <summary>Psyduck Yellow Pokémon use the game's own (hg-engine) level-up moves instead of retail HeartGold's.</summary>
+    private Learnset GetLearnset(PKM pk, EvoCriteria evo) => pk is PK4 { IsExpandedLegalityView: true } && evo.Species < PsyduckYellowExpanded.Learnsets.Length
+        ? PsyduckYellowExpanded.Learnsets[evo.Species]
+        : GetLearnset(evo.Species, evo.Form);
+
     public bool TryGetPersonal(ushort species, byte form, [NotNullWhen(true)] out PersonalInfo4? pi)
     {
         pi = null;
@@ -56,7 +61,7 @@ public sealed class LearnSource4HGSS : ILearnSource<PersonalInfo4>, IEggSource
             return new(LevelUp, Game, 1);
         if (types.HasFlag(MoveSourceType.LevelUp))
         {
-            var learn = GetLearnset(evo.Species, evo.Form);
+            var learn = GetLearnset(pk, evo);
             if (learn.TryGetLevelLearnMove(move, out var level) && level <= evo.LevelMax)
                 return new(LevelUp, Game, level);
         }
@@ -132,10 +137,13 @@ public sealed class LearnSource4HGSS : ILearnSource<PersonalInfo4>, IEggSource
 
         if (types.HasFlag(MoveSourceType.LevelUp))
         {
-            var learn = GetLearnset(evo.Species, evo.Form);
+            var learn = GetLearnset(pk, evo);
             var span = learn.GetMoveRange(evo.LevelMax);
             foreach (var move in span)
-                result[move] = true;
+            {
+                if (move < result.Length) // the expanded game's learnsets include moves newer than Generation 4
+                    result[move] = true;
+            }
         }
 
         if (types.HasFlag(MoveSourceType.Machine))
