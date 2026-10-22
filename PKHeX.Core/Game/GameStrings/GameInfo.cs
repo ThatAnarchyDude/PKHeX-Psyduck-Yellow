@@ -30,6 +30,8 @@ public static class GameInfo
 
     public static string GetVersionName(GameVersion version)
     {
+        if (version == GameVersion.PY)
+            return "Psyduck Yellow";
         foreach (var kvp in Sources.VersionDataSource)
         {
             if (kvp.Value == (int)version)

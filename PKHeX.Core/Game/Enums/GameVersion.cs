@@ -545,4 +545,7 @@ public enum GameVersion : byte
     /// </summary>
     EFL,
     #endregion
+
+    /// <summary>Application-only Psyduck Yellow profile. Never write 254 as a Pokemon origin or save ROM code.</summary>
+    PY = 254,
 }

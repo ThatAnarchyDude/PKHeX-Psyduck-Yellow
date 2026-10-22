@@ -89,7 +89,7 @@ public partial class StatEditor : UserControl
                     break;
                 }
 
-            case Keys.Shift when Entity is IHyperTrain h: // HT
+            case Keys.Shift when Entity is IHyperTrain h && Entity is not PK4 { IsExpandedEngine: false }: // HT
                 {
                     var index = MT_IVs.IndexOf(t);
                     bool flag = h.HyperTrainInvert(index);

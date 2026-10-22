@@ -14,6 +14,7 @@ public partial class PKMEditor
         LoadMisc2(pk4);
         LoadMisc3(pk4);
         LoadMisc4(pk4);
+        if (pk4 is PK4 { IsExpandedEngine: true }) CB_StatAlignment.SelectedValue = (int)pk4.StatAlignment;
 
         CB_GroundTile.SelectedValue = pk4.Gen4 ? (int)pk4.GroundTile : 0;
         CB_GroundTile.Visible = Label_GroundTile.Visible = Entity.Gen4;
@@ -40,6 +41,7 @@ public partial class PKMEditor
         SaveMisc2(pk4);
         SaveMisc3(pk4);
         SaveMisc4(pk4);
+        if (pk4 is PK4 { IsExpandedEngine: true } && pk4.StatAlignment != (Nature)WinFormsUtil.GetIndex(CB_StatAlignment)) pk4.StatAlignment = (Nature)WinFormsUtil.GetIndex(CB_StatAlignment);
 
         pk4.GroundTile = (GroundTileType)WinFormsUtil.GetIndex(CB_GroundTile);
 

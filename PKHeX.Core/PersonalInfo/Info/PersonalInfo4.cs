@@ -9,6 +9,9 @@ namespace PKHeX.Core;
 public sealed class PersonalInfo4(Memory<byte> Raw) : PersonalInfo, IPersonalAbility12, IPersonalInfoTM, IPersonalInfoTutorType
 {
     public const int SIZE = 0x2C;
+    public int EngineAbility1 { get; set; } = -1;
+    public int EngineAbility2 { get; set; } = -1;
+    public int EngineHiddenAbility { get; set; }
 
     private Span<byte> Data => Raw.Span;
     public override byte[] Write() => Raw.ToArray();
@@ -38,18 +41,19 @@ public sealed class PersonalInfo4(Memory<byte> Raw) : PersonalInfo, IPersonalAbi
     public override byte EXPGrowth { get => Data[0x13]; set => Data[0x13] = value; }
     public override int EggGroup1 { get => Data[0x14]; set => Data[0x14] = (byte)value; }
     public override int EggGroup2 { get => Data[0x15]; set => Data[0x15] = (byte)value; }
-    public int Ability1 { get => Data[0x16]; set => Data[0x16] = (byte)value; }
-    public int Ability2 { get => Data[0x17]; set => Data[0x17] = (byte)value; }
+    public int Ability1 { get => EngineAbility1 >= 0 ? EngineAbility1 : Data[0x16]; set { if (EngineAbility1 >= 0) EngineAbility1 = value; else Data[0x16] = (byte)value; } }
+    public int Ability2 { get => EngineAbility2 >= 0 ? EngineAbility2 : Data[0x17]; set { if (EngineAbility2 >= 0) EngineAbility2 = value; else Data[0x17] = (byte)value; } }
     public override int EscapeRate { get => Data[0x18]; set => Data[0x18] = (byte)value; }
     public override int Color { get => Data[0x19] & 0x7F; set => Data[0x19] = (byte)((Data[0x19] & 0x80) | value); }
     public bool NoFlip { get => Data[0x19] >> 7 == 1; set => Data[0x19] = (byte)(Color | (value ? 0x80 : 0)); }
 
-    public override int AbilityCount => 2;
-    public override int GetIndexOfAbility(int abilityID) => abilityID == Ability1 ? 0 : abilityID == Ability2 ? 1 : -1;
+    public override int AbilityCount => EngineHiddenAbility > 0 ? 3 : 2;
+    public override int GetIndexOfAbility(int abilityID) => abilityID == Ability1 ? 0 : abilityID == Ability2 ? 1 : EngineHiddenAbility > 0 && abilityID == EngineHiddenAbility ? 2 : -1;
     public override int GetAbilityAtIndex(int abilityIndex) => abilityIndex switch
     {
         0 => Ability1,
         1 => Ability2,
+        2 when EngineHiddenAbility > 0 => EngineHiddenAbility,
         _ => throw new ArgumentOutOfRangeException(nameof(abilityIndex), abilityIndex, null),
     };
     public int GetAbility(bool second) => second && HasSecondAbility ? Ability2 : Ability1;
@@ -222,3 +226,4 @@ public sealed class PersonalInfo4(Memory<byte> Raw) : PersonalInfo, IPersonalAbi
         (int)Move.RockClimb,
     ];
 }
+

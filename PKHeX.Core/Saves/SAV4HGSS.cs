@@ -14,23 +14,50 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         Initialize();
         Version = GameVersion.HGSS;
         Mystery = new MysteryBlock4HGSS(this, GeneralBuffer.Slice(OffsetMystery, MysteryBlock4HGSS.Size));
-        Dex = new Zukan4(this, GeneralBuffer[PokeDex..]);
+        Dex = new Zukan4(this, GeneralBuffer[L(PokeDex)..]);
     }
 
-    public SAV4HGSS(Memory<byte> data) : base(data, GeneralSize, StorageSize, GeneralSize + GeneralGap)
+    public SAV4HGSS(Memory<byte> data) : this(data, PsyduckYellowExpanded.IsExpandedSave(data.Span)) { }
+
+    private SAV4HGSS(Memory<byte> data, bool expanded) : base(data,
+        expanded ? PsyduckYellowExpanded.GeneralSize : GeneralSize,
+        expanded ? PsyduckYellowExpanded.StorageSize : StorageSize,
+        expanded ? PsyduckYellowExpanded.StorageStart : GeneralSize + GeneralGap, expanded)
     {
+        IsExpandedEngine = expanded;
+        IsPsyduckYellow0029 = expanded;
         Initialize();
         Mystery = new MysteryBlock4HGSS(this, GeneralBuffer.Slice(OffsetMystery, MysteryBlock4HGSS.Size));
-        Dex = new Zukan4(this, GeneralBuffer[PokeDex..]);
+        Dex = new Zukan4(this, GeneralBuffer[L(PokeDex)..]);
     }
 
-    public override Zukan4 Dex { get; }
-    protected override SAV4 CloneInternal4() => State.Exportable ? new SAV4HGSS(Data.ToArray()) : new SAV4HGSS();
+    public bool IsExpandedEngine { get; private set; }
+    public bool IsPsyduckYellow0029 { get; set; }
+    public string ProjectProfileName => IsExpandedEngine ? PsyduckYellowExpanded.Name : PsyduckYellow0029.Name;
+    private int L(int offset) => IsExpandedEngine ? PsyduckYellowExpanded.GeneralOffset(offset) : offset;
+    protected override int ResolveGeneralOffset(int offset) => L(offset);
+    public int InventoryPCRelativeOffset => L(0xDE4) - 0x644 + (0x4152 - 0x4000) * 2;
 
-    public override GameVersion Version { get => (GameVersion)ROMCode; set => ROMCode = (byte)value; }
-    public override PersonalTable4 Personal => PersonalTable.HGSS;
-    public override ReadOnlySpan<ushort> HeldItems => Legal.HeldItems_HGSS;
-    public override int MaxItemID => Legal.MaxItemID_4_HGSS;
+    public override Zukan4 Dex { get; }
+    protected override SAV4 CloneInternal4() => State.Exportable ? new SAV4HGSS(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029 } : new SAV4HGSS { IsPsyduckYellow0029 = IsPsyduckYellow0029 };
+
+    public GameVersion ApplicationVersion => IsPsyduckYellow0029 ? GameVersion.PY : Version;
+    public override GameVersion Version
+    {
+        get => (GameVersion)ROMCode;
+        set
+        {
+            if (value == GameVersion.PY)
+            {
+                IsPsyduckYellow0029 = true;
+                value = GameVersion.HG;
+            }
+            ROMCode = (byte)value;
+        }
+    }
+    public override PersonalTable4 Personal => IsExpandedEngine ? PsyduckYellowExpanded.Personal : IsPsyduckYellow0029 ? PsyduckYellow0029.Personal : PersonalTable.HGSS;
+    public override ReadOnlySpan<ushort> HeldItems => IsExpandedEngine ? PsyduckYellowExpanded.HeldItems : Legal.HeldItems_HGSS;
+    public override int MaxItemID => IsExpandedEngine ? PsyduckYellowExpanded.MaxItem : Legal.MaxItemID_4_HGSS;
     public const int GeneralSize = 0xF628;
     private const int StorageSize = 0x12310; // Start 0xF700, +0 starts box data
     private const int GeneralGap = 0xD8;
@@ -39,12 +66,12 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
 
     protected override BlockInfo4[] ExtraBlocks =>
     [
-        new(0, 0x23000, 0x2AC0), // Hall of Fame
-        new(1, 0x26000, 0x0BB0), // Battle Hall
-        new(2, 0x27000, 0x1D60), // Battle Video (My Video)
-        new(3, 0x29000, 0x1D60), // Battle Video (Other Videos 1)
-        new(4, 0x2B000, 0x1D60), // Battle Video (Other Videos 2)
-        new(5, 0x2D000, 0x1D60), // Battle Video (Other Videos 3)
+        new(0, IsExpandedEngine ? 0x2F000 : 0x23000, 0x2AC0), // Hall of Fame
+        new(1, IsExpandedEngine ? 0x32000 : 0x26000, 0x0BB0), // Battle Hall
+        new(2, IsExpandedEngine ? 0x33000 : 0x27000, 0x1D60), // Battle Video (My Video)
+        new(3, IsExpandedEngine ? 0x35000 : 0x29000, 0x1D60), // Battle Video (Other Videos 1)
+        new(4, IsExpandedEngine ? 0x37000 : 0x2B000, 0x1D60), // Battle Video (Other Videos 2)
+        new(5, IsExpandedEngine ? 0x39000 : 0x2D000, 0x1D60), // Battle Video (Other Videos 3)
     ];
 
     private void Initialize() => GetSAVOffsets();
@@ -57,31 +84,31 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         return base.GetFinalData();
     }
 
-    private const int OffsetMystery = 0x9D3C; // Flags and Gifts
-    protected override int EventWork => 0xDE4;
-    protected override int EventFlag => 0x10C4;
-    protected override int DaycareOffset => 0x15FC;
+    private int OffsetMystery => L(0x9D3C); // Flags and Gifts
+    protected override int EventWork => L(0xDE4);
+    protected override int EventFlag => L(0x10C4);
+    protected override int DaycareOffset => L(0x15FC);
     public override MysteryBlock4HGSS Mystery { get; }
     public override BattleFrontierFacility4 MaxFacility => BattleFrontierFacility4.Arcade;
 
     private void GetSAVOffsets()
     {
         AdventureInfo = 0;
-        Trainer1 = 0x64;
-        Party = 0x98;
-        Extra = 0x230C;
-        FashionCase = 0x3F64;
-        OFS_Record = 0x4B3C;
-        OFS_Chatter = 0x4E74;
-        OFS_Groups = 0x440C;
-        OFS_GiftRibbons = 0x6890;
-        Geonet = 0x8D44;
-        Seal = 0x4E20;
+        Trainer1 = L(0x64);
+        Party = L(0x98);
+        Extra = L(0x230C);
+        FashionCase = L(0x3F64);
+        OFS_Record = L(0x4B3C);
+        OFS_Chatter = L(0x4E74);
+        OFS_Groups = L(0x440C);
+        OFS_GiftRibbons = L(0x6890);
+        Geonet = L(0x8D44);
+        Seal = L(0x4E20);
 
         Box = 0;
     }
 
-    private Span<byte> LockCapsuleSpan => General.Slice(0xB064, PCD.Size);
+    private Span<byte> LockCapsuleSpan => General.Slice(L(0xB064), PCD.Size);
 
     public PCD LockCapsuleSlot
     {
@@ -103,19 +130,19 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
     // byte[18] boxWallpapers
     // -- each box is chunked, padded to nearest 0x100 (resulting in 0x10 trailing zeroes)
     // -- The final 0x16 bytes in the Storage block are unused (padding to nearest 0x100).
-    private const int BOX_COUNT = 18;
+    private int BOX_COUNT => IsExpandedEngine ? 30 : 18;
     private const int BOX_SLOTS = 30;
     private const int BOX_NAME_LEN = 40; // 20 characters
 
     private const int BOX_DATA_LEN = (BOX_SLOTS * PokeCrypto.SIZE_4STORED) + 0x10; // 0xFF0, each box chunk is padded to nearest 0x100
-    private const int BOX_END = BOX_COUNT * BOX_DATA_LEN; // 18 * 0x1000
-    private const int BOX_NAME = 0x12008; // after current & counter
-    private const int BOX_WP = BOX_NAME + (BOX_COUNT * BOX_NAME_LEN); // 0x122D8;
-    private const int BOX_FLAGS = 18 + BOX_WP; // 0x122EA;
+    private int BOX_END => BOX_COUNT * BOX_DATA_LEN; // 18 * 0x1000
+    private int BOX_NAME => BOX_END + 8; // after current & counter
+    private int BOX_WP => BOX_NAME + (BOX_COUNT * BOX_NAME_LEN); // 0x122D8;
+    private int BOX_FLAGS => BOX_COUNT + BOX_WP; // 0x122EA;
 
     public override int GetBoxOffset(int box) => box * 0x1000;
-    private static int GetBoxNameOffset(int box) => BOX_NAME + (box * BOX_NAME_LEN);
-    private static int GetBoxWallpaperOffset(int box) => BOX_WP + box;
+    private int GetBoxNameOffset(int box) => BOX_NAME + (box * BOX_NAME_LEN);
+    private int GetBoxWallpaperOffset(int box) => BOX_WP + box;
 
     // 8 bytes current box (align 32) & (stored count?)
     public override int CurrentBox
@@ -139,7 +166,7 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         set => WriteInt32LittleEndian(Storage[(BOX_END + 4)..], value);
     }
 
-    private const int FlagsBoxContentChangedAll = 0x3_FFFF; // 18 boxes.
+    private int FlagsBoxContentChangedAll => IsExpandedEngine ? 0x3FFF_FFFF : 0x3_FFFF; // 18 boxes.
 
     private Span<byte> GetBoxNameSpan(int box) => Storage.Slice(GetBoxNameOffset(box), BOX_NAME_LEN);
     public string GetBoxName(int box) => GetString(GetBoxNameSpan(box));
@@ -183,9 +210,9 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
 
     public override PlayerBag4HGSS Inventory => new(this);
 
-    public override int M { get => ReadUInt16LittleEndian(General[0x1234..]); set => WriteUInt16LittleEndian(General[0x1234..], (ushort)value); }
-    public override int X { get => ReadUInt16LittleEndian(General[0x123C..]); set => WriteUInt16LittleEndian(General[0x123C..], (ushort)(X2 = value)); }
-    public override int Y { get => ReadUInt16LittleEndian(General[0x1240..]); set => WriteUInt16LittleEndian(General[0x1240..], (ushort)(Y2 = value)); }
+    public override int M { get => ReadUInt16LittleEndian(General[L(0x1234)..]); set => WriteUInt16LittleEndian(General[L(0x1234)..], (ushort)value); }
+    public override int X { get => ReadUInt16LittleEndian(General[L(0x123C)..]); set => WriteUInt16LittleEndian(General[L(0x123C)..], (ushort)(X2 = value)); }
+    public override int Y { get => ReadUInt16LittleEndian(General[L(0x1240)..]); set => WriteUInt16LittleEndian(General[L(0x1240)..], (ushort)(Y2 = value)); }
 
     public override Span<byte> RivalNameTrash
     {
@@ -193,11 +220,11 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         set { if (value.Length == MaxStringLengthTrainer * 2) value.CopyTo(RivalSpan); }
     }
 
-    private Span<byte> RivalSpan => General.Slice(0x22D4, MaxStringLengthTrainer * 2);
+    private Span<byte> RivalSpan => General.Slice(L(0x22D4), MaxStringLengthTrainer * 2);
 
-    public override int X2 { get => ReadUInt16LittleEndian(General[0x236E..]); set => WriteUInt16LittleEndian(General[0x236E..], (ushort)value); }
-    public override int Y2 { get => ReadUInt16LittleEndian(General[0x2372..]); set => WriteUInt16LittleEndian(General[0x2372..], (ushort)value); }
-    public override int Z  { get => ReadUInt16LittleEndian(General[0x2376..]); set => WriteUInt16LittleEndian(General[0x2376..], (ushort)value); }
+    public override int X2 { get => ReadUInt16LittleEndian(General[L(0x236E)..]); set => WriteUInt16LittleEndian(General[L(0x236E)..], (ushort)value); }
+    public override int Y2 { get => ReadUInt16LittleEndian(General[L(0x2372)..]); set => WriteUInt16LittleEndian(General[L(0x2372)..], (ushort)value); }
+    public override int Z  { get => ReadUInt16LittleEndian(General[L(0x2376)..]); set => WriteUInt16LittleEndian(General[L(0x2376)..], (ushort)value); }
 
     public int Badges16
     {
@@ -205,7 +232,7 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         set => General[Trainer1 + 0x1F] = (byte)value;
     }
 
-    private const int OFS_GearRolodex = 0xC0EC;
+    private int OFS_GearRolodex => L(0xC0EC);
     private const byte GearCallerCount = (byte)(PokegearNumber.Ernest + 1);
 
     public PokegearNumber GetCallerAtIndex(int index) => (PokegearNumber)General[OFS_GearRolodex + index];
@@ -279,15 +306,15 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
         PokeGearClearAllCallers(index);
     }
 
-    public Pokeathlon4 Pokeathlon => new(GeneralBuffer.Slice(0xD9D4, Pokeathlon4.SIZE)); // 0xB80
+    public Pokeathlon4 Pokeathlon => new(GeneralBuffer.Slice(L(0xD9D4), Pokeathlon4.SIZE)); // 0xB80
 
     // Apricorn Pouch
-    public int GetApricornCount(int index) => General[0xE558 + index];
-    public void SetApricornCount(int index, int count) => General[0xE558 + index] = (byte)count;
+    public int GetApricornCount(int index) => General[L(0xE558) + index];
+    public void SetApricornCount(int index, int count) => General[L(0xE558) + index] = (byte)count;
 
     // Pokewalker
     public const int WalkerPair = 0xE5E0;
-    private const int OFS_WALKER = 0xE704;
+    private int OFS_WALKER => L(0xE704);
 
     public uint PokewalkerSteps { get => ReadUInt32LittleEndian(General[OFS_WALKER..]); set => WriteUInt32LittleEndian(General[OFS_WALKER..], value); }
     public uint PokewalkerWatts { get => ReadUInt32LittleEndian(General[(OFS_WALKER + 0x4)..]); set => WriteUInt32LittleEndian(General[(OFS_WALKER + 4)..], value); }
@@ -331,11 +358,11 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
     public void PokewalkerCoursesSetAll(uint bitFlags) => WriteUInt32LittleEndian(General[(OFS_WALKER + 0x8)..], bitFlags);
 
     // Swarm
-    public override uint SwarmSeed { get => ReadUInt32LittleEndian(General[0x68A8..]); set => WriteUInt32LittleEndian(General[0x68A8..], value); }
+    public override uint SwarmSeed { get => ReadUInt32LittleEndian(General[L(0x68A8)..]); set => WriteUInt32LittleEndian(General[L(0x68A8)..], value); }
     public override uint SwarmMaxCountModulo => 20;
 
-    public override int BP { get => ReadUInt16LittleEndian(General[0x5BB8..]); set => WriteUInt16LittleEndian(General[0x5BB8..], (ushort)value); }
-    public override uint BattleTowerSeed { get => ReadUInt32LittleEndian(General[0x5BBC..]); set => WriteUInt32LittleEndian(General[0x5BBC..], value); }
+    public override int BP { get => ReadUInt16LittleEndian(General[L(0x5BB8)..]); set => WriteUInt16LittleEndian(General[L(0x5BB8)..], (ushort)value); }
+    public override uint BattleTowerSeed { get => ReadUInt32LittleEndian(General[L(0x5BBC)..]); set => WriteUInt32LittleEndian(General[L(0x5BBC)..], value); }
 
     // Roamers
     public Roamer4 RoamerRaikou => GetRoamer(0);
@@ -346,7 +373,7 @@ public sealed class SAV4HGSS : SAV4, IBoxDetailName, IBoxDetailWallpaper
     private Roamer4 GetRoamer(int index)
     {
         const int size = Roamer4.SIZE;
-        var ofs = 0x68B4 + (index * size);
+        var ofs = L(0x68B4) + (index * size);
         var mem = GeneralBuffer.Slice(ofs, size);
         return new Roamer4(mem);
     }
@@ -359,3 +386,5 @@ public enum MapUnlockState4 : byte
     JohtoKanto = 2,
     Invalid = 3,
 }
+
+

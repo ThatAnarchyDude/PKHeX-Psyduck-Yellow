@@ -902,7 +902,7 @@ public abstract class PKM : ISpeciesForm, ITrainerID32, IGeneration, IShiny, ILa
     /// </summary>
     /// <param name="move">Move ID</param>
     /// <returns>Amount of PP the move has by default (no PP Ups).</returns>
-    public int GetBasePP(ushort move) => MoveInfo.GetPP(Context, move);
+    public virtual int GetBasePP(ushort move) => MoveInfo.GetPP(Context, move);
 
     /// <summary>
     /// Applies a shiny <see cref="PID"/> to the <see cref="PKM"/>.

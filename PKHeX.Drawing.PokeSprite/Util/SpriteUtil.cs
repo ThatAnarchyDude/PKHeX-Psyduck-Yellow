@@ -71,7 +71,8 @@ public static class SpriteUtil
         var formarg = pk is IFormArgument f ? f.FormArgument : 0;
         var shiny = ShinyExtensions.GetType(pk);
 
-        var img = GetSprite(pk.Species, pk.Form, pk.Gender, formarg, pk.SpriteItem, pk.IsEgg, shiny, pk.Context);
+        var displaySpecies = pk is PK4 { IsExpandedEngine: true } ? PsyduckYellowExpanded.GetDisplaySpecies(pk.Species) : pk.Species;
+        var img = GetSprite(displaySpecies, pk.Form, pk.Gender, formarg, pk is PK4 { IsExpandedEngine: true } ? 0 : pk.SpriteItem, pk.IsEgg, shiny, pk.Context);
         if (pk is IShadowCapture { IsShadow: true })
         {
             const ushort Lugia = (int)Species.Lugia;

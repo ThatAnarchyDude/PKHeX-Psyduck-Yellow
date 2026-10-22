@@ -401,10 +401,21 @@ public partial class PKMEditor
         LoadClamp(CB_Ability, index);
     }
 
+    private static int GetExpandedAbilityIndex(PKM pk)
+    {
+        int slot = pk.AbilityNumber == 4 ? 2 : pk.AbilityNumber == 2 ? 1 : 0;
+        if (slot < pk.PersonalInfo.AbilityCount && pk.PersonalInfo.GetAbilityAtIndex(slot) == pk.Ability) return slot;
+        return Math.Max(0, GetExpandedAbilities(pk).FindIndex(z => z.Value == pk.Ability));
+    }
+
     private static int GetAbilityIndex4(PKM pk)
     {
         var pi = pk.PersonalInfo;
         var ability = pk.Ability;
+        if (pk is PK4 { IsExpandedEngine: true })
+            return GetExpandedAbilityIndex(pk);
+        if (PsyduckYellow0029.IsEnabled(pk) && ability != 0 && ability == PsyduckYellow0029.GetHiddenAbility(pk.Species))
+            return 2;
         int abilityIndex = pi.GetIndexOfAbility(ability);
         if (abilityIndex >= 2)
             return 2;

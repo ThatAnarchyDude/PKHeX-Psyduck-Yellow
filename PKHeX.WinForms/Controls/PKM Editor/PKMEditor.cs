@@ -272,7 +272,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         SetPKMFormatExtraBytes(pk);
         (GetFieldsfromPKM, GetPKMfromFields) = GetLoadSet(pk);
         foreach (var move in Moves)
-            move.SetContext(pk.Context);
+            move.SetContext(pk.Context, pk is PK4 { IsExpandedEngine: true });
         TB_Nickname.DisplayContext = TB_OT.DisplayContext = TB_HT.DisplayContext = pk.Context;
     }
 
@@ -308,6 +308,16 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             CB_ExtraBytes.SelectedIndex = 0;
     }
 
+    public PKM PrepareForPsyduckYellowProfile(bool enabled)
+    {
+        var rawAbility = Entity.Ability;
+        var pk = CurrentPKM;
+        // Retail ability lists clamp an unsupported HA when first loading a custom save.
+        if (enabled && rawAbility != 0 && rawAbility == PsyduckYellow0029.GetHiddenAbility(pk.Species))
+            pk.Ability = rawAbility;
+        return pk;
+    }
+
     public void PopulateFields(PKM pk, bool focus = true, bool skipConversionCheck = false) => LoadFieldsFromPKM(pk, focus, skipConversionCheck);
 
     private void LoadFieldsFromPKM(PKM pk, bool focus = true, bool skipConversionCheck = true)
@@ -326,6 +336,11 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         FieldsLoaded = false;
 
         Entity = pk.Clone();
+        if (Entity is PK4 projectPK)
+        {
+            projectPK.IsPsyduckYellow0029 = RequestSaveFile is SAV4HGSS { IsPsyduckYellow0029: true };
+            projectPK.IsExpandedEngine = RequestSaveFile is SAV4HGSS { IsExpandedEngine: true };
+        }
 
 #if !DEBUG
             try { GetFieldsfromPKM(); }
@@ -471,7 +486,8 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         var pi = RequestSaveFile.Personal[species];
         UC_Gender.AllowClick = pi.IsDualGender;
 
-        bool hasForms = FormInfo.HasFormSelection(pi, species, Entity.Format);
+        bool expanded = Entity is PK4 { IsExpandedEngine: true };
+        bool hasForms = expanded ? PsyduckYellowExpanded.GetFormCount(species) > 1 : FormInfo.HasFormSelection(pi, species, Entity.Format);
         CB_Form.Enabled = CB_Form.Visible = Label_Form.Visible = hasForms;
 
         if (HaX && Entity.Format >= 4)
@@ -488,7 +504,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         }
 
         var str = GameInfo.Strings;
-        var forms = FormConverter.GetFormList(species, str.types, str.forms, gendersymbols, Entity.Context);
+        var forms = expanded ? PsyduckYellowExpanded.GetFormNames(species) : FormConverter.GetFormList(species, str.types, str.forms, gendersymbols, Entity.Context);
         if (forms.Length <= 1) // no choices
             CB_Form.Enabled = CB_Form.Visible = Label_Form.Visible = false;
         else
@@ -507,12 +523,30 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
 
         bool tmp = FieldsLoaded;
         FieldsLoaded = false;
-        var items = GameInfo.FilteredSources.GetAbilityList(Entity.PersonalInfo);
+        var items = Entity is PK4 { IsExpandedEngine: true }
+            ? GetExpandedAbilities(Entity)
+            : GameInfo.FilteredSources.GetAbilityList(Entity.PersonalInfo);
         if (Entity is { Context: EntityContext.Gen5, Species: (ushort)Species.Basculin, Form: 1 })
             items = [.. items, FilteredGameDataSource.GetAbilityItem(GameInfo.Strings.abilitylist, (int)Ability.Reckless, '*')];
+        if (Entity is not PK4 { IsExpandedEngine: true } && PsyduckYellow0029.IsEnabled(Entity) && PsyduckYellow0029.GetHiddenAbility(Entity.Species) is > 0 and var hidden)
+            items = [.. items, FilteredGameDataSource.GetAbilityItem(GameInfo.Strings.abilitylist, hidden, 'H')];
         CB_Ability.DataSource = items;
         CB_Ability.SelectedIndex = Math.Clamp(ability, 0, items.Count - 1); // restore original index if available
         FieldsLoaded = tmp;
+    }
+
+    private static List<ComboItem> GetExpandedAbilities(PKM pk)
+    {
+        var pi = pk.PersonalInfo;
+        var result = new List<ComboItem>();
+        for (int i = 0; i < pi.AbilityCount; i++)
+        {
+            int id = pi.GetAbilityAtIndex(i);
+            string name = (uint)id < PsyduckYellowExpanded.AbilityNames.Length ? PsyduckYellowExpanded.AbilityNames[id] : $"Ability {id}";
+            result.Add(new ComboItem($"{name} ({(i == 2 ? "H" : (i + 1).ToString())})", id));
+        }
+        if (!result.Exists(z => z.Value == pk.Ability)) result.Add(new ComboItem($"Stored ability {pk.Ability}", pk.Ability));
+        return result;
     }
 
     private void UpdateIsShiny()
@@ -1460,7 +1494,8 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             // If name is that of another language, don't replace the nickname
             if (sender != CB_Language && !SpeciesName.IsNicknamedAnyLanguage(species, current, Entity.Context))
                 return;
-            nickname = SpeciesName.GetSpeciesNameGeneration(species, language, Entity.Format);
+            nickname = Entity is PK4 { IsExpandedEngine: true } && species < PsyduckYellowExpanded.SpeciesNames.Length
+                ? PsyduckYellowExpanded.SpeciesNames[species] : SpeciesName.GetSpeciesNameGeneration(species, language, Entity.Format);
         }
 
         TB_Nickname.Text = nickname;
@@ -1779,7 +1814,12 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         ValidateComboBox(sender, new CancelEventArgs());
         if (sender == CB_Ability)
         {
-            if (Entity.Format >= 6)
+            if (Entity is PK4 { IsExpandedEngine: true } expanded)
+            {
+                if (CB_Ability.SelectedIndex < expanded.PersonalInfo.AbilityCount) expanded.AbilityNumber = 1 << CB_Ability.SelectedIndex;
+                expanded.Ability = WinFormsUtil.GetIndex(CB_Ability);
+            }
+            else if (Entity.Format >= 6)
                 TB_AbilityNumber.Text = (1 << CB_Ability.SelectedIndex).ToString();
             else if (Entity.Format <= 5 && CB_Ability.SelectedIndex < 2) // Format <= 5, not hidden
                 UpdateRandomPID(sender, e);
@@ -2102,7 +2142,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
 
         CB_Ability.Visible = CB_Ability.TabStop = !DEV_Ability.Enabled && format >= 3;
         Label_Nature.Visible = CB_Nature.Visible = format >= 3;
-        L_StatAlignment.Visible = CB_StatAlignment.Visible = format >= 8;
+        L_StatAlignment.Visible = CB_StatAlignment.Visible = format >= 8 || Entity is PK4 { IsExpandedEngine: true };
         Label_Ability.Visible = FLP_AbilityRight.Visible = format >= 3;
         FLP_ExtraBytes.Visible = format >= 3;
         GB_Markings.Visible = GB_Markings.TabStop = format >= 3;
@@ -2353,6 +2393,15 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             SetIfDifferentCount(source.Relearn, cb, force);
         foreach (var cb in Moves)
             SetIfDifferentCount(source.Moves, cb.CB_Move, force);
+        if (sav is SAV4HGSS { IsExpandedEngine: true })
+        {
+            SetIfDifferentCount(Util.GetCBList(PsyduckYellowExpanded.SpeciesNames), CB_Species, true);
+            SetIfDifferentCount(Util.GetCBList(PsyduckYellowExpanded.ItemNames), CB_HeldItem, true);
+            SetIfDifferentCount(Util.GetCBList(PsyduckYellowExpanded.AbilityNames), DEV_Ability, true);
+            var moves = Util.GetCBList(PsyduckYellowExpanded.MoveNames);
+            LegalMoveSource.ChangeMoveSource(moves);
+            foreach (var cb in Moves) SetIfDifferentCount(moves, cb.CB_Move, true);
+        }
         if (sav is SAV8LA)
             SetIfDifferentCount(source.Moves, CB_AlphaMastered, force);
     }

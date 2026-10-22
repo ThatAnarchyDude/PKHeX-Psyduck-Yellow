@@ -10,12 +10,15 @@ public sealed class PersonalTable4 : IPersonalTable, IPersonalTable<PersonalInfo
 {
     private readonly PersonalInfo4[] Table;
     private const int SIZE = PersonalInfo4.SIZE;
-    private const ushort MaxSpecies = Legal.MaxSpeciesID_4;
+    private readonly ushort MaxSpecies;
+    private readonly ushort[]? EngineForms;
     public ushort MaxSpeciesID => MaxSpecies;
     public int Count => Table.Length;
 
-    public PersonalTable4(Memory<byte> data)
+    public PersonalTable4(Memory<byte> data, ushort maxSpecies = Legal.MaxSpeciesID_4, ushort[]? engineForms = null)
     {
+        MaxSpecies = maxSpecies;
+        EngineForms = engineForms;
         Table = new PersonalInfo4[data.Length / SIZE];
         var count = data.Length / SIZE;
         for (int i = 0, ofs = 0; i < count; i++, ofs += SIZE)
@@ -31,6 +34,7 @@ public sealed class PersonalTable4 : IPersonalTable, IPersonalTable<PersonalInfo
 
     public int GetFormIndex(ushort species, byte form)
     {
+        if (EngineForms is not null && form != 0) { int offset = species * 32 + form - 1; if ((uint)offset < EngineForms.Length && EngineForms[offset] is > 0 and var index && index < Table.Length) return index; return species < Table.Length ? species : 0; }
         if (species <= MaxSpecies)
             return Table[species].FormIndex(species, form);
         return 0;
@@ -80,3 +84,4 @@ public sealed class PersonalTable4 : IPersonalTable, IPersonalTable<PersonalInfo
         }
     }
 }
+

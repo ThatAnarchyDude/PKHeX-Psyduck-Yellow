@@ -18,6 +18,13 @@ public sealed class SummaryPreviewer
 
     public void Show(Control pb, PKM pk, StorageSlotType type = StorageSlotType.None)
     {
+        if (pk is PK4 { IsExpandedEngine: true })
+        {
+            string species = pk.Species < PsyduckYellowExpanded.SpeciesNames.Length ? PsyduckYellowExpanded.SpeciesNames[pk.Species] : $"Species {pk.Species}";
+            string item = (uint)pk.HeldItem < PsyduckYellowExpanded.ItemNames.Length ? PsyduckYellowExpanded.ItemNames[pk.HeldItem] : $"Item {pk.HeldItem}";
+            ShowSet.SetToolTip(pb, $"{species} · Lv. {pk.CurrentLevel}\n{pk.Nickname} · Held: {item}\nExpanded-engine legality is not evaluated against retail catalogs.");
+            return;
+        }
         if (pk.Species == 0)
         {
             Clear();

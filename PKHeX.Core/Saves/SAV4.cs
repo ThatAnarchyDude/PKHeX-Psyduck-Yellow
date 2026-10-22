@@ -50,10 +50,10 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
         ClearBoxes();
     }
 
-    protected SAV4(Memory<byte> data, [ConstantExpected] int gSize, [ConstantExpected] int sSize, [ConstantExpected] int sStart) : base(data)
+    protected SAV4(Memory<byte> data, [ConstantExpected] int gSize, [ConstantExpected] int sSize, [ConstantExpected] int sStart, bool expandedHGEngine = false) : base(data)
     {
-        var GeneralBlockPosition = GetActiveBlock(Data, 0, gSize);
-        var StorageBlockPosition = GetActiveBlock(Data, sStart, sSize);
+        var GeneralBlockPosition = expandedHGEngine ? PsyduckYellowExpanded.GetActiveBlock(Data, 0, gSize) : GetActiveBlock(Data, 0, gSize);
+        var StorageBlockPosition = expandedHGEngine ? PsyduckYellowExpanded.GetActiveBlock(Data, sStart, sSize) : GetActiveBlock(Data, sStart, sSize);
 
         var gbo = (GeneralBlockPosition == 0 ? 0 : PartitionSize);
         var sbo = (StorageBlockPosition == 0 ? 0 : PartitionSize) + sStart;
@@ -87,10 +87,10 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
 
     public sealed override int SIZE_STORED => PokeCrypto.SIZE_4STORED;
     public sealed override int SIZE_PARTY => PokeCrypto.SIZE_4PARTY;
-    public sealed override PK4 BlankPKM => new();
+    public sealed override PK4 BlankPKM => new() { IsPsyduckYellow0029 = this is SAV4HGSS { IsPsyduckYellow0029: true }, IsExpandedEngine = this is SAV4HGSS { IsExpandedEngine: true } };
     public sealed override Type PKMType => typeof(PK4);
 
-    public sealed override int BoxCount => 18;
+    public sealed override int BoxCount => this is SAV4HGSS { IsExpandedEngine: true } ? 30 : 18;
     public sealed override int MaxEV => EffortValues.Max255;
     public sealed override byte Generation => 4;
     public sealed override EntityContext Context => EntityContext.Gen4;
@@ -101,10 +101,10 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
     public sealed override int MaxMoney => 999999;
     public sealed override int MaxCoins => 50_000;
 
-    public sealed override ushort MaxMoveID => Legal.MaxMoveID_4;
-    public sealed override ushort MaxSpeciesID => Legal.MaxSpeciesID_4;
+    public sealed override ushort MaxMoveID => this is SAV4HGSS { IsExpandedEngine: true } ? PsyduckYellowExpanded.MaxMove : (ushort)Legal.MaxMoveID_4;
+    public sealed override ushort MaxSpeciesID => this is SAV4HGSS { IsExpandedEngine: true } ? PsyduckYellowExpanded.MaxSpecies : (ushort)Legal.MaxSpeciesID_4;
     // MaxItemID
-    public sealed override int MaxAbilityID => Legal.MaxAbilityID_4;
+    public sealed override int MaxAbilityID => this is SAV4HGSS { IsExpandedEngine: true } ? PsyduckYellowExpanded.MaxAbility : Legal.MaxAbilityID_4;
     public sealed override int MaxBallID => Legal.MaxBallID_4;
     public sealed override GameVersion MaxGameID => Legal.MaxGameID_4; // Colo/XD
 
@@ -398,7 +398,7 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
     }
     #endregion
 
-    protected sealed override PK4 GetPKM(Memory<byte> data) => new(data);
+    protected sealed override PK4 GetPKM(Memory<byte> data) => new(data) { IsPsyduckYellow0029 = this is SAV4HGSS { IsPsyduckYellow0029: true }, IsExpandedEngine = this is SAV4HGSS { IsExpandedEngine: true } };
     protected sealed override void DecryptPKM(Span<byte> data) => PokeCrypto.Decrypt45(data);
 
     protected override void SetPKM(PKM pk, bool isParty = false)
@@ -474,6 +474,9 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
     public sealed override bool GetCaught(ushort species) => Dex.GetCaught(species);
     public sealed override bool GetSeen(ushort species) => Dex.GetSeen(species);
 
+    protected virtual int ResolveGeneralOffset(int offset) => offset;
+    public int GetGeneralOffset(int legacyOffset) => ResolveGeneralOffset(legacyOffset);
+
     public int DexUpgraded
     {
         get
@@ -487,9 +490,9 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
                     if (General[0x1414] != 0) return 1;
                     return 0;
                 case GameVersion.HGSS:
-                    if (General[0x15ED] != 0) return 3;
-                    if (General[0x15EF] != 0) return 2;
-                    if (General[0x15EE] != 0 && (General[0x10D1] & 8) != 0) return 1;
+                    if (General[ResolveGeneralOffset(0x15ED)] != 0) return 3;
+                    if (General[ResolveGeneralOffset(0x15EF)] != 0) return 2;
+                    if (General[ResolveGeneralOffset(0x15EE)] != 0 && (General[ResolveGeneralOffset(0x10D1)] & 8) != 0) return 1;
                     return 0;
                 case GameVersion.Pt:
                     if (General[0x1641] != 0) return 4;
@@ -511,10 +514,10 @@ public abstract class SAV4 : SaveFile, IEventFlag37, IDaycareStorage, IDaycareRa
                     General[0x1414] = value >= 1 ? (byte)1 : (byte)0;
                     break;
                 case GameVersion.HGSS:
-                    General[0x15ED] = value == 3 ? (byte)1 : (byte)0;
-                    General[0x15EF] = value >= 2 ? (byte)1 : (byte)0;
-                    General[0x15EE] = value >= 1 ? (byte)1 : (byte)0;
-                    General[0x10D1] = (byte)((General[0x10D1] & ~8) | (value >= 1 ? 8 : 0));
+                    General[ResolveGeneralOffset(0x15ED)] = value == 3 ? (byte)1 : (byte)0;
+                    General[ResolveGeneralOffset(0x15EF)] = value >= 2 ? (byte)1 : (byte)0;
+                    General[ResolveGeneralOffset(0x15EE)] = value >= 1 ? (byte)1 : (byte)0;
+                    General[ResolveGeneralOffset(0x10D1)] = (byte)((General[ResolveGeneralOffset(0x10D1)] & ~8) | (value >= 1 ? 8 : 0));
                     break;
                 case GameVersion.Pt:
                     General[0x1641] = value == 4 ? (byte)1 : (byte)0;
@@ -903,3 +906,5 @@ public abstract class MysteryBlock4(SAV4 sav, Memory<byte> raw) : SaveBlock<SAV4
         return NoPCDforPGT;
     }
 }
+
+

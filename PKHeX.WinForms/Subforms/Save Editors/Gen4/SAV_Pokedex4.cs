@@ -27,10 +27,11 @@ public partial class SAV_Pokedex4 : Form
         // Fill List
         CB_Species.InitializeBinding();
         var filtered = GameInfo.FilteredSources;
-        CB_Species.DataSource = new BindingSource(filtered.Species.Skip(1).ToList(), string.Empty);
+        var speciesNames = SAV is SAV4HGSS { IsExpandedEngine: true } ? PsyduckYellowExpanded.SpeciesNames : GameInfo.Strings.specieslist;
+        CB_Species.DataSource = new BindingSource(SAV is SAV4HGSS { IsExpandedEngine: true } ? Util.GetCBList(speciesNames).Where(z=>z.Value!=0).ToList() : filtered.Species.Skip(1).ToList(), string.Empty);
 
         for (int i = 1; i < SAV.MaxSpeciesID + 1; i++)
-            LB_Species.Items.Add($"{i:000} - {GameInfo.Strings.specieslist[i]}");
+            LB_Species.Items.Add($"{i:000} - {speciesNames[i]}");
 
         editing = false;
         LB_Species.SelectedIndex = 0;
@@ -158,7 +159,7 @@ public partial class SAV_Pokedex4 : Form
 
     private void SetEntry()
     {
-        if (species > 493)
+        if (species == ushort.MaxValue || species > SAV.MaxSpeciesID)
             return;
 
         var dex = SAV.Dex;

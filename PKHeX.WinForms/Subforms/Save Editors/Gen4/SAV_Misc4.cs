@@ -507,7 +507,7 @@ public partial class SAV_Misc4 : Form
                 int vali = ReadUInt16LittleEndian(general[(addrVal + (i << 1))..]);
                 StatNUDA[BFV[BFF[Facility][0]][i]].Value = vali > 9999 ? 9999 : vali;
             }
-            CHK_Continue.Checked = (SAV.General[addrFlag] & maskFlag) != 0;
+            CHK_Continue.Checked = (SAV.General[SAV.GetGeneralOffset(addrFlag)] & maskFlag) != 0;
 
             if (Facility == 0) // tower continue count
                 StatNUDA[1].Value = ReadUInt16LittleEndian(general[(addrFlag + TowerContinueCountOfs + (BattleType << 1))..]);
@@ -606,7 +606,7 @@ public partial class SAV_Misc4 : Form
         NumericUpDown[] na = [NUD_CastleRankRcv, NUD_CastleRankItem, NUD_CastleRankInfo];
         for (int i = 0; i < na.Length; i++)
         {
-            int val = ReadInt16LittleEndian(SAV.General[(ofs + (i << 1))..]);
+            int val = ReadInt16LittleEndian(SAV.General[SAV.GetGeneralOffset(ofs + (i << 1))..]);
             na[i].Value = val > na[i].Maximum ? na[i].Maximum : val < na[i].Minimum ? na[i].Minimum : val;
         }
     }
@@ -620,13 +620,13 @@ public partial class SAV_Misc4 : Form
         if (i < 0)
             return;
         var offset = BFF[3][2] + (BFF[3][3] * CB_Stats2.SelectedIndex) + 0x0A + (i << 1);
-        WriteInt32LittleEndian(SAV.General[offset..], (int)na[i].Value);
+        WriteInt32LittleEndian(SAV.General[SAV.GetGeneralOffset(offset)..], (int)na[i].Value);
     }
 
     private void GetHallStat()
     {
         int ofscur = BFF[2][2] + (BFF[2][3] * CB_Stats2.SelectedIndex);
-        var curspe = ReadUInt16LittleEndian(SAV.General[(ofscur + 4)..]);
+        var curspe = ReadUInt16LittleEndian(SAV.General[SAV.GetGeneralOffset(ofscur + 4)..]);
         bool c = curspe == species;
         CHK_HallCurrent.Checked = c;
         CHK_HallCurrent.Text = curspe > 0 && curspe <= SAV.MaxSpeciesID
@@ -636,7 +636,7 @@ public partial class SAV_Misc4 : Form
         int s = 0;
         for (int i = 0; i < HallNUDA.Length; i++)
         {
-            var d = c ? Math.Min(10, (SAV.General[ofscur + 6 + ((i >> 1) << 1)] >> ((i & 1) << 2)) & 0x0F) : 0;
+            var d = c ? Math.Min(10, (SAV.General[SAV.GetGeneralOffset(ofscur + 6 + ((i >> 1) << 1))] >> ((i & 1) << 2)) & 0x0F) : 0;
             HallNUDA[i].Value = d;
             HallNUDA[i].Enabled = c;
             s += d;
@@ -656,7 +656,7 @@ public partial class SAV_Misc4 : Form
             return;
         var offset = BFF[2][2] + (BFF[2][3] * CB_Stats2.SelectedIndex) + 4;
         ushort value = (ushort)(CHK_HallCurrent.Checked ? species : 0);
-        WriteUInt16LittleEndian(SAV.General[offset..], value);
+        WriteUInt16LittleEndian(SAV.General[SAV.GetGeneralOffset(offset)..], value);
         editing = true;
         GetHallStat();
         editing = false;
@@ -670,7 +670,7 @@ public partial class SAV_Misc4 : Form
         if (i < 0)
             return;
         int ofs = BFF[2][2] + (BFF[2][3] * CB_Stats2.SelectedIndex) + 6 + ((i >> 1) << 1);
-        SAV.General[ofs] = (byte)((SAV.General[ofs] & ~(0xF << ((i & 1) << 2))) | ((int)HallNUDA[i].Value << ((i & 1) << 2)));
+        SAV.General[SAV.GetGeneralOffset(ofs)] = (byte)((SAV.General[SAV.GetGeneralOffset(ofs)] & ~(0xF << ((i & 1) << 2))) | ((int)HallNUDA[i].Value << ((i & 1) << 2)));
         L_SumHall.Text = HallNUDA.Sum(x => x.Value).ToString(CultureInfo.InvariantCulture);
     }
 

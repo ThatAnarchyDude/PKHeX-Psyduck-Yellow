@@ -5,7 +5,7 @@ using static System.Buffers.Binary.BinaryPrimitives;
 namespace PKHeX.Core;
 
 /// <summary> Generation 4 <see cref="PKM"/> format. </summary>
-public sealed class PK4 : G4PKM
+public sealed class PK4 : G4PKM, IHyperTrain
 {
     public override ReadOnlySpan<ushort> ExtraBytes =>
     [
@@ -17,7 +17,7 @@ public sealed class PK4 : G4PKM
     public override int SIZE_PARTY => PokeCrypto.SIZE_4PARTY;
     public override int SIZE_STORED => PokeCrypto.SIZE_4STORED;
     public override EntityContext Context => EntityContext.Gen4;
-    public override PersonalInfo4 PersonalInfo => PersonalTable.HGSS.GetFormEntry(Species, Form);
+    public override PersonalInfo4 PersonalInfo => (IsExpandedEngine ? PsyduckYellowExpanded.Personal : IsPsyduckYellow0029 ? PsyduckYellow0029.Personal : PersonalTable.HGSS).GetFormEntry(Species, Form);
 
     public PK4() : base(PokeCrypto.SIZE_4PARTY) { }
     public PK4(Memory<byte> data) : base(DecryptParty(data)) { }
@@ -33,7 +33,12 @@ public sealed class PK4 : G4PKM
         return result;
     }
 
-    public override PK4 Clone() => new(Data.ToArray());
+    // Profile metadata is intentionally never stored in the Pokemon/save bytes.
+    public bool IsPsyduckYellow0029 { get; set; }
+    public bool IsExpandedEngine { get; set; }
+    public override int GetBasePP(ushort move) => IsExpandedEngine && move < PsyduckYellowExpanded.MovePP.Length ? PsyduckYellowExpanded.MovePP[move] : base.GetBasePP(move);
+    public override bool IsShiny => IsPsyduckYellow0029 ? ShinyXor < 16 : base.IsShiny;
+    public override PK4 Clone() => new(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029, IsExpandedEngine = IsExpandedEngine };
 
     // Structure
     public override uint PID { get => ReadUInt32LittleEndian(Data); set => WriteUInt32LittleEndian(Data, value); }
@@ -46,9 +51,9 @@ public sealed class PK4 : G4PKM
     public override uint ID32 { get => ReadUInt32LittleEndian(Data[0x0C..]); set => WriteUInt32LittleEndian(Data[0x0C..], value); }
     public override ushort TID16 { get => ReadUInt16LittleEndian(Data[0x0C..]); set => WriteUInt16LittleEndian(Data[0x0C..], value); }
     public override ushort SID16 { get => ReadUInt16LittleEndian(Data[0x0E..]); set => WriteUInt16LittleEndian(Data[0x0E..], value); }
-    public override uint EXP { get => ReadUInt32LittleEndian(Data[0x10..]); set => WriteUInt32LittleEndian(Data[0x10..], value); }
+    public override uint EXP { get => ReadUInt32LittleEndian(Data[0x10..]) & (IsExpandedEngine ? 0x1FFFFFu : uint.MaxValue); set => WriteUInt32LittleEndian(Data[0x10..], IsExpandedEngine ? (ReadUInt32LittleEndian(Data[0x10..]) & 0xFFE00000u) | (value & 0x1FFFFFu) : value); }
     public override byte OriginalTrainerFriendship { get => Data[0x14]; set => Data[0x14] = value; }
-    public override int Ability { get => Data[0x15]; set => Data[0x15] = (byte)value; }
+    public override int Ability { get => Data[0x15] | (IsExpandedEngine ? (int)(ReadUInt32LittleEndian(Data[0x10..]) >> 31) << 8 : 0); set { Data[0x15] = (byte)value; if (IsExpandedEngine) WriteUInt32LittleEndian(Data[0x10..], (ReadUInt32LittleEndian(Data[0x10..]) & 0x7FFFFFFFu) | (((uint)value & 0x100u) << 23)); } }
     public override byte MarkingValue { get => Data[0x16]; set => Data[0x16] = value; }
     public override int Language { get => Data[0x17]; set => Data[0x17] = (byte)value; }
     public override int EV_HP { get => Data[0x18]; set => Data[0x18] = (byte)value; }
@@ -169,7 +174,40 @@ public sealed class PK4 : G4PKM
     public override bool FatefulEncounter { get => (Data[0x40] & 1) == 1; set => Data[0x40] = (byte)((Data[0x40] & ~0x01) | (value ? 1 : 0)); }
     public override byte Gender { get => (byte)((Data[0x40] >> 1) & 0x3); set => Data[0x40] = (byte)((Data[0x40] & ~0x06) | (value << 1)); }
     public override byte Form { get => (byte)(Data[0x40] >> 3); set => Data[0x40] = (byte)((Data[0x40] & 0x07) | (value << 3)); }
-    public override int ShinyLeaf { get => Data[0x41]; set => Data[0x41] = (byte) value; }
+    public override int ShinyLeaf { get => IsExpandedEngine ? Data[0x41] & 0x3F : Data[0x41]; set => Data[0x41] = IsExpandedEngine ? (byte)((Data[0x41] & 0xC0) | (value & 0x3F)) : (byte)value; }
+    public override int AbilityNumber
+    {
+        get => !IsExpandedEngine ? base.AbilityNumber : (Data[0x41] & 0x40) != 0 ? 4 : 1 << ((int)(PID & 1) ^ (Data[0x42] & 1));
+        set
+        {
+            if (!IsExpandedEngine) return;
+            Data[0x41] = (byte)((Data[0x41] & ~0x40) | (value == 4 ? 0x40 : 0));
+            if (value is 1 or 2) Data[0x42] = (byte)((Data[0x42] & ~1) | ((value == 2 ? 1 : 0) ^ (int)(PID & 1)));
+        }
+    }
+    public override Nature StatAlignment
+    {
+        get { int mint = (Data[0x42] >> 1) & 31; return IsExpandedEngine && mint is >= 1 and <= 25 ? (Nature)(mint - 1) : Nature; }
+        set { if (IsExpandedEngine) Data[0x42] = (byte)((Data[0x42] & ~0x3E) | (((int)value + 1) << 1)); }
+    }
+    private bool GetEngineIV(int bit) => IsExpandedEngine && (ReadUInt16LittleEndian(Data[0x42..]) & (1 << bit)) != 0;
+    private void SetEngineIV(int bit, bool value)
+    {
+        if (!IsExpandedEngine) return;
+        ushort flags = ReadUInt16LittleEndian(Data[0x42..]);
+        WriteUInt16LittleEndian(Data[0x42..], (ushort)((flags & ~(1 << bit)) | (value ? 1 << bit : 0)));
+    }
+    public bool HT_HP { get => GetEngineIV(6); set => SetEngineIV(6, value); }
+    public bool HT_ATK { get => GetEngineIV(7); set => SetEngineIV(7, value); }
+    public bool HT_DEF { get => GetEngineIV(8); set => SetEngineIV(8, value); }
+    public bool HT_SPE { get => GetEngineIV(9); set => SetEngineIV(9, value); }
+    public bool HT_SPA { get => GetEngineIV(10); set => SetEngineIV(10, value); }
+    public bool HT_SPD { get => GetEngineIV(11); set => SetEngineIV(11, value); }
+    public byte HyperTrainFlags
+    {
+        get => (byte)((HT_HP ? 1 : 0) | (HT_ATK ? 2 : 0) | (HT_DEF ? 4 : 0) | (HT_SPA ? 8 : 0) | (HT_SPD ? 16 : 0) | (HT_SPE ? 32 : 0));
+        set { HT_HP = (value & 1) != 0; HT_ATK = (value & 2) != 0; HT_DEF = (value & 4) != 0; HT_SPA = (value & 8) != 0; HT_SPD = (value & 16) != 0; HT_SPE = (value & 32) != 0; }
+    }
     // 0x42-0x43 Unused
     public override ushort EggLocationExtended
     {
@@ -198,7 +236,20 @@ public sealed class PK4 : G4PKM
     }
 
     // 0x5E unused
-    public override GameVersion Version { get => (GameVersion)Data[0x5F]; set => Data[0x5F] = (byte)value; }
+    public GameVersion ApplicationVersion => IsPsyduckYellow0029 ? GameVersion.PY : Version;
+    public override GameVersion Version
+    {
+        get => (GameVersion)Data[0x5F];
+        set
+        {
+            if (value == GameVersion.PY)
+            {
+                IsPsyduckYellow0029 = true;
+                value = GameVersion.HG;
+            }
+            Data[0x5F] = (byte)value;
+        }
+    }
     private byte RIB8 { get => Data[0x60]; set => Data[0x60] = value; } // Sinnoh 3
     private byte RIB9 { get => Data[0x61]; set => Data[0x61] = value; } // Sinnoh 4
     private byte RIBA { get => Data[0x62]; set => Data[0x62] = value; } // Sinnoh 5
@@ -403,3 +454,4 @@ public sealed class PK4 : G4PKM
         => TrashBytesUTF16.GetStringLength(data, StringConverter4.Terminator);
     public override int GetBytesPerChar() => 2;
 }
+

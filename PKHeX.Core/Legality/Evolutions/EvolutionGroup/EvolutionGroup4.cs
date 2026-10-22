@@ -42,7 +42,7 @@ public sealed class EvolutionGroup4 : IEvolutionGroup
 
     public bool TryDevolve<T>(T head, PKM pk, byte currentMaxLevel, byte levelMin, bool skipChecks, out EvoCriteria result) where T : ISpeciesForm
     {
-        return Tree.Reverse.TryDevolve(head, pk, currentMaxLevel, levelMin, skipChecks, Tweak, out result);
+        return (PsyduckYellow0029.IsEnabled(pk) ? EvolutionTree.PsyduckYellow0029 : Tree).Reverse.TryDevolve(head, pk, currentMaxLevel, levelMin, skipChecks, Tweak, out result);
     }
 
     public int Evolve(Span<EvoCriteria> result, PKM pk, EvolutionOrigin enc, EvolutionHistory history)
@@ -74,6 +74,6 @@ public sealed class EvolutionGroup4 : IEvolutionGroup
 
     public bool TryEvolve<T>(T head, ISpeciesForm next, PKM pk, byte currentMaxLevel, byte levelMin, bool skipChecks, out EvoCriteria result) where T : ISpeciesForm
     {
-        return Tree.Forward.TryEvolve(head, next, pk, currentMaxLevel, levelMin, skipChecks, Tweak, out result);
+        return (PsyduckYellow0029.IsEnabled(pk) ? EvolutionTree.PsyduckYellow0029 : Tree).Forward.TryEvolve(head, next, pk, currentMaxLevel, levelMin, skipChecks, Tweak, out result);
     }
 }

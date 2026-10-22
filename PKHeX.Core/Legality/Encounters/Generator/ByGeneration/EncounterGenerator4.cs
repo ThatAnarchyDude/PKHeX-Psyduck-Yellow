@@ -59,6 +59,20 @@ public sealed class EncounterGenerator4 : IEncounterGenerator
 
     public IEnumerable<IEncounterable> GetEncounters(PKM pk, EvoCriteria[] chain, LegalInfo info)
     {
+        if (pk is PK4 { IsPsyduckYellow0029: true, Version: GameVersion.HG, IsEgg: false, EggLocation: 0, FatefulEncounter: false })
+        {
+            foreach (var starter in PsyduckYellow0029.Starters)
+            {
+                foreach (var evo in chain)
+                {
+                    if (evo.Species != starter.Species || !starter.IsMatchExact(pk, evo))
+                        continue;
+                    info.PIDIV = default;
+                    yield return starter;
+                    yield break;
+                }
+            }
+        }
         info.PIDIV = MethodFinder.Analyze(pk);
         var game = pk.Version;
         var iterator = new EncounterEnumerator4(pk, chain, game);

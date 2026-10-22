@@ -25,6 +25,10 @@ public sealed partial class SAV_Inventory : Form
         WinFormsUtil.TranslateInterface(this, Main.CurrentLanguage);
         Origin = sav;
         itemlist = [.. GameInfo.Strings.GetItemStrings(sav.Context, sav.Version)]; // copy
+        if (sav is SAV4HGSS { IsExpandedEngine: true })
+            itemlist = [.. PsyduckYellowExpanded.ItemNames];
+        else if (sav is SAV4HGSS { IsPsyduckYellow0029: true })
+            itemlist = PsyduckYellow0029.GetItemNames(itemlist);
 
         for (int i = 0; i < itemlist.Length; i++)
         {
@@ -111,9 +115,11 @@ public sealed partial class SAV_Inventory : Form
             tab.Controls.Add(dgv);
             tabControl1.TabPages.Add(tab);
             tabControl1.ShowToolTips = true;
-            tab.ToolTipText = pouch.Type.ToString();
+            tab.ToolTipText = pouch.Type == InventoryType.PCItems && savProfilePC() ? $"{Origin.OT}'s PC — {pouch.Items.Length} slots" : pouch.Type.ToString();
         }
     }
+
+    private bool savProfilePC() => Origin is SAV4HGSS { IsPsyduckYellow0029: true };
 
     private DoubleBufferedDataGridView GetDGV(InventoryPouch pouch)
     {

@@ -33,6 +33,8 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
     private const int OFS_SPINDA = sizeof(uint) + (COUNT_REGION * SIZE_REGION);
     private const int OFS_FORM1 = OFS_SPINDA + sizeof(uint);
 
+    private bool Expanded => SAV is SAV4HGSS { IsExpandedEngine: true };
+    private int RegionOffset(int region) => Expanded && region != 0 ? 0x300 + region * 0x100 : 4 + region * SIZE_REGION;
     private bool HGSS => SAV is SAV4HGSS;
     private bool DP => SAV is SAV4DP;
 
@@ -46,7 +48,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
 
     private bool GetRegionFlag(int region, int index)
     {
-        var ofs = 4 + (region * SIZE_REGION) + (index >> 3);
+        var ofs = RegionOffset(region) + (index >> 3);
         return FlagUtil.GetFlag(Data, ofs, index);
     }
 
@@ -57,7 +59,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
 
     private void SetRegionFlag(int region, int index, bool value)
     {
-        var ofs = 4 + (region * SIZE_REGION) + (index >> 3);
+        var ofs = RegionOffset(region) + (index >> 3);
         FlagUtil.SetFlag(Data, ofs, index, value);
     }
 
@@ -79,7 +81,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
         if (species == (int)Species.Deoxys)
         {
             var br1 = Data[0x4 + (1 * brSize) - 1];
-            var br2 = Data[0x4 + (2 * brSize) - 1];
+            var br2 = Data[Expanded ? 0x43F : 0x4 + (2 * brSize) - 1];
             uint val = (uint)(br1 | (br2 << 8));
             return GetDexFormValues(val, 4, 4);
         }
@@ -121,7 +123,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
             case (int)Species.Deoxys: // Deoxys
                 uint newval = SetDexFormValues(forms, 4, 4);
                 Data[0x4 + (1 * brSize) - 1] = (byte)(newval & 0xFF);
-                Data[0x4 + (2 * brSize) - 1] = (byte)((newval >> 8) & 0xFF);
+                Data[Expanded ? 0x43F : 0x4 + (2 * brSize) - 1] = (byte)((newval >> 8) & 0xFF);
                 break;
         }
 
@@ -275,7 +277,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
     public override void SetDex(PKM pk)
     {
         var species = pk.Species;
-        if (species is 0 or > Legal.MaxSpeciesID_4)
+        if (species == 0 || species > (Expanded ? PsyduckYellowExpanded.MaxSpecies : Legal.MaxSpeciesID_4))
             return;
         if (pk.IsEgg) // do not add
             return;
@@ -348,6 +350,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
 
     public bool GetLanguageBitIndex(ushort species, int lang)
     {
+        if (Expanded && species > Legal.MaxSpeciesID_4) return false;
         int dpl = 1 + DPLangSpecies.IndexOf(species);
         if (DP && dpl <= 0)
             return false;
@@ -359,6 +362,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
 
     public void SetLanguageBitIndex(ushort species, int lang, bool value)
     {
+        if (Expanded && species > Legal.MaxSpeciesID_4) return;
         int dpl = 1 + DPLangSpecies.IndexOf(species);
         if (DP && dpl <= 0)
             return;
@@ -368,7 +372,7 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
         FlagUtil.SetFlag(Data, ofs, lang & 7, value);
     }
 
-    public bool HasLanguage(ushort species) => GetSpeciesLanguageByteIndex(species) >= 0;
+    public bool HasLanguage(ushort species) => (!Expanded || species <= Legal.MaxSpeciesID_4) && GetSpeciesLanguageByteIndex(species) >= 0;
 
     private int GetSpeciesLanguageByteIndex(ushort species)
     {
@@ -504,9 +508,9 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
     public override void SetDexEntryAll(ushort species, bool shinyToo = false) => ModifyAll(species, SetDexArgs.Complete);
     public override void ClearDexEntryAll(ushort species) => ModifyAll(species, SetDexArgs.None);
 
-    private static void IterateAll(Action<ushort> a)
+    private void IterateAll(Action<ushort> a)
     {
-        for (ushort i = 1; i <= Legal.MaxSpeciesID_4; i++)
+        for (ushort i = 1; i <= (Expanded ? PsyduckYellowExpanded.MaxSpecies : Legal.MaxSpeciesID_4); i++)
             a(i);
     }
 
@@ -526,3 +530,4 @@ public sealed class Zukan4(SAV4 sav, Memory<byte> raw) : ZukanBase<SAV4>(sav, ra
         IterateAll(z => SetCaught(z));
     }
 }
+

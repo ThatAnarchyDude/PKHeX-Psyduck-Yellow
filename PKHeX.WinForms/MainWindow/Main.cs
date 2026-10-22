@@ -29,6 +29,7 @@ public partial class Main : Form
             AutoScaleMode = AutoScaleMode.Font;
         C_SAV.SetEditEnvironment(new SaveDataEditor<PictureBox>(FakeSaveFile.Default, PKME_Tabs));
         FormLoadAddEvents();
+        InitializePsyduckYellowProfile();
 #if DEBUG // translation updater -- all controls are added at this point -- call translate now
         if (DevUtil.IsUpdatingTranslations)
         {
@@ -37,6 +38,9 @@ public partial class Main : Form
         }
 #endif
         FormInitializeSecond();
+        MinimumSize = Size;
+        splitContainer1.Panel2MinSize = splitContainer1.Panel2.Width;
+        InitializeWholeWindowScaling();
     }
 
     #region Important Variables
@@ -762,7 +766,7 @@ public partial class Main : Form
         ParseSettings.InitFromSaveFileData(sav); // physical GB, no longer used in logic
         RecentTrainerCache.SetRecentTrainer(sav);
         SpriteUtil.Initialize(sav); // refresh sprite generator
-        dragout.Size = new Size(SpriteUtil.Spriter.Width, SpriteUtil.Spriter.Height);
+        dragout.Size = ScaleSize(new Size(SpriteUtil.Spriter.Width, SpriteUtil.Spriter.Height), WholeWindowScale);
 
         // clean fields
         Menu_ExportSAV.Enabled = sav.State.Exportable;
@@ -790,6 +794,7 @@ public partial class Main : Form
 
     private void ResetSAVPKMEditors(SaveFile sav)
     {
+        RestoreZoomForLayoutChange();
         C_SAV.SetEditEnvironment(new SaveDataEditor<PictureBox>(sav, PKME_Tabs));
 
         var pk = sav.LoadTemplate(TemplatePath);
@@ -823,6 +828,7 @@ public partial class Main : Form
         sav.State.Edited = false;
         foreach (var p in Plugins)
             p.NotifySaveLoaded();
+        UpdateWholeWindowScale();
     }
 
     private static string GetProgramTitle()
@@ -845,8 +851,8 @@ public partial class Main : Form
         if (sav is ISaveFileRevision rev)
             type += rev.SaveRevisionString;
 
-        var title = GetProgramTitle() + $" - {type}: ";
-        var version = GameInfo.GetVersionName(sav.Version);
+        var title = GetProgramTitle() + (sav is SAV4HGSS { IsPsyduckYellow0029: true } projectSave ? " — " + projectSave.ProjectProfileName : "") + $" - {type}: ";
+        var version = GameInfo.GetVersionName(sav is SAV4HGSS { IsPsyduckYellow0029: true } ? GameVersion.PY : sav.Version);
         if (Settings.Privacy.HideSAVDetails)
             return title + $"[{version}]";
         if (!sav.State.Exportable) // Blank save file
@@ -998,6 +1004,7 @@ public partial class Main : Form
 
     private void ApplyMainLanguage(int index)
     {
+        RestoreZoomForLayoutChange();
         if ((uint)index < GameLanguage.LanguageCount)
             CurrentLanguage = GameLanguage.LanguageCode(index);
 
@@ -1029,6 +1036,7 @@ public partial class Main : Form
 
         foreach (var plugin in Plugins)
             plugin.NotifyDisplayLanguageChanged(lang);
+        UpdateWholeWindowScale();
     }
 
     private void UpdateLanguageMenuChecks(int index)
@@ -1131,6 +1139,11 @@ public partial class Main : Form
 
     private void DisplayLegalityReport(LegalityAnalysis la)
     {
+        if (la.Info.Entity is PK4 { IsExpandedEngine: true })
+        {
+            WinFormsUtil.Alert("Retail legality checking is unavailable for the Psyduck Yellow expanded engine. Species, moves, items and abilities use the data extracted from prototype 0038. Editing and exporting are supported; this is not an official legality verdict.");
+            return;
+        }
         if (Settings.Sounds.PlaySoundLegalityCheck)
             SystemSounds.Asterisk.Play();
 

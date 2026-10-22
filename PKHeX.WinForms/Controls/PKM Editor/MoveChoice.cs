@@ -19,7 +19,8 @@ public partial class MoveChoice : UserControl
     public int PP { get => SelectedMove == 0 ? 0 : Util.ToInt32(TB_PP.Text); set => TB_PP.Text = value.ToString(); }
     public int PPUps { get => SelectedMove == 0 ? 0 : CB_PPUps.SelectedIndex; set => LoadClamp(CB_PPUps, value); }
     public bool HideLegality { private get; set; }
-    public void SetContext(EntityContext context) => Context = context;
+    private bool ExpandedEngine;
+    public void SetContext(EntityContext context, bool expandedEngine = false) { Context = context; ExpandedEngine = expandedEngine; }
 
     private void UpdateTypeSprite(int value)
     {
@@ -29,7 +30,7 @@ public partial class MoveChoice : UserControl
             return;
         }
 
-        var type = MoveInfo.GetType((ushort)value, Context);
+        var type = ExpandedEngine && value < PsyduckYellowExpanded.MoveTypes.Length ? PsyduckYellowExpanded.MoveTypes[value] : MoveInfo.GetType((ushort)value, Context);
         PB_Type.Image = TypeSpriteUtil.GetTypeSpriteIconSmall(type);
     }
 

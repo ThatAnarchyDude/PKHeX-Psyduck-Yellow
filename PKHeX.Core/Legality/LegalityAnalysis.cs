@@ -114,6 +114,15 @@ public sealed class LegalityAnalysis
         SlotOrigin = source;
 
         Info = new LegalInfo(pk, Parse);
+        if (pk is PK4 { IsExpandedEngine: true })
+        {
+            // Retail encounter/learnset catalogs do not describe this engine's IDs or rules.
+            // Keep editing available without manufacturing an official legality verdict.
+            EnsureMovesPopulated();
+            Parsed = false;
+            Valid = false;
+            return;
+        }
 #if SUPPRESS
         try
 #endif

@@ -8,22 +8,39 @@ public sealed class PlayerBag4HGSS : PlayerBag
 {
     private const int BaseOffset = 0x644;
 
-    public override IReadOnlyList<InventoryPouch4> Pouches { get; } = GetPouches(ItemStorage4HGSS.Instance);
-    public override ItemStorage4HGSS Info => ItemStorage4HGSS.Instance;
+    public override IReadOnlyList<InventoryPouch> Pouches { get; } = GetPouches(ItemStorage4HGSS.Instance);
+    public override IItemStorage Info { get; } = ItemStorage4HGSS.Instance;
 
-    private static InventoryPouch4[] GetPouches(ItemStorage4HGSS info) =>
+    private static InventoryPouch[] GetPouches(IItemStorage info) =>
     [
-        new(0x000, 999, info, Items),
-        new(0x294, 001, info, KeyItems),
-        new(0x35C, 099, info, TMHMs),
-        new(0x4F0, 999, info, MailItems),
-        new(0x520, 999, info, Medicine),
-        new(0x5C0, 999, info, Berries),
-        new(0x6C0, 999, info, Balls),
-        new(0x720, 999, info, BattleItems),
+        new InventoryPouch4(0x000, 999, info, Items),
+        new InventoryPouch4(0x294, 001, info, KeyItems),
+        new InventoryPouch4(0x35C, 099, info, TMHMs),
+        new InventoryPouch4(0x4F0, 999, info, MailItems),
+        new InventoryPouch4(0x520, 999, info, Medicine),
+        new InventoryPouch4(0x5C0, 999, info, Berries),
+        new InventoryPouch4(0x6C0, 999, info, Balls),
+        new InventoryPouch4(0x720, 999, info, BattleItems),
     ];
 
-    public PlayerBag4HGSS(SAV4HGSS sav) : this(sav.General[BaseOffset..]) { }
+    private static InventoryPouch[] GetExpandedPouches(IItemStorage info) =>
+    [
+        new InventoryPouch4(0x000, 999, info, Items, 245),
+        new InventoryPouch4(0x3D4, 1, info, KeyItems, 92),
+        new InventoryPouch4(0x544, 99, info, TMHMs, 101),
+        new InventoryPouch4(0x6D8, 999, info, MailItems, 12),
+        new InventoryPouch4(0x708, 999, info, Medicine, 40),
+        new InventoryPouch4(0x7A8, 999, info, Berries, 64),
+        new InventoryPouch4(0x8A8, 999, info, Balls, 26),
+        new InventoryPouch4(0x910, 999, info, BattleItems, 30),
+    ];
+
+    public PlayerBag4HGSS(SAV4HGSS sav)
+    {
+        Info = sav.IsExpandedEngine ? ItemStoragePsyduckExpanded.Instance : sav.IsPsyduckYellow0029 ? ItemStorage4HGSS.PsyduckYellow : ItemStorage4HGSS.Instance;
+        Pouches = sav.IsExpandedEngine ? [.. GetExpandedPouches(Info), new InventoryPouchPsyduckPC(Info, sav.InventoryPCRelativeOffset)] : sav.IsPsyduckYellow0029 ? [.. GetPouches(Info), new InventoryPouchPsyduckPC(Info)] : GetPouches(Info);
+        Pouches.LoadAll(sav.General[BaseOffset..]);
+    }
     public PlayerBag4HGSS(ReadOnlySpan<byte> data) => Pouches.LoadAll(data);
 
     public override void CopyTo(SaveFile sav) => CopyTo((SAV4HGSS)sav);

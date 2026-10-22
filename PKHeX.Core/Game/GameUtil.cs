@@ -111,6 +111,8 @@ public static class GameUtil
 
         private EntityContext GetContextInternal()
         {
+            if (version == PY)
+                return EntityContext.Gen4;
             if (version.IsValidSavedVersion())
                 return version.GetContextFromSaved();
 

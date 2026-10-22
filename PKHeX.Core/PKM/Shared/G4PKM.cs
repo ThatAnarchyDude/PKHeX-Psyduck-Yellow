@@ -15,10 +15,10 @@ public abstract class G4PKM : PKM, IHandlerUpdate,
     protected override void EncryptParty(Span<byte> party) => PokeCrypto.CryptArray(party, EncryptionConstant);
 
     // Maximums
-    public sealed override ushort MaxMoveID => Legal.MaxMoveID_4;
-    public sealed override ushort MaxSpeciesID => Legal.MaxSpeciesID_4;
-    public sealed override int MaxAbilityID => Legal.MaxAbilityID_4;
-    public sealed override int MaxItemID => Legal.MaxItemID_4_HGSS;
+    public sealed override ushort MaxMoveID => this is PK4 { IsExpandedEngine: true } ? PsyduckYellowExpanded.MaxMove : (ushort)Legal.MaxMoveID_4;
+    public sealed override ushort MaxSpeciesID => this is PK4 { IsExpandedEngine: true } ? PsyduckYellowExpanded.MaxSpecies : (ushort)Legal.MaxSpeciesID_4;
+    public sealed override int MaxAbilityID => this is PK4 { IsExpandedEngine: true } ? PsyduckYellowExpanded.MaxAbility : Legal.MaxAbilityID_4;
+    public sealed override int MaxItemID => this is PK4 { IsExpandedEngine: true } ? PsyduckYellowExpanded.MaxItem : Legal.MaxItemID_4_HGSS;
     public sealed override int MaxBallID => Legal.MaxBallID_4;
     public sealed override GameVersion MaxGameID => Legal.MaxGameID_4;
     public sealed override int MaxIV => 31;
@@ -51,7 +51,7 @@ public abstract class G4PKM : PKM, IHandlerUpdate,
     public sealed override Nature Nature { get => (Nature)(PID % 25); set { } }
     public sealed override byte CurrentFriendship { get => OriginalTrainerFriendship; set => OriginalTrainerFriendship = value; }
     public sealed override byte CurrentHandler { get => 0; set { } }
-    public sealed override int AbilityNumber { get => 1 << PIDAbility; set { } }
+    public override int AbilityNumber { get => 1 << PIDAbility; set { } }
 
     public abstract byte PokerusState { get; set; }
     public abstract int ShinyLeaf { get; set; }
@@ -583,3 +583,4 @@ public abstract class G4PKM : PKM, IHandlerUpdate,
             language = 1;
     }
 }
+
