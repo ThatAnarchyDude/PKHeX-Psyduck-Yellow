@@ -1,0 +1,63 @@
+# Builds the Windows app on a GitHub-hosted runner (a verifiable build) and, once SignPath is set up, submits it for code signing.
+# Signing needs: repository variable SIGNPATH_ORGANIZATION_ID and secret SIGNPATH_API_TOKEN (see CODE-SIGNING-POLICY.md).
+# Without them the job still builds and uploads an UNSIGNED package.
+name: Psyduck Yellow build
+
+on:
+  push:
+    tags: ['pkhex-psyduck-yellow-v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build
+        shell: pwsh
+        run: dotnet build PKHeX.WinForms/PKHeX.WinForms.csproj -c Release -o out
+
+      - name: Package (no debug symbols)
+        shell: pwsh
+        run: |
+          $dir = 'package/PKHeX-Psyduck-Yellow'
+          New-Item -ItemType Directory -Force $dir | Out-Null
+          Copy-Item out/*.exe, out/*.dll, out/*.json $dir
+          Copy-Item LICENSE (Join-Path $dir 'LICENSE.txt')
+          Copy-Item PSYDUCK-YELLOW.md (Join-Path $dir 'README-Psyduck-Yellow.txt')
+          Compress-Archive -Path "package/PKHeX-Psyduck-Yellow" -DestinationPath PKHeX-Psyduck-Yellow-unsigned.zip
+
+      - name: Upload unsigned package
+        id: upload-unsigned
+        uses: actions/upload-artifact@v4
+        with:
+          name: PKHeX-Psyduck-Yellow-unsigned
+          path: PKHeX-Psyduck-Yellow-unsigned.zip
+
+      - name: Submit for code signing (SignPath Foundation)
+        if: ${{ vars.SIGNPATH_ORGANIZATION_ID != '' }}
+        uses: signpath/github-action-submit-signing-request@v1
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: PKHeX-Psyduck-Yellow
+          signing-policy-slug: release-signing
+          github-artifact-id: ${{ steps.upload-unsigned.outputs.artifact-id }}
+          wait-for-completion: true
+          output-artifact-directory: signed
+
+      - name: Upload signed package
+        if: ${{ vars.SIGNPATH_ORGANIZATION_ID != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: PKHeX-Psyduck-Yellow-signed
+          path: signed

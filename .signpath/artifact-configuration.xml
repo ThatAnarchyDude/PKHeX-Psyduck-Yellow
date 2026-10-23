@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SignPath artifact configuration for the Psyduck Yellow PKHeX build.
+     Signs only binaries built from this repository; third-party libraries (QRCoder.dll) are left untouched.
+     Verify the schema against https://about.signpath.io/documentation/artifact-configuration when the application is approved. -->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <directory path="PKHeX-Psyduck-Yellow">
+      <pe-file-set>
+        <include path="PKHeX.exe" />
+        <include path="PKHeX.dll" />
+        <include path="PKHeX.Core.dll" />
+        <include path="PKHeX.Drawing*.dll" />
+        <authenticode-sign />
+      </pe-file-set>
+    </directory>
+  </zip-file>
+</artifact-configuration>

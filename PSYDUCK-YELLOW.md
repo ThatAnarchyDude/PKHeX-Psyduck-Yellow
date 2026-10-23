@@ -1,50 +1,36 @@
-# PKHeX with built-in Psyduck Yellow prototype 0029 support
+# PKHeX with built-in Psyduck Yellow support
 
-This is the complete PKHeX Windows application based on the project's 26.08.26 fork. Its normal editors and game support are retained. Prototype 0029 rules are compiled into PKHeX.Core and the Windows interface; no plugin is required.
+A full PKHeX (upstream kwsch/PKHeX, rebased on commit a9ff306) with Psyduck Yellow added as a game of its own. No plugin or profile switch is needed.
+
+Requirements: Windows and the .NET 10 Desktop Runtime.
 
 ## Use
 
-1. Extract the application package and run PKHeX.exe. It requires the .NET 10 Windows Desktop runtime, already installed on the owner's PC.
-2. Open a COPY of your prototype 0029 battery save (.sav or .dsv).
-3. Check Tools > Psyduck Yellow prototype 0029 before editing Pokemon. The window title identifies the active profile. Select this profile again when opening another project save; it is not written into the save itself.
-4. Use PKHeX's normal party, boxes, Pokemon, trainer and inventory editors. Export to a new save path and keep your original backup.
+1. Run `PKHeX.exe`.
+2. Open a COPY of your Psyduck Yellow battery save (`.dsv` or `.sav`). It is detected automatically; the title bar shows "Psyduck Yellow Expanded Engine".
+3. Edit, then export to a new file. Keep your original.
 
-For ordinary games, leave the Psyduck Yellow option unchecked. Selecting the option does not convert a retail save into a Psyduck Yellow campaign save.
+## What works
 
-The application identifies the profile as GameVersion.PY = 254 and EntityContext.Gen4. Pokemon origin bytes and save ROM codes remain HeartGold (7); 254 is never stored in those fields.
+Party, 30 boxes, bag and item PC, Pokedex, trainer data, event flags and variables (with Psyduck Yellow labels), the game's own species/move/item/ability lists (starter and Mega copies labelled), correct move types, and legality checks for Pokemon within the Generation 4 catalogs (HeartGold rules plus the starter rules; level-up moves come from the game). Psyduck Yellow can be a Pokemon's origin game.
 
-## Built-in project rules
+Saves from prototypes 0038 through 0056 have been opened. Not every editor window has been tested.
 
-- Recognize level-5 Pallet Town starter gifts: male Psyduck, female Eevee, and either-gender Togepi, in ordinary Poke Balls. Reject incorrect origin data, impossible abilities and impossible moves.
-- Permit the game's supported starter Hidden Abilities and their supported evolutions. The normal editor retains the actual ability byte without replacing it or rerolling the PID.
-- Recognize Togepi's level-1 Tackle and the additional TM compatibility read from the released 0029 ROM.
-- Display Golduck as Water/Psychic only in this profile.
-- Recognize the project's starter stone evolution alternatives, including Psyduck's Moon Stone evolution.
-- Classify existing Pokemon as shiny at XOR < 16 for this profile, retaining retail generation-4 XOR < 8 outside it. Encounter odds do not create extra fields in a save.
-- Name Shiny Charm, Friendship Charm and the seven extra TMs correctly in the inventory editor, with their correct pockets. Preserve the native save format, quest flags, custom PC variables and emulator footer.
+## Known limits
 
-Hidden Abilities supported by the game: Psyduck/Golduck (Swift Swim), Eevee (Anticipation), Vaporeon (Hydration), Jolteon (Quick Feet), Flareon (Guts), Umbreon (Inner Focus), Leafeon (Chlorophyll), Glaceon (Ice Body), and Togepi/Togetic/Togekiss (Super Luck). Espeon has no newly invented generation-4 Hidden Ability.
+- Wild encounters are not covered by legality yet, so caught wild Pokemon can show as illegal.
+- TM, HM, egg and tutor moves use HeartGold's data.
+- Species types for Sylveon (Fairy) and Novareon (Stellar) are not converted yet.
+- Prototype 0029 saves still need Tools > Psyduck Yellow prototype 0029.
+- Pokemon outside the Generation 4 catalogs show "Analysis not available".
 
-## Verified scope and limitations
+No ROMs, saves or game files are included. PKHeX is GPL-3.0-or-later; see `LICENSE`.
 
-Core regressions cover all three starters, normal/hidden abilities, perfect IVs, stone evolutions, wrong-level/location/ball/ability/move rejection, shiny thresholds and retail isolation. A copied 0029 save round-trips with party bytes, quest/PC variables, checksums and emulator footer preserved. Native Windows form tests cover the built-in profile, all twelve HA species through normal editing, shiny classification, inventory names and retail isolation.
+## Windows security warning
 
-Custom starter encounter families are described explicitly. The entire altered Kanto wild/campaign gift encounter catalog is not yet replaced; other custom encounters can still receive retail encounter warnings. These project legality results do not establish retail-game or online-transfer eligibility. The exact final exported save also loaded through the released 0029 game's ordinary Continue menu and returned to the field; no emulator state or RAM writes were used.
+Releases are not code-signed yet, so Windows may show "We can't verify who created this file".
 
-No ROMs, player saves or credentials are included. Publication of this editor is authorized; game materials remain private.
+- Run the app from a normal folder on a local drive (for example `C:\Tools\PKHeX`), not from a network path such as `\\wsl.localhost\...`; Windows treats network paths as untrusted.
+- For a downloaded zip: right-click the zip, choose Properties, tick **Unblock**, then extract.
 
-## Source and license
-
-The release tag and its source archives contain the complete corresponding application source and tests. Original PKHeX contributor notices and LICENSE are retained (GPL-3.0-or-later). Local base commit: a7eeac285796385e001ed714b53f3f149e823a4c. Local branch: codex/psyduck-yellow-0029-support. Build using .NET SDK 10: dotnet publish PKHeX.WinForms/PKHeX.WinForms.csproj -c Release -p:PublishReadyToRun=false.
-
-## PC item tab (v2)
-The Items editor now includes the player''s PC storage in the active Psyduck Yellow profile. Prototype0029 supports ten physical saved stacks, up to999 of each. All ten are editable regardless of badges. PC edits are separate from the Bag. Existing items and story state are preserved; new PC contents are marked initialized so the first login does not overwrite them.
-
-The approved next game prototype will start at20 usable in-game slots and unlock5 per distinct Kanto badge, up to60. PKHeX will expose all60 independently of badges once that game save layout is implemented. That expansion and layout are pending; this editor does not write invented extra rows into0029 saves.
-
-
-## Whole-interface scaling (v4)
-
-Drag the window edges or use the standard Windows maximize button. Text, controls, menu icons, spacing and Pokemon images enlarge together from their original dimensions. At 150% of the default client size, the interface uses a 150% scale. If width and height grow by different amounts, one uniform factor fits the complete interface without clipping or distorting images; unused space is centered around it. Windows' normal working area keeps the visible taskbar available.
-
-Returning the window to its original size restores original fonts and geometry. Saving/loading and changing display language rebuild the layout at its native size before reapplying zoom, avoiding accumulated rounding and font drift. This scales the live native editor, rather than displaying an enlarged screenshot. Manual resizing is included.
+Free open-source code signing through SignPath Foundation is being prepared; see [CODE-SIGNING-POLICY.md](CODE-SIGNING-POLICY.md).
