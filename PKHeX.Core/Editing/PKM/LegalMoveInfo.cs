@@ -25,7 +25,7 @@ public sealed class LegalMoveInfo
     /// </summary>
     /// <param name="move">Move to check the sources for</param>
     /// <returns>Sources that allow the move to be learned</returns>
-    public IndicatedSourceType GetMoveSources(ushort move) => AllowedMoves[move];
+    public IndicatedSourceType GetMoveSources(ushort move) => move < AllowedMoves.Length ? AllowedMoves[move] : None; // expanded games (Psyduck Yellow) have moves past the retail range
 
     /// <summary>
     /// Reloads the legality sources to permit the provided legal info.
