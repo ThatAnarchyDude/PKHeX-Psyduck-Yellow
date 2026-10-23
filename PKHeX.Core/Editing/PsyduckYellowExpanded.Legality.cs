@@ -16,6 +16,7 @@ public static partial class PsyduckYellowExpanded
     public const ushort Eonite = 3145;
     public const ushort Psyduckite = 3146;
     public const ushort Novareonite = 3147;
+
     /// <summary>First and last of the starter Eevee line's species: for each Eeveelution a starter species followed by its Mega copy; the last pair is the Novareon stand-in.</summary>
     public const ushort StarterLineFirst = 1565;
     public const ushort StarterLineLast = 1582;
@@ -46,6 +47,18 @@ public static partial class PsyduckYellowExpanded
         }
         return result;
     }
+
+    /// <summary>Move types in PKHeX's numbering (Normal..Steel 0-8, Fire 9 .. Dark 16, Fairy 17), as used by the type icons and names.</summary>
+    private static readonly Lazy<byte[]> MoveTypeData = new(() => Array.ConvertAll(MoveTypesEngine, ToDisplayType));
+    public static byte[] MoveTypes => MoveTypeData.Value;
+
+    /// <summary>Converts a game-stored type (Fairy in slot 9, Fire at 10 .. Dark at 17) to PKHeX's numbering.</summary>
+    public static byte ToDisplayType(byte engineType) => engineType switch
+    {
+        9 => 17,
+        > 9 and <= 17 => (byte)(engineType - 1),
+        _ => engineType,
+    };
 
     /// <summary>Species names with the project's starter/Mega copies labelled, and unused placeholder slots hidden.</summary>
     public static string[] GetSpeciesDisplayNames()
