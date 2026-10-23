@@ -150,7 +150,7 @@ public record struct EncounterEnumerator4(PKM Entity, EvoCriteria[] Chain, GameV
                 { State = YieldState.SlotSS; goto case YieldState.SlotSS; }
                 throw new ArgumentOutOfRangeException(nameof(Version));
             case YieldState.SlotHG:
-                if (TryGetNext<EncounterArea4, EncounterSlot4>(Encounters4HGSS.SlotsHG))
+                if (TryGetNext<EncounterArea4, EncounterSlot4>(Entity is PK4 { IsExpandedLegalityView: true } ? Encounters4HGSS.SlotsPY : Encounters4HGSS.SlotsHG))
                     return true;
                 goto case YieldState.SlotEnd;
             case YieldState.SlotSS:

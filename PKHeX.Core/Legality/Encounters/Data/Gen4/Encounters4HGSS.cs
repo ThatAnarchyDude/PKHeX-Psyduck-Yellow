@@ -12,6 +12,8 @@ internal static class Encounters4HGSS
 {
     internal static readonly EncounterArea4[] SlotsHG = EncounterArea4.GetAreas(Get("hg", "hg"u8), HG);
     internal static readonly EncounterArea4[] SlotsSS = EncounterArea4.GetAreas(Get("ss", "ss"u8), SS);
+    /// <summary>Psyduck Yellow's Kanto wild encounters, read from the game (see private/generate-pkhex-expanded-encounters.py). Origin version is stored as HeartGold.</summary>
+    internal static readonly EncounterArea4[] SlotsPY = EncounterArea4.GetAreas(Get("py", "py"u8), HG);
 
     internal static readonly EncounterStatic4Pokewalker[] Encounter_PokeWalker = EncounterStatic4Pokewalker.GetAll(Util.GetBinaryResource("encounter_walker4.pkl"));
 

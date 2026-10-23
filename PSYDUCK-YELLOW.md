@@ -12,13 +12,13 @@ Requirements: Windows and the .NET 10 Desktop Runtime.
 
 ## What works
 
-Party, 30 boxes, bag and item PC, Pokedex, trainer data, event flags and variables (with Psyduck Yellow labels), the game's own species/move/item/ability lists (starter and Mega copies labelled), correct move types, and legality checks for Pokemon within the Generation 4 catalogs (HeartGold rules plus the starter rules; level-up moves come from the game). Psyduck Yellow can be a Pokemon's origin game.
+Party, 30 boxes, bag and item PC, Pokedex, trainer data, event flags and variables (with Psyduck Yellow labels), the game's own species/move/item/ability lists (starter and Mega copies labelled), correct move types, and legality checks for Pokemon within the Generation 4 catalogs (HeartGold rules plus the starter rules; level-up moves and Kanto wild encounters come from the game). Psyduck Yellow can be a Pokemon's origin game.
 
 Saves from prototypes 0038 through 0056 have been opened. Not every editor window has been tested.
 
 ## Known limits
 
-- Wild encounters are not covered by legality yet, so caught wild Pokemon can show as illegal.
+- Legality covers Kanto wild encounters (grass, surfing, fishing, Rock Smash) from the game's own tables. Static encounters, gifts, in-game trades, hatched eggs and Headbutt trees are not covered yet, so Pokemon from those can show as illegal.
 - TM, HM, egg and tutor moves use HeartGold's data.
 - Species types for Sylveon (Fairy) and Novareon (Stellar) are not converted yet.
 - Prototype 0029 saves still need Tools > Psyduck Yellow prototype 0029.
