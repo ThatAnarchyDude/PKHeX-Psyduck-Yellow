@@ -14,7 +14,7 @@ Requirements: Windows and the .NET 10 Desktop Runtime.
 
 Party, 30 boxes, bag and item PC, Pokedex, trainer data, event flags and variables (with Psyduck Yellow labels), the game's own species/move/item/ability lists (starter and Mega copies labelled), correct move types, and legality checks for Pokemon within the Generation 4 catalogs (HeartGold rules plus the starter rules; level-up moves and Kanto wild encounters come from the game). Psyduck Yellow can be a Pokemon's origin game.
 
-Saves from prototypes 0038 through 0056 have been opened. Not every editor window has been tested.
+Saves from prototypes 0038 through 0098 have been opened (data regenerated from the 0099 build). Not every editor window has been tested.
 
 ## Known limits
 

@@ -16,6 +16,8 @@ public static partial class PsyduckYellowExpanded
     public const ushort Eonite = 3145;
     public const ushort Psyduckite = 3146;
     public const ushort Novareonite = 3147;
+    /// <summary>Regular (non-starter) Novareon species slot.</summary>
+    public const ushort Novareon = 500;
 
     /// <summary>First and last of the starter Eevee line's species: for each Eeveelution a starter species followed by its Mega copy; the last pair is the Novareon stand-in.</summary>
     public const ushort StarterLineFirst = 1565;
@@ -89,6 +91,7 @@ public static partial class PsyduckYellowExpanded
             StarterEevee or MegaEevee => (ushort)Species.Eevee,
             StarterPsyduck or MegaPsyduck => (ushort)Species.Psyduck,
             >= StarterLineFirst and <= StarterLineLast => LineBases[(pk.Species - StarterLineFirst) / 2],
+            Novareon => (ushort)Species.Umbreon, // the regular Novareon (Eevee + Sandwich), stat-wise an Umbreon stand-in
             _ => pk.Species,
         };
         if (species is 0 or > Legal.MaxSpeciesID_4)
@@ -115,7 +118,9 @@ public static partial class PsyduckYellowExpanded
             clone.HeldItem = megaStone ? (ushort)0 : (ushort)450;
         // The expanded game writes species names in mixed case; retail Generation 4 stores them in upper case.
         var expectedName = SpeciesName.GetSpeciesNameGeneration(species, clone.Language, 4);
-        if (!clone.IsNicknamed && string.Equals(clone.Nickname, expectedName, StringComparison.OrdinalIgnoreCase))
+        var ownName = pk.Species < SpeciesNames.Length ? SpeciesNames[pk.Species] : expectedName; // e.g. "Novareon" on its Umbreon stand-in
+        if (!clone.IsNicknamed && (string.Equals(clone.Nickname, expectedName, StringComparison.OrdinalIgnoreCase)
+                                   || string.Equals(clone.Nickname, ownName, StringComparison.OrdinalIgnoreCase)))
             clone.Nickname = expectedName;
         if (clone.Version == GameVersion.PY)
             clone.Version = GameVersion.HG;
