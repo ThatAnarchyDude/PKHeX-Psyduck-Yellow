@@ -97,17 +97,20 @@ public static partial class PsyduckYellowExpanded
     /// Campaign Pokémon only use Kanto encounters, so Pokémon whose species, moves, ability and item fit the retail Generation 4 catalogs
     /// are checked with HeartGold's rules plus the Psyduck Yellow starter rules. Returns false when the Pokémon uses anything beyond that catalog.
     /// </summary>
+    /// <summary>The ordinary species that legality (and the encounter search) uses for a starter/Mega copy or the regular Novareon.</summary>
+    public static ushort GetRetailSpecies(ushort species) => species switch
+    {
+        StarterEevee or MegaEevee => (ushort)Species.Eevee,
+        StarterPsyduck or MegaPsyduck => (ushort)Species.Psyduck,
+        >= StarterLineFirst and <= StarterLineLast => LineBases[(species - StarterLineFirst) / 2],
+        Novareon => (ushort)Species.Umbreon, // the regular Novareon (Eevee + Sandwich), stat-wise an Umbreon stand-in
+        _ => species,
+    };
+
     public static bool TryGetRetailView(PK4 pk, out PK4 view)
     {
         view = pk;
-        var species = pk.Species switch
-        {
-            StarterEevee or MegaEevee => (ushort)Species.Eevee,
-            StarterPsyduck or MegaPsyduck => (ushort)Species.Psyduck,
-            >= StarterLineFirst and <= StarterLineLast => LineBases[(pk.Species - StarterLineFirst) / 2],
-            Novareon => (ushort)Species.Umbreon, // the regular Novareon (Eevee + Sandwich), stat-wise an Umbreon stand-in
-            _ => pk.Species,
-        };
+        var species = GetRetailSpecies(pk.Species);
         if (species is 0 or > Legal.MaxSpeciesID_4)
             return false;
         if (pk.Move1 > Legal.MaxMoveID_4 || pk.Move2 > Legal.MaxMoveID_4 || pk.Move3 > Legal.MaxMoveID_4 || pk.Move4 > Legal.MaxMoveID_4)

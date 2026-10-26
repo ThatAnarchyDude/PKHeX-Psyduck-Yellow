@@ -251,6 +251,8 @@ public partial class SAV_Encounters : Form
         }
 
         SAV.AdaptToSaveFile(pk);
+        if (SAV is SAV4PY && pk is PK4 pk4)
+            PsyduckYellowEncounterSearch.AdaptToGame(pk4, enc);
         pk.RefreshChecksum();
         PKME_Tabs.PopulateFields(pk, false);
         slotSelected = index;
@@ -292,7 +294,7 @@ public partial class SAV_Encounters : Form
         var Any = new ComboItem(MsgAny, 0);
         var filtered = GameInfo.FilteredSources;
         var source = filtered.Source;
-        var species = new List<ComboItem>(source.SpeciesDataSource)
+        var species = new List<ComboItem>(SAV is SAV4PY ? filtered.Species : source.SpeciesDataSource)
         {
             [0] = Any // Replace (None) with "Any"
         };
@@ -347,6 +349,8 @@ public partial class SAV_Encounters : Form
         // If nothing is specified, instead of just returning all possible encounters, just return nothing.
         if (!IsSearchAllowed(settings))
             return [];
+        if (SAV is SAV4PY) // the game's own Kanto encounters and starters
+            return PsyduckYellowEncounterSearch.Search(settings.Species);
         var pk = SAV.BlankPKM;
 
         var moves = settings.Moves.ToArray();
