@@ -826,6 +826,9 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
     {
         Span<ushort> moves = stackalloc ushort[4];
         Entity.GetMoveSet(moves, random);
+        var gameMoves = Entity is PK4 { IsExpandedEngine: true };
+        if (moves[0] == 0 && gameMoves)
+            PsyduckYellowExpanded.TryGetSuggestedMoves((PK4)Entity, moves); // legality has no suggestion: use the game's own level-up moves
         if (moves[0] == 0)
         {
             if (!silent)
@@ -841,7 +844,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
 
         if (!silent)
         {
-            var msg = GetMoveListPrint(moves, GameInfo.Strings.movelist);
+            var msg = GetMoveListPrint(moves, gameMoves ? PsyduckYellowExpanded.MoveNames : GameInfo.Strings.movelist);
             if (DialogResult.Yes != WinFormsUtil.Prompt(MessageBoxButtons.YesNo, MsgPKMSuggestionMoves, msg))
                 return false;
         }

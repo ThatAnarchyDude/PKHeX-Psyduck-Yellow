@@ -62,6 +62,20 @@ public static partial class PsyduckYellowExpanded
         _ => engineType,
     };
 
+    /// <summary>
+    /// Fills <paramref name="moves"/> with the last four level-up moves the game teaches the Pokémon's species by its current level.
+    /// Used when legality cannot suggest moves (the Pokémon is outside the retail catalogs or matches no known encounter).
+    /// </summary>
+    public static bool TryGetSuggestedMoves(PK4 pk, Span<ushort> moves)
+    {
+        var learnsets = Learnsets;
+        if (pk.Species >= learnsets.Length)
+            return false;
+        moves.Clear();
+        learnsets[pk.Species].SetEncounterMoves((byte)Math.Clamp((int)pk.CurrentLevel, 1, 100), moves);
+        return moves[0] != 0;
+    }
+
     /// <summary>Species names with the project's starter/Mega copies labelled, and unused placeholder slots hidden.</summary>
     public static string[] GetSpeciesDisplayNames()
     {
