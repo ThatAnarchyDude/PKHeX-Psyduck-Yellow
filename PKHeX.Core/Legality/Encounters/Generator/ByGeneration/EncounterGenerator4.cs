@@ -61,8 +61,13 @@ public sealed class EncounterGenerator4 : IEncounterGenerator
     {
         if (pk is PK4 { IsPsyduckYellow0029: true, Version: GameVersion.HG, IsEgg: false, EggLocation: 0, FatefulEncounter: false })
         {
+            // In Psyduck Yellow the starter Psyduck/Eevee are their own species: only those (and their evolutions) can be the Pallet gift, and nothing else can be them.
+            bool isExpanded = pk is PK4 { IsExpandedLegalityView: true };
+            bool isStarterLine = pk is PK4 { IsExpandedLegalityView: true } view && PsyduckYellowExpanded.IsStarterSpecies(view.ExpandedSpecies);
             foreach (var starter in PsyduckYellow0029.Starters)
             {
+                if (isExpanded && starter.Species != (ushort)Species.Togepi && !isStarterLine)
+                    continue;
                 foreach (var evo in chain)
                 {
                     if (evo.Species != starter.Species || !starter.IsMatchExact(pk, evo))
@@ -72,6 +77,8 @@ public sealed class EncounterGenerator4 : IEncounterGenerator
                     yield break;
                 }
             }
+            if (isStarterLine)
+                yield break;
         }
         info.PIDIV = MethodFinder.Analyze(pk);
         var game = pk.Version;

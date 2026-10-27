@@ -107,6 +107,9 @@ public static partial class PsyduckYellowExpanded
         _ => species,
     };
 
+    /// <summary>True for the starter Eevee/Psyduck, their Eeveelutions and Mega copies: these exist only as the starter gift line, identified by their own species.</summary>
+    public static bool IsStarterSpecies(ushort species) => species is StarterEevee or MegaEevee or StarterPsyduck or MegaPsyduck or (>= StarterLineFirst and <= StarterLineLast);
+
     public static bool TryGetRetailView(PK4 pk, out PK4 view)
     {
         view = pk;
@@ -125,7 +128,7 @@ public static partial class PsyduckYellowExpanded
         if (pk.Ability > Legal.MaxAbilityID_4 || (pk.HeldItem > Legal.MaxItemID_4_HGSS && !isStone))
             return false;
 
-        var clone = new PK4(pk.Data.ToArray()) { IsPsyduckYellow0029 = true, IsExpandedEngine = false, IsExpandedLegalityView = true };
+        var clone = new PK4(pk.Data.ToArray()) { IsPsyduckYellow0029 = true, IsExpandedEngine = false, IsExpandedLegalityView = true, ExpandedSpecies = pk.Species };
         // Expanded-engine extras share bytes with retail fields: ability bit 8 sits in EXP bit 31, and flags occupy the shiny-leaf byte.
         var exp = ReadUInt32LittleEndian(clone.Data[0x10..]) & 0x1FFFFFu;
         WriteUInt32LittleEndian(clone.Data[0x10..], exp);

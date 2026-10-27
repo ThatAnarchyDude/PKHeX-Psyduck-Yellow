@@ -38,9 +38,11 @@ public sealed class PK4 : G4PKM, IHyperTrain
     public bool IsExpandedEngine { get; set; }
     /// <summary>Set on the retail-shaped copy used for legality of expanded-engine Pokémon (not stored).</summary>
     public bool IsExpandedLegalityView { get; set; }
+    /// <summary>The Pokémon's own internal species on the retail-shaped legality copy (whose <see cref="PKM.Species"/> is mapped to the ordinary species); 0 otherwise.</summary>
+    public ushort ExpandedSpecies { get; set; }
     public override int GetBasePP(ushort move) => IsExpandedEngine && move < PsyduckYellowExpanded.MovePP.Length ? PsyduckYellowExpanded.MovePP[move] : base.GetBasePP(move);
     public override bool IsShiny => IsPsyduckYellow0029 ? ShinyXor < 16 : base.IsShiny;
-    public override PK4 Clone() => new(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029, IsExpandedEngine = IsExpandedEngine, IsExpandedLegalityView = IsExpandedLegalityView };
+    public override PK4 Clone() => new(Data.ToArray()) { IsPsyduckYellow0029 = IsPsyduckYellow0029, IsExpandedEngine = IsExpandedEngine, IsExpandedLegalityView = IsExpandedLegalityView, ExpandedSpecies = ExpandedSpecies };
 
     // Structure
     public override uint PID { get => ReadUInt32LittleEndian(Data); set => WriteUInt32LittleEndian(Data, value); }
