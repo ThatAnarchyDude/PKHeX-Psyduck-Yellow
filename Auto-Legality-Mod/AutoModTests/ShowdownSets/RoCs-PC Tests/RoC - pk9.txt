@@ -1,0 +1,12121 @@
+Pikachu (F)
+IVs: 11 Atk / 17 Def / 24 SpA / 17 SpD
+Ability: Static
+Tera Type: Dark
+Level: 35
+Quirky Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Thunderbolt
+- Nuzzle
+- Iron Tail
+- Spark
+
+Raichu (F)
+IVs: 29 HP / 15 Atk / 9 Def / 21 SpA / 9 SpD / 14 Spe
+Ability: Static
+Tera Type: Electric
+Level: 56
+Rash Nature
+Ball: Master Ball
+~=Location=109
+~=Version=SV
+.Version=50
+- Tail Whip
+- Double Team
+- Light Screen
+- Thunderbolt
+
+Jigglypuff (F)
+IVs: 25 HP / 2 Atk / 15 SpD / 13 Spe
+Ability: Competitive
+Tera Type: Water
+Level: 14
+Lonely Nature
+~=Location=20
+~=Version=SV
+.Version=50
+- Water Pulse
+- Sing
+- Disarming Voice
+- Round
+
+Wigglytuff (F)
+IVs: 17 HP / 21 Atk / 14 Def / 27 SpA / 16 SpD / 18 Spe
+Ability: Competitive
+Tera Type: Fairy
+Level: 50
+Timid Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Double-Edge
+- Body Slam
+- Charm
+- Play Rough
+
+Venonat (M)
+IVs: 8 HP / 21 Atk / 9 Def / 10 SpA / 23 SpD / 18 Spe
+Ability: Tinted Lens
+Tera Type: Poison
+Level: 21
+Naughty Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Supersonic
+- Confusion
+- Poison Powder
+- Psybeam
+
+Venomoth (F)
+IVs: 21 HP / 16 Atk / 25 Def / 1 SpA / 14 SpD / 3 Spe
+Ability: Tinted Lens
+Tera Type: Poison
+Level: 31
+Impish Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Psybeam
+- Stun Spore
+- Bug Buzz
+- Sleep Powder
+
+Diglett (M)
+IVs: 14 HP / 26 Atk / 21 Def / 29 SpA / 1 SpD / 10 Spe
+Ability: Sand Veil
+Tera Type: Ground
+Level: 24
+Gentle Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Mud-Slap
+- Bulldoze
+- Sucker Punch
+- Slash
+
+Dugtrio (M)
+IVs: 20 HP / 6 Atk / 4 Def / 30 SpA / 4 SpD / 1 Spe
+Ability: Arena Trap
+Tera Type: Ground
+Level: 26
+Docile Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Mud-Slap
+- Bulldoze
+- Sucker Punch
+- Slash
+
+Meowth (F)
+IVs: 22 HP / 2 Atk / 13 Def / 12 SpA / 0 SpD / 29 Spe
+Ability: Pickup
+Tera Type: Normal
+Level: 23
+Gentle Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Scratch
+- Pay Day
+- Bite
+- Taunt
+
+Meowth-Galar (F)
+IVs: 2 HP / 13 Def / 30 SpA
+Ability: Pickup
+Tera Type: Steel
+Level: 5
+Calm Nature
+~=Level=5
+~=Location=130
+~=Version=SV
+.Version=50
+- Growl
+- Fake Out
+- Hone Claws
+
+Persian (M)
+IVs: 27 HP / 30 Atk / 19 Def / 7 SpA / 26 SpD / 2 Spe
+Ability: Technician
+Tera Type: Normal
+Level: 30
+Timid Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Pay Day
+- Bite
+- Taunt
+- Assurance
+
+Psyduck (M)
+IVs: 8 HP / 0 Atk / 13 Def / 12 SpA / 13 SpD / 23 Spe
+Ability: Cloud Nine
+Tera Type: Water
+Level: 7
+Mild Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Scratch
+- Tail Whip
+- Water Gun
+- Confusion
+
+Golduck (F)
+IVs: 4 Atk / 9 Def / 23 SpA / 3 SpD / 26 Spe
+Ability: Cloud Nine
+Tera Type: Water
+Level: 37
+Careful Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Aqua Tail
+- Soak
+- Psych Up
+- Amnesia
+
+Mankey (M)
+IVs: 21 Atk / 23 Def / 26 SpA / 7 Spe
+Ability: Anger Point
+Tera Type: Fighting
+Level: 16
+Rash Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Covet
+- Fury Swipes
+- Low Kick
+- Seismic Toss
+
+Primeape (F)
+IVs: 18 HP / 4 Atk / 2 Def / 9 SpA / 22 SpD
+Ability: Vital Spirit
+Tera Type: Fighting
+Level: 31
+Brave Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Swagger
+- Cross Chop
+- Assurance
+- Thrash
+
+Growlithe (M)
+IVs: 22 HP / 11 Atk / 11 Def / 11 SpA / 8 SpD / 11 Spe
+Ability: Intimidate
+Tera Type: Fire
+Level: 11
+Quiet Nature
+~=Location=20
+~=Version=SV
+.Version=50
+- Leer
+- Ember
+- Howl
+- Bite
+
+Arcanine (M)
+IVs: 3 HP / 8 Atk / 30 Def / 1 SpA / 11 SpD / 24 Spe
+Ability: Intimidate
+Tera Type: Fire
+Level: 23
+Naughty Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Bite
+- Flame Wheel
+- Extreme Speed
+- Agility
+
+Slowpoke (M)
+IVs: 8 HP / 0 Atk / 19 Def / 13 SpA / 29 SpD / 14 Spe
+Ability: Oblivious
+Tera Type: Water
+Level: 23
+Impish Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Confusion
+- Disable
+- Water Pulse
+- Headbutt
+
+Slowbro (M)
+IVs: 3 HP / 24 Atk / 14 Def / 29 SpA / 25 SpD / 7 Spe
+Ability: Own Tempo
+Tera Type: Water
+Level: 50
+Impish Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Slack Off
+- Psychic
+- Psych Up
+- Rain Dance
+
+Magnemite
+IVs: 2 HP / 4 Atk / 30 Def / 29 SpA / 25 SpD / 26 Spe
+Ability: Magnet Pull
+Tera Type: Electric
+Level: 22
+Brave Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Thunder Wave
+- Electro Ball
+- Gyro Ball
+- Spark
+
+Magneton
+IVs: 28 HP / 6 Atk / 1 Def / 2 SpA / 6 Spe
+Ability: Sturdy
+Tera Type: Steel
+Level: 34
+Quiet Nature
+~=Location=38
+~=Version=SV
+.Version=50
+- Spark
+- Screech
+- Magnet Rise
+- Flash Cannon
+
+Grimer (M)
+IVs: 13 HP / 5 Atk / 15 Def / 27 SpA / 29 SpD / 7 Spe
+Ability: Stench
+Tera Type: Poison
+Level: 19
+Brave Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Mud-Slap
+- Disable
+- Sludge
+- Mud Shot
+
+Muk (M)
+IVs: 5 HP / 28 Atk / 19 Def / 4 SpA / 2 SpD / 6 Spe
+Ability: Sticky Hold
+Tera Type: Poison
+Level: 38
+Hasty Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Sludge Bomb
+- Mud Shot
+- Sludge Wave
+- Toxic
+
+Shellder (M)
+IVs: 15 Atk / 10 Def / 7 SpA / 2 SpD / 23 Spe
+Ability: Skill Link
+Tera Type: Ghost
+Level: 12
+Calm Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Water Gun
+- Ice Shard
+- Supersonic
+- Aurora Beam
+
+Cloyster (M)
+IVs: 26 HP / 27 Atk / 17 Def / 10 SpA / 14 SpD / 3 Spe
+Ability: Skill Link
+Tera Type: Ice
+Level: 46
+Hasty Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Supersonic
+- Leer
+- Tackle
+- Razor Shell
+
+Gastly (M)
+IVs: 7 HP / 27 Atk / 28 Def / 29 SpA / 10 SpD / 11 Spe
+Ability: Levitate
+Tera Type: Poison
+Level: 23
+Serious Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Mean Look
+- Payback
+- Spite
+- Curse
+
+Haunter (F)
+IVs: 2 HP / 8 Atk / 12 Def / 16 SpA / 8 SpD / 7 Spe
+Ability: Levitate
+Tera Type: Poison
+Level: 30
+Mild Nature
+~=Location=22
+~=Version=SV
+.Version=50
+- Spite
+- Curse
+- Hex
+- Night Shade
+
+Gengar (F)
+IVs: 8 HP / 3 Atk / 24 Def / 1 SpA / 14 SpD / 9 Spe
+Ability: Cursed Body
+Tera Type: Poison
+Level: 50
+Lax Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Night Shade
+- Sucker Punch
+- Dark Pulse
+- Shadow Ball
+
+Drowzee (F)
+IVs: 24 Atk / 16 Def / 29 SpA / 18 SpD / 7 Spe
+Ability: Insomnia
+Tera Type: Psychic
+Level: 7
+Serious Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Pound
+- Hypnosis
+- Disable
+
+Hypno (F)
+IVs: 6 HP / 2 Atk / 29 Def / 14 SpA / 1 SpD / 27 Spe
+Ability: Forewarn
+Tera Type: Psychic
+Level: 39
+Naughty Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Psybeam
+- Psych Up
+- Zen Headbutt
+- Swagger
+
+Voltorb
+IVs: 21 HP / 12 Atk / 12 Def / 18 SpA / 8 SpD / 6 Spe
+Ability: Static
+Tera Type: Electric
+Level: 26
+Careful Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Charge Beam
+- Swift
+- Electro Ball
+- Self-Destruct
+
+Tinkatink (F)
+IVs: 21 HP / 24 Atk / 2 Def / 27 SpA / 18 SpD / 2 Spe
+Ability: Mold Breaker
+Tera Type: Fairy
+Level: 20
+Adamant Nature
+~=Location=24
+~=Version=SV
+.Version=50
+- Metal Claw
+- Covet
+- Rock Smash
+- Draining Kiss
+
+Tinkatuff (F)
+IVs: 30 HP / 0 Atk / 12 Def / 13 SpA / 6 SpD / 22 Spe
+Ability: Own Tempo
+Tera Type: Fairy
+Level: 24
+Adamant Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Rock Smash
+- Draining Kiss
+- Sweet Kiss
+- Brutal Swing
+
+Tinkaton (F)
+IVs: 19 Atk / 16 SpA
+Ability: Own Tempo
+Tera Type: Fire
+Level: 75
+Docile Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Gigaton Hammer
+- Play Rough
+- Brutal Swing
+- Rock Smash
+
+Charcadet (F)
+IVs: 25 HP / 3 Atk / 8 Def / 27 SpA / 6 SpD / 13 Spe
+Ability: Flash Fire
+Tera Type: Fire
+Level: 13
+Careful Nature
+~=Location=20
+~=Version=SV
+.Version=50
+- Ember
+- Astonish
+- Clear Smog
+- Fire Spin
+
+Armarouge (M)
+IVs: 17 HP / 16 SpD
+Ability: Weak Armor
+Tera Type: Normal
+Level: 75
+Naughty Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Armor Cannon
+- Psychic
+- Night Shade
+- Will-O-Wisp
+
+Ceruledge (F)
+IVs: 11 HP / 18 Atk / 5 Def / 18 SpA / 10 SpD / 21 Spe
+Ability: Flash Fire
+Tera Type: Fire
+Level: 13
+Gentle Nature
+~=Location=20
+~=Version=SV
+.Version=51
+- Ember
+- Shadow Claw
+- Clear Smog
+- Fire Spin
+
+Toedscool (M)
+IVs: 30 HP / 2 Atk / 7 Def / 13 SpA / 5 SpD / 23 Spe
+Ability: Mycelium Might
+Tera Type: Grass
+Level: 19
+Brave Nature
+~=Location=34
+~=Version=SV
+.Version=50
+- Stun Spore
+- Supersonic
+- Tackle
+- Mega Drain
+
+Toedscruel (M)
+IVs: 20 HP / 9 Atk / 13 Def / 4 SpA / 7 SpD / 18 Spe
+Ability: Mycelium Might
+Tera Type: Grass
+Level: 54
+Rash Nature
+Ball: Master Ball
+~=Location=109
+~=Version=SV
+.Version=50
+- Spore
+- Growth
+- Giga Drain
+- Earth Power
+
+Kingambit (F) @ Leader’s Crest
+IVs: 24 HP / 0 Atk / 20 Def / 3 SpA / 5 Spe
+EVs: 6 Atk
+Ability: Supreme Overlord
+Tera Type: Dark
+Level: 56
+Serious Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Slash
+- Kowtow Cleave
+- Iron Defense
+- Retaliate
+
+Clodsire (M)
+IVs: 7 HP / 21 Atk / 5 Def / 23 SpA / 22 SpD / 1 Spe
+Ability: Water Absorb
+Tera Type: Ground
+Level: 47
+Calm Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Poison Jab
+- Sludge Wave
+- Megahorn
+- Toxic
+
+Electrode
+IVs: 29 HP / 9 Def / 29 SpA / 29 SpD / 25 Spe
+Ability: Soundproof
+Tera Type: Electric
+Level: 30
+Quiet Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Charge Beam
+- Swift
+- Electro Ball
+- Self-Destruct
+
+Annihilape (F)
+IVs: 9 HP / 20 SpD
+EVs: 4 Atk / 14 SpD / 14 Spe
+Ability: Inner Focus
+Tera Type: Poison
+Level: 52
+Naughty Nature
+~=Location=38
+~=Version=SV
+.Version=50
+- Rage Fist
+- Poison Jab
+- Brick Break
+- Shadow Punch
+
+Chansey (F)
+IVs: 10 HP / 25 Atk / 8 Def / 20 SpA / 28 SpD / 30 Spe
+Ability: Serene Grace
+Tera Type: Normal
+Level: 41
+Modest Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Heal Pulse
+- Helping Hand
+- Light Screen
+- Double-Edge
+
+Scyther (F)
+IVs: 22 HP / 26 Atk / 14 Def / 18 SpA / 11 SpD / 29 Spe
+Ability: Technician
+Tera Type: Bug
+Level: 52
+Adamant Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Agility
+- Air Slash
+- X-Scissor
+- Swords Dance
+
+Tauros-Paldea-Combat (M)
+IVs: 22 HP / 22 Atk / 2 Def / 29 SpA / 25 SpD / 12 Spe
+Ability: Anger Point
+Tera Type: Fighting
+Level: 22
+Modest Nature
+~=Location=34
+~=Version=SV
+.Version=50
+- Work Up
+- Double Kick
+- Assurance
+- Headbutt
+
+Tauros-Paldea-Blaze (M)
+IVs: 30 HP / 13 Atk / 15 Def / 10 SpA / 24 SpD
+Ability: Anger Point
+Tera Type: Fighting
+Level: 25
+Lonely Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Double Kick
+- Flame Charge
+- Headbutt
+- Scary Face
+
+Tauros-Paldea-Aqua (M)
+IVs: 6 HP / 0 Atk / 9 Def / 24 SpA / 5 SpD / 25 Spe
+Ability: Intimidate
+Tera Type: Fighting
+Level: 25
+Sassy Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=51
+- Double Kick
+- Aqua Jet
+- Headbutt
+- Scary Face
+
+Magikarp (M)
+IVs: 28 HP / 1 Atk / 18 Def / 10 SpA / 13 SpD / 27 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 4
+Mild Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Splash
+
+Gyarados (M)
+IVs: 20 HP / 1 Atk / 6 Def / 22 SpA / 3 SpD / 9 Spe
+Ability: Intimidate
+Tera Type: Water
+Level: 51
+Lax Nature
+~=Location=40
+~=Version=SV
+.Version=50
+- Dragon Dance
+- Hydro Pump
+- Hurricane
+- Thrash
+
+Ditto
+IVs: 17 HP / 8 Atk / 3 Def / 3 SpA / 1 SpD / 28 Spe
+Ability: Limber
+Tera Type: Normal
+Level: 28
+Quirky Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Transform
+
+Eevee (M)
+IVs: 5 HP / 24 Atk / 29 SpA / 28 SpD / 11 Spe
+Ability: Run Away
+Tera Type: Normal
+Level: 28
+Quiet Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Quick Attack
+- Baby-Doll Eyes
+- Swift
+- Bite
+
+Vaporeon (M)
+IVs: 17 HP / 10 Atk / 27 Def / 14 SpA / 3 SpD / 24 Spe
+Ability: Water Absorb
+Tera Type: Water
+Level: 46
+Impish Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Aurora Beam
+- Aqua Ring
+- Muddy Water
+- Acid Armor
+
+Jolteon (F)
+IVs: 19 HP / 5 SpA / 11 SpD
+Ability: Volt Absorb
+Tera Type: Electric
+Level: 50
+Modest Nature
+~=Location=22
+~=Version=SV
+.Version=50
+- Thunderbolt
+- Yawn
+- Fake Tears
+- Shadow Ball
+
+Flareon (M)
+IVs: 7 HP / 5 Atk / 1 Def / 4 SpD / 23 Spe
+Ability: Flash Fire
+Tera Type: Fire
+Level: 40
+Quiet Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Bite
+- Fire Fang
+- Fire Spin
+- Lava Plume
+
+Dratini (F)
+IVs: 15 HP / 28 Atk / 18 Def / 13 SpA / 26 SpD / 0 Spe
+Ability: Shed Skin
+Tera Type: Dragon
+Level: 52
+Timid Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Dragon Rush
+- Safeguard
+- Rain Dance
+- Dragon Dance
+
+Dragonair (M)
+IVs: 22 HP / 13 Atk / 17 Def / 20 SpA / 4 SpD / 13 Spe
+Ability: Shed Skin
+Tera Type: Dragon
+Level: 53
+Rash Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Aqua Tail
+- Dragon Rush
+- Safeguard
+- Rain Dance
+
+Dragonite (M)
+IVs: 19 Atk / 6 Def / 30 SpA / 11 SpD / 19 Spe
+Ability: Inner Focus
+Tera Type: Dragon
+Level: 55
+Quiet Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Aqua Tail
+- Dragon Rush
+- Hurricane
+- Rain Dance
+
+Pichu (F)
+IVs: 20 HP / 3 Atk / 0 Def / 20 SpA / 24 SpD / 21 Spe
+Ability: Static
+Tera Type: Electric
+Level: 7
+Gentle Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tail Whip
+- Thunder Shock
+- Play Nice
+
+Igglybuff (F)
+IVs: 2 HP / 19 Atk / 10 Def / 3 SpA / 22 SpD / 10 Spe
+Ability: Competitive
+Tera Type: Normal
+Level: 6
+Impish Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Pound
+- Sing
+- Copycat
+- Defense Curl
+
+Mareep (F)
+IVs: 24 HP / 3 Atk / 19 Def / 1 SpA / 6 SpD / 21 Spe
+Ability: Static
+Tera Type: Electric
+Level: 9
+Modest Nature
+Ball: Master Ball
+~=Location=12
+~=Version=SV
+.Version=50
+- Tackle
+- Growl
+- Thunder Wave
+- Thunder Shock
+
+Flaaffy (F)
+IVs: 26 HP / 22 Atk / 5 Def / 7 SpA / 3 SpD / 5 Spe
+Ability: Static
+Tera Type: Electric
+Level: 39
+Lax Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Electro Ball
+- Confuse Ray
+- Power Gem
+- Discharge
+
+Ampharos (M)
+IVs: 3 HP / 20 Atk / 21 Def / 2 SpA / 2 SpD / 26 Spe
+Ability: Static
+Tera Type: Electric
+Level: 42
+Impish Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Electro Ball
+- Confuse Ray
+- Power Gem
+- Discharge
+
+Marill (M)
+IVs: 25 HP / 19 Atk / 2 Def / 4 SpA / 23 SpD / 10 Spe
+Ability: Huge Power
+Tera Type: Water
+Level: 21
+Mild Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Slam
+- Bounce
+- Aqua Tail
+- Play Rough
+
+Azumarill (F)
+IVs: 4 Def / 4 SpA / 20 SpD
+Ability: Thick Fat
+Tera Type: Fairy
+Level: 55
+Quiet Nature
+~=Location=40
+~=Version=SV
+.Version=50
+- Play Rough
+- Aqua Jet
+- Liquidation
+- Sing
+
+Sudowoodo (F)
+IVs: 16 HP / 8 Atk / 0 Def / 5 SpD / 2 Spe
+Ability: Rock Head
+Tera Type: Rock
+Level: 30
+Naive Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Mimic
+- Rock Tomb
+- Tearful Look
+- Sucker Punch
+
+Hoppip (F)
+IVs: 22 HP / 19 Atk / 29 Def / 5 SpA / 6 SpD / 29 Spe
+EVs: 3 HP / 1 Atk / 3 Def / 1 SpA / 5 Spe
+Ability: Leaf Guard
+Tera Type: Grass
+Level: 7
+Relaxed Nature
+Ball: Master Ball
+~=Location=70
+~=Version=SV
+.Version=50
+- Splash
+- Tackle
+- Tail Whip
+- Absorb
+
+Skiploom (M)
+IVs: 2 HP / 4 Atk / 14 Def / 12 SpA / 13 SpD / 19 Spe
+Ability: Leaf Guard
+Tera Type: Flying
+Level: 20
+Calm Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Stun Spore
+- Sleep Powder
+- Bullet Seed
+- Leech Seed
+
+Jumpluff (F)
+IVs: 20 HP / 14 Atk / 9 Def / 28 SpA / 0 SpD / 16 Spe
+Ability: Leaf Guard
+Tera Type: Grass
+Level: 46
+Calm Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Acrobatics
+- Cotton Spore
+- U-turn
+- Giga Drain
+
+Sunkern (F)
+IVs: 8 HP / 2 Atk / 29 Def / 16 SpA / 22 SpD / 24 Spe
+Ability: Solar Power
+Tera Type: Grass
+Level: 5
+Modest Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- Growth
+
+Sunflora (M)
+IVs: 24 HP / 17 Atk / 18 Def / 14 SpA / 30 SpD
+Ability: Solar Power
+Tera Type: Grass
+Level: 46
+Quiet Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Solar Beam
+- Double-Edge
+- Sunny Day
+- Leaf Storm
+
+Manchester (Wooper) (M) @ Rare Candy
+IVs: 27 HP / 18 Atk / 25 Def / 16 SpA / 13 Spe
+Ability: Water Absorb
+Tera Type: Water
+Level: 18
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=50
+- Mud Shot
+- Mist
+- Haze
+- Slam
+
+Wooper-Paldea (M)
+IVs: 2 HP / 13 Atk / 10 Def / 20 SpA / 28 SpD / 21 Spe
+Ability: Water Absorb
+Tera Type: Ground
+Level: 6
+Quirky Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tail Whip
+- Mud Shot
+- Tackle
+
+Manchester (Quagsire) (M) @ Rare Candy
+IVs: 27 HP / 18 Atk / 25 Def / 16 SpA / 13 Spe
+Ability: Water Absorb
+Tera Type: Water
+Level: 20
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=51
+- Mud Shot
+- Mist
+- Haze
+- Slam
+
+Espeon (M)
+IVs: 15 HP / 23 Def / 9 SpD
+Ability: Synchronize
+Tera Type: Psychic
+Level: 50
+Brave Nature
+~=Location=32
+~=Version=SV
+.Version=50
+- Psychic
+- Calm Mind
+- Shadow Ball
+- Morning Sun
+
+Umbreon (M)
+IVs: 15 HP / 7 Atk / 28 Def / 13 SpA / 29 SpD / 17 Spe
+Ability: Synchronize
+Tera Type: Dark
+Level: 40
+Timid Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- Assurance
+- Moonlight
+- Guard Swap
+- Dark Pulse
+
+Murkrow (F)
+IVs: 19 HP / 10 Atk / 1 Def / 28 SpA / 9 SpD / 28 Spe
+Ability: Insomnia
+Tera Type: Flying
+Level: 15
+Calm Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Astonish
+- Gust
+- Haze
+- Wing Attack
+
+Slowking (M)
+IVs: 19 Atk / 18 Def
+Ability: Own Tempo
+Tera Type: Fire
+Level: 75
+Calm Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Psychic
+- Surf
+- Yawn
+- Water Pulse
+
+Misdreavus (F)
+IVs: 3 HP / 2 Atk / 28 Def / 0 SpA / 21 SpD / 8 Spe
+Ability: Levitate
+Tera Type: Ghost
+Level: 54
+Bold Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=51
+- Payback
+- Shadow Ball
+- Perish Song
+- Power Gem
+
+Girafarig (M)
+IVs: 9 HP / 15 Atk / 7 Def / 23 SpA / 12 SpD / 0 Spe
+Ability: Inner Focus
+Tera Type: Psychic
+Level: 26
+Naughty Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Assurance
+- Stomp
+- Psybeam
+- Agility
+
+Pineco (F)
+IVs: 12 Atk / 23 Def / 12 SpA / 25 SpD / 12 Spe
+Ability: Sturdy
+Tera Type: Bug
+Level: 20
+Naughty Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Bug Bite
+- Take Down
+- Rollout
+- Struggle Bug
+
+Forretress (M)
+IVs: 23 HP / 11 Atk / 21 Def / 13 SpA / 9 SpD / 1 Spe
+Ability: Sturdy
+Tera Type: Bug
+Level: 54
+Lax Nature
+Ball: Master Ball
+~=Location=109
+~=Version=SV
+.Version=50
+- Explosion
+- Iron Defense
+- Gyro Ball
+- Double-Edge
+
+Dunsparce (F)
+IVs: 22 HP / 3 Atk / 1 Def / 2 SpA / 30 SpD / 14 Spe
+Ability: Serene Grace
+Tera Type: Normal
+Level: 21
+Sassy Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Rollout
+- Glare
+- Screech
+- Ancient Power
+
+Qwilfish (M)
+IVs: 7 HP / 19 Atk / 4 Def / 9 SpA / 25 SpD / 24 Spe
+Ability: Swift Swim
+Tera Type: Poison
+Level: 16
+Sassy Nature
+Ball: Master Ball
+~=Location=56
+~=Version=SV
+.Version=50
+- Harden
+- Water Gun
+- Fell Stinger
+- Minimize
+
+Scizor (F)
+IVs: 19 HP / 1 SpA
+Ability: Light Metal
+Tera Type: Flying
+Level: 75
+Calm Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Iron Head
+- X-Scissor
+- Bullet Punch
+- Slash
+
+Heracross (F)
+IVs: 4 HP / 22 Atk / 23 Def / 29 SpA / 2 SpD / 28 Spe
+Ability: Guts
+Tera Type: Fighting
+Level: 55
+Impish Nature
+~=Location=48
+~=Version=SV
+.Version=50
+- Throat Chop
+- Thrash
+- Swords Dance
+- Megahorn
+
+Sneasel (F)
+IVs: 15 HP / 24 Atk / 21 Def / 0 SpA / 6 SpD / 0 Spe
+Ability: Keen Eye
+Tera Type: Dark
+Level: 36
+Serious Nature
+~=Location=38
+~=Version=SV
+.Version=50
+- Metal Claw
+- Icy Wind
+- Fury Swipes
+- Hone Claws
+
+Teddiursa (F)
+IVs: 19 HP / 5 Atk / 18 Def / 19 SpA / 2 SpD / 13 Spe
+Ability: Quick Feet
+Tera Type: Normal
+Level: 51
+Jolly Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Charm
+- Rest
+- Snore
+- Thrash
+
+Ursaring (M)
+IVs: 7 HP / 5 Atk / 29 Def / 13 SpA / 12 SpD / 4 Spe
+Ability: Guts
+Tera Type: Normal
+Level: 35
+Quirky Nature
+~=Location=28
+~=Version=SV
+.Version=50
+- Slash
+- Play Nice
+- Play Rough
+- Scary Face
+
+Delibird (F)
+IVs: 30 HP / 7 Atk / 8 Def / 16 SpA / 25 SpD / 3 Spe
+Ability: Vital Spirit
+Tera Type: Ice
+Level: 38
+Rash Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Present
+- Drill Peck
+
+Houndour (M)
+IVs: 21 HP / 18 Atk / 6 SpA / 2 Spe
+Ability: Early Bird
+Tera Type: Normal
+Level: 20
+Relaxed Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Bite
+- Ember
+- Beat Up
+- Facade
+
+Houndoom (M)
+IVs: 12 HP / 22 Atk / 22 Def / 16 SpA / 9 SpD / 24 Spe
+Ability: Flash Fire
+Tera Type: Fire
+Level: 51
+Adamant Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Torment
+- Comeuppance
+- Foul Play
+- Flamethrower
+
+Phanpy (M)
+IVs: 23 HP / 30 Atk / 3 Def / 1 SpA / 2 SpD / 0 Spe
+Ability: Pickup
+Tera Type: Ground
+Level: 16
+Modest Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Defense Curl
+- Flail
+- Rollout
+- Bulldoze
+
+Donphan (F)
+IVs: 21 HP / 1 Atk / 13 Def / 22 SpA / 6 SpD / 5 Spe
+Ability: Sturdy
+Tera Type: Ground
+Level: 26
+Sassy Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Rollout
+- Assurance
+- Knock Off
+- Slam
+
+Stantler (M)
+IVs: 21 HP / 14 SpA / 10 SpD / 19 Spe
+Ability: Frisk
+Tera Type: Dark
+Level: 35
+Impish Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Stomp
+- Psyshock
+- Bite
+- Leer
+
+Blissey (F)
+IVs: 13 HP / 14 Atk / 24 Def / 21 SpA / 9 SpD / 8 Spe
+Ability: Natural Cure
+Tera Type: Normal
+Level: 45
+Sassy Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Helping Hand
+- Light Screen
+- Double-Edge
+- Soft-Boiled
+
+Larvitar (M)
+IVs: 19 HP / 7 Atk / 2 Def / 21 SpA / 30 SpD / 26 Spe
+Ability: Guts
+Tera Type: Rock
+Level: 24
+Hardy Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Rock Slide
+- Stomping Tantrum
+- Screech
+- Smack Down
+
+Pupitar (F)
+IVs: 14 HP / 15 Atk / 29 Def / 16 SpA / 16 SpD / 8 Spe
+Ability: Shed Skin
+Tera Type: Rock
+Level: 43
+Gentle Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- Crunch
+- Earthquake
+- Stone Edge
+- Thrash
+
+Tyranitar (F)
+IVs: 6 HP / 1 Atk / 12 Def / 14 SpA / 27 SpD / 23 Spe
+Ability: Sand Stream
+Tera Type: Rock
+Level: 55
+Lonely Nature
+~=Location=32
+~=Version=SV
+.Version=50
+- Crunch
+- Earthquake
+- Stone Edge
+- Thrash
+
+Wingull (M)
+IVs: 13 HP / 14 Atk / 25 Def / 19 SpA / 25 SpD / 26 Spe
+Ability: Hydration
+Tera Type: Flying
+Level: 4
+Jolly Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Growl
+- Water Gun
+
+Pelipper (F)
+IVs: 23 HP / 8 Atk / 14 Def / 3 SpA / 16 SpD / 7 Spe
+Ability: Keen Eye
+Tera Type: Flying
+Level: 43
+Careful Nature
+Ball: Master Ball
+~=Location=62
+~=Version=SV
+.Version=50
+- Spit Up
+- Swallow
+- Fling
+- Mist
+
+Ralts (F)
+IVs: 15 HP / 26 Atk / 16 Def / 17 SpA / 19 SpD / 21 Spe
+Ability: Synchronize
+Tera Type: Psychic
+Level: 6
+Naughty Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Growl
+- Disarming Voice
+- Double Team
+- Confusion
+
+Kirlia (F)
+IVs: 0 HP / 9 Atk / 16 Def / 26 SpA / 2 SpD / 30 Spe
+Ability: Trace
+Tera Type: Fairy
+Level: 29
+Mild Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Teleport
+- Psybeam
+- Life Dew
+- Charm
+
+Gardevoir (F)
+IVs: 30 HP / 22 Atk / 3 Def / 10 SpA / 13 SpD / 1 Spe
+Ability: Trace
+Tera Type: Fairy
+Level: 40
+Gentle Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Psybeam
+- Life Dew
+- Wish
+- Calm Mind
+
+Surskit (M) @ Honey
+IVs: 29 HP / 12 Atk / 15 Def / 13 SpA / 21 SpD / 29 Spe
+Ability: Swift Swim
+Tera Type: Bug
+Level: 20
+Brave Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Quick Attack
+- Sweet Scent
+- Soak
+- Bubble Beam
+
+Masquerain (M)
+IVs: 14 Atk / 22 Def / 16 SpA / 19 SpD / 8 Spe
+Ability: Intimidate
+Tera Type: Flying
+Level: 23
+Naive Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Soak
+- Gust
+- Scary Face
+- Air Cutter
+
+Shroomish (M)
+IVs: 10 HP / 25 Atk / 26 Def / 24 SpA / 3 SpD / 27 Spe
+Ability: Effect Spore
+Tera Type: Grass
+Level: 29
+Naive Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Headbutt
+- Poison Powder
+- Giga Drain
+- Growth
+
+Breloom (F)
+IVs: 22 HP / 25 Atk / 23 Def / 28 SpA / 17 SpD / 4 Spe
+Ability: Poison Heal
+Tera Type: Grass
+Level: 32
+Mild Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Headbutt
+- Feint
+- Counter
+- Force Palm
+
+Slakoth (M)
+IVs: 21 HP / 22 Def / 16 SpA / 27 SpD / 2 Spe
+Ability: Truant
+Tera Type: Electric
+Level: 20
+Docile Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Headbutt
+- Encore
+- Yawn
+- Play Rough
+
+Vigoroth (F)
+IVs: 6 HP / 25 Atk / 18 Def / 0 SpA / 7 SpD / 20 Spe
+Ability: Vital Spirit
+Tera Type: Normal
+Level: 30
+Jolly Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Fury Swipes
+- Endure
+- Slash
+- Throat Chop
+
+Slaking (M)
+IVs: 17 HP / 30 SpA / 2 Spe
+Ability: Truant
+Tera Type: Ghost
+Level: 55
+Adamant Nature
+.MetLocation=48
+~=Version=SV
+.Version=50
+- Shadow Claw
+- Sucker Punch
+- Giga Impact
+- Yawn
+
+Makuhita (M)
+IVs: 0 HP / 2 Atk / 28 Def / 28 SpA / 0 SpD / 5 Spe
+Ability: Thick Fat
+Tera Type: Fighting
+Level: 18
+Modest Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Arm Thrust
+- Fake Out
+- Force Palm
+- Whirlwind
+
+Hariyama (M)
+IVs: 6 HP / 7 Atk / 14 Def / 25 SpA / 15 SpD / 20 Spe
+Ability: Thick Fat
+Tera Type: Fighting
+Level: 27
+Quirky Nature
+~=Location=32
+~=Version=SV
+.Version=50
+- Whirlwind
+- Knock Off
+- Bulk Up
+- Belly Drum
+
+Azurill (F)
+IVs: 26 HP / 4 Atk / 21 SpA / 25 SpD / 14 Spe
+Ability: Huge Power
+Tera Type: Normal
+Level: 7
+Docile Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Water Gun
+- Splash
+- Helping Hand
+- Bubble Beam
+
+Sableye (F)
+IVs: 8 HP / 30 Atk / 26 Def / 21 SpA / 15 SpD / 15 Spe
+Ability: Keen Eye
+Tera Type: Dark
+Level: 16
+Bold Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Astonish
+- Shadow Sneak
+- Fake Out
+- Disable
+
+Meditite (M)
+IVs: 16 HP / 25 Atk / 29 Def / 13 SpA / 30 SpD / 3 Spe
+Ability: Pure Power
+Tera Type: Psychic
+Level: 42
+Docile Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- Acupressure
+- Power Trick
+- Reversal
+- Recover
+
+Medicham (M)
+IVs: 17 HP / 27 Atk / 1 Def / 5 SpA / 0 SpD / 18 Spe
+Ability: Pure Power
+Tera Type: Fighting
+Level: 43
+Impish Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- High Jump Kick
+- Psych Up
+- Acupressure
+- Power Trick
+
+Gulpin (F)
+IVs: 2 HP / 9 Atk / 11 Def / 12 SpA / 9 SpD / 10 Spe
+Ability: Sticky Hold
+Tera Type: Poison
+Level: 12
+Lonely Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=51
+- Yawn
+- Poison Gas
+- Sludge
+- Amnesia
+
+Swalot (M)
+IVs: 27 HP / 7 Atk / 6 Def / 27 SpA / 29 SpD / 9 Spe
+Ability: Sticky Hold
+Tera Type: Poison
+Level: 52
+Careful Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=51
+- Swallow
+- Sludge Bomb
+- Gastro Acid
+- Belch
+
+Numel (F)
+IVs: 12 HP / 17 Atk / 6 Def / 9 SpA / 26 SpD / 23 Spe
+Ability: Oblivious
+Tera Type: Fire
+Level: 18
+Docile Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Ember
+- Focus Energy
+- Bulldoze
+- Incinerate
+
+Camerupt (M)
+IVs: 17 HP / 3 Atk / 22 Def / 27 SpA / 28 SpD / 10 Spe
+Ability: Magma Armor
+Tera Type: Ground
+Level: 50
+Lonely Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Curse
+- Take Down
+- Yawn
+- Earthquake
+
+Torkoal (F)
+IVs: 15 HP / 19 Atk / 24 Def / 19 SpA / 26 SpD / 11 Spe
+Ability: Drought
+Tera Type: Fire
+Level: 35
+Bashful Nature
+~=Location=69
+~=Version=SV
+.Version=50
+- Flame Wheel
+- Protect
+- Lava Plume
+- Body Slam
+
+Spoink (M)
+IVs: 9 HP / 12 Def / 13 SpA / 22 SpD / 26 Spe
+Ability: Thick Fat
+Tera Type: Psychic
+Level: 10
+Impish Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Splash
+- Confusion
+- Growl
+
+Grumpig (M)
+IVs: 8 HP / 2 Atk / 22 Def / 7 SpA / 14 SpD / 10 Spe
+Ability: Thick Fat
+Tera Type: Psychic
+Level: 39
+Hasty Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Zen Headbutt
+- Power Gem
+- Rest
+- Snore
+
+Cacnea (M)
+IVs: 0 HP / 0 Atk / 12 Def / 28 SpA / 27 SpD / 24 Spe
+Ability: Sand Veil
+Tera Type: Grass
+Level: 22
+Bashful Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Sand Attack
+- Bullet Seed
+- Power Trip
+- Ingrain
+
+Cacturne (F)
+IVs: 11 HP / 25 Atk / 21 Def / 14 SpA / 21 SpD / 8 Spe
+Ability: Sand Veil
+Tera Type: Grass
+Level: 35
+Bashful Nature
+~=Location=24
+~=Version=SV
+.Version=50
+- Ingrain
+- Payback
+- Spikes
+- Sucker Punch
+
+Swablu (M)
+IVs: 11 HP / 20 Atk / 6 Def / 30 SpA / 8 SpD / 30 Spe
+Ability: Natural Cure
+Tera Type: Normal
+Level: 40
+Lax Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Sing
+- Cotton Guard
+- Take Down
+- Moonblast
+
+Altaria (M)
+IVs: 19 HP / 21 Atk / 10 Def / 6 SpA / 8 SpD / 3 Spe
+Ability: Natural Cure
+Tera Type: Flying
+Level: 41
+Rash Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Safeguard
+- Sing
+- Cotton Guard
+- Take Down
+
+Zangoose (F)
+IVs: 29 HP / 18 Atk / 11 Def / 4 SpA / 28 SpD / 13 Spe
+Ability: Immunity
+Tera Type: Normal
+Level: 22
+Quirky Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Metal Claw
+- Hone Claws
+- Slash
+- Power Trip
+
+Seviper (M)
+IVs: 20 HP / 27 Atk / 0 Def / 3 SpA / 29 SpD / 16 Spe
+Ability: Shed Skin
+Tera Type: Poison
+Level: 20
+Lax Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Poison Tail
+- Feint
+- Screech
+- Glare
+
+Barboach (M)
+IVs: 7 HP / 19 Atk / 19 Def / 22 SpD / 7 Spe
+Ability: Oblivious
+Tera Type: Ground
+Level: 12
+Serious Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Water Pulse
+- Mud Shot
+- Take Down
+- Spark
+
+Whiscash (M)
+IVs: 3 HP / 15 Atk / 10 Def / 26 SpA / 2 SpD / 12 Spe
+Ability: Anticipation
+Tera Type: Water
+Level: 30
+Impish Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SV
+.Version=50
+- Mud-Slap
+- Thrash
+- Aqua Tail
+- Water Pulse
+
+Shuppet (F)
+IVs: 6 HP / 3 Atk / 14 Def / 15 SpA / 8 SpD / 18 Spe
+Ability: Insomnia
+Tera Type: Ghost
+Level: 16
+Naive Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Screech
+- Night Shade
+- Spite
+- Will-O-Wisp
+
+Banette (F)
+IVs: 18 HP / 0 Def / 3 SpA / 29 SpD / 30 Spe
+Ability: Insomnia
+Tera Type: Ghost
+Level: 42
+Gentle Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Curse
+- Shadow Ball
+- Role Play
+- Sucker Punch
+
+Tropius (F)
+IVs: 18 HP / 5 Atk / 26 Def / 2 SpA / 25 SpD / 0 Spe
+Ability: Solar Power
+Tera Type: Grass
+Level: 30
+Brave Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Stomp
+- Magical Leaf
+- Whirlwind
+- Wide Guard
+
+Snorunt (F)
+IVs: 27 HP / 15 Atk / 25 Def / 18 SpA / 16 SpD / 25 Spe
+Ability: Ice Body
+Tera Type: Ice
+Level: 36
+Naughty Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Protect
+- Icy Wind
+- Frost Breath
+- Bite
+
+Glalie (F)
+IVs: 20 HP / 27 Atk / 3 Def / 24 SpA / 14 SpD / 12 Spe
+Ability: Inner Focus
+Tera Type: Ice
+Level: 43
+Adamant Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Icy Wind
+- Frost Breath
+- Bite
+- Ice Fang
+
+Luvdisc (F)
+IVs: 16 HP / 15 Atk / 7 Def / 16 SpA / 8 SpD / 22 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 23
+Impish Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Wish
+- Water Pulse
+- Attract
+- Draining Kiss
+
+Bagon (M)
+IVs: 8 HP / 14 Atk / 13 Def / 1 SpA / 24 SpD / 11 Spe
+Ability: Rock Head
+Tera Type: Dragon
+Level: 23
+Lax Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=51
+- Bite
+- Dragon Breath
+- Headbutt
+- Scary Face
+
+Shelgon (M)
+IVs: 17 HP / 24 Atk / 24 Def / 6 SpA / 15 Spe
+Ability: Rock Head
+Tera Type: Dragon
+Level: 42
+Rash Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=51
+- Scary Face
+- Crunch
+- Dragon Claw
+- Zen Headbutt
+
+Salamence (F)
+IVs: 23 HP / 11 Atk / 27 Def / 3 SpA / 15 SpD / 10 Spe
+Ability: Intimidate
+Tera Type: Dragon
+Level: 50
+Jolly Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=51
+- Fly
+- Crunch
+- Dragon Claw
+- Zen Headbutt
+
+Starly (M)
+IVs: 13 HP / 21 Atk / 7 Def / 4 SpA / 8 SpD / 7 Spe
+Ability: Keen Eye
+Tera Type: Flying
+Level: 9
+Brave Nature
+Ball: Master Ball
+~=Location=12
+~=Version=SV
+.Version=50
+- Tackle
+- Growl
+- Quick Attack
+- Wing Attack
+
+Staravia (M)
+IVs: 16 HP / 16 Atk / 25 Def / 6 SpA / 26 SpD / 1 Spe
+Ability: Intimidate
+Tera Type: Normal
+Level: 26
+Bold Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Wing Attack
+- Double Team
+- Endeavor
+- Whirlwind
+
+Staraptor (M)
+IVs: 18 HP / 27 Atk / 26 Def / 29 SpA / 14 SpD / 11 Spe
+Ability: Intimidate
+Tera Type: Normal
+Level: 50
+Timid Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Aerial Ace
+- Take Down
+- Agility
+- Brave Bird
+
+Kricketot (F)
+IVs: 29 HP / 5 Atk / 24 Def / 3 SpA / 27 SpD / 5 Spe
+Ability: Shed Skin
+Tera Type: Bug
+Level: 8
+Docile Nature
+Ball: Master Ball
+~=Location=12
+~=Version=SV
+.Version=50
+- Tackle
+- Growl
+- Struggle Bug
+
+Kricketune (M)
+IVs: 13 HP / 18 Atk / 19 Def / 30 SpA / 0 SpD / 13 Spe
+Ability: Swarm
+Tera Type: Bug
+Level: 49
+Hardy Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Taunt
+- Night Slash
+- Sticky Web
+- Bug Buzz
+
+Shinx (F)
+IVs: 22 HP / 12 Atk / 16 Def / 22 SpA / 13 SpD / 5 Spe
+Ability: Rivalry
+Tera Type: Electric
+Level: 7
+Naive Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Tackle
+- Leer
+- Thunder Shock
+
+Luxio (M)
+IVs: 22 HP / 3 Atk / 5 Def / 22 SpA / 13 SpD / 22 Spe
+Ability: Rivalry
+Tera Type: Electric
+Level: 20
+Serious Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Thunder Shock
+- Charge
+- Bite
+- Spark
+
+Luxray (F)
+IVs: 19 HP / 18 Atk / 28 Def / 14 SpA / 22 SpD / 17 Spe
+Ability: Intimidate
+Tera Type: Electric
+Level: 51
+Quirky Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Roar
+- Volt Switch
+- Scary Face
+- Thunder Wave
+
+Combee (M)
+IVs: 14 HP / 23 Atk / 1 Def / 29 SpD / 27 Spe
+Ability: Honey Gather
+Tera Type: Ground
+Level: 12
+Timid Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Sweet Scent
+- Struggle Bug
+- Gust
+- Bug Bite
+
+Vespiquen (F)
+IVs: 24 HP / 23 Atk / 25 Def / 22 SpA / 8 SpD / 25 Spe
+Ability: Pressure
+Tera Type: Bug
+Level: 25
+Gentle Nature
+~=Location=12
+~=Version=SV
+.Version=50
+- Fell Stinger
+- Fury Swipes
+- Swagger
+- Roost
+
+Pachirisu (F)
+IVs: 30 HP / 10 Atk / 11 Def / 27 SpA / 23 SpD / 6 Spe
+Ability: Run Away
+Tera Type: Rock
+Level: 35
+Hardy Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Spark
+- Quick Attack
+- Sweet Kiss
+- Seed Bomb
+
+Buizel (M)
+IVs: 22 HP / 18 Atk / 8 SpA / 9 Spe
+Ability: Swift Swim
+Tera Type: Ice
+Level: 21
+Careful Nature
+~=Location=22
+~=Version=SV
+.Version=50
+- Icy Wind
+- Water Pulse
+- Swift
+- Bite
+
+Floatzel (M)
+IVs: 4 HP / 10 Atk / 10 Def / 4 SpA / 18 SpD / 2 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 50
+Timid Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Double Hit
+- Whirlpool
+- Liquidation
+- Aqua Tail
+
+Shellos (F)
+IVs: 1 Def
+Ability: Storm Drain
+Tera Type: Water
+Level: 1
+Quiet Nature
+~=Version=SV
+.Version=50
+- Water Gun
+- Mud-Slap
+
+Shellos-East (F)
+IVs: 13 HP / 6 Atk / 8 Def / 14 SpA / 19 SpD / 25 Spe
+Ability: Storm Drain
+Tera Type: Water
+Level: 21
+Adamant Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Harden
+- Recover
+- Water Pulse
+- Ancient Power
+
+Gastrodon (M)
+IVs: 11 HP
+Ability: Storm Drain
+Tera Type: Water
+Level: 30
+Lax Nature
+~=Version=SV
+.Version=50
+- Water Pulse
+- Mud-Slap
+- Ancient Power
+- Body Slam
+
+Gastrodon-East (M)
+IVs: 20 HP / 26 Atk / 13 Def / 14 SpA / 12 SpD / 7 Spe
+Ability: Sticky Hold
+Tera Type: Ground
+Level: 50
+Sassy Nature
+~=Location=44
+~=Version=SV
+.Version=50
+- Ancient Power
+- Body Slam
+- Muddy Water
+- Rain Dance
+
+Drifloon (F)
+IVs: 23 HP / 20 Atk / 8 Def / 15 SpA / 29 SpD / 22 Spe
+Ability: Aftermath
+Tera Type: Flying
+Level: 14
+Jolly Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Astonish
+- Gust
+- Focus Energy
+- Payback
+
+Drifblim (M)
+IVs: 12 HP / 10 Atk / 26 Def / 15 SpA / 15 SpD / 29 Spe
+Ability: Unburden
+Tera Type: Ghost
+Level: 43
+Naughty Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Stockpile
+- Self-Destruct
+- Destiny Bond
+- Baton Pass
+
+Mismagius (F)
+IVs: 0 HP / 4 Atk / 0 Def / 25 SpA / 28 SpD / 23 Spe
+Ability: Levitate
+Tera Type: Ghost
+Level: 51
+Calm Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=51
+- Magical Leaf
+- Power Gem
+- Phantom Force
+- Mystical Fire
+
+Honchkrow (M)
+IVs: 25 HP / 11 Atk / 22 Def / 17 SpA / 28 SpD / 8 Spe
+Ability: Insomnia
+Tera Type: Flying
+Level: 40
+Brave Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Night Slash
+- Quash
+- Swagger
+- Nasty Plot
+
+Stunky (F)
+IVs: 9 HP / 14 Atk / 8 Def / 17 SpA / 2 SpD / 5 Spe
+Ability: Aftermath
+Tera Type: Poison
+Level: 26
+Impish Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Focus Energy
+- Bite
+- Venoshock
+- Screech
+
+Skuntank (F)
+IVs: 5 HP / 19 Atk / 14 Def / 2 SpA / 20 SpD / 27 Spe
+Ability: Stench
+Tera Type: Dark
+Level: 50
+Lonely Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Memento
+- Night Slash
+- Belch
+- Explosion
+
+Bronzor
+IVs: 5 HP / 21 Atk / 18 Def / 13 SpA / 13 Spe
+Ability: Levitate
+Tera Type: Steel
+Level: 21
+Docile Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Payback
+- Imprison
+- Gyro Ball
+- Hypnosis
+
+Bronzong
+IVs: 28 HP / 12 Atk / 0 SpA / 16 SpD / 2 Spe
+Ability: Heatproof
+Tera Type: Psychic
+Level: 40
+Relaxed Nature
+~=Location=16
+~=Version=SV
+.Version=50
+- Safeguard
+- Extrasensory
+- Heavy Slam
+- Iron Defense
+
+Bonsly (M)
+IVs: 21 HP / 6 Atk / 3 Def / 15 SpA / 13 SpD / 6 Spe
+Ability: Sturdy
+Tera Type: Rock
+Level: 8
+Quiet Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Fake Tears
+- Copycat
+- Flail
+- Rock Throw
+
+Happiny (F)
+IVs: 25 HP / 17 Atk / 12 Def / 23 SpA / 22 SpD / 12 Spe
+Ability: Serene Grace
+Tera Type: Normal
+Level: 6
+Serious Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Pound
+- Copycat
+- Defense Curl
+
+Spiritomb (M)
+IVs: 23 HP / 13 Atk / 11 Def / 14 SpA / 17 Spe
+Ability: Pressure
+Tera Type: Dark
+Level: 49
+Adamant Nature
+~=Location=38
+~=Version=SV
+.Version=50
+- Memento
+- Sucker Punch
+- Curse
+- Shadow Ball
+
+Gible (M)
+IVs: 15 HP / 21 Atk / 9 Def / 28 SpA / 30 SpD / 20 Spe
+Ability: Sand Veil
+Tera Type: Dragon
+Level: 16
+Lonely Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Tackle
+- Sand Tomb
+- Sand Attack
+- Dragon Breath
+
+Gabite (M)
+IVs: 16 HP / 8 Atk / 17 Def / 3 SpA / 29 SpD / 16 Spe
+Ability: Sand Veil
+Tera Type: Dragon
+Level: 30
+Hardy Nature
+~=Location=26
+~=Version=SV
+.Version=50
+- Dragon Breath
+- Sand Tomb
+- Bulldoze
+- Bite
+
+Garchomp (F)
+IVs: 12 Def / 0 SpA / 30 Spe
+Ability: Sand Veil
+Tera Type: Water
+Level: 65
+Relaxed Nature
+~=Location=26
+~=Version=SV
+.Version=50
+- Liquidation
+- Earthquake
+- Outrage
+- Rock Tomb
+
+Riolu (M)
+IVs: 24 HP / 17 Atk / 11 Def / 0 SpA / 25 SpD / 30 Spe
+Ability: Inner Focus
+Tera Type: Fighting
+Level: 16
+Hasty Nature
+~=Location=14
+~=Version=SV
+.Version=50
+- Feint
+- Metal Claw
+- Counter
+- Work Up
+
+Lucario (M)
+IVs: 21 HP / 22 Atk / 24 Spe
+Ability: Inner Focus
+Tera Type: Ice
+Level: 75
+Careful Nature
+.MetLocation=69
+~=Version=SV
+.Version=50
+- Ice Punch
+- Close Combat
+- Meteor Mash
+- Bullet Punch
+
+Hippopotas (F)
+IVs: 27 HP / 16 Atk / 30 Def / 16 SpA / 29 Spe
+Ability: Sand Stream
+Tera Type: Ground
+Level: 26
+Quiet Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Sand Tomb
+- Dig
+- Crunch
+- Sandstorm
+
+Hippowdon (M)
+IVs: 21 Atk / 4 SpA
+Ability: Sand Stream
+Tera Type: Ghost
+Level: 75
+Naughty Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Earthquake
+- Yawn
+- Rock Slide
+- Body Slam
+
+Croagunk (F)
+IVs: 12 HP / 14 Atk / 19 Def / 24 SpD / 0 Spe
+Ability: Anticipation
+Tera Type: Fighting
+Level: 53
+Relaxed Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Toxic
+- Nasty Plot
+- Sludge Bomb
+- Belch
+
+Toxicroak (M)
+IVs: 1 HP / 5 Atk / 25 Def / 9 SpA / 28 SpD / 10 Spe
+Ability: Anticipation
+Tera Type: Fighting
+Level: 54
+Lonely Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Toxic
+- Nasty Plot
+- Sludge Bomb
+- Belch
+
+Finneon (M)
+IVs: 30 HP / 13 Atk / 19 Def / 0 SpA / 12 SpD / 8 Spe
+Ability: Storm Drain
+Tera Type: Water
+Level: 43
+Timid Nature
+Ball: Master Ball
+~=Location=62
+~=Version=SV
+.Version=50
+- Safeguard
+- Aqua Ring
+- Whirlpool
+- U-turn
+
+Lumineon (F)
+IVs: 11 HP / 2 Atk / 12 Def / 9 SpA / 8 SpD / 10 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 46
+Naive Nature
+Ball: Master Ball
+~=Location=62
+~=Version=SV
+.Version=50
+- Attract
+- Safeguard
+- Aqua Ring
+- Whirlpool
+
+Snover (F)
+IVs: 3 HP / 28 Atk / 29 Def / 26 SpA / 17 SpD / 2 Spe
+Ability: Snow Warning
+Tera Type: Ice
+Level: 36
+Impish Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Razor Leaf
+- Icy Wind
+- Swagger
+- Ingrain
+
+Abomasnow (M)
+IVs: 23 HP / 26 Atk / 10 Def / 25 SpA / 12 Spe
+Ability: Snow Warning
+Tera Type: Ice
+Level: 40
+Careful Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Razor Leaf
+- Icy Wind
+- Swagger
+- Ingrain
+
+Weavile (M)
+IVs: 25 HP / 10 Atk / 17 Def / 28 SpA / 20 SpD / 14 Spe
+Ability: Pressure
+Tera Type: Dark
+Level: 40
+Bashful Nature
+~=Location=38
+~=Version=SV
+.Version=50
+- Metal Claw
+- Icy Wind
+- Fury Swipes
+- Hone Claws
+
+Magnezone
+IVs: 11 HP / 19 Atk / 19 Def / 12 SpA / 13 SpD / 10 Spe
+Ability: Sturdy
+Tera Type: Steel
+Level: 38
+Serious Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Spark
+- Screech
+- Magnet Rise
+- Flash Cannon
+
+Leafeon (M)
+IVs: 20 HP / 10 Atk / 4 Def / 23 SpA / 18 SpD / 22 Spe
+Ability: Leaf Guard
+Tera Type: Grass
+Level: 55
+Sassy Nature
+Ball: Master Ball
+~=Location=109
+~=Version=SV
+.Version=50
+- Giga Drain
+- Swords Dance
+- Leaf Blade
+- Last Resort
+
+Glaceon (M)
+IVs: 28 HP / 16 Atk / 26 Def / 13 SpA / 21 SpD / 20 Spe
+Ability: Snow Cloak
+Tera Type: Ice
+Level: 53
+Hasty Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Snowscape
+- Freeze-Dry
+- Mirror Coat
+- Blizzard
+
+Gallade (M)
+IVs: 7 HP / 8 Atk / 25 Def / 26 SpA / 20 SpD / 1 Spe
+Ability: Steadfast
+Tera Type: Psychic
+Level: 28
+Mild Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Slash
+- Psybeam
+- Life Dew
+- Charm
+
+Froslass (F)
+IVs: 3 HP / 13 Atk / 17 Def / 8 SpA / 4 SpD / 29 Spe
+Ability: Snow Cloak
+Tera Type: Ghost
+Level: 40
+Naive Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Icy Wind
+- Frost Breath
+- Confuse Ray
+- Snowscape
+
+Rotom
+IVs: 3 HP / 24 Atk / 24 SpA / 19 SpD / 2 Spe
+Ability: Levitate
+Tera Type: Electric
+Level: 20
+Modest Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Thunder Shock
+- Confuse Ray
+- Charge
+- Electro Ball
+
+Rotom-Heat
+IVs: 0 HP / 22 Atk / 10 Def / 11 SpA / 29 SpD / 18 Spe
+Ability: Levitate
+Tera Type: Electric
+Level: 26
+Serious Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Confuse Ray
+- Overheat
+- Electro Ball
+- Thunder Wave
+
+Rotom-Wash
+IVs: 8 HP / 9 Atk / 26 Def / 28 SpA / 10 SpD / 6 Spe
+Ability: Levitate
+Tera Type: Ghost
+Level: 29
+Lax Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Confuse Ray
+- Hydro Pump
+- Electro Ball
+- Thunder Wave
+
+Rotom-Frost
+IVs: 23 HP / 21 Atk / 26 Def / 22 SpA / 17 Spe
+Ability: Levitate
+Tera Type: Electric
+Level: 29
+Modest Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Confuse Ray
+- Blizzard
+- Electro Ball
+- Thunder Wave
+
+Rotom-Fan
+IVs: 5 HP / 28 Atk / 2 Def / 6 SpA / 11 SpD / 13 Spe
+Ability: Levitate
+Tera Type: Electric
+Level: 27
+Modest Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Confuse Ray
+- Air Slash
+- Electro Ball
+- Thunder Wave
+
+Rotom-Mow
+IVs: 2 SpA / 3 SpD / 20 Spe
+Ability: Levitate
+Tera Type: Steel
+Level: 45
+Gentle Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Discharge
+- Leaf Storm
+- Uproar
+- Thunder Wave
+
+Petilil (F)
+IVs: 28 HP / 1 Atk / 30 Def / 24 SpD / 10 Spe
+Ability: Own Tempo
+Tera Type: Steel
+Level: 12
+Naive Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Growth
+- Sleep Powder
+- Absorb
+- Mega Drain
+
+Lilligant (F)
+IVs: 18 HP / 29 Atk / 1 Def / 23 SpA / 5 SpD / 13 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 35
+Lax Nature
+~=Location=28
+~=Version=SV
+.Version=50
+- Mega Drain
+- After You
+- Absorb
+- Magical Leaf
+
+Basculin (F)
+IVs: 29 HP / 3 Atk / 7 Def / 13 SpA / 26 SpD / 26 Spe
+Ability: Adaptability
+Tera Type: Water
+Level: 35
+Hardy Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Scary Face
+- Headbutt
+- Soak
+- Crunch
+
+Basculin-Blue-Striped (F)
+IVs: 14 HP / 13 Atk / 9 Def / 23 SpA / 6 SpD / 2 Spe
+Ability: Adaptability
+Tera Type: Water
+Level: 40
+Quiet Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Soak
+- Crunch
+- Take Down
+- Final Gambit
+
+Sandile (M)
+IVs: 12 HP / 11 Atk / 2 Def / 13 SpD / 25 Spe
+Ability: Moxie
+Tera Type: Ground
+Level: 20
+Sassy Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Bulldoze
+- Bite
+- Sand Attack
+- Leer
+
+Krokorok (M)
+IVs: 23 HP / 21 Atk / 29 SpA / 18 SpD / 6 Spe
+Ability: Moxie
+Tera Type: Dark
+Level: 29
+Gentle Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Scary Face
+- Crunch
+- Torment
+- Dig
+
+Krookodile (F)
+IVs: 6 HP / 13 Def / 9 SpA / 7 SpD / 1 Spe
+Ability: Moxie
+Tera Type: Dark
+Level: 40
+Calm Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Crunch
+- Foul Play
+- Dig
+- Swagger
+
+Zorua (M)
+IVs: 15 HP / 4 Atk / 2 Def / 12 SpA / 17 SpD / 19 Spe
+Ability: Illusion
+Tera Type: Dark
+Level: 28
+Relaxed Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Scary Face
+- Taunt
+- Knock Off
+- Fake Tears
+
+Zoroark (M)
+IVs: 2 HP / 11 Atk / 11 Def / 13 SpA / 19 SpD / 16 Spe
+Ability: Illusion
+Tera Type: Dark
+Level: 54
+Gentle Nature
+Ball: Master Ball
+~=Location=109
+~=Version=SV
+.Version=50
+- Agility
+- Imprison
+- Night Daze
+- Nasty Plot
+
+Gothita (F)
+IVs: 16 HP / 25 Atk / 17 Def / 1 SpA / 0 SpD / 7 Spe
+Ability: Frisk
+Tera Type: Psychic
+Level: 25
+Sassy Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Psybeam
+- Charm
+- Psyshock
+- Hypnosis
+
+Gothorita (F)
+IVs: 4 HP / 21 Atk / 18 Def / 22 SpA / 29 SpD / 26 Spe
+Ability: Frisk
+Tera Type: Psychic
+Level: 41
+Relaxed Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Psyshock
+- Hypnosis
+- Fake Tears
+- Psych Up
+
+Gothitelle (F)
+IVs: 9 HP / 27 Atk / 5 Def / 3 SpA / 6 SpD / 15 Spe
+Ability: Frisk
+Tera Type: Psychic
+Level: 41
+Naive Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Psyshock
+- Hypnosis
+- Fake Tears
+- Psych Up
+
+Deerling (F)
+IVs: 7 HP / 0 Atk / 5 Def / 16 SpA / 24 SpD / 27 Spe
+Ability: Sap Sipper
+Tera Type: Normal
+Level: 7
+Careful Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- Growl
+- Sand Attack
+
+Deerling-Summer (F)
+IVs: 23 HP / 12 Atk / 19 Def / 26 SpA / 19 SpD
+Ability: Sap Sipper
+Tera Type: Grass
+Level: 23
+Adamant Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Double Kick
+- Leech Seed
+- Bullet Seed
+- Take Down
+
+Deerling-Autumn (M)
+IVs: 11 HP / 28 Atk / 6 Def / 23 SpA / 28 SpD / 7 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 28
+Quiet Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Bullet Seed
+- Take Down
+- Zen Headbutt
+- Energy Ball
+
+Deerling-Winter (F)
+IVs: 10 HP / 9 Def / 0 SpA / 24 SpD / 30 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 40
+Jolly Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Zen Headbutt
+- Energy Ball
+- Charm
+- Double-Edge
+
+Sawsbuck (M)
+IVs: 15 HP / 21 Atk / 19 Def / 26 SpA / 15 SpD / 27 Spe
+Ability: Sap Sipper
+Tera Type: Grass
+Level: 34
+Hardy Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Zen Headbutt
+- Energy Ball
+- Horn Leech
+- Double Kick
+
+Sawsbuck-Summer (M)
+IVs: 30 HP / 15 Atk / 20 Def / 14 SpA / 20 SpD / 6 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 34
+Timid Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Double Kick
+- Zen Headbutt
+- Horn Leech
+- Take Down
+
+Sawsbuck-Autumn (M)
+IVs: 11 HP / 19 Atk / 30 Def / 13 SpA / 25 SpD / 28 Spe
+Ability: Sap Sipper
+Tera Type: Grass
+Level: 34
+Lonely Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Bullet Seed
+- Take Down
+- Zen Headbutt
+- Energy Ball
+
+Sawsbuck-Winter (F)
+IVs: 29 HP / 17 Atk / 9 Def / 12 SpA / 19 SpD / 19 Spe
+Ability: Sap Sipper
+Tera Type: Normal
+Level: 39
+Naive Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Take Down
+- Zen Headbutt
+- Energy Ball
+- Charm
+
+Foongus (M)
+IVs: 11 HP / 15 Atk / 3 Def / 4 SpA / 22 SpD / 5 Spe
+Ability: Effect Spore
+Tera Type: Grass
+Level: 26
+Relaxed Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Mega Drain
+- Synthesis
+- Clear Smog
+- Sweet Scent
+
+Amoonguss (F)
+IVs: 0 HP / 28 Atk / 11 Def / 18 SpA / 9 SpD / 15 Spe
+Ability: Effect Spore
+Tera Type: Grass
+Level: 51
+Bashful Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Ingrain
+- Toxic
+- Rage Powder
+- Solar Beam
+
+Alomomola (F)
+IVs: 26 HP / 16 Atk / 22 Def / 19 SpA / 12 Spe
+Ability: Hydration
+Tera Type: Water
+Level: 46
+Impish Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Soak
+- Wish
+- Brine
+- Safeguard
+
+Tynamo (F)
+IVs: 4 HP / 12 Def / 16 SpA / 28 SpD / 21 Spe
+Ability: Levitate
+Tera Type: Electric
+Level: 12
+Sassy Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Tackle
+- Thunder Wave
+- Spark
+- Charge Beam
+
+Eelektrik (M)
+IVs: 14 Atk / 28 Def / 4 SpD / 15 Spe
+Ability: Levitate
+Tera Type: Electric
+Level: 48
+Calm Nature
+Ball: Master Ball
+~=Location=62
+~=Version=SV
+.Version=50
+- Bind
+- Acid
+- Discharge
+- Thunderbolt
+
+Eelektross (F)
+IVs: 4 HP / 14 Atk / 23 SpD
+Ability: Levitate
+Tera Type: Dragon
+Level: 65
+Impish Nature
+~=Location=62
+~=Version=SV
+.Version=50
+- Dragon Claw
+- Discharge
+- Eerie Impulse
+- Electric Terrain
+
+Axew (M)
+IVs: 5 HP / 16 Atk / 29 SpA / 28 SpD / 23 Spe
+Ability: Rivalry
+Tera Type: Dragon
+Level: 36
+Quiet Nature
+Ball: Master Ball
+~=Location=69
+~=Version=SV
+.Version=50
+- Dragon Dance
+- Breaking Swipe
+- Focus Energy
+- Dragon Pulse
+
+Fraxure (F)
+IVs: 14 HP / 20 Atk / 19 Def / 6 SpA / 14 SpD / 26 Spe
+Ability: Mold Breaker
+Tera Type: Dragon
+Level: 38
+Careful Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Crunch
+- Dragon Pulse
+- Breaking Swipe
+- Focus Energy
+
+Haxorus (M)
+IVs: 8 Atk / 14 Def / 8 SpA / 14 SpD / 14 Spe
+Ability: Rivalry
+Tera Type: Dragon
+Level: 48
+Rash Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Crunch
+- Dragon Pulse
+- Breaking Swipe
+- Outrage
+
+Cubchoo (F)
+IVs: 29 HP / 11 Atk / 17 Def / 1 SpA / 15 SpD / 11 Spe
+Ability: Snow Cloak
+Tera Type: Ice
+Level: 36
+Mild Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Charm
+- Snowscape
+- Thrash
+- Rest
+
+Beartic (M)
+IVs: 10 HP / 14 Atk / 25 Def / 4 SpA / 4 SpD / 27 Spe
+Ability: Slush Rush
+Tera Type: Ice
+Level: 40
+Lax Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Swagger
+- Snowscape
+- Thrash
+- Rest
+
+Cryogonal
+IVs: 8 HP / 17 Atk / 13 Def / 14 SpA / 3 SpD / 29 Spe
+Ability: Levitate
+Tera Type: Ice
+Level: 39
+Impish Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Aurora Beam
+- Slash
+- Night Slash
+- Freeze-Dry
+
+Pawniard (F)
+IVs: 25 HP / 4 Def / 18 SpA / 11 SpD / 3 Spe
+Ability: Defiant
+Tera Type: Steel
+Level: 32
+Hasty Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Torment
+- Scary Face
+- Assurance
+- Metal Sound
+
+Bisharp (M)
+IVs: 22 HP / 19 Atk / 5 SpA / 29 SpD / 1 Spe
+Ability: Inner Focus
+Tera Type: Dark
+Level: 52
+Hasty Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Slash
+- Night Slash
+- Iron Defense
+- Retaliate
+
+Rufflet (M)
+IVs: 25 HP / 30 Atk / 24 Def / 24 SpA / 28 SpD / 22 Spe
+Ability: Keen Eye
+Tera Type: Normal
+Level: 27
+Lax Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Hone Claws
+- Wing Attack
+- Tailwind
+- Scary Face
+
+Braviary (M)
+IVs: 4 HP / 18 Atk / 11 Def / 25 SpA / 10 SpD / 20 Spe
+Ability: Keen Eye
+Tera Type: Flying
+Level: 54
+Calm Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Aerial Ace
+- Slash
+- Whirlwind
+- Crush Claw
+
+Deino (M)
+IVs: 16 HP / 8 Atk / 9 Def / 12 SpA / 7 SpD / 21 Spe
+Ability: Hustle
+Tera Type: Dragon
+Level: 41
+Quiet Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- Slam
+- Crunch
+- Scary Face
+- Dragon Pulse
+
+Zweilous (F)
+IVs: 22 HP / 19 Atk / 22 Def / 25 SpA / 16 SpD / 22 Spe
+Ability: Hustle
+Tera Type: Dark
+Level: 56
+Lonely Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Dragon Pulse
+- Body Slam
+- Hyper Voice
+- Dragon Rush
+
+Hydreigon (M)
+IVs: 19 HP / 8 Atk / 30 Def / 2 SpA / 30 SpD / 15 Spe
+Ability: Levitate
+Tera Type: Dragon
+Level: 64
+Lax Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Dragon Pulse
+- Body Slam
+- Hyper Voice
+- Dragon Rush
+
+Larvesta (F)
+IVs: 5 HP / 7 Atk / 7 Def / 22 SpA / 2 SpD / 17 Spe
+Ability: Flame Body
+Tera Type: Bug
+Level: 25
+Sassy Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Flame Charge
+- Struggle Bug
+- Flame Wheel
+- Bug Bite
+
+Volcarona (F)
+IVs: 15 HP / 11 Atk / 15 Def / 13 SpA / 8 SpD / 24 Spe
+Ability: Flame Body
+Tera Type: Fire
+Level: 59
+Timid Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Leech Life
+- Bug Buzz
+- Heat Wave
+- Amnesia
+
+Fletchling (M)
+IVs: 0 HP / 20 Atk / 29 Def / 10 SpA / 18 SpD / 22 Spe
+Ability: Big Pecks
+Tera Type: Normal
+Level: 9
+Quiet Nature
+Ball: Master Ball
+~=Location=12
+~=Version=SV
+.Version=50
+- Growl
+- Peck
+- Quick Attack
+
+Fletchinder (M)
+IVs: 24 HP / 10 Atk / 25 Def / 20 SpA / 10 SpD / 12 Spe
+Ability: Flame Body
+Tera Type: Fire
+Level: 19
+Impish Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SV
+.Version=50
+- Peck
+- Quick Attack
+- Feint
+- Flail
+
+Talonflame (F)
+IVs: 21 HP / 24 Atk / 3 Def / 26 SpA / 20 SpD / 22 Spe
+Ability: Flame Body
+Tera Type: Flying
+Level: 54
+Quirky Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Acrobatics
+- Agility
+- Aerial Ace
+- Tailwind
+
+Scatterbug-Fancy (M)
+IVs: 27 HP / 17 Atk / 4 Def / 3 SpA / 11 SpD / 23 Spe
+Ability: Shield Dust
+Tera Type: Bug
+Level: 6
+Quiet Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- String Shot
+- Stun Spore
+
+Spewpa-Fancy (F)
+IVs: 8 HP / 5 Def / 17 SpA / 11 SpD / 2 Spe
+Ability: Shed Skin
+Tera Type: Bug
+Level: 9
+Serious Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- String Shot
+- Stun Spore
+- Protect
+
+Vivillon-Fancy (F)
+IVs: 25 HP / 24 Atk / 21 Def / 10 SpA / 11 SpD / 6 Spe
+Ability: Shield Dust
+Tera Type: Bug
+Level: 44
+Careful Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Supersonic
+- Draining Kiss
+- Safeguard
+- Bug Buzz
+
+Litleo (M)
+IVs: 2 HP / 8 Atk / 29 Def / 23 SpA / 4 SpD / 12 Spe
+Ability: Rivalry
+Tera Type: Fire
+Level: 18
+Hasty Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Ember
+- Work Up
+- Headbutt
+- Noble Roar
+
+Pyroar (F)
+IVs: 15 HP / 3 Atk / 5 Def / 14 SpA / 25 SpD / 28 Spe
+Ability: Unnerve
+Tera Type: Normal
+Level: 36
+Docile Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Take Down
+- Fire Fang
+- Endeavor
+- Echoed Voice
+
+Flabébé (F)
+IVs: 27 HP / 20 Atk / 27 Def / 17 SpA / 9 SpD / 16 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 47
+Naughty Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Synthesis
+- Misty Terrain
+- Moonblast
+- Petal Dance
+
+Flabébé-Yellow (F)
+IVs: 6 SpD
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 1
+Hasty Nature
+~=Version=SV
+.Version=50
+- Vine Whip
+- Tackle
+
+Flabébé-Orange (F)
+IVs: 4 HP / 8 Atk / 6 Def / 19 SpA / 15 SpD / 4 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 16
+Quirky Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Tackle
+- Fairy Wind
+- Safeguard
+- Razor Leaf
+
+Flabébé-Blue (F)
+IVs: 22 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 1
+Hasty Nature
+~=Version=SV
+.Version=50
+- Vine Whip
+- Tackle
+
+Flabébé-White (F)
+IVs: 0 SpD
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 1
+Jolly Nature
+~=Version=SV
+.Version=50
+- Vine Whip
+- Tackle
+
+Floette (F)
+IVs: 1 HP / 3 Atk / 26 Def / 20 SpA / 20 SpD / 17 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 45
+Quirky Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Grassy Terrain
+- Petal Blizzard
+- Synthesis
+- Misty Terrain
+
+Floette-Yellow (F)
+IVs: 25 HP / 30 Atk / 27 Def / 21 SpA / 26 SpD / 10 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 44
+Hasty Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Grassy Terrain
+- Petal Blizzard
+- Synthesis
+- Misty Terrain
+
+Floette-Orange (F)
+IVs: 6 HP / 28 Atk / 26 Def / 21 SpA / 28 SpD / 28 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 47
+Lax Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Petal Blizzard
+- Synthesis
+- Misty Terrain
+- Moonblast
+
+Floette-Blue (F)
+IVs: 19 HP / 0 Atk / 1 Def / 20 SpA / 10 SpD / 24 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 45
+Gentle Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Grassy Terrain
+- Petal Blizzard
+- Synthesis
+- Misty Terrain
+
+Floette-White (F)
+IVs: 16 HP / 7 Atk / 6 Def / 23 SpA / 22 SpD / 3 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 53
+Gentle Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Synthesis
+- Misty Terrain
+- Moonblast
+- Petal Dance
+
+Florges (F)
+IVs: 30 HP / 12 Atk / 9 Def / 9 SpA / 18 SpD / 13 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 47
+Docile Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Disarming Voice
+- Grassy Terrain
+- Misty Terrain
+- Moonblast
+
+Florges-Yellow (F)
+IVs: 9 HP / 8 Def / 14 SpA / 6 SpD / 24 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 47
+Bashful Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Petal Blizzard
+- Synthesis
+- Misty Terrain
+- Moonblast
+
+Florges-Orange (F)
+IVs: 8 HP / 18 Atk / 8 Def / 10 SpA / 16 SpD / 20 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 47
+Adamant Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Petal Blizzard
+- Synthesis
+- Misty Terrain
+- Moonblast
+
+Florges-Blue (F)
+IVs: 9 HP / 22 Atk / 26 Def / 25 SpA / 30 SpD / 25 Spe
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 45
+Naive Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Grassy Terrain
+- Petal Blizzard
+- Synthesis
+- Misty Terrain
+
+Florges-White (F)
+IVs: 5 Def
+Ability: Flower Veil
+Tera Type: Fairy
+Level: 19
+Hardy Nature
+~=Version=SV
+.Version=50
+- Vine Whip
+- Tackle
+- Fairy Wind
+- Razor Leaf
+
+Skiddo (F)
+IVs: 8 HP / 1 Def / 28 SpA / 30 SpD / 6 Spe
+Ability: Sap Sipper
+Tera Type: Grass
+Level: 18
+Calm Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Tail Whip
+- Leech Seed
+- Razor Leaf
+- Worry Seed
+
+Gogoat (M)
+IVs: 1 HP / 30 Atk / 17 Def / 1 SpA / 6 SpD / 24 Spe
+Ability: Sap Sipper
+Tera Type: Grass
+Level: 43
+Careful Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Bulldoze
+- Seed Bomb
+- Bulk Up
+- Double-Edge
+
+Skrelp (M)
+IVs: 4 HP / 2 Atk / 18 Def / 25 SpA / 19 SpD / 2 Spe
+Ability: Poison Touch
+Tera Type: Water
+Level: 47
+Rash Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Water Pulse
+- Toxic
+- Dragon Pulse
+- Aqua Tail
+
+Dragalge (F)
+IVs: 2 HP / 21 Atk / 10 Def / 29 SpA / 29 SpD / 10 Spe
+Ability: Poison Touch
+Tera Type: Poison
+Level: 50
+Mild Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Water Pulse
+- Toxic
+- Dragon Pulse
+- Aqua Tail
+
+Clauncher (F)
+IVs: 8 HP / 5 Atk / 16 SpA / 25 SpD / 10 Spe
+Ability: Mega Launcher
+Tera Type: Water
+Level: 23
+Modest Nature
+Ball: Master Ball
+~=Location=56
+~=Version=SV
+.Version=51
+- Vise Grip
+- Flail
+- Aqua Jet
+- Smack Down
+
+Clawitzer (M)
+IVs: 20 HP / 21 Atk / 24 Def / 4 SpA / 29 SpD / 12 Spe
+Ability: Mega Launcher
+Tera Type: Water
+Level: 47
+Timid Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=51
+- Hone Claws
+- Water Pulse
+- Swords Dance
+- Aura Sphere
+
+Sylveon (M)
+IVs: 16 HP / 0 Atk / 30 SpA
+Ability: Cute Charm
+Tera Type: Fairy
+Level: 50
+Hardy Nature
+~=Location=44
+~=Version=SV
+.Version=50
+- Moonblast
+- Calm Mind
+- Yawn
+- Shadow Ball
+
+Hawlucha (F)
+IVs: 0 HP / 1 Atk / 8 Def / 13 SpA / 0 SpD
+Ability: Limber
+Tera Type: Flying
+Level: 54
+Careful Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Swords Dance
+- Flying Press
+- High Jump Kick
+- Endeavor
+
+Dedenne (F)
+IVs: 13 HP / 6 Atk / 24 Def / 23 SpA / 14 SpD / 30 Spe
+Ability: Pickup
+Tera Type: Fairy
+Level: 29
+Serious Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Charge
+- Thunder Shock
+- Charm
+- Parabolic Charge
+
+Goomy (F)
+IVs: 21 HP / 20 Atk / 17 Def / 24 SpA / 1 SpD / 15 Spe
+Ability: Sap Sipper
+Tera Type: Dragon
+Level: 50
+Hasty Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Dragon Pulse
+- Curse
+- Body Slam
+- Muddy Water
+
+Sliggoo (F)
+IVs: 14 HP / 19 Atk / 8 Def / 11 SpA / 12 SpD
+Ability: Sap Sipper
+Tera Type: Dragon
+Level: 50
+Hasty Nature
+~=Location=40
+~=Version=SV
+.Version=50
+- Rain Dance
+- Dragon Pulse
+- Curse
+- Body Slam
+
+Goodra (F)
+IVs: 1 SpA / 23 SpD
+Ability: Sap Sipper
+Tera Type: Poison
+Level: 75
+Relaxed Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Water Pulse
+- Dragon Pulse
+- Sludge Bomb
+- Power Whip
+
+Klefki (F)
+IVs: 23 HP / 16 Atk / 29 Def / 18 SpA / 8 SpD / 28 Spe
+Ability: Prankster
+Tera Type: Steel
+Level: 41
+Serious Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Recycle
+- Imprison
+- Flash Cannon
+- Play Rough
+
+Bergmite (M)
+IVs: 23 HP / 21 Atk / 26 Def / 22 SpA / 2 SpD / 30 Spe
+Ability: Own Tempo
+Tera Type: Ice
+Level: 50
+Impish Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Crunch
+- Take Down
+- Blizzard
+- Double-Edge
+
+Avalugg (F)
+IVs: 23 HP / 11 Atk / 1 Def / 18 SpA / 15 SpD
+Ability: Own Tempo
+Tera Type: Ice
+Level: 53
+Hardy Nature
+~=Location=40
+~=Version=SV
+.Version=50
+- Take Down
+- Blizzard
+- Double-Edge
+- Icicle Crash
+
+Noibat (M)
+IVs: 5 HP / 28 Atk / 8 Def / 20 SpA / 16 SpD / 18 Spe
+Ability: Frisk
+Tera Type: Flying
+Level: 27
+Adamant Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Double Team
+- Wing Attack
+- Bite
+- Air Cutter
+
+Noivern (F)
+IVs: 24 HP / 24 Atk / 2 Def / 13 SpA / 14 SpD / 16 Spe
+Ability: Infiltrator
+Tera Type: Flying
+Level: 50
+Timid Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Super Fang
+- Air Slash
+- Screech
+- Roost
+
+Yungoos (F)
+IVs: 26 HP / 1 Atk / 20 Def / 28 SpA / 0 SpD / 29 Spe
+Ability: Stakeout
+Tera Type: Normal
+Level: 2
+Calm Nature
+.MetLocation=64
+~=Version=SV
+.Version=50
+- Tackle
+
+Gumshoos (F)
+IVs: 12 HP / 22 Atk / 7 Def / 12 SpA / 4 SpD / 11 Spe
+Ability: Strong Jaw
+Tera Type: Normal
+Level: 23
+Brave Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Payback
+- Work Up
+- Bite
+- Mud-Slap
+
+Crabrawler (M)
+IVs: 25 HP / 14 Atk / 7 Def / 12 SpA / 1 SpD / 18 Spe
+Ability: Iron Fist
+Tera Type: Fighting
+Level: 14
+Gentle Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Vise Grip
+- Rock Smash
+- Leer
+- Bubble Beam
+
+Crabominable (F) @ Cheri Berry
+IVs: 15 HP / 7 Atk / 4 Def / 28 SpA / 28 SpD / 17 Spe
+Ability: Iron Fist
+Tera Type: Fighting
+Level: 38
+Rash Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Slam
+- Avalanche
+- Reversal
+- Ice Hammer
+
+Oricorio (M)
+IVs: 6 HP / 11 Atk / 1 Def / 1 SpA / 26 SpD / 9 Spe
+Ability: Dancer
+Tera Type: Fire
+Level: 21
+Relaxed Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Helping Hand
+- Air Cutter
+- Baton Pass
+- Feather Dance
+
+Oricorio-Pom-Pom (F)
+IVs: 15 Spe
+Ability: Dancer
+Tera Type: Flying
+Level: 1
+Naive Nature
+~=Version=SV
+.Version=50
+- Pound
+
+Oricorio-Pa’u (F)
+IVs: 18 SpD
+Ability: Dancer
+Tera Type: Fire
+Level: 1
+Relaxed Nature
+~=Version=SV
+.Version=50
+- Pound
+
+Oricorio-Sensu (F)
+IVs: 28 Atk
+Ability: Dancer
+Tera Type: Flying
+Level: 1
+Naughty Nature
+~=Version=SV
+.Version=50
+- Pound
+
+Rockruff (F)
+IVs: 0 HP / 18 Atk / 28 Def / 2 SpA / 28 SpD / 18 Spe
+Ability: Vital Spirit
+Tera Type: Rock
+Level: 16
+Quirky Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Sand Attack
+- Double Team
+- Rock Throw
+- Howl
+
+Rockruff (F)
+IVs: 6 Def
+Ability: Own Tempo
+Tera Type: Rock
+Level: 1
+Mild Nature
+~=Version=SV
+.Version=50
+- Tackle
+- Leer
+
+Lycanroc (M)
+IVs: 5 HP / 4 Atk / 12 Def / 5 SpA / 20 SpD / 20 Spe
+Ability: Keen Eye
+Tera Type: Rock
+Level: 39
+Naughty Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Bite
+- Rock Tomb
+- Roar
+- Rock Slide
+
+Lycanroc-Midnight (M)
+IVs: 8 HP / 12 Atk / 25 Def / 9 SpA / 16 SpD / 19 Spe
+Ability: Keen Eye
+Tera Type: Rock
+Level: 40
+Hasty Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Bite
+- Rock Tomb
+- Roar
+- Rock Slide
+
+Lycanroc-Dusk (M)
+IVs: 4 Spe
+Ability: Tough Claws
+Tera Type: Rock
+Level: 25
+Lonely Nature
+~=Version=SV
+.Version=50
+- Tackle
+- Leer
+- Crush Claw
+
+Mareanie (M)
+IVs: 18 HP / 7 Atk / 22 Def / 26 SpA / 3 SpD / 3 Spe
+Ability: Merciless
+Tera Type: Poison
+Level: 23
+Modest Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Wide Guard
+- Bite
+- Venoshock
+- Recover
+
+Toxapex (F)
+IVs: 28 HP / 17 Atk / 26 Def / 30 SpA / 20 SpD / 25 Spe
+Ability: Limber
+Tera Type: Water
+Level: 38
+Brave Nature
+Ball: Master Ball
+~=Location=60
+~=Version=SV
+.Version=50
+- Pin Missile
+- Liquidation
+- Venoshock
+- Baneful Bunker
+
+Mudbray (F)
+IVs: 11 HP / 0 Atk / 20 Def / 15 SpA / 29 SpD / 9 Spe
+Ability: Own Tempo
+Tera Type: Ground
+Level: 16
+Bold Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Iron Defense
+- Double Kick
+- Bulldoze
+- Stomp
+
+Mudsdale (M)
+IVs: 21 HP / 3 Atk / 8 Def / 8 SpA / 29 SpD / 15 Spe
+Ability: Own Tempo
+Tera Type: Ground
+Level: 41
+Brave Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Counter
+- High Horsepower
+- Heavy Slam
+- Earthquake
+
+Fomantis (F)
+IVs: 29 Atk / 0 Def / 29 SpA / 13 SpD / 0 Spe
+Ability: Leaf Guard
+Tera Type: Grass
+Level: 44
+Bold Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Slash
+- X-Scissor
+- Synthesis
+- Leaf Blade
+
+Lurantis (M)
+IVs: 19 HP / 7 Def / 1 SpA / 5 SpD / 3 Spe
+Ability: Leaf Guard
+Tera Type: Grass
+Level: 44
+Timid Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Slash
+- X-Scissor
+- Synthesis
+- Leaf Blade
+
+Salandit (F)
+IVs: 6 HP / 16 Atk / 8 Def / 3 SpA / 25 SpD / 21 Spe
+Ability: Corrosion
+Tera Type: Poison
+Level: 13
+Modest Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Scratch
+- Poison Gas
+- Smog
+- Ember
+
+Salazzle (F)
+IVs: 7 HP / 18 Atk / 9 Def / 5 SpA / 7 SpD / 0 Spe
+Ability: Corrosion
+Tera Type: Fire
+Level: 40
+Rash Nature
+Ball: Master Ball
+~=Location=69
+~=Version=SV
+.Version=50
+- Sweet Scent
+- Nasty Plot
+- Incinerate
+- Venoshock
+
+Bounsweet (F)
+IVs: 10 HP / 1 Atk / 27 Def / 10 SpA / 26 SpD / 4 Spe
+Ability: Oblivious
+Tera Type: Grass
+Level: 6
+Hasty Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Splash
+- Play Nice
+
+Steenee (F)
+IVs: 28 HP / 0 Atk / 28 Def / 29 SpA / 18 SpD / 29 Spe
+Ability: Oblivious
+Tera Type: Grass
+Level: 22
+Impish Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Rapid Spin
+- Play Nice
+- Sweet Scent
+- Magical Leaf
+
+Tsareena (F)
+IVs: 17 HP / 24 SpA / 25 SpD
+Ability: Leaf Guard
+Tera Type: Psychic
+Level: 65
+Quirky Nature
+.MetLocation=109
+~=Version=SV
+.Version=50
+- Zen Headbutt
+- Trop Kick
+- Stomp
+- Synthesis
+
+Oranguru (F)
+IVs: 1 HP / 2 Atk / 2 Def / 17 SpA / 5 SpD / 29 Spe
+Ability: Inner Focus
+Tera Type: Psychic
+Level: 28
+Quirky Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Calm Mind
+- Stored Power
+- Psych Up
+- Quash
+
+Passimian (M)
+IVs: 25 HP / 27 Atk / 29 Def / 26 SpA / 10 SpD / 18 Spe
+Ability: Receiver
+Tera Type: Fighting
+Level: 29
+Timid Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=51
+- Focus Energy
+- Beat Up
+- Scary Face
+- Take Down
+
+Sandygast (F)
+IVs: 7 HP / 24 Atk / 3 SpA / 5 SpD
+Ability: Water Compaction
+Tera Type: Ghost
+Level: 21
+Quirky Nature
+Ball: Master Ball
+~=Location=36
+~=Version=SV
+.Version=50
+- Astonish
+- Sand Tomb
+- Mega Drain
+- Sand Attack
+
+Palossand (M)
+IVs: 0 HP / 4 Atk / 7 Def / 6 SpA / 24 SpD / 22 Spe
+Ability: Water Compaction
+Tera Type: Ghost
+Level: 42
+Quiet Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SV
+.Version=50
+- Astonish
+- Bulldoze
+- Giga Drain
+- Sand Attack
+
+Komala (F)
+IVs: 22 HP / 29 Atk / 6 Def / 17 SpA / 25 SpD / 25 Spe
+Ability: Comatose
+Tera Type: Normal
+Level: 25
+Naive Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Swallow
+- Rapid Spin
+- Yawn
+- Slam
+
+Mimikyu (F)
+IVs: 27 HP / 1 Atk / 1 Def / 2 SpA / 0 SpD / 14 Spe
+Ability: Disguise
+Tera Type: Fairy
+Level: 32
+Hardy Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Double Team
+- Baby-Doll Eyes
+- Mimic
+- Hone Claws
+
+Bruxish (M)
+IVs: 2 HP / 7 Atk / 0 Def / 1 SpA
+Ability: Wonder Skin
+Tera Type: Fairy
+Level: 35
+Modest Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Psychic Fangs
+- Bite
+- Aqua Jet
+- Screech
+
+Skwovet (M)
+IVs: 1 HP / 30 Atk / 27 Def / 1 SpA / 15 SpD / 2 Spe
+Ability: Cheek Pouch
+Tera Type: Normal
+Level: 6
+Brave Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- Tail Whip
+- Bite
+
+Greedent (M)
+IVs: 30 HP / 5 Atk / 29 Def / 1 SpA / 22 SpD / 9 Spe
+Ability: Cheek Pouch
+Tera Type: Normal
+Level: 26
+Calm Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Stockpile
+- Spit Up
+- Swallow
+- Body Slam
+
+Rookidee (M)
+IVs: 20 HP / 19 Atk / 20 Def / 6 SpA / 17 SpD / 9 Spe
+Ability: Unnerve
+Tera Type: Flying
+Level: 7
+Careful Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Leer
+- Peck
+- Power Trip
+
+Corvisquire (F)
+IVs: 0 HP / 18 Atk / 28 Def / 25 SpA / 9 SpD / 12 Spe
+Ability: Unnerve
+Tera Type: Flying
+Level: 22
+Rash Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Power Trip
+- Fury Attack
+- Pluck
+- Taunt
+
+Corviknight (M)
+IVs: 14 HP / 11 Atk / 11 SpD
+Ability: Pressure
+Tera Type: Fighting
+Level: 55
+Bold Nature
+~=Location=48
+~=Version=SV
+.Version=50
+- Body Press
+- Drill Peck
+- Roost
+- Iron Defense
+
+Chewtle (F)
+IVs: 4 HP / 27 Atk / 9 Def / 28 SpA / 28 SpD / 8 Spe
+Ability: Shell Armor
+Tera Type: Water
+Level: 7
+Relaxed Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- Water Gun
+- Bite
+
+Drednaw (F)
+IVs: 10 HP / 12 Atk / 22 SpA / 18 SpD / 6 Spe
+Ability: Shell Armor
+Tera Type: Rock
+Level: 54
+Sassy Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Headbutt
+- Counter
+- Jaw Lock
+- Liquidation
+
+Rolycoly (M)
+IVs: 15 HP / 7 Atk / 15 Def / 0 SpA / 24 SpD / 19 Spe
+Ability: Heatproof
+Tera Type: Rock
+Level: 25
+Quirky Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Smack Down
+- Rock Polish
+- Ancient Power
+- Incinerate
+
+Carkol (M)
+IVs: 16 HP / 22 Atk / 28 Def / 1 SpA / 0 SpD / 25 Spe
+Ability: Flame Body
+Tera Type: Fire
+Level: 25
+Gentle Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Rapid Spin
+- Smack Down
+- Rock Polish
+- Ancient Power
+
+Coalossal (F)
+IVs: 7 HP / 17 Atk / 10 Def / 6 SpA / 27 SpD / 6 Spe
+Ability: Steam Engine
+Tera Type: Rock
+Level: 34
+Impish Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Rapid Spin
+- Smack Down
+- Incinerate
+- Ancient Power
+
+Applin (M)
+IVs: 17 HP / 22 Atk / 26 Def / 14 SpA / 4 SpD / 9 Spe
+Ability: Ripen
+Tera Type: Dragon
+Level: 26
+Quirky Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Astonish
+- Withdraw
+
+Flapple (F)
+IVs: 14 HP / 6 Atk / 0 SpA / 11 SpD / 5 Spe
+Ability: Ripen
+Tera Type: Grass
+Level: 27
+Quiet Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Astonish
+- Withdraw
+- Wing Attack
+
+Appletun (F)
+IVs: 21 Def / 28 SpD
+Ability: Thick Fat
+Tera Type: Fighting
+Level: 75
+Hasty Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Apple Acid
+- Dragon Pulse
+- Giga Drain
+- Body Press
+
+Silicobra (F)
+IVs: 4 HP / 11 Atk / 10 Def / 4 SpA / 22 SpD / 26 Spe
+Ability: Sand Spit
+Tera Type: Ground
+Level: 22
+Lonely Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Minimize
+- Brutal Swing
+- Bulldoze
+- Headbutt
+
+Sandaconda (M)
+IVs: 8 HP / 11 Atk / 3 Def / 10 SpA / 25 SpD / 23 Spe
+Ability: Shed Skin
+Tera Type: Ground
+Level: 40
+Relaxed Nature
+~=Location=24
+~=Version=SV
+.Version=50
+- Headbutt
+- Glare
+- Dig
+- Sandstorm
+
+Arrokuda (M)
+IVs: 22 HP / 16 Atk / 6 Def / 8 SpA / 18 SpD / 2 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 44
+Mild Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Dive
+- Focus Energy
+- Crunch
+- Liquidation
+
+Barraskewda (M)
+IVs: 7 HP / 7 Atk / 20 Def / 20 SpA / 26 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 43
+Timid Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Agility
+- Dive
+- Focus Energy
+- Crunch
+
+Toxel (M)
+IVs: 25 HP / 22 Atk / 3 Def / 7 SpA / 19 SpD / 30 Spe
+Ability: Rattled
+Tera Type: Poison
+Level: 18
+Modest Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SV
+.Version=50
+- Flail
+- Belch
+- Nuzzle
+- Tearful Look
+
+Toxtricity (F)
+IVs: 14 HP / 20 Atk / 26 Def / 18 SpA / 9 SpD / 24 Spe
+Ability: Punk Rock
+Tera Type: Electric
+Level: 41
+Naive Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- Swagger
+- Toxic
+- Discharge
+- Poison Jab
+
+Toxtricity-Low-Key (F)
+IVs: 21 HP / 24 Atk / 27 Def / 18 SpA / 11 SpD / 15 Spe
+Ability: Minus
+Tera Type: Poison
+Level: 41
+Bashful Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- Swagger
+- Toxic
+- Discharge
+- Poison Jab
+
+Sinistea
+IVs: 14 Atk / 22 Def / 21 SpA / 0 SpD / 15 Spe
+Ability: Weak Armor
+Tera Type: Ghost
+Level: 43
+Bold Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Sucker Punch
+- Sweet Scent
+- Giga Drain
+- Nasty Plot
+
+Sinistea-Antique
+IVs: 6 HP / 9 Atk / 3 Def / 15 SpA / 14 SpD / 15 Spe
+Ability: Weak Armor
+Tera Type: Ghost
+Level: 44
+Relaxed Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Sucker Punch
+- Sweet Scent
+- Giga Drain
+- Nasty Plot
+
+Polteageist
+IVs: 20 HP / 2 Atk / 2 Def / 19 SpA / 27 SpD / 5 Spe
+Ability: Weak Armor
+Tera Type: Ghost
+Level: 42
+Careful Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Sucker Punch
+- Teatime
+- Giga Drain
+- Nasty Plot
+
+Polteageist-Antique
+IVs: 2 HP / 30 Atk / 8 Def / 2 SpA / 23 SpD / 20 Spe
+Ability: Weak Armor
+Tera Type: Ghost
+Level: 42
+Naughty Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Sucker Punch
+- Teatime
+- Giga Drain
+- Nasty Plot
+
+Hatenna (F)
+IVs: 5 HP / 25 Def / 12 SpA / 19 SpD / 6 Spe
+Ability: Healer
+Tera Type: Psychic
+Level: 18
+Quirky Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SV
+.Version=50
+- Play Nice
+- Life Dew
+- Disarming Voice
+- Aromatic Mist
+
+Hattrem (F)
+IVs: 5 HP / 19 Def / 9 SpA / 14 SpD / 13 Spe
+Ability: Anticipation
+Tera Type: Psychic
+Level: 32
+Bold Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SV
+.Version=50
+- Psybeam
+- Heal Pulse
+- Brutal Swing
+- Dazzling Gleam
+
+Hatterene (F)
+IVs: 0 HP / 25 Atk / 15 Def / 25 SpA / 12 SpD / 25 Spe
+Ability: Anticipation
+Tera Type: Psychic
+Level: 42
+Hasty Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SV
+.Version=50
+- Psybeam
+- Psycho Cut
+- Dazzling Gleam
+- Brutal Swing
+
+Impidimp (M)
+IVs: 26 HP / 10 Atk / 21 Def / 18 SpA / 11 SpD / 13 Spe
+Ability: Frisk
+Tera Type: Dark
+Level: 26
+Rash Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Fake Tears
+- Assurance
+- Swagger
+- Sucker Punch
+
+Morgrem (M)
+IVs: 11 HP / 21 Atk / 10 SpA / 18 Spe
+Ability: Pickpocket
+Tera Type: Ghost
+Level: 35
+Careful Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Bite
+- Dark Pulse
+- Play Rough
+- Fake Tears
+
+Grimmsnarl (M)
+IVs: 10 HP / 26 Atk / 28 Def / 24 SpA / 4 SpD / 29 Spe
+Ability: Frisk
+Tera Type: Dark
+Level: 42
+Sassy Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Assurance
+- Spirit Break
+- Sucker Punch
+- Dark Pulse
+
+Perrserker (F)
+IVs: 16 HP / 30 SpA
+Ability: Battle Armor
+Tera Type: Steel
+Level: 28
+Calm Nature
+~=Version=SV
+.Version=50
+- Growl
+- Fake Out
+- Iron Head
+
+Falinks
+IVs: 18 HP / 14 Atk / 13 Spe
+Ability: Battle Armor
+Tera Type: Steel
+Level: 30
+Lonely Nature
+~=Location=32
+~=Version=SV
+.Version=50
+- Smart Strike
+- Reversal
+- Rock Smash
+- Bulk Up
+
+Pincurchin (F)
+IVs: 10 HP / 6 Def / 5 SpA
+Ability: Lightning Rod
+Tera Type: Electric
+Level: 55
+Lonely Nature
+~=Location=38
+~=Version=SV
+.Version=50
+- Zing Zap
+- Poison Jab
+- Surf
+- Sucker Punch
+
+Snom (F)
+IVs: 27 HP / 8 Atk / 11 Def / 24 SpA / 0 SpD / 29 Spe
+Ability: Shield Dust
+Tera Type: Bug
+Level: 37
+Careful Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Struggle Bug
+- Powder Snow
+
+Frosmoth (M)
+IVs: 24 HP / 13 Atk / 13 Def / 28 SpA / 22 SpD / 22 Spe
+Ability: Shield Dust
+Tera Type: Ice
+Level: 52
+Sassy Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Blizzard
+- Tailwind
+- Wide Guard
+- Quiver Dance
+
+Stonjourner (F)
+IVs: 7 HP / 27 Atk / 25 Def / 20 SpA / 8 SpD / 5 Spe
+Ability: Power Spot
+Tera Type: Rock
+Level: 22
+Bashful Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Block
+- Rock Polish
+- Rock Tomb
+- Gravity
+
+Eiscue (M)
+IVs: 7 HP / 11 Atk / 17 Def / 25 SpA / 10 SpD / 14 Spe
+Ability: Ice Face
+Tera Type: Ice
+Level: 47
+Quiet Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=51
+- Headbutt
+- Amnesia
+- Freeze-Dry
+- Snowscape
+
+Indeedee (M)
+IVs: 7 HP / 22 Atk / 17 SpA / 16 SpD / 24 Spe
+Ability: Inner Focus
+Tera Type: Normal
+Level: 50
+Lonely Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Psychic
+- Calm Mind
+- Power Split
+- Psychic Terrain
+
+Indeedee-F (F)
+IVs: 2 HP / 17 Atk / 7 Def / 2 SpA / 5 SpD / 28 Spe
+Ability: Synchronize
+Tera Type: Normal
+Level: 50
+Lax Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Psychic
+- Calm Mind
+- Guard Split
+- Psychic Terrain
+
+Cufant (F)
+IVs: 1 HP / 0 Atk / 30 Def / 23 SpA / 5 SpD / 4 Spe
+Ability: Sheer Force
+Tera Type: Steel
+Level: 22
+Bold Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Rollout
+- Rock Smash
+- Bulldoze
+- Stomp
+
+Copperajah (M)
+IVs: 17 HP / 14 Atk / 13 Def / 12 SpA / 20 SpD / 4 Spe
+Ability: Sheer Force
+Tera Type: Steel
+Level: 40
+Quirky Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Stomp
+- Iron Defense
+- Dig
+- Strength
+
+Dreepy (M)
+IVs: 24 HP / 9 Atk / 21 Def / 28 SpA / 21 SpD
+Ability: Infiltrator
+Tera Type: Dragon
+Level: 51
+Jolly Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=51
+- Bite
+- Quick Attack
+- Astonish
+- Infestation
+
+Drakloak (M)
+IVs: 8 HP / 4 Def / 19 SpA / 16 SpD / 16 Spe
+Ability: Infiltrator
+Tera Type: Dragon
+Level: 52
+Jolly Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=51
+- Double Hit
+- U-turn
+- Dragon Dance
+- Phantom Force
+
+Dragapult (M)
+IVs: 25 HP / 3 Atk / 10 Def / 0 SpA / 2 SpD / 12 Spe
+Ability: Infiltrator
+Tera Type: Ghost
+Level: 60
+Quirky Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=51
+- Dragon Darts
+- U-turn
+- Dragon Dance
+- Phantom Force
+
+Sprigatito (M)
+IVs: 26 HP / 12 Atk / 18 Def / 12 SpA / 14 SpD / 20 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 5
+Hardy Nature
+~=Level=5
+~=Location=80
+~=Version=SV
+.Version=51
+- Scratch
+- Tail Whip
+- Leafage
+
+Floragato (M)
+IVs: 12 Atk / 0 SpD
+Ability: Overgrow
+Tera Type: Grass
+Level: 16
+Lax Nature
+~=Version=SV
+.Version=50
+- Quick Attack
+- Hone Claws
+- Magical Leaf
+- Bite
+
+Meowscarada (M)
+IVs: 26 HP / 12 Atk / 12 SpA / 1 SpD / 20 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 36
+Bashful Nature
+~=Version=SV
+.Version=50
+- Slash
+- U-turn
+- Flower Trick
+- Hone Claws
+
+Fuecoco (M)
+IVs: 22 HP / 15 Atk / 23 Def / 6 SpA / 27 SpD / 16 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 5
+Docile Nature
+~=Level=5
+~=Location=80
+~=Version=SV
+.Version=51
+- Tackle
+- Leer
+- Ember
+
+Crocalor (M)
+IVs: 22 HP / 23 Def / 27 SpD / 7 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 16
+Timid Nature
+~=Version=SV
+.Version=50
+- Tackle
+- Bite
+- Incinerate
+- Round
+
+Skeledirge (M)
+IVs: 23 Def / 13 SpD / 16 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 36
+Brave Nature
+~=Version=SV
+.Version=50
+- Tackle
+- Snarl
+- Torch Song
+- Round
+
+Quaxly (M)
+IVs: 30 HP / 12 Atk / 1 Def / 29 SpA / 13 SpD / 25 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 5
+Naive Nature
+~=Level=5
+~=Location=80
+~=Version=SV
+.Version=51
+- Pound
+- Growl
+- Water Gun
+
+Quaxwell (M)
+IVs: 30 HP / 21 SpD
+Ability: Torrent
+Tera Type: Water
+Level: 16
+Timid Nature
+~=Version=SV
+.Version=50
+- Pound
+- Wing Attack
+- Water Gun
+- Aqua Jet
+
+Quaquaval (M)
+IVs: 3 HP / 12 Atk / 25 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 36
+Naive Nature
+~=Version=SV
+.Version=50
+- Air Slash
+- Wing Attack
+- Aqua Step
+- Low Sweep
+
+Lechonk (M)
+IVs: 5 HP / 20 Atk / 25 Def / 13 SpA / 14 SpD / 16 Spe
+Ability: Gluttony
+Tera Type: Normal
+Level: 6
+Modest Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- Tail Whip
+- Disarming Voice
+
+Oinkologne (M)
+IVs: 0 HP / 16 Atk / 9 Def / 28 SpA / 25 SpD / 12 Spe
+Ability: Gluttony
+Tera Type: Normal
+Level: 26
+Docile Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Covet
+- Dig
+- Headbutt
+- Take Down
+
+Oinkologne-F (F)
+IVs: 3 HP / 14 Atk / 3 Def / 18 SpA / 10 SpD / 19 Spe
+Ability: Aroma Veil
+Tera Type: Normal
+Level: 20
+Timid Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Mud Shot
+- Covet
+- Dig
+- Headbutt
+
+Dudunsparce (F)
+IVs: 29 HP / 28 Atk / 7 Def / 30 SpA / 20 SpD / 3 Spe
+Ability: Run Away
+Tera Type: Normal
+Level: 58
+Bashful Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Coil
+- Double-Edge
+- Endeavor
+- Hurricane
+
+Dudunsparce-Three-Segment (F)
+IVs: 26 HP / 26 Atk / 29 Def / 21 SpA / 12 SpD
+EVs: 12 HP
+Ability: Serene Grace
+Tera Type: Normal
+Level: 60
+Adamant Nature
+Ball: Master Ball
+.MetLocation=124
+~=Version=SV
+.Version=50
+- Hyper Drill
+- Coil
+- Double-Edge
+- Endeavor
+
+Tarountula (M)
+IVs: 3 HP / 26 Atk / 12 Def / 20 SpA / 28 SpD / 8 Spe
+Ability: Insomnia
+Tera Type: Bug
+Level: 27
+Mild Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Bug Bite
+- Block
+- Counter
+- Headbutt
+
+Spidops (F)
+IVs: 17 HP / 24 Atk / 9 Def / 13 SpA / 22 SpD / 1 Spe
+Ability: Insomnia
+Tera Type: Bug
+Level: 25
+Bold Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Feint
+- Bug Bite
+- Block
+- Counter
+
+Nymble (F)
+IVs: 22 HP / 27 Atk / 15 SpA / 15 SpD / 26 Spe
+Ability: Swarm
+Tera Type: Bug
+Level: 17
+Quiet Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Astonish
+- Assurance
+- Double Kick
+- Screech
+
+Lokix (F)
+IVs: 22 HP / 23 Atk / 21 Def / 12 SpA / 11 SpD / 13 Spe
+Ability: Swarm
+Tera Type: Dark
+Level: 41
+Quiet Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Feint
+- Agility
+- Throat Chop
+- Sucker Punch
+
+Rellor (F)
+IVs: 21 HP / 23 Atk / 11 Def / 29 SpA / 3 SpD / 3 Spe
+Ability: Compound Eyes
+Tera Type: Bug
+Level: 26
+Quiet Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Rollout
+- Mud Shot
+- Bug Bite
+- Take Down
+
+Rabsca (M)
+IVs: 1 HP / 29 Atk / 11 Def / 14 SpA / 10 SpD / 10 Spe
+Ability: Synchronize
+Tera Type: Bug
+Level: 27
+Bold Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Rollout
+- Mud Shot
+- Bug Bite
+- Revival Blessing
+
+Greavard (F)
+IVs: 19 HP / 22 Atk / 19 Def / 6 SpA / 10 SpD / 19 Spe
+Ability: Pickup
+Tera Type: Ghost
+Level: 42
+Timid Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Crunch
+- Play Rough
+- Helping Hand
+- Phantom Force
+
+Houndstone (M)
+IVs: 0 HP / 2 Atk / 24 Def / 1 SpA / 4 SpD / 10 Spe
+Ability: Sand Rush
+Tera Type: Ghost
+Level: 42
+Lonely Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Rest
+- Crunch
+- Play Rough
+- Helping Hand
+
+Flittle (M)
+IVs: 4 HP / 0 Atk / 13 Def / 24 SpA / 28 SpD / 4 Spe
+Ability: Anticipation
+Tera Type: Psychic
+Level: 38
+Rash Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Psybeam
+- Pluck
+- Agility
+- Uproar
+
+Espathra (F)
+IVs: 26 HP / 4 Atk / 6 Def / 7 SpA / 0 SpD / 27 Spe
+Ability: Frisk
+Tera Type: Psychic
+Level: 40
+Sassy Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Psybeam
+- Pluck
+- Agility
+- Uproar
+
+Farigiraf (M)
+IVs: 24 HP / 19 Atk / 14 Def / 2 SpA / 4 SpD / 4 Spe
+Ability: Cud Chew
+Tera Type: Normal
+Level: 55
+Mild Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Crunch
+- Baton Pass
+- Nasty Plot
+- Psychic
+
+Wiglett (F)
+IVs: 3 HP / 0 Atk / 23 Def / 15 SpA / 1 SpD
+Ability: Rattled
+Tera Type: Dark
+Level: 12
+Naive Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Wrap
+- Aqua Jet
+- Sand Attack
+- Water Gun
+
+Wugtrio (M)
+IVs: 7 HP / 16 Atk / 16 Def / 20 SpA / 5 SpD / 16 Spe
+Ability: Gooey
+Tera Type: Water
+Level: 45
+Rash Nature
+~=Location=44
+~=Version=SV
+.Version=50
+- Headbutt
+- Triple Dive
+- Dig
+- Sucker Punch
+
+Dondozo (M)
+IVs: 25 HP / 25 Atk / 25 Def / 23 SpD / 14 Spe
+Ability: Unaware
+Tera Type: Water
+Level: 53
+Bold Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Body Slam
+- Aqua Tail
+- Rain Dance
+- Order Up
+
+Veluza (M)
+IVs: 2 HP / 14 Atk / 29 Def / 25 SpA / 9 SpD / 14 Spe
+Ability: Mold Breaker
+Tera Type: Water
+Level: 52
+Lonely Nature
+~=Location=40
+~=Version=SV
+.Version=50
+- Night Slash
+- Psycho Cut
+- Liquidation
+- Crunch
+
+Finizen (F)
+IVs: 30 HP / 21 Atk / 12 SpA / 10 SpD / 20 Spe
+Ability: Water Veil
+Tera Type: Water
+Level: 19
+Hasty Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Astonish
+- Focus Energy
+- Aqua Jet
+- Double Hit
+
+Palafin (F)
+IVs: 17 HP / 2 Def / 24 SpA / 13 SpD / 22 Spe
+Ability: Zero to Hero
+Tera Type: Water
+Level: 38
+Adamant Nature
+Ball: Master Ball
+~=Location=56
+~=Version=SV
+.Version=50
+- Acrobatics
+- Dive
+- Flip Turn
+- Double Hit
+
+Smoliv (F)
+IVs: 22 HP / 6 Atk / 28 Def / 7 SpA / 17 SpD / 3 Spe
+Ability: Early Bird
+Tera Type: Normal
+Level: 7
+Serious Nature
+~=Location=12
+~=Version=SV
+.Version=50
+- Tackle
+- Sweet Scent
+- Absorb
+- Growth
+
+Dolliv (F)
+IVs: 10 HP / 12 Atk / 1 Def / 14 SpA / 25 SpD / 15 Spe
+Ability: Early Bird
+Tera Type: Grass
+Level: 25
+Quiet Nature
+Ball: Master Ball
+~=Location=12
+~=Version=SV
+.Version=50
+- Sweet Scent
+- Mega Drain
+- Growth
+- Razor Leaf
+
+Arboliva (M)
+IVs: 30 HP / 19 Atk / 1 Def / 18 SpD / 22 Spe
+Ability: Seed Sower
+Tera Type: Grass
+Level: 35
+Bold Nature
+~=Location=12
+~=Version=SV
+.Version=50
+- Tackle
+- Energy Ball
+- Mega Drain
+- Seed Bomb
+
+Capsakid (M)
+IVs: 4 HP / 29 Atk / 22 Def / 8 SpD / 10 Spe
+Ability: Insomnia
+Tera Type: Water
+Level: 20
+Rash Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Bite
+- Razor Leaf
+- Bullet Seed
+- Headbutt
+
+Scovillain (M)
+IVs: 10 HP / 2 Atk / 8 Def / 15 SpA / 14 SpD / 18 Spe
+Ability: Insomnia
+Tera Type: Grass
+Level: 40
+Bashful Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Headbutt
+- Zen Headbutt
+- Worry Seed
+- Crunch
+
+Tadbulb (M)
+IVs: 16 HP / 21 Atk / 11 Def / 18 SpA / 21 SpD / 11 Spe
+Ability: Static
+Tera Type: Electric
+Level: 18
+Lonely Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Mud-Slap
+- Thunder Shock
+- Water Gun
+- Charge
+
+Bellibolt (F)
+IVs: 18 HP / 8 Atk / 19 Def / 11 SpA / 6 SpD / 6 Spe
+Ability: Electromorphosis
+Tera Type: Electric
+Level: 30
+Gentle Nature
+~=Location=30
+~=Version=SV
+.Version=50
+- Charge
+- Spark
+- Mud Shot
+- Flail
+
+Varoom (M)
+IVs: 5 HP / 3 Atk / 26 Def / 3 SpA / 22 SpD
+Ability: Overcoat
+Tera Type: Poison
+Level: 27
+Sassy Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Sludge
+- Gyro Ball
+- Headbutt
+- Screech
+
+Revavroom (M)
+IVs: 8 HP / 26 Atk / 14 Def / 5 SpA / 24 SpD / 10 Spe
+Ability: Overcoat
+Tera Type: Poison
+Level: 40
+Bold Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Screech
+- Iron Head
+- Swagger
+- Poison Jab
+
+Orthworm (F)
+IVs: 22 HP / 14 Atk / 7 Def / 3 SpA / 6 SpD / 11 Spe
+Ability: Earth Eater
+Tera Type: Steel
+Level: 22
+Lonely Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Mud-Slap
+- Smack Down
+- Bulldoze
+- Iron Head
+
+Tandemaus
+IVs: 23 HP / 0 Atk / 4 Def / 5 SpA / 6 SpD / 1 Spe
+Ability: Pickup
+Tera Type: Normal
+Level: 27
+Impish Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Double Hit
+- Bullet Seed
+- Encore
+- Play Rough
+
+Maushold
+IVs: 4 HP / 21 Atk / 0 SpA / 12 SpD / 18 Spe
+EVs: 1 HP / 9 Spe
+Ability: Friend Guard
+Tera Type: Normal
+Level: 25
+Impish Nature
+Ball: Master Ball
+.MetLocation=10
+~=Version=SV
+.Version=50
+- Pound
+- Baby-Doll Eyes
+- Echoed Voice
+
+Maushold-Four
+IVs: 26 SpA
+EVs: 2 HP / 3 Spe
+Ability: Friend Guard
+Tera Type: Normal
+Level: 26
+Serious Nature
+~=Version=SV
+.Version=50
+- Pound
+- Baby-Doll Eyes
+- After You
+- Echoed Voice
+
+Cetoddle (M)
+IVs: 8 HP / 27 Atk / 13 Def / 2 SpA / 4 SpD / 16 Spe
+Ability: Snow Cloak
+Tera Type: Ice
+Level: 40
+Gentle Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Avalanche
+- Bounce
+- Body Slam
+- Amnesia
+
+Cetitan (M)
+IVs: 28 HP / 20 Atk / 26 Def / 14 SpD / 29 Spe
+Ability: Thick Fat
+Tera Type: Ice
+Level: 53
+Impish Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Amnesia
+- Ice Spinner
+- Double-Edge
+- Blizzard
+
+Frigibax (M)
+IVs: 25 HP / 18 Atk / 20 Def / 4 SpA / 23 SpD / 7 Spe
+Ability: Thermal Exchange
+Tera Type: Dragon
+Level: 36
+Hardy Nature
+~=Location=38
+~=Version=SV
+.Version=50
+- Bite
+- Ice Fang
+- Dragon Claw
+- Take Down
+
+Arctibax (M)
+IVs: 0 HP / 16 Atk / 19 Def / 17 SpA / 21 Spe
+Ability: Thermal Exchange
+Tera Type: Dragon
+Level: 40
+Quiet Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Focus Energy
+- Bite
+- Ice Fang
+- Take Down
+
+Baxcalibur (F)
+IVs: 7 HP / 23 Atk / 19 Def / 2 SpA / 26 SpD / 10 Spe
+Ability: Thermal Exchange
+Tera Type: Ice
+Level: 54
+Brave Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Crunch
+- Ice Beam
+- Glaive Rush
+- Take Down
+
+Tatsugiri (F)
+IVs: 13 Atk / 7 Def / 5 SpA / 20 SpD / 2 Spe
+Ability: Commander
+Tera Type: Dragon
+Level: 51
+Bold Nature
+~=Location=40
+~=Version=SV
+.Version=50
+- Memento
+- Muddy Water
+- Nasty Plot
+- Mirror Coat
+
+Tatsugiri (F)
+IVs: 28 HP / 29 Atk / 21 Def / 24 SpA / 29 SpD / 13 Spe
+Ability: Commander
+Tera Type: Dragon
+Level: 50
+Mild Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Memento
+- Muddy Water
+- Nasty Plot
+- Mirror Coat
+
+Tatsugiri (M)
+IVs: 11 HP / 30 Atk / 19 Def / 14 SpA / 13 SpD / 22 Spe
+Ability: Commander
+Tera Type: Dragon
+Level: 45
+Gentle Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Taunt
+- Memento
+- Muddy Water
+- Nasty Plot
+
+Cyclizar (F)
+IVs: 12 HP / 16 Atk / 20 Def / 12 SpA / 19 SpD / 14 Spe
+Ability: Shed Skin
+Tera Type: Normal
+Level: 20
+Adamant Nature
+~=Location=34
+~=Version=SV
+.Version=50
+- Rapid Spin
+- Taunt
+- Breaking Swipe
+- Quick Attack
+
+Pawmi (F)
+IVs: 11 HP / 14 Atk / 15 Def / 8 SpA / 7 SpD / 29 Spe
+Ability: Static
+Tera Type: Electric
+Level: 6
+Timid Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Scratch
+- Growl
+- Thunder Shock
+- Quick Attack
+
+Pawmo (M)
+IVs: 16 HP / 24 Atk / 1 Def / 24 SpA / 21 SpD / 5 Spe
+Ability: Natural Cure
+Tera Type: Electric
+Level: 18
+Bold Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Quick Attack
+- Charge
+- Nuzzle
+- Dig
+
+Pawmot (M)
+IVs: 16 HP / 8 Atk / 9 Def / 28 Spe
+Ability: Natural Cure
+Tera Type: Fighting
+Level: 39
+Lax Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Arm Thrust
+- Spark
+- Revival Blessing
+- Low Sweep
+
+Wattrel (M)
+IVs: 1 HP / 7 Atk / 27 Def / 23 SpA / 29 SpD / 15 Spe
+Ability: Volt Absorb
+Tera Type: Flying
+Level: 19
+Jolly Nature
+~=Location=36
+~=Version=SV
+.Version=50
+- Quick Attack
+- Pluck
+- Spark
+- Uproar
+
+Kilowattrel (F)
+IVs: 7 HP / 25 Atk / 30 Def / 7 SpA / 17 SpD / 22 Spe
+Ability: Volt Absorb
+Tera Type: Flying
+Level: 47
+Docile Nature
+Ball: Master Ball
+~=Location=44
+~=Version=SV
+.Version=50
+- Roost
+- Dual Wingbeat
+- Agility
+- Volt Switch
+
+Bombirdier (F)
+IVs: 26 HP / 22 Atk / 23 Def / 27 SpA / 5 SpD / 14 Spe
+Ability: Big Pecks
+Tera Type: Flying
+Level: 41
+Serious Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Pluck
+- Torment
+- Rock Tomb
+- Payback
+
+Squawkabilly (M)
+IVs: 4 HP / 29 Atk / 14 Def / 1 SpD / 8 Spe
+Ability: Hustle
+Tera Type: Normal
+Level: 24
+Jolly Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Aerial Ace
+- Fury Attack
+- Taunt
+- Uproar
+
+Squawkabilly-Blue (F)
+IVs: 0 HP / 13 Atk / 2 Def / 2 SpA / 19 SpD / 27 Spe
+Ability: Intimidate
+Tera Type: Flying
+Level: 17
+Timid Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Quick Attack
+- Torment
+- Aerial Ace
+- Fury Attack
+
+Squawkabilly-Yellow (M)
+IVs: 10 HP / 15 Atk / 30 Def / 20 SpA / 14 SpD / 5 Spe
+Ability: Intimidate
+Tera Type: Normal
+Level: 25
+Rash Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Aerial Ace
+- Fury Attack
+- Taunt
+- Uproar
+
+Squawkabilly-White (F)
+IVs: 8 HP / 2 Atk / 30 Def / 18 SpA / 11 SpD / 17 Spe
+Ability: Intimidate
+Tera Type: Flying
+Level: 24
+Impish Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Aerial Ace
+- Fury Attack
+- Taunt
+- Uproar
+
+Flamigo (M)
+IVs: 26 HP / 23 Atk / 22 Def / 18 SpA / 17 SpD / 18 Spe
+Ability: Tangled Feet
+Tera Type: Flying
+Level: 5
+Adamant Nature
+~=Location=6
+~=Version=SV
+.Version=50
+- Peck
+- Copycat
+- Double Kick
+
+Klawf (M)
+IVs: 19 HP / 9 Atk / 18 Def / 11 SpA / 2 Spe
+Ability: Shell Armor
+Tera Type: Rock
+Level: 13
+Gentle Nature
+~=Location=20
+~=Version=SV
+.Version=50
+- Rock Throw
+- Harden
+- Rock Smash
+- Rock Tomb
+
+Nacli (M)
+IVs: 7 HP / 6 Atk / 9 Def / 25 SpA / 13 SpD / 16 Spe
+Ability: Sturdy
+Tera Type: Rock
+Level: 13
+Gentle Nature
+~=Location=20
+~=Version=SV
+.Version=50
+- Rock Throw
+- Mud Shot
+- Smack Down
+- Rock Polish
+
+Naclstack (F)
+IVs: 23 HP / 19 Atk / 30 Def / 18 SpA / 7 SpD / 26 Spe
+Ability: Sturdy
+Tera Type: Rock
+Level: 39
+Brave Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Iron Defense
+- Recover
+- Rock Slide
+- Stealth Rock
+
+Garganacl (M)
+IVs: 30 HP / 24 Atk / 10 Def / 20 SpA / 8 SpD / 18 Spe
+Ability: Sturdy
+Tera Type: Rock
+Level: 55
+Hasty Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Stealth Rock
+- Heavy Slam
+- Earthquake
+- Stone Edge
+
+Glimmet (F)
+IVs: 6 HP / 5 Atk / 20 Def / 19 SpD / 13 Spe
+Ability: Toxic Debris
+Tera Type: Rock
+Level: 41
+Brave Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SV
+.Version=50
+- Self-Destruct
+- Rock Slide
+- Power Gem
+- Acid Armor
+
+Glimmora (F)
+IVs: 28 HP / 17 Atk / 5 Def / 18 SpA / 9 SpD / 25 Spe
+Ability: Toxic Debris
+Tera Type: Rock
+Level: 60
+Bold Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Rock Slide
+- Power Gem
+- Acid Armor
+- Sludge Wave
+
+Shroodle (F)
+IVs: 5 HP / 17 Atk / 15 Def / 12 SpA / 12 SpD / 3 Spe
+Ability: Pickpocket
+Tera Type: Normal
+Level: 8
+Calm Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Leer
+- Acid Spray
+- Bite
+- Fury Swipes
+
+Grafaiai (F)
+IVs: 15 HP / 11 Atk / 1 Def / 22 SpA / 7 SpD / 22 Spe
+Ability: Poison Touch
+Tera Type: Poison
+Level: 24
+Bashful Nature
+~=Location=30
+~=Version=SV
+.Version=50
+- Switcheroo
+- Poison Fang
+- Flatter
+- Slash
+
+Fidough (M)
+IVs: 22 HP / 30 Atk / 2 Def / 10 SpA / 8 SpD / 0 Spe
+Ability: Own Tempo
+Tera Type: Fairy
+Level: 7
+Bold Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Tackle
+- Growl
+- Lick
+- Tail Whip
+
+Dachsbun (M)
+IVs: 2 HP / 15 Atk / 13 Def / 21 SpA / 7 SpD / 5 Spe
+Ability: Well-Baked Body
+Tera Type: Fairy
+Level: 39
+Bashful Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SV
+.Version=50
+- Work Up
+- Baton Pass
+- Roar
+- Double-Edge
+
+Maschiff (M)
+IVs: 4 HP / 1 Atk / 23 Def / 29 SpA / 15 Spe
+Ability: Run Away
+Tera Type: Fairy
+Level: 12
+Calm Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Snarl
+- Hone Claws
+- Bite
+- Lick
+
+Mabosstiff (M)
+IVs: 2 HP / 7 Atk / 20 SpA / 30 SpD / 1 Spe
+Ability: Guard Dog
+Tera Type: Dark
+Level: 34
+Brave Nature
+Ball: Master Ball
+~=Location=28
+~=Version=SV
+.Version=50
+- Roar
+- Headbutt
+- Payback
+- Crunch
+
+Bramblin (F)
+IVs: 7 HP / 20 Atk / 22 Def / 23 SpA / 23 SpD / 4 Spe
+Ability: Wind Rider
+Tera Type: Grass
+Level: 21
+Jolly Nature
+~=Location=32
+~=Version=SV
+.Version=50
+- Rapid Spin
+- Bullet Seed
+- Infestation
+- Hex
+
+Brambleghast (F)
+IVs: 26 HP / 29 Atk / 5 Def / 16 SpA / 5 SpD / 30 Spe
+Ability: Wind Rider
+Tera Type: Ghost
+Level: 28
+Hardy Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SV
+.Version=50
+- Bullet Seed
+- Infestation
+- Hex
+- Mega Drain
+
+Gimmighoul
+IVs: 17 HP / 25 Atk / 29 Def / 16 SpA / 1 SpD
+Ability: Rattled
+Tera Type: Ghost
+Level: 10
+Relaxed Nature
+Ball: Master Ball
+~=Location=20
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gholdengo
+IVs: 20 HP / 16 Atk / 10 Def / 3 SpA / 22 SpD / 30 Spe
+Ability: Good as Gold
+Tera Type: Ghost
+Level: 21
+Bold Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Great Tusk
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Ability: Protosynthesis
+Tera Type: Fighting
+Level: 45
+Naughty Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SV
+.Version=50
+- Rapid Spin
+- Brick Break
+- Knock Off
+- Stomping Tantrum
+
+Brute Bonnet
+IVs: 16 HP / 26 Atk / 13 Def / 17 SpA / 14 SpD / 30 Spe
+Ability: Protosynthesis
+Tera Type: Grass
+Level: 58
+Brave Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Payback
+- Thrash
+- Giga Drain
+- Sucker Punch
+
+Sandy Shocks
+IVs: 27 HP / 2 Atk / 23 Def / 19 SpA / 26 SpD / 7 Spe
+Ability: Protosynthesis
+Tera Type: Electric
+Level: 57
+Serious Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Screech
+- Heavy Slam
+- Metal Sound
+- Discharge
+
+Scream Tail
+IVs: 26 HP / 14 Atk / 20 Def / 2 SpA / 12 SpD / 29 Spe
+Ability: Protosynthesis
+Tera Type: Psychic
+Level: 60
+Relaxed Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Rest
+- Play Rough
+- Hyper Voice
+- Psychic Fangs
+
+Flutter Mane
+IVs: 11 HP / 9 Atk / 15 Def / 30 SpA / 15 SpD / 16 Spe
+Ability: Protosynthesis
+Tera Type: Ghost
+Level: 59
+Quirky Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Dazzling Gleam
+- Shadow Ball
+- Mystical Fire
+- Power Gem
+
+Slither Wing
+IVs: 12 HP / 5 Atk / 1 Def / 10 SpA / 6 Spe
+Ability: Protosynthesis
+Tera Type: Bug
+Level: 53
+Lax Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Low Sweep
+- Morning Sun
+- Lunge
+- Superpower
+
+Roaring Moon
+IVs: 4 HP / 10 Atk / 0 Def / 16 SpA / 7 SpD / 29 Spe
+Ability: Protosynthesis
+Tera Type: Dark
+Level: 59
+Bashful Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Zen Headbutt
+- Flamethrower
+- Night Slash
+- Dragon Dance
+
+Iron Treads
+IVs: 15 HP / 7 Atk / 11 SpA / 12 SpD / 7 Spe
+Ability: Quark Drive
+Tera Type: Steel
+Level: 58
+Mild Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Stomping Tantrum
+- Knock Off
+- Earthquake
+- Heavy Slam
+
+Iron Moth
+IVs: 8 HP / 7 Atk / 30 Def / 26 SpA / 26 SpD / 7 Spe
+Ability: Quark Drive
+Tera Type: Fire
+Level: 56
+Hardy Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Screech
+- Discharge
+- Sludge Wave
+- Fiery Dance
+
+Iron Hands
+IVs: 17 HP / 9 Atk / 8 Def / 6 SpD / 1 Spe
+Ability: Quark Drive
+Tera Type: Electric
+Level: 55
+Lonely Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Slam
+- Force Palm
+- Seismic Toss
+- Charge
+
+Iron Jugulis
+IVs: 25 HP / 8 Atk / 10 Def / 7 SpA / 23 Spe
+Ability: Quark Drive
+Tera Type: Dark
+Level: 59
+Adamant Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Snarl
+- Crunch
+- Hyper Voice
+- Air Slash
+
+Iron Thorns
+IVs: 13 HP / 4 Atk / 3 Def / 13 SpA / 29 SpD / 22 Spe
+Ability: Quark Drive
+Tera Type: Electric
+Level: 58
+Calm Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Charge
+- Rock Slide
+- Sandstorm
+- Wild Charge
+
+Iron Bundle
+IVs: 30 HP / 21 Atk / 12 Def / 8 SpA / 2 SpD / 27 Spe
+Ability: Quark Drive
+Tera Type: Water
+Level: 59
+Brave Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Helping Hand
+- Freeze-Dry
+- Flip Turn
+- Ice Beam
+
+Iron Valiant
+IVs: 4 HP / 28 Atk / 11 Def / 6 SpA / 30 SpD / 30 Spe
+Ability: Quark Drive
+Tera Type: Fighting
+Level: 59
+Brave Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Psycho Cut
+- Night Slash
+- Leaf Blade
+- Moonblast
+
+Ting-Lu
+IVs: 28 Atk / 15 Def / 12 SpD
+Ability: Vessel of Ruin
+Tera Type: Ground
+Level: 60
+Quiet Nature
+Ball: Master Ball
+~=Location=109
+~=Version=SV
+.Version=50
+- Stomping Tantrum
+- Ruination
+- Throat Chop
+- Rock Slide
+
+Chien-Pao
+IVs: 26 HP / 13 Atk / 4 SpA
+Ability: Sword of Ruin
+Tera Type: Dark
+Level: 60
+Lonely Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Icicle Crash
+- Ruination
+- Sucker Punch
+- Sacred Sword
+
+Wo-Chien
+IVs: 22 Atk / 18 SpA / 12 SpD
+Ability: Tablets of Ruin
+Tera Type: Dark
+Level: 60
+Impish Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Giga Drain
+- Ruination
+- Foul Play
+- Power Whip
+
+Chi-Yu
+IVs: 21 Atk / 11 SpA / 27 SpD
+Ability: Beads of Ruin
+Tera Type: Dark
+Level: 60
+Timid Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SV
+.Version=50
+- Lava Plume
+- Ruination
+- Bounce
+- Swagger
+
+Koraidon
+IVs: 25 HP / 25 Def / 25 SpD
+Ability: Orichalcum Pulse
+Tera Type: Fighting
+Level: 72
+Adamant Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Giga Impact
+- Bulk Up
+- Collision Course
+- Flamethrower
+
+Miraidon
+IVs: 25 HP / 25 Def / 25 SpD
+Ability: Hadron Engine
+Tera Type: Electric
+Level: 72
+Modest Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Hyper Beam
+- Charge
+- Electro Drift
+- Power Gem
+
+Gimmighoul
+IVs: 15 HP / 18 Atk / 29 Def / 1 SpA / 11 SpD / 5 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 15
+Mild Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 5 HP / 25 Atk / 21 Def / 27 SpA / 8 SpD / 26 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 50
+Serious Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 12 Atk / 3 Def / 16 SpA / 14 SpD / 3 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 35
+Naive Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 21 HP / 6 Atk / 4 Def / 9 SpA / 30 SpD / 9 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 50
+Bashful Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 19 HP / 18 Atk / 7 Def / 12 SpA / 0 SpD / 28 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 10
+Bashful Nature
+Ball: Master Ball
+~=Location=12
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 24 HP / 25 Atk / 24 Def / 18 SpA / 2 SpD / 16 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 50
+Docile Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 21 HP / 21 Atk / 10 Def / 11 SpA / 29 SpD / 21 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 50
+Relaxed Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 17 HP / 3 Atk / 20 Def / 3 SpA / 4 SpD / 7 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 50
+Bashful Nature
+Ball: Master Ball
+~=Location=46
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 10 HP / 20 Atk / 12 Def / 17 SpA / 27 SpD / 14 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 15
+Careful Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 29 HP / 2 Atk / 29 Def / 21 SpA / 0 SpD / 0 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 50
+Bold Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 10 HP / 23 Atk / 8 Def / 26 SpA / 28 SpD / 19 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 15
+Timid Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 24 HP / 0 Atk / 29 SpD / 24 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 50
+Naive Nature
+Ball: Master Ball
+~=Location=26
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 19 HP / 19 Atk / 6 Def / 11 SpA / 27 SpD / 21 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 35
+Calm Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Gimmighoul
+IVs: 23 HP / 4 Atk / 25 Def / 13 SpA / 29 SpD / 7 Spe
+Ability: Rattled
+Tera Type: Ghost
+Level: 35
+Calm Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SV
+.Version=50
+- Astonish
+- Tackle
+
+Ollie (Floatzel) (M) @ Mystic Water
+EVs: 6 HP / 252 Atk / 252 Spe
+Ability: Water Veil
+Tera Type: Water
+Jolly Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SV
+.Version=50
+- Aqua Tail
+- Crunch
+- Ice Fang
+- Swift
+
+Goofy (Skeledirge) (M) @ Charcoal
+EVs: 6 HP / 252 SpA / 252 Spe
+Ability: Unaware
+Tera Type: Fire
+Modest Nature
+~=Level=5
+~=Location=80
+~=Version=SV
+.Version=50
+- Flamethrower
+- Hyper Voice
+- Shadow Ball
+- Snarl
+
+Donald (Quaquaval) (M) @ Mystic Water
+EVs: 6 HP / 252 Atk / 252 Spe
+Ability: Moxie
+Tera Type: Water
+Adamant Nature
+~=Level=5
+~=Location=80
+~=Version=SV
+.Version=51
+- Aqua Step
+- Air Slash
+- Close Combat
+- Low Sweep
+
+Sora (Floragato) (M) @ Everstone
+EVs: 6 HP / 252 SpA / 252 Spe
+Ability: Protean
+Tera Type: Grass
+Modest Nature
+~=Level=5
+~=Location=80
+~=Version=SV
+.Version=51
+- Energy Ball
+- Bite
+- U-turn
+- Play Rough
+
+Saix (Roaring Moon) @ Dragon Fang
+EVs: 6 HP / 252 Atk / 252 Spe
+Ability: Protosynthesis
+Tera Type: Dark
+Adamant Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Zen Headbutt
+- Flamethrower
+- Jaw Lock
+- Dragon Claw
+
+Roxas (Pawmo) (M) @ Magnet
+EVs: 6 HP / 252 Atk / 252 Spe
+Ability: Iron Fist
+Tera Type: Electric
+Adamant Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Slam
+- Dig
+- Bite
+- Wild Charge
+
+Axel (Koraidon) @ Dragon Fang
+EVs: 6 HP / 252 Atk / 252 Spe
+Ability: Orichalcum Pulse
+Tera Type: Fighting
+Adamant Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=50
+- Outrage
+- Dragon Claw
+- Collision Course
+- Flamethrower
+
+Larxene (Miraidon) @ Dragon Fang
+EVs: 6 HP / 252 SpA / 252 Spe
+Ability: Hadron Engine
+Tera Type: Electric
+Modest Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SV
+.Version=51
+- Outrage
+- Thunder
+- Electro Drift
+- Power Gem
+
+Hauntikins (Gengar) (F)
+IVs: 14 HP / 20 Atk / 25 Def / 28 SpA / 16 SpD
+Ability: Cursed Body
+Tera Type: Ghost
+Level: 25
+Lonely Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=50
+- Payback
+- Spite
+- Curse
+- Hex
+
+Manchester (Wooper) (M) @ Rare Candy
+IVs: 27 HP / 18 Atk / 25 Def / 16 SpA / 13 Spe
+Ability: Water Absorb
+Tera Type: Water
+Level: 18
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=50
+- Mud Shot
+- Mist
+- Haze
+- Slam
+
+Snowsalot (Snom) (F)
+IVs: 18 Atk / 13 Def / 28 SpA / 26 SpD / 20 Spe
+Ability: Shield Dust
+Tera Type: Ice
+Level: 10
+Bashful Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=50
+- Struggle Bug
+- Powder Snow
+
+Hauntikins (Gengar) (F)
+IVs: 14 HP / 20 Atk / 25 Def / 28 SpA / 16 SpD
+Ability: Cursed Body
+Tera Type: Ghost
+Level: 25
+Lonely Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=51
+- Payback
+- Spite
+- Curse
+- Hex
+
+Manchester (Wooper) (M) @ Rare Candy
+IVs: 27 HP / 18 Atk / 25 Def / 16 SpA / 13 Spe
+Ability: Water Absorb
+Tera Type: Water
+Level: 18
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=51
+- Mud Shot
+- Mist
+- Haze
+- Slam
+
+Snowsalot (Snom) (F)
+IVs: 18 Atk / 13 Def / 28 SpA / 26 SpD / 20 Spe
+Ability: Shield Dust
+Tera Type: Ice
+Level: 10
+Bashful Nature
+Language: English
+~=Location=30001
+~=Version=SV
+.Version=51
+- Struggle Bug
+- Powder Snow
+
+Ekans (F)
+IVs: 22 HP / 2 Atk / 19 Def / 9 SpD / 14 Spe
+Ability: Intimidate
+Tera Type: Poison
+Level: 57
+Docile Nature
+Ball: Master Ball
+~=Location=136
+~=Version=SV
+.Version=50
+- Belch
+- Haze
+- Coil
+- Gunk Shot
+
+Arbok (M)
+IVs: 17 HP / 26 Atk / 13 Spe
+Ability: Shed Skin
+Tera Type: Electric
+Level: 67
+Serious Nature
+~=Location=158
+~=Version=SV
+.Version=50
+- Thunder Fang
+- Poison Tail
+- Bite
+- Leer
+
+Pikachu-Original (M)
+IVs: 4 HP / 24 Atk / 25 SpA / 17 SpD / 21 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Pikachu-Hoenn (M)
+IVs: 17 HP / 9 Atk / 8 Def / 1 SpD / 20 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Pikachu-Sinnoh (M)
+IVs: 28 HP / 6 Atk / 4 Def / 5 SpA / 0 SpD / 5 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Pikachu-Unova (M)
+IVs: 0 HP / 11 Atk / 8 Def / 21 SpA / 10 SpD / 1 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Pikachu-Kalos (M)
+IVs: 12 HP / 9 Atk / 13 Def / 11 SpA / 19 SpD / 10 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Pikachu-Alola (M)
+IVs: 22 HP / 12 Atk / 24 Def / 19 SpA / 30 SpD / 3 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Pikachu-Partner (M)
+IVs: 26 HP / 18 Atk / 23 Def / 19 SpA / 23 SpD / 0 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Pikachu-World (M)
+IVs: 10 HP / 6 Atk / 1 Def / 29 SpA / 6 SpD / 8 Spe
+Ability: Static
+Tera Type: Electric
+Level: 25
+Hardy Nature
+~=Location=40042
+~=Version=SWSH
+.Version=44
+- Electro Ball
+- Feint
+- Spark
+- Agility
+
+Sandshrew (F)
+IVs: 6 HP / 0 Atk / 1 Def / 11 SpA / 15 SpD / 26 Spe
+Ability: Sand Veil
+Tera Type: Ground
+Level: 63
+Impish Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Gyro Ball
+- Swords Dance
+- Sandstorm
+- Earthquake
+
+Sandshrew-Alola (F)
+IVs: 12 SpD
+Ability: Snow Cloak
+Tera Type: Ice
+Level: 1
+Hardy Nature
+~=Version=SV
+.Version=50
+- Defense Curl
+- Scratch
+
+Sandslash (F)
+IVs: 26 HP / 9 Atk / 14 Def / 23 SpA / 2 SpD / 5 Spe
+Ability: Sand Veil
+Tera Type: Ground
+Level: 65
+Naive Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Gyro Ball
+- Swords Dance
+- Sandstorm
+- Earthquake
+
+Sandslash-Alola (M)
+IVs: 16 HP
+Ability: Snow Cloak
+Tera Type: Ice
+Level: 1
+Hardy Nature
+~=Version=SV
+.Version=50
+- Defense Curl
+- Scratch
+- Icicle Spear
+
+Clefairy (F)
+IVs: 0 HP / 26 Atk / 13 Def / 15 SpA / 8 SpD / 30 Spe
+Ability: Cute Charm
+Tera Type: Fairy
+Level: 63
+Impish Nature
+Ball: Master Ball
+~=Location=144
+~=Version=SV
+.Version=50
+- Follow Me
+- Cosmic Power
+- Moonblast
+- Healing Wish
+
+Clefable (M)
+IVs: 15 HP / 3 Def / 19 SpA / 28 SpD / 27 Spe
+Ability: Cute Charm
+Tera Type: Fairy
+Level: 71
+Modest Nature
+Ball: Master Ball
+~=Location=144
+~=Version=SV
+.Version=50
+- Follow Me
+- Cosmic Power
+- Moonblast
+- Healing Wish
+
+Vulpix (F)
+IVs: 21 HP / 29 Atk / 7 Def / 13 SpD / 12 Spe
+Ability: Flash Fire
+Tera Type: Fire
+Level: 66
+Quirky Nature
+Ball: Master Ball
+~=Location=144
+~=Version=SV
+.Version=50
+- Fire Spin
+- Safeguard
+- Inferno
+- Fire Blast
+
+Vulpix-Alola (F)
+IVs: 13 SpA
+Ability: Snow Cloak
+Tera Type: Ice
+Level: 1
+Brave Nature
+~=Version=SV
+.Version=50
+- Tail Whip
+- Powder Snow
+
+Ninetales (F)
+IVs: 16 Def / 2 SpA / 20 SpD
+Ability: Flash Fire
+Tera Type: Fairy
+Level: 62
+Mild Nature
+~=Location=140
+~=Version=SV
+.Version=50
+- Hypnosis
+- Baby-Doll Eyes
+- Incinerate
+- Quick Attack
+
+Ninetales-Alola (F)
+IVs: 22 Atk
+Ability: Snow Cloak
+Tera Type: Ice
+Level: 1
+Brave Nature
+~=Version=SV
+.Version=50
+- Tail Whip
+- Powder Snow
+- Dazzling Gleam
+
+Poliwag (F)
+IVs: 13 HP / 15 Atk / 5 Def / 28 SpA / 19 SpD / 13 Spe
+Ability: Damp
+Tera Type: Water
+Level: 73
+Gentle Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Earth Power
+- Hydro Pump
+- Belly Drum
+- Double-Edge
+
+Poliwhirl (F)
+IVs: 24 HP / 4 Atk / 23 Def / 20 SpA / 10 SpD / 12 Spe
+Ability: Damp
+Tera Type: Water
+Level: 72
+Naughty Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Earth Power
+- Hydro Pump
+- Belly Drum
+- Double-Edge
+
+Poliwrath (M)
+IVs: 4 HP / 19 Atk / 7 Def / 14 SpA / 6 SpD / 1 Spe
+Ability: Damp
+Tera Type: Water
+Level: 65
+Lax Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Body Slam
+- Earth Power
+- Hydro Pump
+- Dynamic Punch
+
+Bellsprout (M)
+IVs: 19 HP / 14 Atk / 19 Def / 1 SpA / 0 SpD / 3 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 59
+Gentle Nature
+Ball: Master Ball
+~=Location=136
+~=Version=SV
+.Version=50
+- Razor Leaf
+- Poison Jab
+- Slam
+- Power Whip
+
+Weepinbell (F)
+IVs: 13 HP / 17 Atk / 1 Def / 11 SpA / 21 SpD / 6 Spe
+Ability: Chlorophyll
+Tera Type: Poison
+Level: 65
+Calm Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Razor Leaf
+- Poison Jab
+- Slam
+- Power Whip
+
+Victreebel (M)
+IVs: 22 HP / 27 Atk / 21 Def / 29 SpA / 30 SpD / 25 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 65
+Sassy Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Leaf Storm
+- Poison Jab
+- Slam
+- Power Whip
+
+Geodude (M)
+IVs: 22 Atk / 11 Def / 23 SpA / 29 SpD / 28 Spe
+Ability: Rock Head
+Tera Type: Rock
+Level: 65
+Naughty Nature
+Ball: Master Ball
+~=Location=168
+~=Version=SV
+.Version=50
+- Earthquake
+- Explosion
+- Double-Edge
+- Stone Edge
+
+Geodude-Alola (F)
+IVs: 5 Def
+Ability: Sturdy
+Tera Type: Rock
+Level: 1
+Serious Nature
+~=Version=SV
+.Version=50
+- Tackle
+- Defense Curl
+
+Graveler (F)
+IVs: 8 Atk / 14 Def / 28 SpA / 4 SpD / 29 Spe
+Ability: Sturdy
+Tera Type: Rock
+Level: 68
+Quiet Nature
+~=Location=144
+~=Version=SV
+.Version=50
+- Earthquake
+- Explosion
+- Double-Edge
+- Stone Edge
+
+Graveler-Alola (F)
+IVs: 0 SpD
+Ability: Sturdy
+Tera Type: Rock
+Level: 25
+Serious Nature
+~=Version=SV
+.Version=50
+- Smack Down
+- Rock Throw
+- Thunder Punch
+- Spark
+
+Golem (F)
+IVs: 23 HP / 18 Atk / 24 Def / 12 SpA / 9 SpD / 19 Spe
+Ability: Sturdy
+Tera Type: Ground
+Level: 68
+Serious Nature
+~=Location=162
+~=Version=SV
+.Version=50
+- Earthquake
+- Explosion
+- Double-Edge
+- Stone Edge
+
+Golem-Alola (M)
+IVs: 13 SpD
+Ability: Sturdy
+Tera Type: Electric
+Level: 25
+Serious Nature
+~=Version=SV
+.Version=50
+- Rock Throw
+- Spark
+- Charge
+- Thunder Punch
+
+Koffing (F)
+IVs: 17 HP / 7 Atk / 2 Def / 2 SpA / 5 SpD / 8 Spe
+Ability: Levitate
+Tera Type: Poison
+Level: 70
+Hasty Nature
+Ball: Master Ball
+~=Location=152
+~=Version=SV
+.Version=50
+- Belch
+- Explosion
+- Memento
+- Destiny Bond
+
+Weezing (M)
+IVs: 17 HP / 10 Atk / 8 Def / 16 SpA / 24 SpD / 18 Spe
+Ability: Levitate
+Tera Type: Poison
+Level: 68
+Quiet Nature
+Ball: Master Ball
+~=Location=152
+~=Version=SV
+.Version=50
+- Belch
+- Explosion
+- Double Hit
+- Destiny Bond
+
+Weezing-Galar (F)
+IVs: 9 HP / 26 Atk / 3 Def / 14 SpA / 27 SpD / 5 Spe
+Ability: Neutralizing Gas
+Tera Type: Poison
+Level: 45
+Hardy Nature
+~=Location=8
+~=Version=SWSH
+.Version=44
+- Self-Destruct
+- Sludge Bomb
+- Toxic
+- Belch
+
+Snorlax (F)
+IVs: 14 HP / 12 Atk / 12 Def / 10 SpA / 3 SpD / 13 Spe
+Ability: Thick Fat
+Tera Type: Normal
+Level: 76
+Naughty Nature
+~=Location=166
+~=Version=SV
+.Version=50
+- Hammer Arm
+- Belly Drum
+- Belch
+- Giga Impact
+
+Articuno
+IVs: 2 Atk / 13 SpD
+Ability: Pressure
+Tera Type: Ice
+Level: 70
+Naughty Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Hurricane
+- Haze
+- Blizzard
+- Sheer Cold
+
+Articuno-Galar
+IVs: 6 SpA / 5 SpD / 1 Spe
+Ability: Competitive
+Tera Type: Psychic
+Level: 70
+Timid Nature
+.MetLocation=212
+~=Version=SWSH
+.Version=44
+- Hurricane
+- Double Team
+- Future Sight
+- Trick Room
+
+Zapdos
+IVs: 5 Atk / 9 Spe
+Ability: Pressure
+Tera Type: Electric
+Level: 70
+Relaxed Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Thunder
+- Detect
+- Magnetic Flux
+- Zap Cannon
+
+Zapdos-Galar
+IVs: 29 Atk / 5 SpD / 14 Spe
+Ability: Defiant
+Tera Type: Fighting
+Level: 70
+Brave Nature
+.MetLocation=122
+~=Version=SWSH
+.Version=44
+- Counter
+- Detect
+- Close Combat
+- Reversal
+
+Moltres
+IVs: 24 HP / 3 Atk
+Ability: Pressure
+Tera Type: Fire
+Level: 70
+Careful Nature
+.Location=244
+~=Version=SWSH
+.Version=44
+- Hurricane
+- Endure
+- Overheat
+- Sky Attack
+
+Moltres-Galar
+IVs: 25 HP / 30 Atk / 2 Def
+Ability: Berserk
+Tera Type: Dark
+Level: 70
+Impish Nature
+.MetLocation=190
+~=Version=SWSH
+.Version=44
+- Hurricane
+- Endure
+- Memento
+- Sky Attack
+
+Mewtwo
+IVs: 13 HP / 9 Atk
+Ability: Pressure
+Tera Type: Psychic
+Level: 70
+Naughty Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Psychic
+- Power Swap
+- Guard Swap
+- Mist
+
+Mew
+IVs: 13 Atk / 5 Def / 29 Spe
+Ability: Synchronize
+Tera Type: Psychic
+Level: 1
+Naughty Nature
+~=Location=40085
+~=Version=SWSH
+.Version=44
+- Pound
+- Reflect Type
+
+Sentret (M)
+IVs: 0 HP / 21 Atk / 20 Def / 25 SpA / 1 SpD / 7 Spe
+Ability: Keen Eye
+Tera Type: Normal
+Level: 58
+Jolly Nature
+~=Location=136
+~=Version=SV
+.Version=50
+- Amnesia
+- Baton Pass
+- Double-Edge
+- Hyper Voice
+
+Furret (F)
+IVs: 4 HP / 19 Atk / 18 Def / 27 SpA / 4 SpD / 29 Spe
+Ability: Keen Eye
+Tera Type: Normal
+Level: 60
+Bold Nature
+Ball: Master Ball
+~=Location=140
+~=Version=SV
+.Version=50
+- Amnesia
+- Baton Pass
+- Double-Edge
+- Hyper Voice
+
+Hoothoot (M)
+IVs: 11 HP / 25 Atk / 27 Def / 0 SpA / 26 SpD / 7 Spe
+Ability: Insomnia
+Tera Type: Normal
+Level: 72
+Jolly Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Roost
+- Moonblast
+- Hypnosis
+- Dream Eater
+
+Noctowl (M)
+IVs: 17 HP / 7 Def / 23 SpA / 24 SpD / 11 Spe
+Ability: Insomnia
+Tera Type: Flying
+Level: 66
+Adamant Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Roost
+- Moonblast
+- Hypnosis
+- Dream Eater
+
+Spinarak (M)
+IVs: 30 HP / 26 Atk / 27 Def / 12 SpA / 6 SpD / 2 Spe
+Ability: Insomnia
+Tera Type: Poison
+Level: 70
+Lonely Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Poison Jab
+- Cross Poison
+- Sticky Web
+- Toxic Thread
+
+Ariados (M)
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Swarm
+Tera Type: Bug
+Level: 65
+Hardy Nature
+Ball: Master Ball
+~=Location=166
+~=Version=SV
+.Version=50
+- Poison Jab
+- Cross Poison
+- Sticky Web
+- Toxic Thread
+
+Cleffa (M)
+IVs: 15 Atk / 15 Def / 20 SpA / 15 SpD / 28 Spe
+Ability: Cute Charm
+Tera Type: Fairy
+Level: 69
+Quiet Nature
+Ball: Master Ball
+~=Location=144
+~=Version=SV
+.Version=50
+- Sweet Kiss
+- Disarming Voice
+- Encore
+- Charm
+
+Politoed (F)
+IVs: 16 HP / 29 Atk / 25 Def / 28 SpA / 24 SpD / 5 Spe
+Ability: Damp
+Tera Type: Water
+Level: 65
+Mild Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Body Slam
+- Earth Power
+- Hydro Pump
+- Belly Drum
+
+Aipom (M)
+IVs: 8 HP / 24 Atk / 22 Def / 20 SpA / 7 SpD / 24 Spe
+Ability: Pickup
+Tera Type: Normal
+Level: 60
+Modest Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=51
+- Double Hit
+- Fling
+- Nasty Plot
+- Last Resort
+
+Yanma (M)
+IVs: 0 HP / 13 Def / 4 Spe
+Ability: Compound Eyes
+Tera Type: Psychic
+Level: 66
+Serious Nature
+~=Location=156
+~=Version=SV
+.Version=50
+- Psychic
+- Air Cutter
+- Detect
+- Uproar
+
+Gligar (F)
+IVs: 29 HP / 30 Atk / 9 Def / 11 SpA / 21 SpD / 1 Spe
+Ability: Hyper Cutter
+Tera Type: Flying
+Level: 71
+Adamant Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Screech
+- X-Scissor
+- Crabhammer
+- Swords Dance
+
+Slugma (F)
+IVs: 0 HP / 25 Atk / 15 Def / 27 SpA / 21 SpD / 7 Spe
+Ability: Magma Armor
+Tera Type: Fire
+Level: 66
+Lonely Nature
+Ball: Master Ball
+~=Location=152
+~=Version=SV
+.Version=50
+- Body Slam
+- Recover
+- Flamethrower
+- Earth Power
+
+Magcargo (F)
+IVs: 27 HP / 10 Atk / 16 Def / 26 SpA / 20 SpD
+Ability: Magma Armor
+Tera Type: Fire
+Level: 70
+Bold Nature
+Ball: Master Ball
+~=Location=152
+~=Version=SV
+.Version=50
+- Body Slam
+- Recover
+- Flamethrower
+- Earth Power
+
+Swinub (F)
+IVs: 23 HP / 22 Atk / 3 Def / 23 SpA / 26 SpD / 8 Spe
+Ability: Oblivious
+Tera Type: Ground
+Level: 58
+Gentle Nature
+Ball: Master Ball
+~=Location=140
+~=Version=SV
+.Version=50
+- Amnesia
+- Take Down
+- Earthquake
+- Blizzard
+
+Piloswine (M)
+IVs: 22 HP / 19 Atk / 10 Def / 18 SpA / 19 SpD / 20 Spe
+Ability: Snow Cloak
+Tera Type: Ground
+Level: 72
+Jolly Nature
+Ball: Master Ball
+~=Location=170
+~=Version=SV
+.Version=50
+- Take Down
+- Earthquake
+- Blizzard
+- Thrash
+
+Poochyena (M)
+IVs: 22 HP / 22 Atk / 1 Def / 22 SpA / 14 SpD / 21 Spe
+Ability: Quick Feet
+Tera Type: Dark
+Level: 55
+Calm Nature
+Ball: Master Ball
+~=Location=136
+~=Version=SV
+.Version=50
+- Yawn
+- Take Down
+- Sucker Punch
+- Play Rough
+
+Mightyena (M)
+IVs: 26 HP / 3 Atk / 8 Def / 3 SpA / 25 Spe
+Ability: Intimidate
+Tera Type: Dark
+Level: 62
+Timid Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=50
+- Yawn
+- Take Down
+- Sucker Punch
+- Play Rough
+
+Lotad (M)
+IVs: 26 HP / 11 Atk / 18 Def / 27 SpA / 6 SpD / 13 Spe
+Ability: Rain Dish
+Tera Type: Water
+Level: 68
+Bold Nature
+Ball: Master Ball
+~=Location=168
+~=Version=SV
+.Version=50
+- Giga Drain
+- Rain Dance
+- Zen Headbutt
+- Energy Ball
+
+Lombre (F)
+IVs: 15 HP / 6 Atk / 11 Def / 4 SpA / 14 SpD / 17 Spe
+Ability: Rain Dish
+Tera Type: Grass
+Level: 64
+Naughty Nature
+~=Location=158
+~=Version=SV
+.Version=50
+- Giga Drain
+- Zen Headbutt
+- Energy Ball
+- Hydro Pump
+
+Ludicolo (F)
+IVs: 28 HP / 7 Atk / 14 Def / 20 SpA / 16 SpD / 16 Spe
+Ability: Rain Dish
+Tera Type: Water
+Level: 72
+Quirky Nature
+~=Location=156
+~=Version=SV
+.Version=50
+- Giga Drain
+- Zen Headbutt
+- Energy Ball
+- Hydro Pump
+
+Seedot (M)
+IVs: 27 HP / 4 Atk / 19 Def / 2 SpA / 4 SpD / 30 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 62
+Docile Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Sunny Day
+- Synthesis
+- Sucker Punch
+- Explosion
+
+Nuzleaf (F)
+IVs: 10 HP / 21 Atk / 11 Def / 29 SpA / 19 SpD / 9 Spe
+Ability: Chlorophyll
+Tera Type: Dark
+Level: 71
+Calm Nature
+Ball: Master Ball
+~=Location=166
+~=Version=SV
+.Version=50
+- Sunny Day
+- Extrasensory
+- Sucker Punch
+- Leaf Blade
+
+Shiftry (F)
+IVs: 23 HP / 26 Atk / 3 Def / 27 SpA / 6 SpD / 9 Spe
+Ability: Wind Rider
+Tera Type: Grass
+Level: 72
+Quirky Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Sunny Day
+- Extrasensory
+- Sucker Punch
+- Leaf Blade
+
+Nosepass (F)
+IVs: 10 HP / 10 Atk / 18 Def / 30 SpA / 18 SpD / 23 Spe
+Ability: Sturdy
+Tera Type: Rock
+Level: 62
+Lonely Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Earth Power
+- Stone Edge
+- Zap Cannon
+- Lock-On
+
+Volbeat (M)
+IVs: 15 HP / 1 Atk / 12 Def / 1 SpA / 9 SpD / 20 Spe
+Ability: Illuminate
+Tera Type: Bug
+Level: 55
+Serious Nature
+Ball: Master Ball
+~=Location=132
+~=Version=SV
+.Version=50
+- Bug Buzz
+- Play Rough
+- Double-Edge
+- Infestation
+
+Illumise (F)
+IVs: 30 HP / 16 Atk / 22 Def / 1 SpA / 11 SpD / 19 Spe
+Ability: Oblivious
+Tera Type: Bug
+Level: 71
+Lax Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Helping Hand
+- Bug Buzz
+- Play Rough
+- Infestation
+
+Corphish (F)
+IVs: 20 HP / 23 Def / 29 SpA / 20 SpD / 19 Spe
+Ability: Shell Armor
+Tera Type: Water
+Level: 71
+Quiet Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Crunch
+- Crabhammer
+- Endeavor
+- Guillotine
+
+Crawdaunt (M)
+IVs: 25 HP / 22 Atk / 30 Def / 25 SpA / 24 SpD / 25 Spe
+Ability: Hyper Cutter
+Tera Type: Water
+Level: 71
+Lax Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Crunch
+- Crabhammer
+- Endeavor
+- Guillotine
+
+Feebas (F)
+IVs: 18 HP / 7 Atk / 7 Def / 24 SpA / 4 SpD / 4 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 69
+Hardy Nature
+Ball: Master Ball
+~=Location=144
+~=Version=SV
+.Version=50
+- Splash
+- Tackle
+- Flail
+
+Milotic (M)
+IVs: 22 HP / 30 Atk / 12 Def / 4 SpA / 6 SpD / 12 Spe
+Ability: Competitive
+Tera Type: Water
+Level: 63
+Hasty Nature
+Ball: Master Ball
+~=Location=144
+~=Version=SV
+.Version=50
+- Splash
+- Tackle
+- Flail
+- Water Pulse
+
+Duskull (M)
+IVs: 2 HP / 6 Atk / 14 Def / 8 SpA / 3 SpD / 10 Spe
+Ability: Levitate
+Tera Type: Ghost
+Level: 65
+Hasty Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Hex
+- Curse
+- Shadow Ball
+- Future Sight
+
+Dusclops (F)
+IVs: 19 HP / 5 Atk / 10 Def / 17 SpA / 20 SpD / 10 Spe
+Ability: Pressure
+Tera Type: Ghost
+Level: 71
+Calm Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Hex
+- Curse
+- Shadow Ball
+- Future Sight
+
+Chimecho (M)
+IVs: 9 HP / 9 Atk / 22 Def / 12 SpA / 15 SpD / 29 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 70
+Rash Nature
+Ball: Master Ball
+~=Location=152
+~=Version=SV
+.Version=50
+- Uproar
+- Safeguard
+- Double-Edge
+- Heal Pulse
+
+Kyogre
+IVs: 12 Atk / 27 Spe
+Ability: Drizzle
+Tera Type: Water
+Level: 70
+Gentle Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Muddy Water
+- Ice Beam
+- Sheer Cold
+- Aqua Ring
+
+Groudon
+IVs: 8 Atk / 12 Def
+Ability: Drought
+Tera Type: Ground
+Level: 70
+Naughty Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Earthquake
+- Hammer Arm
+- Fissure
+- Rest
+
+Rayquaza
+IVs: 14 Def / 29 SpA
+Ability: Air Lock
+Tera Type: Dragon
+Level: 70
+Bold Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Dragon Pulse
+- Hyper Voice
+- Rest
+- Fly
+
+Jirachi
+IVs: 29 Def / 25 SpA / 22 Spe
+Ability: Serene Grace
+Tera Type: Steel
+Level: 5
+Bold Nature
+~=Location=438
+~=Version=BD
+- Confusion
+- Wish
+
+Turtwig (M)
+IVs: 19 HP / 21 Atk / 0 Def / 23 SpA / 29 SpD / 23 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 1
+Rash Nature
+~=Level=1
+~=Version=SV
+.Version=50
+- Tackle
+
+Grotle (M)
+IVs: 11 Def
+Ability: Overgrow
+Tera Type: Grass
+Level: 18
+Docile Nature
+~=Version=SV
+.Version=50
+- Tackle
+- Withdraw
+- Absorb
+- Razor Leaf
+
+Torterra (M)
+IVs: 16 Def
+Ability: Overgrow
+Tera Type: Grass
+Level: 32
+Mild Nature
+~=Version=SV
+.Version=50
+- Earthquake
+- Bite
+- Mega Drain
+- Razor Leaf
+
+Chimchar (M)
+IVs: 14 HP / 20 Atk / 14 Def / 11 SpA / 2 SpD / 24 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 1
+Relaxed Nature
+~=Level=1
+~=Version=SV
+.Version=50
+- Scratch
+- Leer
+
+Monferno (M)
+IVs: 7 Def
+Ability: Blaze
+Tera Type: Fire
+Level: 14
+Brave Nature
+~=Version=SV
+.Version=50
+- Scratch
+- Mach Punch
+- Ember
+- Taunt
+
+Infernape (M)
+IVs: 9 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 36
+Quiet Nature
+~=Version=SV
+.Version=50
+- Scratch
+- Close Combat
+- Flame Wheel
+- Fury Swipes
+
+Piplup (M)
+IVs: 14 HP / 26 Atk / 21 Def / 0 SpD / 15 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 1
+Naughty Nature
+~=Level=1
+~=Version=SV
+.Version=50
+- Pound
+
+Prinplup (M)
+IVs: 22 Def
+Ability: Torrent
+Tera Type: Water
+Level: 16
+Quiet Nature
+~=Version=SV
+.Version=50
+- Metal Claw
+- Peck
+- Water Gun
+- Charm
+
+Empoleon (M)
+IVs: 20 Atk
+Ability: Torrent
+Tera Type: Water
+Level: 36
+Brave Nature
+~=Version=SV
+.Version=50
+- Pound
+- Peck
+- Aqua Jet
+- Metal Claw
+
+Ambipom (F)
+IVs: 29 HP / 11 Atk / 19 Def / 20 SpA / 15 SpD / 5 Spe
+Ability: Technician
+Tera Type: Normal
+Level: 63
+Bold Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=51
+- Double Hit
+- Fling
+- Nasty Plot
+- Last Resort
+
+Chingling (M)
+IVs: 0 HP / 23 Atk / 30 Def / 30 SpA / 12 SpD / 21 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 69
+Quirky Nature
+Ball: Master Ball
+~=Location=152
+~=Version=SV
+.Version=50
+- Yawn
+- Last Resort
+- Entrainment
+- Uproar
+
+Munchlax (M)
+IVs: 22 HP / 16 Atk / 15 Def / 15 SpA / 15 SpD / 3 Spe
+Ability: Pickup
+Tera Type: Normal
+Level: 70
+Careful Nature
+~=Location=156
+~=Version=SV
+.Version=50
+- Metronome
+- Flail
+- Belly Drum
+- Last Resort
+
+Yanmega (M)
+IVs: 26 HP / 15 Atk / 12 Def / 6 SpD / 26 Spe
+Ability: Tinted Lens
+Tera Type: Bug
+Level: 71
+Calm Nature
+~=Location=156
+~=Version=SV
+.Version=50
+- Ancient Power
+- U-turn
+- Air Slash
+- Bug Buzz
+
+Gliscor (F)
+IVs: 19 HP / 20 Atk / 16 Def / 13 SpA / 6 SpD / 5 Spe
+Ability: Hyper Cutter
+Tera Type: Flying
+Level: 69
+Calm Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Screech
+- X-Scissor
+- Crabhammer
+- Swords Dance
+
+Mamoswine (M)
+IVs: 9 HP / 13 Atk / 17 Def / 5 SpA / 7 SpD / 14 Spe
+Ability: Oblivious
+Tera Type: Ice
+Level: 72
+Naive Nature
+Ball: Master Ball
+~=Location=170
+~=Version=SV
+.Version=50
+- Ancient Power
+- Earthquake
+- Blizzard
+- Double Hit
+
+Probopass (F)
+IVs: 6 Atk / 26 Def / 9 SpA / 30 SpD / 25 Spe
+Ability: Magnet Pull
+Tera Type: Rock
+Level: 65
+Naive Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Earth Power
+- Stone Edge
+- Zap Cannon
+- Tri Attack
+
+Dusknoir (M)
+IVs: 26 HP / 12 Atk / 4 Def / 13 SpA / 0 SpD / 25 Spe
+Ability: Pressure
+Tera Type: Ghost
+Level: 70
+Rash Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Hex
+- Curse
+- Shadow Ball
+- Future Sight
+
+Uxie
+IVs: 24 Atk / 19 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 70
+Naive Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Psychic
+- Yawn
+- Future Sight
+- Flail
+
+Mesprit
+IVs: 18 HP / 2 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 70
+Hasty Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Psychic
+- Flatter
+- Future Sight
+- Copycat
+
+Azelf
+IVs: 5 HP / 18 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 70
+Timid Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Psychic
+- Uproar
+- Future Sight
+- Last Resort
+
+Dialga
+IVs: 9 Atk / 17 SpA
+Ability: Pressure
+Tera Type: Steel
+Level: 70
+Lax Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Dragon Claw
+- Aura Sphere
+- Power Gem
+- Metal Burst
+
+Dialga-Origin @ Adamant Crystal
+IVs: 9 Atk / 17 SpA
+Ability: Pressure
+Tera Type: Steel
+Level: 70
+Lax Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Dragon Claw
+- Aura Sphere
+- Power Gem
+- Metal Burst
+
+Palkia
+IVs: 25 SpA / 21 Spe
+Ability: Pressure
+Tera Type: Water
+Level: 70
+Timid Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Aqua Ring
+- Aura Sphere
+- Power Gem
+- Aqua Tail
+
+Palkia-Origin @ Lustrous Globe
+IVs: 25 SpA / 21 Spe
+Ability: Pressure
+Tera Type: Water
+Level: 70
+Timid Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Aqua Ring
+- Aura Sphere
+- Power Gem
+- Aqua Tail
+
+Heatran (F)
+IVs: 28 Atk / 2 SpA
+Ability: Flash Fire
+Tera Type: Fire
+Level: 70
+Impish Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Metal Sound
+- Earth Power
+- Heat Wave
+- Stone Edge
+
+Giratina
+IVs: 13 Def / 4 SpD
+Ability: Pressure
+Tera Type: Ghost
+Level: 70
+Naughty Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Pain Split
+- Aura Sphere
+- Dragon Claw
+- Earth Power
+
+Giratina-Origin @ Griseous Core
+IVs: 13 Def / 4 SpD
+Ability: Levitate
+Tera Type: Ghost
+Level: 70
+Naughty Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Pain Split
+- Aura Sphere
+- Dragon Claw
+- Earth Power
+
+Cresselia (F)
+IVs: 10 SpD / 13 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 70
+Brave Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Safeguard
+- Psychic
+- Moonblast
+- Future Sight
+
+Phione
+IVs: 25 HP
+Ability: Hydration
+Tera Type: Water
+Level: 1
+Impish Nature
+~=Version=SV
+.Version=50
+- Water Gun
+
+Manaphy
+IVs: 25 HP / 21 Atk / 18 Spe
+Ability: Hydration
+Tera Type: Water
+Level: 1
+Modest Nature
+~=Version=BD
+- Water Gun
+- Tail Glow
+- Heart Swap
+
+Timburr (F)
+IVs: 14 HP / 27 Atk / 6 Def / 10 SpA / 4 SpD / 20 Spe
+Ability: Guts
+Tera Type: Fighting
+Level: 63
+Naive Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Hammer Arm
+- Stone Edge
+- Superpower
+- Focus Punch
+
+Gurdurr (M)
+IVs: 0 HP / 5 Atk / 21 Def / 16 SpA / 26 SpD / 9 Spe
+Ability: Sheer Force
+Tera Type: Fighting
+Level: 68
+Lonely Nature
+~=Location=162
+~=Version=SV
+.Version=50
+- Hammer Arm
+- Stone Edge
+- Superpower
+- Focus Punch
+
+Conkeldurr (M)
+IVs: 27 HP / 4 Atk / 15 Def / 14 SpA / 14 SpD / 30 Spe
+Ability: Guts
+Tera Type: Fighting
+Level: 68
+Modest Nature
+~=Location=158
+~=Version=SV
+.Version=50
+- Hammer Arm
+- Stone Edge
+- Superpower
+- Focus Punch
+
+Sewaddle (M)
+IVs: 14 HP / 10 Atk / 8 Def / 11 SpA / 19 SpD / 25 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 58
+Calm Nature
+Ball: Master Ball
+~=Location=136
+~=Version=SV
+.Version=50
+- Endure
+- Sticky Web
+- Bug Buzz
+- Flail
+
+Swadloon (F)
+IVs: 23 HP / 10 Atk / 13 Def / 23 SpA / 26 SpD
+Ability: Leaf Guard
+Tera Type: Bug
+Level: 65
+Bold Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Endure
+- Sticky Web
+- Bug Buzz
+- Flail
+
+Leavanny (F)
+IVs: 26 HP / 18 Atk / 22 Def / 25 SpA / 28 SpD / 27 Spe
+Ability: Chlorophyll
+Tera Type: Bug
+Level: 66
+Serious Nature
+~=Location=156
+~=Version=SV
+.Version=50
+- X-Scissor
+- Entrainment
+- Swords Dance
+- Leaf Storm
+
+Ducklett (M)
+IVs: 6 HP / 19 Atk / 27 Def / 8 SpA / 27 SpD / 4 Spe
+Ability: Keen Eye
+Tera Type: Water
+Level: 67
+Sassy Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Rain Dance
+- Tailwind
+- Brave Bird
+- Hurricane
+
+Swanna (F)
+IVs: 1 HP / 9 Atk / 1 Def / 16 SpA / 29 SpD / 19 Spe
+Ability: Keen Eye
+Tera Type: Flying
+Level: 68
+Modest Nature
+~=Location=164
+~=Version=SV
+.Version=50
+- Rain Dance
+- Tailwind
+- Brave Bird
+- Hurricane
+
+Litwick (M)
+IVs: 8 HP / 30 Atk / 21 Def / 0 SpA / 19 SpD / 9 Spe
+Ability: Flash Fire
+Tera Type: Fire
+Level: 71
+Calm Nature
+Ball: Master Ball
+~=Location=166
+~=Version=SV
+.Version=50
+- Imprison
+- Pain Split
+- Overheat
+- Memento
+
+Lampent (M)
+IVs: 19 SpA / 10 SpD / 19 Spe
+Ability: Flame Body
+Tera Type: Grass
+Level: 86
+Bashful Nature
+~=Location=168
+~=Version=SV
+.Version=50
+- Energy Ball
+- Night Shade
+- Heat Wave
+- Poltergeist
+
+Chandelure (F)
+IVs: 25 HP / 10 Atk / 0 Def / 11 SpA / 26 SpD / 25 Spe
+Ability: Flash Fire
+Tera Type: Fire
+Level: 71
+Naive Nature
+Ball: Master Ball
+~=Location=166
+~=Version=SV
+.Version=50
+- Imprison
+- Pain Split
+- Overheat
+- Memento
+
+Mienfoo (M)
+IVs: 3 HP / 8 Atk / 22 Def / 14 SpA / 2 SpD / 20 Spe
+Ability: Regenerator
+Tera Type: Fighting
+Level: 63
+Adamant Nature
+~=Location=156
+~=Version=SV
+.Version=50
+- Aura Sphere
+- Bounce
+- Calm Mind
+- High Jump Kick
+
+Mienshao (F)
+IVs: 30 Def / 22 SpA
+Ability: Regenerator
+Tera Type: Grass
+Level: 75
+Careful Nature
+~=Location=30024
+~=Version=SV
+.Version=50
+- Aura Sphere
+- Poison Jab
+- Taunt
+- Acrobatics
+
+Vullaby (F)
+IVs: 11 HP / 12 Def / 23 SpA / 25 SpD / 14 Spe
+Ability: Overcoat
+Tera Type: Flying
+Level: 63
+Naughty Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Air Slash
+- Dark Pulse
+- Nasty Plot
+- Defog
+
+Mandibuzz (F)
+IVs: 10 HP / 16 Atk / 16 SpA / 23 SpD / 7 Spe
+Ability: Big Pecks
+Tera Type: Dark
+Level: 65
+Naive Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Air Slash
+- Dark Pulse
+- Nasty Plot
+- Bone Rush
+
+Tornadus (M)
+IVs: 26 HP / 1 SpD
+Ability: Prankster
+Tera Type: Flying
+Level: 70
+Gentle Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Hammer Arm
+- Rain Dance
+- Hurricane
+- Thrash
+
+Tornadus-Therian (M)
+IVs: 26 HP / 1 SpD
+Ability: Regenerator
+Tera Type: Flying
+Level: 70
+Gentle Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Hammer Arm
+- Rain Dance
+- Hurricane
+- Thrash
+
+Thundurus (M)
+IVs: 8 Atk / 28 SpD
+Ability: Prankster
+Tera Type: Electric
+Level: 70
+Brave Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Hammer Arm
+- Rain Dance
+- Thunder
+- Thrash
+
+Thundurus-Therian (M)
+IVs: 8 Atk / 28 SpD
+Ability: Volt Absorb
+Tera Type: Electric
+Level: 70
+Brave Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Hammer Arm
+- Rain Dance
+- Thunder
+- Thrash
+
+Landorus (M)
+IVs: 24 Def / 13 SpD
+Ability: Sand Force
+Tera Type: Ground
+Level: 70
+Docile Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Hammer Arm
+- Sandstorm
+- Earthquake
+- Outrage
+
+Landorus-Therian (M)
+IVs: 24 Def / 13 SpD
+Ability: Intimidate
+Tera Type: Ground
+Level: 70
+Docile Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Hammer Arm
+- Sandstorm
+- Earthquake
+- Outrage
+
+Meloetta
+IVs: 27 Atk / 27 Def / 28 Spe
+Ability: Serene Grace
+Tera Type: Psychic
+Quirky Nature
+Ball: Cherish Ball
+~=Location=40001
+~=Version=X
+- Hyper Voice
+- Role Play
+- Close Combat
+- Perish Song
+
+Phantump (M)
+IVs: 1 Atk / 12 Def / 19 SpA / 5 SpD / 7 Spe
+Ability: Natural Cure
+Tera Type: Grass
+Level: 74
+Bold Nature
+Ball: Master Ball
+~=Location=166
+~=Version=SV
+.Version=50
+- Ingrain
+- Wood Hammer
+- Destiny Bond
+- Forest’s Curse
+
+Trevenant (M)
+IVs: 2 Def / 13 Spe
+Ability: Natural Cure
+Tera Type: Normal
+Level: 75
+Modest Nature
+~=Location=166
+~=Version=SV
+.Version=50
+- Wood Hammer
+- Shadow Claw
+- Trailblaze
+- Facade
+
+Diancie
+IVs: 30 Def / 10 SpA / 20 Spe
+Ability: Clear Body
+Tera Type: Rock
+Level: 50
+Serious Nature
+Ball: Cherish Ball
+~=Location=40001
+~=Version=X
+- Ancient Power
+- Rock Polish
+- Light Screen
+- Rock Slide
+
+Volcanion
+IVs: 25 Atk / 14 SpA / 15 Spe
+Ability: Water Absorb
+Tera Type: Fire
+Level: 70
+Sassy Nature
+Ball: Cherish Ball
+~=Location=40001
+~=Version=X
+- Take Down
+- Haze
+- Mist
+- Hydro Pump
+
+Grubbin (M)
+IVs: 6 HP / 19 Atk / 17 Def / 16 SpA / 25 SpD / 25 Spe
+Ability: Swarm
+Tera Type: Bug
+Level: 62
+Quiet Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=50
+- Sticky Web
+- X-Scissor
+- Crunch
+- Dig
+
+Charjabug (M)
+IVs: 30 HP / 4 Atk / 19 SpA / 10 SpD / 21 Spe
+Ability: Battery
+Tera Type: Electric
+Level: 63
+Careful Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=50
+- X-Scissor
+- Crunch
+- Dig
+- Iron Defense
+
+Vikavolt (M)
+IVs: 11 Atk / 9 SpD
+Ability: Levitate
+Tera Type: Grass
+Level: 74
+Mild Nature
+~=Location=164
+~=Version=SV
+.Version=50
+- Zap Cannon
+- Energy Ball
+- Bug Buzz
+- Charge
+
+Cutiefly (F) @ Honey
+IVs: 12 HP / 25 Atk / 24 Def / 12 SpA / 10 SpD / 21 Spe
+Ability: Honey Gather
+Tera Type: Fairy
+Level: 62
+Naughty Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=50
+- Switcheroo
+- Dazzling Gleam
+- Bug Buzz
+- Quiver Dance
+
+Ribombee (M)
+IVs: 11 HP / 25 Atk / 6 Def / 24 SpA / 5 SpD / 3 Spe
+Ability: Shield Dust
+Tera Type: Fairy
+Level: 70
+Lonely Nature
+~=Location=156
+~=Version=SV
+.Version=50
+- Switcheroo
+- Dazzling Gleam
+- Bug Buzz
+- Quiver Dance
+
+Jangmo-o (F)
+IVs: 5 HP / 13 Atk / 20 Def / 19 SpA / 9 SpD / 2 Spe
+Ability: Bulletproof
+Tera Type: Dragon
+Level: 62
+Gentle Nature
+~=Location=162
+~=Version=SV
+.Version=50
+- Dragon Claw
+- Noble Roar
+- Dragon Dance
+- Outrage
+
+Hakamo-o (F)
+IVs: 10 HP / 10 Atk / 14 Def / 4 SpD / 23 Spe
+Ability: Soundproof
+Tera Type: Dragon
+Level: 68
+Mild Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Noble Roar
+- Dragon Dance
+- Outrage
+- Close Combat
+
+Kommo-o (M)
+IVs: 9 HP / 15 Atk / 8 Def / 15 SpA / 10 SpD
+Ability: Bulletproof
+Tera Type: Fighting
+Level: 71
+Gentle Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SV
+.Version=50
+- Clanging Scales
+- Dragon Dance
+- Outrage
+- Close Combat
+
+Magearna
+IVs: 30 HP / 17 Def / 1 SpA
+Ability: Soul-Heart
+Tera Type: Steel
+Level: 50
+Bashful Nature
+Ball: Cherish Ball
+~=Location=40001
+~=Version=UM
+- Psybeam
+- Aurora Beam
+- Lock-On
+- Shift Gear
+
+Cramorant (F)
+IVs: 9 HP / 7 Atk / 21 Def / 27 SpA / 8 SpD / 12 Spe
+Ability: Gulp Missile
+Tera Type: Flying
+Level: 71
+Serious Nature
+Ball: Master Ball
+~=Location=160
+~=Version=SV
+.Version=50
+- Drill Peck
+- Amnesia
+- Thrash
+- Hydro Pump
+
+Morpeko (F)
+IVs: 25 HP / 22 Atk / 11 Def / 11 SpA / 7 SpD / 22 Spe
+Ability: Hunger Switch
+Tera Type: Electric
+Level: 60
+Impish Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=51
+- Bullet Seed
+- Crunch
+- Aura Wheel
+- Thrash
+
+Zacian
+IVs: 8 Atk / 28 SpA / 0 Spe
+Ability: Intrepid Sword
+Tera Type: Fairy
+Level: 70
+Adamant Nature
+~=Location=66
+~=Version=SWSH
+.Version=44
+- Iron Head
+- Noble Roar
+- Crunch
+- Moonblast
+
+Zamazenta
+IVs: 9 Atk / 2 SpA / 13 Spe
+Ability: Dauntless Shield
+Tera Type: Fighting
+Level: 70
+Docile Nature
+~=Location=66
+~=Version=SWSH
+.Version=45
+- Iron Head
+- Metal Burst
+- Crunch
+- Moonblast
+
+Eternatus
+IVs: 16 Atk / 22 SpD / 17 Spe
+Ability: Pressure
+Tera Type: Poison
+Level: 60
+Mild Nature
+~=Location=66
+~=Version=SWSH
+.Version=44
+- Cross Poison
+- Dragon Pulse
+- Flamethrower
+- Dynamax Cannon
+
+Regieleki
+IVs: 10 Atk / 13 SpA / 25 SpD
+Ability: Transistor
+Tera Type: Electric
+Level: 70
+Lonely Nature
+~=Location=242
+~=Version=SWSH
+.Version=45
+- Magnet Rise
+- Thrash
+- Lock-On
+- Zap Cannon
+
+Regidrago
+IVs: 25 HP / 7 Def / 8 Spe
+Ability: Dragon’s Maw
+Tera Type: Dragon
+Level: 70
+Docile Nature
+~=Location=242
+~=Version=SWSH
+.Version=44
+- Dragon Dance
+- Thrash
+- Focus Energy
+- Dragon Energy
+
+Glastrier
+IVs: 0 Def / 28 SpD / 11 Spe
+Ability: Chilling Neigh
+Tera Type: Ice
+Level: 75
+Mild Nature
+~=Location=220
+~=Version=SWSH
+.Version=45
+- Thrash
+- Taunt
+- Double-Edge
+- Swords Dance
+
+Spectrier
+IVs: 0 HP / 4 Def / 3 SpD
+Ability: Grim Neigh
+Tera Type: Ghost
+Level: 75
+Quirky Nature
+~=Location=220
+~=Version=SWSH
+.Version=44
+- Thrash
+- Disable
+- Double-Edge
+- Nasty Plot
+
+Calyrex
+IVs: 8 HP / 13 Def
+Ability: Unnerve
+Tera Type: Psychic
+Level: 80
+Docile Nature
+~=Location=220
+~=Version=SWSH
+.Version=44
+- Psychic
+- Leech Seed
+- Heal Pulse
+- Solar Beam
+
+Calyrex-Ice
+IVs: 8 HP / 13 Def
+Ability: As One (Glastrier)
+Tera Type: Psychic
+Level: 80
+Docile Nature
+~=Location=220
+~=Version=SWSH
+.Version=44
+- Psychic
+- Glacial Lance
+- Heal Pulse
+- Solar Beam
+
+Calyrex-Shadow
+IVs: 8 HP / 13 Def
+Ability: As One (Spectrier)
+Tera Type: Psychic
+Level: 80
+Docile Nature
+~=Location=220
+~=Version=SWSH
+.Version=44
+- Psychic
+- Heal Pulse
+- Solar Beam
+- Astral Barrage
+
+Ursaluna-Bloodmoon (M)
+IVs: 6 HP / 4 Atk / 26 SpA
+Ability: Mind’s Eye
+Tera Type: Normal
+Level: 70
+Hardy Nature
+Ball: Master Ball
+~=Location=166
+~=Version=SV
+.Version=50
+- Blood Moon
+- Earth Power
+- Slash
+- Calm Mind
+
+Dipplin (M)
+IVs: 2 HP / 6 Atk / 5 Def / 9 SpA / 28 SpD / 7 Spe
+Ability: Supersweet Syrup
+Tera Type: Grass
+Level: 29
+Timid Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SV
+.Version=50
+- Astonish
+- Withdraw
+- Double Hit
+
+Poltchageist
+IVs: 4 HP / 19 SpD / 14 Spe
+Ability: Hospitality
+Tera Type: Water
+Level: 71
+Adamant Nature
+~=Location=158
+~=Version=SV
+.Version=50
+- Scald
+- Mega Drain
+- Foul Play
+- Spite
+
+Poltchageist-Artisan
+IVs: 0 HP / 24 Atk / 12 Def / 16 SpA / 3 SpD / 17 Spe
+Ability: Hospitality
+Tera Type: Ghost
+Level: 67
+Careful Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Giga Drain
+- Shadow Ball
+- Memento
+- Leaf Storm
+
+Sinistcha
+IVs: 11 HP / 25 Atk / 20 Def / 11 SpA / 4 SpD / 18 Spe
+Ability: Hospitality
+Tera Type: Grass
+Level: 66
+Quirky Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Giga Drain
+- Shadow Ball
+- Matcha Gotcha
+- Leaf Storm
+
+Sinistcha-Masterpiece
+IVs: 28 HP / 2 Atk / 10 Def / 23 SpA / 3 Spe
+Ability: Hospitality
+Tera Type: Ghost
+Level: 67
+Lax Nature
+Ball: Master Ball
+~=Location=158
+~=Version=SV
+.Version=50
+- Giga Drain
+- Shadow Ball
+- Matcha Gotcha
+- Leaf Storm
+
+Okidogi (M)
+IVs: 22 Atk / 16 SpD / 18 Spe
+Ability: Toxic Chain
+Tera Type: Poison
+Level: 70
+Modest Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SV
+.Version=50
+- Poison Jab
+- Brutal Swing
+- Crunch
+- Superpower
+
+Munkidori (M)
+IVs: 20 HP / 2 Def / 6 SpA
+Ability: Toxic Chain
+Tera Type: Poison
+Level: 70
+Serious Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SV
+.Version=50
+- Psychic
+- Sludge Wave
+- Nasty Plot
+- Future Sight
+
+Fezandipiti (M)
+IVs: 28 HP / 29 Atk / 30 Spe
+Ability: Toxic Chain
+Tera Type: Poison
+Level: 70
+Bold Nature
+Ball: Master Ball
+~=Location=144
+~=Version=SV
+.Version=50
+- Beat Up
+- Swagger
+- Flatter
+- Roost
+
+Ogerpon (F)
+IVs: 20 Def / 20 SpA / 20 SpD
+Ability: Defiant
+Tera Type: Grass
+Level: 70
+Lonely Nature
+Ball: Master Ball
+~=Location=146
+~=Version=SV
+.Version=50
+- Ivy Cudgel
+- Low Kick
+- Slam
+- Grassy Terrain
+
+Ogerpon-Wellspring (F) @ Wellspring Mask
+IVs: 20 Def / 20 SpA / 20 SpD
+Ability: Water Absorb
+Tera Type: Water
+Level: 70
+Lonely Nature
+Ball: Master Ball
+~=Location=146
+~=Version=SV
+.Version=50
+- Ivy Cudgel
+- Low Kick
+- Slam
+- Grassy Terrain
+
+Ogerpon-Hearthflame (F) @ Hearthflame Mask
+IVs: 20 Def / 20 SpA / 20 SpD
+Ability: Mold Breaker
+Tera Type: Fire
+Level: 70
+Lonely Nature
+Ball: Master Ball
+~=Location=146
+~=Version=SV
+.Version=50
+- Ivy Cudgel
+- Low Kick
+- Slam
+- Grassy Terrain
+
+Ogerpon-Cornerstone (F) @ Cornerstone Mask
+IVs: 20 Def / 20 SpA / 20 SpD
+Ability: Sturdy
+Tera Type: Rock
+Level: 70
+Lonely Nature
+Ball: Master Ball
+~=Location=146
+~=Version=SV
+.Version=50
+- Ivy Cudgel
+- Low Kick
+- Slam
+- Grassy Terrain
+
+Bulbasaur (M)
+IVs: 3 HP / 28 Def / 27 SpA / 4 SpD / 26 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 66
+Jolly Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Synthesis
+- Worry Seed
+- Power Whip
+- Solar Beam
+
+Ivysaur (M)
+IVs: 4 HP / 27 Atk / 24 Def / 6 SpA / 17 SpD / 9 Spe
+Ability: Overgrow
+Tera Type: Poison
+Level: 63
+Quiet Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Synthesis
+- Worry Seed
+- Power Whip
+- Solar Beam
+
+Venusaur (M)
+IVs: 9 HP / 7 Atk / 15 Def / 10 SpA / 27 SpD / 30 Spe
+Ability: Overgrow
+Tera Type: Poison
+Level: 67
+Adamant Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Synthesis
+- Petal Blizzard
+- Power Whip
+- Solar Beam
+
+Squirtle (M)
+IVs: 25 HP / 1 Atk / 16 Def / 9 SpA / 8 SpD / 3 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 64
+Serious Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Shell Smash
+- Iron Defense
+- Hydro Pump
+- Wave Crash
+
+Wartortle (M)
+IVs: 23 HP / 13 Atk / 24 Def / 5 SpA / 15 SpD / 15 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 71
+Naive Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Shell Smash
+- Iron Defense
+- Hydro Pump
+- Wave Crash
+
+Blastoise (M)
+IVs: 11 HP / 17 Atk / 20 Def / 24 SpA / 3 SpD / 4 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 63
+Sassy Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Shell Smash
+- Flash Cannon
+- Hydro Pump
+- Wave Crash
+
+Oddish (F)
+IVs: 30 HP / 25 Atk / 17 Def / 14 SpA / 23 SpD / 21 Spe
+Ability: Chlorophyll
+Tera Type: Poison
+Level: 65
+Relaxed Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Moonblast
+- Grassy Terrain
+- Moonlight
+- Petal Dance
+
+Gloom (F)
+IVs: 11 HP / 12 Atk / 12 Def / 24 SpA / 29 SpD / 10 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 64
+Docile Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Moonblast
+- Grassy Terrain
+- Moonlight
+- Petal Dance
+
+Vileplume (M)
+IVs: 21 HP / 11 Atk / 10 Def
+Ability: Chlorophyll
+Tera Type: Rock
+Level: 45
+Gentle Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Petal Dance
+- Poison Powder
+- Sludge Bomb
+- Moonblast
+
+Tentacool (F)
+IVs: 23 HP / 2 Atk / 19 Def / 24 SpA / 26 SpD / 5 Spe
+Ability: Liquid Ooze
+Tera Type: Poison
+Level: 68
+Bold Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Poison Jab
+- Surf
+- Sludge Wave
+- Hydro Pump
+
+Tentacruel (M)
+IVs: 17 Atk / 6 SpA / 30 SpD
+Ability: Rain Dish
+Tera Type: Fighting
+Level: 45
+Timid Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Poison Jab
+- Surf
+- Acid
+- Toxic
+
+Doduo (F)
+IVs: 9 HP / 3 Atk / 0 Def / 11 SpA / 18 SpD / 14 Spe
+Ability: Early Bird
+Tera Type: Flying
+Level: 55
+Jolly Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Swords Dance
+- Drill Peck
+- Endeavor
+- Thrash
+
+Dodrio (M)
+IVs: 5 HP / 29 Atk / 16 Def / 8 SpA / 22 SpD / 19 Spe
+Ability: Early Bird
+Tera Type: Flying
+Level: 67
+Bold Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Swords Dance
+- Drill Peck
+- Endeavor
+- Thrash
+
+Seel (M)
+IVs: 27 HP / 7 Atk / 16 Def / 25 SpA / 8 SpD / 14 Spe
+Ability: Hydration
+Tera Type: Water
+Level: 63
+Bashful Nature
+~=Location=180
+~=Version=SL
+.Version=50
+- Aqua Tail
+- Ice Beam
+- Safeguard
+- Snowscape
+
+Dewgong (M)
+IVs: 21 SpA / 9 SpD / 16 Spe
+Ability: Ice Body
+Tera Type: Steel
+Level: 45
+Adamant Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Brine
+- Ice Beam
+- Play Rough
+- Aqua Jet
+
+Exeggcute (M)
+IVs: 21 HP / 15 Atk / 28 Def / 0 SpA / 30 SpD / 4 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 62
+Lax Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Extrasensory
+- Uproar
+- Worry Seed
+- Solar Beam
+
+Exeggutor (F)
+IVs: 16 HP / 18 Atk / 22 Def / 15 SpA / 20 SpD / 29 Spe
+Ability: Chlorophyll
+Tera Type: Psychic
+Level: 60
+Brave Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Mega Drain
+- Absorb
+- Wood Hammer
+- Giga Drain
+
+Exeggutor-Alola (M)
+IVs: 3 HP / 18 Atk / 27 Def / 16 SpA / 5 SpD / 21 Spe
+Ability: Frisk
+Tera Type: Dragon
+Level: 62
+Calm Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Leech Seed
+- Mega Drain
+- Psyshock
+- Absorb
+
+Hitmonlee (M)
+IVs: 6 HP / 29 Atk / 3 Def / 14 SpA / 6 SpD / 30 Spe
+Ability: Limber
+Tera Type: Fighting
+Level: 64
+Quirky Nature
+~=Location=178
+~=Version=SL
+.Version=50
+- Tackle
+- Focus Energy
+- Brick Break
+- Helping Hand
+
+Hitmonchan (M)
+IVs: 30 Atk / 10 SpA
+Ability: Keen Eye
+Tera Type: Flying
+Level: 75
+Jolly Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Mach Punch
+- Mega Punch
+- Thunder Punch
+- Throat Chop
+
+Rhyhorn (M)
+IVs: 6 HP / 22 Atk / 14 SpA / 8 SpD / 17 Spe
+Ability: Rock Head
+Tera Type: Rock
+Level: 55
+Lax Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Take Down
+- Earthquake
+- Stone Edge
+- Megahorn
+
+Rhydon (M)
+IVs: 23 HP / 10 Atk / 1 Def / 3 SpA / 29 SpD / 25 Spe
+Ability: Rock Head
+Tera Type: Ground
+Level: 60
+Rash Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Drill Run
+- Take Down
+- Earthquake
+- Stone Edge
+
+Horsea (F)
+IVs: 12 HP / 11 Atk / 7 Def / 23 SpA / 0 SpD / 9 Spe
+Ability: Swift Swim
+Tera Type: Water
+Level: 61
+Serious Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Dragon Pulse
+- Hydro Pump
+- Dragon Dance
+- Rain Dance
+
+Seadra (F)
+IVs: 26 Def / 9 SpD / 5 Spe
+Ability: Sniper
+Tera Type: Dragon
+Level: 50
+Docile Nature
+~=Location=176
+~=Version=SL
+.Version=50
+- Bubble Beam
+- Agility
+- Water Pulse
+- Dragon Pulse
+
+Electabuzz (M)
+IVs: 20 HP / 11 Atk / 28 Def / 4 SpA / 29 SpD / 10 Spe
+Ability: Static
+Tera Type: Electric
+Level: 70
+Quiet Nature
+~=Location=178
+~=Version=SL
+.Version=50
+- Thunderbolt
+- Light Screen
+- Thunder
+- Giga Impact
+
+Magmar (F)
+IVs: 19 HP / 9 Atk / 0 Def / 26 SpA / 12 SpD / 10 Spe
+Ability: Flame Body
+Tera Type: Fire
+Level: 67
+Calm Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Flamethrower
+- Sunny Day
+- Fire Blast
+- Hyper Beam
+
+Lapras (M)
+IVs: 18 HP / 21 Atk / 14 Def / 21 SpA / 13 SpD / 4 Spe
+Ability: Water Absorb
+Tera Type: Water
+Level: 67
+Docile Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Rain Dance
+- Hydro Pump
+- Perish Song
+- Sheer Cold
+
+Porygon
+IVs: 15 HP / 23 Atk / 5 Def / 0 SpA / 20 SpD / 9 Spe
+Ability: Trace
+Tera Type: Normal
+Level: 68
+Mild Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Tri Attack
+- Double-Edge
+- Lock-On
+- Zap Cannon
+
+Articuno
+IVs: 22 HP / 16 Atk / 2 Def / 7 SpA / 27 SpD / 11 Spe
+Ability: Pressure
+Tera Type: Ice
+Level: 70
+Adamant Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SL
+.Version=50
+- Hurricane
+- Haze
+- Blizzard
+- Sheer Cold
+
+Zapdos
+IVs: 0 HP / 26 Atk / 21 Def / 28 SpA / 27 SpD / 30 Spe
+Ability: Pressure
+Tera Type: Electric
+Level: 70
+Careful Nature
+Ball: Master Ball
+~=Location=6
+~=Version=SL
+.Version=50
+- Thunder
+- Detect
+- Magnetic Flux
+- Zap Cannon
+
+Moltres
+IVs: 8 HP / 28 Atk / 1 Def / 22 SpA / 5 SpD / 28 Spe
+Ability: Pressure
+Tera Type: Fire
+Level: 70
+Careful Nature
+Ball: Master Ball
+~=Location=24
+~=Version=SL
+.Version=50
+- Hurricane
+- Endure
+- Overheat
+- Sky Attack
+
+Chikorita (M)
+IVs: 11 HP / 9 Atk / 16 Def / 2 SpA / 16 SpD / 11 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 68
+Timid Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Body Slam
+- Safeguard
+- Giga Drain
+- Solar Beam
+
+Bayleef (M)
+IVs: 18 HP / 9 Atk / 21 Def / 8 SpA / 24 SpD / 0 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 68
+Lonely Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Body Slam
+- Safeguard
+- Giga Drain
+- Solar Beam
+
+Meganium (M)
+IVs: 7 HP / 28 Def / 21 SpA / 17 SpD / 3 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 64
+Impish Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Body Slam
+- Petal Dance
+- Giga Drain
+- Solar Beam
+
+Totodile (M)
+IVs: 13 HP / 26 Atk / 28 Def / 2 SpA / 8 SpD / 2 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 63
+Bold Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Thrash
+- Aqua Tail
+- Superpower
+- Hydro Pump
+
+Croconaw (M)
+IVs: 15 HP / 6 Atk / 10 Def / 9 SpA / 28 SpD / 20 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 57
+Naive Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Thrash
+- Aqua Tail
+- Superpower
+- Hydro Pump
+
+Feraligatr (M)
+IVs: 1 HP / 22 Atk / 3 Def / 9 SpA / 1 SpD / 26 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 62
+Mild Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Thrash
+- Aqua Tail
+- Superpower
+- Hydro Pump
+
+Chinchou (F)
+IVs: 4 HP / 19 Atk / 5 Def / 12 SpA / 6 SpD / 14 Spe
+Ability: Volt Absorb
+Tera Type: Electric
+Level: 66
+Quiet Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Aqua Ring
+- Flail
+- Take Down
+- Hydro Pump
+
+Lanturn (M)
+IVs: 17 HP / 27 Atk / 12 Def / 28 SpA / 30 SpD / 1 Spe
+Ability: Illuminate
+Tera Type: Electric
+Level: 64
+Lonely Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Aqua Ring
+- Flail
+- Take Down
+- Hydro Pump
+
+Bellossom (F)
+IVs: 19 HP / 20 Atk / 26 Def / 25 SpA / 2 SpD / 2 Spe
+Ability: Chlorophyll
+Tera Type: Grass
+Level: 64
+Brave Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Moonlight
+- Quiver Dance
+- Grassy Terrain
+- Moonblast
+
+Snubbull (F)
+IVs: 8 HP / 4 Atk / 10 Def / 12 SpA / 0 SpD / 24 Spe
+Ability: Run Away
+Tera Type: Fairy
+Level: 70
+Gentle Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Last Resort
+- Play Rough
+- Payback
+- Crunch
+
+Granbull (F)
+IVs: 17 HP / 2 Atk / 26 Def / 10 SpA / 14 SpD / 14 Spe
+Ability: Intimidate
+Tera Type: Fairy
+Level: 69
+Naive Nature
+~=Location=180
+~=Version=SL
+.Version=50
+- Last Resort
+- Play Rough
+- Payback
+- Crunch
+
+Skarmory (M)
+IVs: 22 HP / 14 Atk / 24 Def / 7 SpA / 29 SpD / 2 Spe
+Ability: Sturdy
+Tera Type: Steel
+Level: 70
+Sassy Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Metal Sound
+- Spikes
+- Iron Defense
+- Brave Bird
+
+Kingdra (F)
+IVs: 3 Atk
+Ability: Swift Swim
+Tera Type: Ghost
+Level: 75
+Naughty Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Dragon Pulse
+- Hydro Pump
+- Flash Cannon
+- Yawn
+
+Porygon2
+IVs: 14 Atk / 20 SpA
+Ability: Trace
+Tera Type: Normal
+Level: 75
+Lonely Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Tri Attack
+- Discharge
+- Agility
+- Psybeam
+
+Smeargle (F)
+IVs: 30 HP / 23 Atk / 4 Def / 24 SpA / 8 SpD / 6 Spe
+Ability: Own Tempo
+Tera Type: Normal
+Level: 55
+Careful Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Swift
+
+Tyrogue (M)
+IVs: 21 HP / 19 Atk / 9 Def / 13 SpA / 9 SpD / 5 Spe
+Ability: Guts
+Tera Type: Fighting
+Level: 59
+Serious Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Tackle
+- Focus Energy
+- Fake Out
+- Helping Hand
+
+Hitmontop (M)
+IVs: 13 HP / 27 SpA / 0 Spe
+Ability: Technician
+Tera Type: Ice
+Level: 65
+Careful Nature
+~=Location=178
+~=Version=SL
+.Version=50
+- Dig
+- Close Combat
+- Counter
+- Endeavor
+
+Elekid (F)
+IVs: 29 HP / 28 Atk / 11 Def / 1 SpA / 7 SpD / 3 Spe
+Ability: Static
+Tera Type: Electric
+Level: 59
+Jolly Nature
+~=Location=178
+~=Version=SL
+.Version=50
+- Low Kick
+- Thunderbolt
+- Light Screen
+- Thunder
+
+Magby (F)
+IVs: 25 Atk / 11 Def / 10 SpA / 13 SpD / 20 Spe
+Ability: Flame Body
+Tera Type: Fire
+Level: 59
+Brave Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Low Kick
+- Flamethrower
+- Sunny Day
+- Fire Blast
+
+Raikou
+IVs: 1 HP / 15 Atk / 23 Def / 1 SpA / 15 SpD / 28 Spe
+Ability: Pressure
+Tera Type: Electric
+Level: 70
+Serious Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SL
+.Version=50
+- Extrasensory
+- Discharge
+- Reflect
+- Rain Dance
+
+Entei
+IVs: 21 HP / 20 Atk / 14 SpA / 26 SpD / 12 Spe
+Ability: Pressure
+Tera Type: Fire
+Level: 70
+Naive Nature
+Ball: Master Ball
+~=Location=32
+~=Version=SL
+.Version=50
+- Extrasensory
+- Lava Plume
+- Swagger
+- Sunny Day
+
+Suicune
+IVs: 16 HP / 7 Atk / 3 Def / 29 SpA / 23 SpD / 27 Spe
+Ability: Pressure
+Tera Type: Water
+Level: 70
+Rash Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SL
+.Version=50
+- Extrasensory
+- Surf
+- Mirror Coat
+- Rain Dance
+
+Lugia
+IVs: 23 HP / 15 Atk / 30 Def / 27 SpA / 5 SpD / 20 Spe
+Ability: Pressure
+Tera Type: Water
+Level: 70
+Jolly Nature
+Ball: Master Ball
+~=Location=62
+~=Version=SL
+.Version=50
+- Extrasensory
+- Recover
+- Aeroblast
+- Rain Dance
+
+Ho-Oh
+IVs: 14 HP / 10 Atk / 2 Def / 27 SpA / 13 SpD / 14 Spe
+Ability: Pressure
+Tera Type: Fire
+Level: 70
+Sassy Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SL
+.Version=50
+- Extrasensory
+- Recover
+- Sacred Fire
+- Sunny Day
+
+Treecko (M)
+IVs: 24 HP / 26 Atk / 8 Def / 2 SpA / 23 SpD / 3 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 65
+Brave Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Energy Ball
+- Screech
+- Endeavor
+- Leaf Storm
+
+Grovyle (M)
+IVs: 16 HP / 28 Atk / 20 Def / 29 SpA / 9 SpD / 2 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 62
+Modest Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Energy Ball
+- Screech
+- Endeavor
+- Leaf Storm
+
+Sceptile (M)
+IVs: 16 HP / 3 Atk / 15 Def / 14 SpA / 21 SpD / 30 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 72
+Careful Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Energy Ball
+- Leaf Blade
+- Endeavor
+- Leaf Storm
+
+Torchic (M)
+IVs: 14 HP / 11 Atk / 30 Def / 1 SpA / 7 SpD / 24 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 72
+Quiet Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Flamethrower
+- Feather Dance
+- Reversal
+- Flare Blitz
+
+Combusken (M)
+IVs: 27 HP / 9 Atk / 27 Def / 3 SpA / 25 SpD / 4 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 64
+Naive Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Flamethrower
+- Double Kick
+- Reversal
+- Flare Blitz
+
+Blaziken (M)
+IVs: 27 HP / 14 Atk / 17 Def / 8 SpA / 13 SpD / 10 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 70
+Jolly Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Flamethrower
+- Double Kick
+- Blaze Kick
+- Flare Blitz
+
+Mudkip (M)
+IVs: 22 HP / 28 Atk / 2 Def / 0 SpA / 22 SpD / 5 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 66
+Mild Nature
+Ball: Master Ball
+~=Location=194
+~=Version=SL
+.Version=50
+- Surf
+- Screech
+- Endeavor
+- Hydro Pump
+
+Marshtomp (M)
+IVs: 15 HP / 6 Atk / 19 Def / 28 SpA / 10 SpD / 10 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 65
+Mild Nature
+Ball: Master Ball
+~=Location=194
+~=Version=SL
+.Version=50
+- Surf
+- Mud Shot
+- Endeavor
+- Hydro Pump
+
+Swampert (M)
+IVs: 7 HP / 12 Atk / 24 Def / 24 SpA / 26 SpD / 20 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 71
+Quiet Nature
+Ball: Master Ball
+~=Location=194
+~=Version=SL
+.Version=50
+- Surf
+- Mud Shot
+- Endeavor
+- Hydro Pump
+
+Plusle (F)
+IVs: 24 HP / 30 Atk / 5 Def / 30 SpA / 17 SpD / 22 Spe
+Ability: Plus
+Tera Type: Electric
+Level: 71
+Naive Nature
+Ball: Master Ball
+~=Location=192
+~=Version=SL
+.Version=50
+- Last Resort
+- Thunder
+- Nasty Plot
+- Entrainment
+
+Minun (M)
+IVs: 18 HP / 5 Atk / 20 Def / 5 SpA / 0 SpD / 27 Spe
+Ability: Minus
+Tera Type: Electric
+Level: 66
+Bold Nature
+Ball: Master Ball
+~=Location=192
+~=Version=SL
+.Version=50
+- Last Resort
+- Thunder
+- Nasty Plot
+- Entrainment
+
+Trapinch (F)
+IVs: 9 HP / 24 Atk / 23 Def / 26 Spe
+Ability: Hyper Cutter
+Tera Type: Ground
+Level: 63
+Quirky Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Earth Power
+- Earthquake
+- Superpower
+- Fissure
+
+Vibrava (M)
+IVs: 28 HP / 23 Atk / 27 Def / 18 SpA / 5 SpD / 7 Spe
+Ability: Levitate
+Tera Type: Dragon
+Level: 60
+Gentle Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Earth Power
+- Earthquake
+- Uproar
+- Dragon Rush
+
+Flygon (M)
+IVs: 20 HP / 28 Atk / 26 Def / 14 SpA / 21 SpD / 2 Spe
+Ability: Levitate
+Tera Type: Ground
+Level: 67
+Naughty Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Earth Power
+- Earthquake
+- Uproar
+- Dragon Rush
+
+Beldum
+IVs: 21 SpD / 30 Spe
+Ability: Light Metal
+Tera Type: Grass
+Level: 35
+Naive Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Tackle
+
+Metang
+IVs: 25 HP / 27 Atk / 11 Def / 21 SpA / 28 SpD / 0 Spe
+Ability: Clear Body
+Tera Type: Steel
+Level: 71
+Relaxed Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Scary Face
+- Meteor Mash
+- Iron Defense
+- Agility
+
+Metagross
+IVs: 16 HP / 12 SpA / 18 SpD
+Ability: Clear Body
+Tera Type: Ghost
+Level: 65
+Careful Nature
+~=Location=180
+~=Version=SL
+.Version=50
+- Psychic
+- Hammer Arm
+- Meteor Mash
+- Iron Defense
+
+Latias (F)
+IVs: 23 HP / 1 Atk / 24 Def / 27 SpA / 10 SpD / 17 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 70
+Jolly Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SL
+.Version=50
+- Reflect Type
+- Psychic
+- Guard Split
+- Healing Wish
+
+Latios (M)
+IVs: 13 HP / 17 Atk / 3 Def / 0 SpA / 26 SpD / 7 Spe
+Ability: Levitate
+Tera Type: Psychic
+Level: 70
+Quirky Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SL
+.Version=50
+- Luster Purge
+- Dragon Pulse
+- Zen Headbutt
+- Dragon Breath
+
+Kyogre
+IVs: 10 HP / 22 Atk / 8 Def / 28 SpA / 19 SpD / 8 Spe
+Ability: Drizzle
+Tera Type: Water
+Level: 70
+Hardy Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SL
+.Version=50
+- Muddy Water
+- Ice Beam
+- Sheer Cold
+- Aqua Ring
+
+Groudon
+IVs: 29 HP / 25 Atk / 6 Def / 25 SpA / 8 SpD / 21 Spe
+Ability: Drought
+Tera Type: Fire
+Level: 70
+Calm Nature
+Ball: Master Ball
+~=Location=67
+~=Version=SL
+.Version=50
+- Earthquake
+- Hammer Arm
+- Fissure
+- Rest
+
+Rayquaza
+IVs: 22 HP / 30 Atk / 26 Def / 11 SpA / 10 SpD / 21 Spe
+Ability: Air Lock
+Tera Type: Flying
+Level: 70
+Quirky Nature
+Ball: Master Ball
+~=Location=50
+~=Version=SL
+.Version=50
+- Dragon Pulse
+- Hyper Voice
+- Rest
+- Fly
+
+Cranidos (F)
+IVs: 7 HP / 6 Atk / 13 Def / 3 SpA / 23 SpD / 3 Spe
+Ability: Mold Breaker
+Tera Type: Rock
+Level: 69
+Timid Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Ancient Power
+- Zen Headbutt
+- Screech
+- Head Smash
+
+Rampardos (M)
+IVs: 28 HP / 21 Atk / 30 Def / 7 SpA / 29 SpD / 30 Spe
+Ability: Mold Breaker
+Tera Type: Rock
+Level: 68
+Lonely Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Ancient Power
+- Zen Headbutt
+- Endeavor
+- Head Smash
+
+Shieldon (F)
+IVs: 12 HP / 15 Atk / 23 Def / 18 SpA / 22 SpD / 24 Spe
+Ability: Sturdy
+Tera Type: Rock
+Level: 59
+Modest Nature
+Ball: Master Ball
+~=Location=178
+~=Version=VL
+.Version=51
+- Endure
+- Metal Burst
+- Iron Head
+- Heavy Slam
+
+Bastiodon (M)
+IVs: 4 Atk / 4 Def / 14 SpD
+Ability: Sturdy
+Tera Type: Steel
+Level: 45
+Quirky Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Iron Head
+- Ancient Power
+- Sandstorm
+- Rock Tomb
+
+Rhyperior (M)
+IVs: 30 HP / 14 SpA
+Ability: Reckless
+Tera Type: Dragon
+Level: 75
+Jolly Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Earthquake
+- Rock Wrecker
+- Brick Break
+- Surf
+
+Electivire (F)
+IVs: 19 Spe
+Ability: Vital Spirit
+Tera Type: Psychic
+Level: 75
+Modest Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Discharge
+- Thunder Punch
+- Earthquake
+- Brick Break
+
+Magmortar (M)
+IVs: 19 Atk / 13 SpA
+Ability: Flame Body
+Tera Type: Rock
+Level: 75
+Hasty Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Flamethrower
+- Psychic
+- Focus Blast
+- Clear Smog
+
+Porygon-Z
+IVs: 11 Atk / 22 SpA
+Ability: Download
+Tera Type: Electric
+Level: 75
+Rash Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Tri Attack
+- Discharge
+- Agility
+- Psybeam
+
+Dialga
+IVs: 26 Def / 28 SpD
+Ability: Telepathy
+Tera Type: Dragon
+Level: 75
+Quiet Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Draco Meteor
+- Earth Power
+- Fire Blast
+- Steel Beam
+
+Palkia
+IVs: 0 HP / 15 SpD
+Ability: Telepathy
+Tera Type: Dragon
+Level: 75
+Modest Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Draco Meteor
+- Thunder
+- Fire Blast
+- Hydro Pump
+
+Snivy (M)
+IVs: 19 HP / 1 Atk / 16 Def / 9 SpA / 14 SpD / 20 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 55
+Careful Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Coil
+- Giga Drain
+- Gastro Acid
+- Leaf Storm
+
+Servine (M)
+IVs: 2 HP / 25 Atk / 18 Def / 20 SpA / 18 SpD / 15 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 59
+Calm Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Coil
+- Giga Drain
+- Gastro Acid
+- Leaf Storm
+
+Serperior (M)
+IVs: 10 HP / 25 Atk / 14 Def / 14 SpA / 6 SpD / 28 Spe
+Ability: Overgrow
+Tera Type: Grass
+Level: 68
+Lax Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Coil
+- Giga Drain
+- Gastro Acid
+- Leaf Storm
+
+Tepig (M)
+IVs: 2 HP / 7 Atk / 4 Def / 20 SpA / 29 SpD / 13 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 62
+Sassy Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Flamethrower
+- Head Smash
+- Roar
+- Flare Blitz
+
+Pignite (M)
+IVs: 14 HP / 1 Atk / 7 Def / 1 SpA / 2 SpD / 27 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 60
+Hasty Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Flamethrower
+- Head Smash
+- Arm Thrust
+- Flare Blitz
+
+Emboar (M)
+IVs: 10 HP / 7 Atk / 20 Def / 6 SpA / 13 SpD
+Ability: Blaze
+Tera Type: Fire
+Level: 64
+Docile Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Flamethrower
+- Head Smash
+- Arm Thrust
+- Flare Blitz
+
+Blitzle (M)
+IVs: 0 HP / 2 Atk / 3 Def / 21 SpA / 28 SpD / 5 Spe
+Ability: Lightning Rod
+Tera Type: Electric
+Level: 62
+Impish Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Discharge
+- Agility
+- Wild Charge
+- Thrash
+
+Zebstrika (F)
+IVs: 7 HP / 24 Atk / 10 Def / 4 SpA / 13 SpD / 3 Spe
+Ability: Motor Drive
+Tera Type: Electric
+Level: 64
+Lax Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SL
+.Version=50
+- Discharge
+- Agility
+- Wild Charge
+- Thrash
+
+Drilbur (F)
+IVs: 24 HP / 24 Atk / 23 Def / 1 SpA / 22 SpD / 1 Spe
+Ability: Sand Rush
+Tera Type: Ground
+Level: 60
+Careful Nature
+~=Location=178
+~=Version=SL
+.Version=50
+- Swords Dance
+- Drill Run
+- Earthquake
+- Fissure
+
+Excadrill (M)
+IVs: 13 HP / 15 Atk / 29 Def / 10 SpA / 21 SpD / 1 Spe
+Ability: Sand Force
+Tera Type: Ground
+Level: 73
+Careful Nature
+Ball: Master Ball
+~=Location=192
+~=Version=SL
+.Version=50
+- Swords Dance
+- Drill Run
+- Earthquake
+- Fissure
+
+Cottonee (F)
+IVs: 11 HP / 6 Atk / 18 Def / 26 SpA / 28 SpD / 1 Spe
+Ability: Prankster
+Tera Type: Fairy
+Level: 65
+Brave Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Sunny Day
+- Endeavor
+- Cotton Guard
+- Solar Beam
+
+Whimsicott (F)
+IVs: 21 HP / 10 Atk / 23 Def / 1 SpA / 6 SpD
+Ability: Prankster
+Tera Type: Fairy
+Level: 59
+Quirky Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Mega Drain
+- Absorb
+- Fairy Wind
+- Gust
+
+Scraggy (F)
+IVs: 0 HP / 13 Atk / 22 Def / 13 SpA / 19 SpD / 13 Spe
+Ability: Shed Skin
+Tera Type: Dark
+Level: 60
+Gentle Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Crunch
+- High Jump Kick
+- Focus Punch
+- Head Smash
+
+Scrafty (M)
+IVs: 13 Def / 3 SpA / 4 SpD
+Ability: Moxie
+Tera Type: Grass
+Level: 45
+Naive Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Crunch
+- High Jump Kick
+- Swagger
+- Dragon Claw
+
+Minccino (F)
+IVs: 9 HP / 7 Atk / 1 Def / 3 SpA / 19 SpD / 25 Spe
+Ability: Technician
+Tera Type: Normal
+Level: 70
+Jolly Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Tickle
+- Slam
+- Hyper Voice
+- Last Resort
+
+Cinccino (F)
+IVs: 16 HP / 19 Atk / 19 Def / 21 SpA / 17 Spe
+Ability: Technician
+Tera Type: Normal
+Level: 63
+Docile Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Pound
+- Sing
+- Charm
+- Bullet Seed
+
+Solosis (M)
+IVs: 5 HP / 17 Atk / 15 Def / 14 SpA / 20 SpD / 21 Spe
+Ability: Magic Guard
+Tera Type: Psychic
+Level: 64
+Modest Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Psychic
+- Skill Swap
+- Future Sight
+- Wonder Room
+
+Duosion (F)
+IVs: 14 HP / 27 Atk / 2 Def / 17 SpA / 13 SpD / 24 Spe
+Ability: Overcoat
+Tera Type: Psychic
+Level: 64
+Bashful Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Psychic
+- Skill Swap
+- Future Sight
+- Wonder Room
+
+Reuniclus (F)
+IVs: 27 Def / 14 SpA
+Ability: Regenerator
+Tera Type: Normal
+Level: 75
+Hasty Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Psychic
+- Psyshock
+- Gravity
+- Shadow Ball
+
+Joltik (F)
+IVs: 19 HP / 16 Atk / 16 Def / 5 SpA / 7 SpD / 12 Spe
+Ability: Compound Eyes
+Tera Type: Bug
+Level: 72
+Impish Nature
+Ball: Master Ball
+~=Location=192
+~=Version=SL
+.Version=50
+- Discharge
+- Screech
+- Gastro Acid
+- Bug Buzz
+
+Galvantula (M)
+IVs: 3 HP / 27 Atk / 11 Def / 23 SpA / 19 SpD / 5 Spe
+Ability: Unnerve
+Tera Type: Electric
+Level: 64
+Impish Nature
+.MetLocation=192
+~=Version=SL
+.Version=50
+- Discharge
+- Screech
+- Gastro Acid
+- Bug Buzz
+
+Golett
+IVs: 28 HP / 10 Atk / 9 Def / 5 SpA / 18 SpD / 24 Spe
+Ability: Klutz
+Tera Type: Ground
+Level: 65
+Quiet Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Phantom Force
+- Hammer Arm
+- Earthquake
+- Dynamic Punch
+
+Golurk
+IVs: 26 HP / 30 Atk / 23 Def / 1 SpA / 20 SpD / 29 Spe
+Ability: Klutz
+Tera Type: Ghost
+Level: 69
+Serious Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Phantom Force
+- Hammer Arm
+- Earthquake
+- Dynamic Punch
+
+Cobalion
+IVs: 8 HP / 9 Def / 20 SpA / 3 SpD / 9 Spe
+Ability: Justified
+Tera Type: Fighting
+Level: 70
+Relaxed Nature
+Ball: Master Ball
+~=Location=48
+~=Version=SL
+.Version=50
+- Sacred Sword
+- Swords Dance
+- Iron Head
+- Close Combat
+
+Terrakion
+IVs: 6 HP / 29 Atk / 17 Def / 14 SpA / 21 SpD / 18 Spe
+Ability: Justified
+Tera Type: Fighting
+Level: 70
+Docile Nature
+Ball: Master Ball
+~=Location=22
+~=Version=SL
+.Version=50
+- Sacred Sword
+- Swords Dance
+- Stone Edge
+- Close Combat
+
+Virizion
+IVs: 19 HP / 1 Atk / 25 Def / 22 SpA / 22 SpD / 13 Spe
+Ability: Justified
+Tera Type: Fighting
+Level: 70
+Careful Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SL
+.Version=50
+- Sacred Sword
+- Swords Dance
+- Leaf Blade
+- Close Combat
+
+Reshiram
+IVs: 25 HP / 18 Atk / 3 Def / 2 SpA / 1 SpD / 25 Spe
+Ability: Turboblaze
+Tera Type: Dragon
+Level: 70
+Modest Nature
+Ball: Master Ball
+~=Location=34
+~=Version=SL
+.Version=50
+- Flamethrower
+- Fusion Flare
+- Hyper Voice
+- Fire Blast
+
+Zekrom
+IVs: 30 HP / 27 Atk / 26 Def / 0 SpA / 11 SpD / 19 Spe
+Ability: Teravolt
+Tera Type: Dragon
+Level: 70
+Hardy Nature
+Ball: Master Ball
+~=Location=18
+~=Version=SL
+.Version=50
+- Thunderbolt
+- Fusion Bolt
+- Hyper Voice
+- Thunder
+
+Kyurem
+IVs: 16 HP / 10 Atk / 22 Def / 9 SpA / 27 SpD / 12 Spe
+Ability: Pressure
+Tera Type: Dragon
+Level: 70
+Hasty Nature
+Ball: Master Ball
+~=Location=69
+~=Version=SL
+.Version=50
+- Hyper Voice
+- Scary Face
+- Blizzard
+- Imprison
+
+Meloetta
+IVs: 20 Atk / 29 SpA / 17 Spe
+Ability: Serene Grace
+Tera Type: Fighting
+Level: 70
+Hasty Nature
+Ball: Safari Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Relic Song
+- Hyper Voice
+- Sing
+- Psychic
+
+Espurr (M)
+IVs: 28 HP / 16 Atk / 19 Def / 13 SpA / 30 SpD / 24 Spe
+Ability: Infiltrator
+Tera Type: Psychic
+Level: 60
+Rash Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Psybeam
+- Light Screen
+- Reflect
+- Psyshock
+
+Meowstic (M)
+IVs: 28 HP / 24 Atk / 19 Def / 4 SpA / 13 SpD / 0 Spe
+Ability: Keen Eye
+Tera Type: Psychic
+Level: 60
+Hasty Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Imprison
+- Quick Guard
+- Psychic
+- Misty Terrain
+
+Meowstic-F (F)
+IVs: 0 HP / 9 Atk / 21 Def / 17 SpA / 5 SpD / 27 Spe
+Ability: Infiltrator
+Tera Type: Psychic
+Level: 60
+Impish Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Extrasensory
+- Shadow Ball
+- Psychic
+- Future Sight
+
+Inkay (F)
+IVs: 11 HP / 4 Atk / 30 Def / 2 SpA / 29 SpD / 8 Spe
+Ability: Suction Cups
+Tera Type: Psychic
+Level: 67
+Careful Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Switcheroo
+- Foul Play
+- Topsy-Turvy
+- Superpower
+
+Malamar (M)
+IVs: 3 SpA
+Ability: Infiltrator
+Tera Type: Poison
+Level: 75
+Brave Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Psycho Cut
+- Night Slash
+- Foul Play
+- Pluck
+
+Litten (M)
+IVs: 25 Atk / 3 Def / 0 SpA / 11 SpD / 7 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 67
+Docile Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Swagger
+- Flamethrower
+- Thrash
+- Flare Blitz
+
+Torracat (M)
+IVs: 15 HP / 13 Atk / 27 Def / 1 SpA / 15 SpD / 7 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 60
+Gentle Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Swagger
+- Flamethrower
+- Thrash
+- Flare Blitz
+
+Incineroar (M)
+IVs: 9 HP / 23 Atk / 26 Def / 7 SpA / 6 SpD / 7 Spe
+Ability: Blaze
+Tera Type: Fire
+Level: 64
+Timid Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Darkest Lariat
+- Flamethrower
+- Thrash
+- Flare Blitz
+
+Popplio (M)
+IVs: 10 HP / 28 Atk / 25 Def / 24 SpA / 11 SpD / 24 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 66
+Adamant Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Misty Terrain
+- Hyper Voice
+- Moonblast
+- Hydro Pump
+
+Brionne (M)
+IVs: 7 HP / 14 Atk / 1 Def / 30 SpA / 18 SpD / 2 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 67
+Lonely Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Misty Terrain
+- Hyper Voice
+- Moonblast
+- Hydro Pump
+
+Primarina (M)
+IVs: 4 HP / 18 Atk / 17 Def / 17 SpA / 24 SpD / 25 Spe
+Ability: Torrent
+Tera Type: Water
+Level: 70
+Docile Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Sparkling Aria
+- Hyper Voice
+- Moonblast
+- Hydro Pump
+
+Pikipek (M)
+IVs: 8 HP / 11 Atk / 20 Def / 28 SpA / 14 SpD / 28 Spe
+Ability: Skill Link
+Tera Type: Normal
+Level: 62
+Lax Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Drill Peck
+- Bullet Seed
+- Feather Dance
+- Hyper Voice
+
+Trumbeak (F)
+IVs: 21 HP / 18 SpA / 12 SpD
+Ability: Skill Link
+Tera Type: Grass
+Level: 58
+Timid Nature
+~=Location=176
+~=Version=SL
+.Version=50
+- Drill Peck
+- Bullet Seed
+- Feather Dance
+- Hyper Voice
+
+Toucannon (F)
+IVs: 30 HP / 7 Atk / 25 Def / 5 SpA / 22 SpD / 28 Spe
+Ability: Keen Eye
+Tera Type: Normal
+Level: 60
+Brave Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Drill Peck
+- Bullet Seed
+- Feather Dance
+- Hyper Voice
+
+Dewpider (F)
+IVs: 14 HP / 20 Atk / 7 Def / 28 SpA / 28 SpD / 1 Spe
+Ability: Water Bubble
+Tera Type: Bug
+Level: 62
+Adamant Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Lunge
+- Liquidation
+- Leech Life
+- Mirror Coat
+
+Araquanid (M)
+IVs: 18 HP / 9 Atk / 8 Def / 24 SpA / 28 SpD / 26 Spe
+Ability: Water Bubble
+Tera Type: Water
+Level: 60
+Calm Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Entrainment
+- Lunge
+- Liquidation
+- Leech Life
+
+Comfey (M)
+IVs: 30 HP / 26 Atk / 24 Def / 2 SpA / 13 SpD / 15 Spe
+Ability: Triage
+Tera Type: Fairy
+Level: 60
+Naive Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Play Rough
+- Sweet Scent
+- Petal Dance
+- Grassy Terrain
+
+Minior-Red
+IVs: 8 HP / 3 Atk / 17 Def / 29 SpA / 8 SpD / 2 Spe
+Ability: Shields Down
+Tera Type: Rock
+Level: 61
+Calm Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Power Gem
+- Double-Edge
+- Shell Smash
+- Explosion
+
+Minior-Orange
+IVs: 14 HP / 3 Atk / 21 Def / 8 SpA / 26 SpD / 28 Spe
+Ability: Shields Down
+Tera Type: Rock
+Level: 64
+Lonely Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SL
+.Version=50
+- Power Gem
+- Double-Edge
+- Shell Smash
+- Explosion
+
+Minior-Yellow
+IVs: 3 HP / 30 Atk / 28 Def / 20 SpA / 21 SpD / 4 Spe
+Ability: Shields Down
+Tera Type: Rock
+Level: 70
+Mild Nature
+Ball: Master Ball
+~=Location=192
+~=Version=SL
+.Version=50
+- Power Gem
+- Double-Edge
+- Shell Smash
+- Explosion
+
+Minior-Green
+IVs: 7 HP / 15 Atk / 0 Def / 7 SpA / 4 SpD / 18 Spe
+Ability: Shields Down
+Tera Type: Rock
+Level: 66
+Naughty Nature
+Ball: Master Ball
+~=Location=176
+~=Version=SL
+.Version=50
+- Power Gem
+- Double-Edge
+- Shell Smash
+- Explosion
+
+Minior-Blue
+IVs: 6 HP / 30 Atk / 10 Def / 17 SpA / 23 SpD / 21 Spe
+Ability: Shields Down
+Tera Type: Rock
+Level: 64
+Lonely Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Power Gem
+- Double-Edge
+- Shell Smash
+- Explosion
+
+Minior-Indigo @ Hard Stone
+IVs: 13 HP / 9 Atk / 18 Def / 29 SpA / 29 SpD / 7 Spe
+Ability: Shields Down
+Tera Type: Rock
+Level: 66
+Mild Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Power Gem
+- Double-Edge
+- Shell Smash
+- Explosion
+
+Minior-Violet
+IVs: 2 HP / 1 Atk / 18 Def / 21 SpA / 27 SpD / 25 Spe
+Ability: Shields Down
+Tera Type: Flying
+Level: 74
+Brave Nature
+Ball: Master Ball
+~=Location=192
+~=Version=SL
+.Version=50
+- Power Gem
+- Double-Edge
+- Shell Smash
+- Explosion
+
+Solgaleo
+IVs: 3 HP / 11 Atk / 19 Def / 23 SpA / 10 SpD / 7 Spe
+Ability: Full Metal Body
+Tera Type: Psychic
+Level: 70
+Brave Nature
+Ball: Master Ball
+~=Location=10
+~=Version=SL
+.Version=50
+- Metal Burst
+- Wild Charge
+- Solar Beam
+- Flare Blitz
+
+Lunala
+IVs: 2 HP / 15 Atk / 4 Def / 10 SpA / 6 SpD / 24 Spe
+Ability: Shadow Shield
+Tera Type: Psychic
+Level: 70
+Gentle Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SL
+.Version=50
+- Psychic
+- Moonblast
+- Phantom Force
+- Dream Eater
+
+Necrozma
+IVs: 29 HP / 7 Atk / 19 Def / 9 SpA / 16 SpD / 26 Spe
+Ability: Prism Armor
+Tera Type: Psychic
+Level: 70
+Serious Nature
+Ball: Master Ball
+~=Location=109
+~=Version=SL
+.Version=50
+- Stored Power
+- Rock Blast
+- Iron Defense
+- Power Gem
+
+Milcery (F)
+IVs: 5 HP / 8 Atk / 3 Def / 10 SpA / 11 SpD / 10 Spe
+Ability: Sweet Veil
+Tera Type: Fairy
+Level: 59
+Sassy Nature
+~=Location=174
+~=Version=SL
+.Version=50
+- Dazzling Gleam
+- Recover
+- Misty Terrain
+- Entrainment
+
+Alcremie (F)
+IVs: 22 SpA / 15 SpD
+Ability: Aroma Veil
+Tera Type: Dragon
+Level: 75
+Relaxed Nature
+~=Location=30024
+~=Version=SL
+.Version=50
+- Dazzling Gleam
+- Psychic
+- Encore
+- Psyshock
+
+Duraludon (F)
+IVs: 30 HP / 26 Atk / 9 Def / 26 SpA / 1 SpD / 21 Spe
+Ability: Heavy Metal
+Tera Type: Dragon
+Level: 68
+Sassy Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Dragon Claw
+- Flash Cannon
+- Metal Burst
+- Hyper Beam
+
+Kubfu (M)
+IVs: 29 HP / 28 Atk / 26 Def / 29 SpA / 14 SpD / 20 Spe
+Ability: Inner Focus
+Tera Type: Fighting
+Level: 30
+Rash Nature
+Ball: Safari Ball
+~=Location=48
+~=Version=SL
+.Version=50
+- Scary Face
+- Headbutt
+- Brick Break
+- Detect
+
+Urshifu (M)
+IVs: 29 HP / 14 Atk / 22 Def / 30 SpA / 26 SpD / 19 Spe
+Ability: Unseen Fist
+Tera Type: Fighting
+Level: 30
+Quirky Nature
+Ball: Safari Ball
+~=Location=48
+~=Version=SL
+.Version=50
+- Wicked Blow
+- Headbutt
+- Brick Break
+- Detect
+
+Urshifu-Rapid-Strike (M)
+IVs: 18 HP / 10 Atk / 14 Def / 13 SpA / 21 SpD / 24 Spe
+Ability: Unseen Fist
+Tera Type: Fighting
+Level: 30
+Sassy Nature
+Ball: Safari Ball
+~=Location=48
+~=Version=SL
+.Version=50
+- Surging Strikes
+- Headbutt
+- Brick Break
+- Detect
+
+Glastrier
+IVs: 13 HP / 2 Atk / 6 Def / 5 SpA / 20 SpD / 23 Spe
+Ability: Chilling Neigh
+Tera Type: Ice
+Level: 70
+Gentle Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SL
+.Version=50
+- Iron Defense
+- Thrash
+- Taunt
+- Double-Edge
+
+Spectrier
+IVs: 23 HP / 20 Atk / 23 Def / 26 SpA / 14 SpD / 20 Spe
+Ability: Grim Neigh
+Tera Type: Ghost
+Level: 70
+Bashful Nature
+Ball: Master Ball
+~=Location=38
+~=Version=SL
+.Version=50
+- Agility
+- Thrash
+- Disable
+- Double-Edge
+
+Archaludon (M)
+IVs: 20 HP / 20 Atk / 19 Def / 17 SpA / 29 SpD / 1 Spe
+Ability: Stamina
+Tera Type: Dragon
+Level: 64
+Hasty Nature
+Ball: Master Ball
+~=Location=180
+~=Version=SL
+.Version=50
+- Electro Shot
+- Dragon Claw
+- Flash Cannon
+- Metal Burst
+
+Hydrapple (M)
+IVs: 20 HP / 21 Atk / 25 Def / 14 SpA / 28 SpD / 13 Spe
+Ability: Regenerator
+Tera Type: Grass
+Level: 27
+Mild Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SL
+.Version=50
+- Astonish
+- Fickle Beam
+- Double Hit
+- Dragon Cheer
+
+Gouging Fire
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Protosynthesis
+Tera Type: Fire
+Level: 75
+Adamant Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SL
+.Version=50
+- Burning Bulwark
+- Dragon Rush
+- Fire Blast
+- Lava Plume
+
+Raging Bolt
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Protosynthesis
+Tera Type: Electric
+Level: 75
+Brave Nature
+Ball: Master Ball
+~=Location=124
+~=Version=SL
+.Version=50
+- Thunderclap
+- Dragon Hammer
+- Rising Voltage
+- Dragon Pulse
+
+Iron Boulder
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Quark Drive
+Tera Type: Rock
+Level: 75
+Sassy Nature
+Ball: Master Ball
+~=Location=124
+~=Version=VL
+.Version=51
+- Sacred Sword
+- Mighty Cleave
+- Swords Dance
+- Megahorn
+
+Iron Crown
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Quark Drive
+Tera Type: Steel
+Level: 75
+Gentle Nature
+Ball: Master Ball
+~=Location=124
+~=Version=VL
+.Version=51
+- Sacred Sword
+- Tachyon Cutter
+- Future Sight
+- Volt Switch
+
+Terapagos (M)
+IVs: 15 Atk
+Ability: Tera Shift
+Tera Type: Stellar
+Level: 85
+Hardy Nature
+Ball: Master Ball
+~=Location=198
+~=Version=SL
+.Version=50
+- Tera Starstorm
+- Zen Headbutt
+- Earth Power
+- Water Pulse
+
+Meowth-Alola (F)
+IVs: 9 HP / 24 Def / 12 SpA / 12 SpD / 11 Spe
+Ability: Technician
+Tera Type: Dark
+Level: 21
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Scratch
+- Pay Day
+- Bite
+- Taunt
+
+Magnemite
+IVs: 4 HP / 29 Atk / 8 Def / 2 SpD / 30 Spe
+Ability: Magnet Pull
+Tera Type: Electric
+Level: 22
+Rash Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Electroweb
+- Supersonic
+- Thunder Wave
+- Spark
+
+Sunflora (M)
+IVs: 12 HP / 19 Atk / 25 Def / 16 SpA / 24 SpD / 20 Spe
+Ability: Solar Power
+Tera Type: Grass
+Level: 40
+Brave Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Trailblaze
+- Sunny Day
+- Endeavor
+- Synthesis
+
+Wooper-Paldea (M)
+IVs: 27 HP / 16 SpA / 30 SpD / 6 Spe
+Ability: Unaware
+Tera Type: Poison
+Level: 8
+Naughty Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Mud Shot
+- Counter
+- Acid Spray
+- Poison Tail
+
+Snubbull (M)
+IVs: 18 HP / 30 Atk / 24 Def / 24 SpA / 25 SpD
+Ability: Intimidate
+Tera Type: Fairy
+Level: 18
+Adamant Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Ice Fang
+- Fire Fang
+- Bite
+- Lick
+
+Skarmory (F)
+IVs: 24 HP / 15 Atk / 22 Def / 14 SpA / 9 SpD / 19 Spe
+Ability: Sturdy
+Tera Type: Steel
+Level: 40
+Lonely Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Steel Wing
+- Payback
+- Drill Peck
+- Metal Sound
+
+Magby (M)
+IVs: 12 Atk / 25 Def / 15 Spe
+Ability: Vital Spirit
+Tera Type: Fire
+Level: 12
+Docile Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Focus Punch
+- Ember
+- Smokescreen
+- Clear Smog
+
+Meditite (M)
+IVs: 24 HP / 30 Atk / 12 Def / 0 SpA / 6 SpD / 29 Spe
+Ability: Pure Power
+Tera Type: Fire
+Level: 28
+Quirky Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Dynamic Punch
+- Fire Punch
+- Ice Punch
+- Thunder Punch
+
+Gulpin (F)
+IVs: 12 HP / 28 Atk / 25 Def / 17 SpA / 19 Spe
+Ability: Gluttony
+Tera Type: Poison
+Level: 17
+Gentle Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Acid Spray
+- Encore
+- Clear Smog
+- Yawn
+
+Combee (F)
+IVs: 24 HP / 22 Atk / 28 SpA / 0 SpD / 16 Spe
+Ability: Hustle
+Tera Type: Bug
+Level: 15
+Calm Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Gust
+- Sweet Scent
+- Bug Bite
+- Struggle Bug
+
+Blitzle (M)
+IVs: 25 Atk / 23 Def / 23 SpA
+Ability: Lightning Rod
+Tera Type: Electric
+Level: 20
+Shiny: Square
+Hardy Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Charge
+- Shock Wave
+- Thunder Wave
+- Flame Charge
+
+Rockruff (F)
+IVs: 20 HP / 30 Atk / 2 Def / 15 SpA / 17 SpD / 19 Spe
+Ability: Steadfast
+Tera Type: Ground
+Level: 12
+Impish Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Stomping Tantrum
+- Rock Throw
+- Last Resort
+- Endeavor
+
+Mareanie (F)
+IVs: 30 HP / 21 Atk / 10 Def / 22 SpA / 29 SpD / 16 Spe
+Ability: Regenerator
+Tera Type: Poison
+Level: 20
+Timid Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Wide Guard
+- Bite
+- Venoshock
+- Recover
+
+Hattrem (F)
+IVs: 22 HP / 18 Atk / 18 Def / 7 Spe
+Ability: Healer
+Tera Type: Fairy
+Level: 33
+Serious Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Aromatic Mist
+- Psybeam
+- Heal Pulse
+- Dazzling Gleam
+
+Duraludon (M)
+IVs: 20 HP / 30 Atk / 25 Def / 13 SpD / 0 Spe
+Ability: Stalwart
+Tera Type: Electric
+Level: 36
+Quiet Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Metal Sound
+- Breaking Swipe
+- Dragon Tail
+- Iron Defense
+
+Pawmo (M)
+IVs: 15 HP / 22 Atk / 14 SpA / 3 SpD / 29 Spe
+Ability: Volt Absorb
+Tera Type: Fighting
+Level: 24
+Hasty Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Nuzzle
+- Dig
+- Bite
+- Spark
+
+Flittle (F)
+IVs: 13 HP / 20 Atk / 12 Def / 21 SpA / 21 SpD / 12 Spe
+Ability: Speed Boost
+Tera Type: Psychic
+Level: 32
+Impish Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Quick Attack
+- Psybeam
+- Pluck
+- Agility
+
+Tinkatuff (F)
+IVs: 12 HP / 29 Atk / 29 Def / 28 SpA / 22 SpD / 26 Spe
+Ability: Mold Breaker
+Tera Type: Fairy
+Level: 25
+Careful Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Rock Smash
+- Draining Kiss
+- Sweet Kiss
+- Brutal Swing
+
+Glimmet (F)
+IVs: 0 Atk / 22 Def / 30 SpA
+Ability: Corrosion
+Tera Type: Psychic
+Level: 5
+Modest Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Tera Blast
+- Toxic
+- Rock Throw
+- Smack Down
+
+Greavard (M)
+IVs: 15 HP / 26 Atk / 14 Def / 4 SpA / 16 Spe
+Ability: Fluffy
+Tera Type: Ghost
+Level: 10
+Jolly Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Lick
+- Tail Whip
+- Bite
+- Roar
+
+Cetoddle (M)
+IVs: 23 Atk / 18 Def / 15 SpA / 9 SpD
+Ability: Sheer Force
+Tera Type: Ice
+Level: 37
+Bashful Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Flail
+- Avalanche
+- Bounce
+- Body Slam
+
+Veluza (F)
+IVs: 28 Atk / 14 Def / 14 SpA / 18 SpD / 26 Spe
+Ability: Sharpness
+Tera Type: Water
+Level: 20
+Sassy Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Pluck
+- Water Pulse
+- Focus Energy
+- Slash
+
+Dudunsparce (M)
+IVs: 15 HP / 24 Atk / 11 SpD / 26 Spe
+Ability: Serene Grace
+Tera Type: Flying
+Level: 35
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Facade
+- Air Slash
+- Drill Run
+- Hyper Drill
+
+Arctibax (M)
+IVs: 24 HP / 22 Atk / 21 Def / 30 SpA / 30 Spe
+Ability: Thermal Exchange
+Tera Type: Dragon
+Level: 45
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Dragon Rush
+- Ice Fang
+- Crunch
+- Focus Energy
+
+Gimmighoul
+IVs: 5 HP / 12 Atk / 1 Def / 16 SpA / 18 SpD / 22 Spe
+Ability: Rattled
+Tera Type: Steel
+Level: 30
+Sassy Nature
+Language: English
+~=Location=30001
+~=Version=SL
+.Version=50
+- Astonish
+- Tackle
+
+Growlithe-Hisui (M)
+IVs: 20 Def / 20 SpA / 20 SpD
+Ability: Rock Head
+Tera Type: Rock
+Level: 15
+Jolly Nature
+~=Level=15
+~=Location=134
+~=Version=VL
+.Version=51
+- Ember
+- Howl
+- Bite
+- Flame Wheel
+
+Ursaluna-Bloodmoon (M)
+IVs: 3 Atk / 3 SpD / 22 Spe
+Ability: Mind’s Eye
+Tera Type: Normal
+Level: 70
+Hardy Nature
+Ball: Master Ball
+~=Location=166
+~=Version=VL
+.Version=51
+- Blood Moon
+- Earth Power
+- Slash
+- Calm Mind

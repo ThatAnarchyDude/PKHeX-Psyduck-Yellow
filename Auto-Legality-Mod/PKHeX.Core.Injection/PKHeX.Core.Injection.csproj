@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="LibUsbDotNet" Version="2.2.29" />
+    <ProjectReference Include="$(PsyduckYellowCoreProject)" Private="false" />
+  </ItemGroup>
+</Project>

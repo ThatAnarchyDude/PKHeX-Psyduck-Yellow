@@ -1,0 +1,2166 @@
+Metapod (M)
+IVs: 29 HP / 29 Atk / 4 Def / 20 SpA / 4 SpD / 9 Spe
+Ability: Shed Skin
+Level: 5
+Adamant Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Harden
+
+Metapod (M)
+IVs: 14 HP / 1 Atk / 16 Def / 27 SpA / 0 SpD / 17 Spe
+Ability: Shed Skin
+Level: 4
+Calm Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Harden
+
+Metapod (M)
+IVs: 14 Atk / 17 Def / 27 SpA / 14 SpD / 10 Spe
+Ability: Shed Skin
+Level: 3
+Relaxed Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Harden
+
+Butterfree (M)
+IVs: 16 HP / 13 Atk / 26 Def / 15 SpA / 4 SpD / 7 Spe
+Ability: Compound Eyes
+Level: 6
+Bashful Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Confusion
+
+Butterfree (M)
+IVs: 19 HP / 17 Atk / 13 Def / 13 SpA / 29 SpD / 0 Spe
+Ability: Compound Eyes
+Level: 8
+Brave Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Confusion
+
+Butterfree (F)
+IVs: 14 HP / 23 Atk / 8 Def / 18 SpA / 22 SpD / 6 Spe
+Ability: Compound Eyes
+Level: 7
+Gentle Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Confusion
+
+Butterfree (F)
+IVs: 11 HP / 15 Atk / 26 Def / 1 SpA / 23 SpD / 16 Spe
+Ability: Compound Eyes
+Level: 6
+Impish Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Confusion
+
+Butterfree (M)
+IVs: 16 HP / 9 Atk / 14 Def / 30 SpA / 14 SpD / 28 Spe
+Ability: Compound Eyes
+Level: 7
+Naughty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Confusion
+
+Kakuna (F)
+IVs: 23 Atk / 4 Def / 30 SpA / 20 Spe
+Ability: Shed Skin
+Level: 4
+Hardy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Harden
+
+Kakuna (F)
+IVs: 12 HP / 16 Atk / 22 Def / 19 SpA / 10 SpD / 21 Spe
+Ability: Shed Skin
+Level: 3
+Jolly Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Harden
+
+Beedrill (F)
+IVs: 5 HP / 17 Atk / 10 Def / 13 SpA / 2 SpD / 2 Spe
+Ability: Swarm
+Level: 6
+Serious Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Fury Attack
+
+Pidgeotto (F)
+IVs: 9 Atk / 22 Def / 27 SpA / 30 SpD / 15 Spe
+Ability: Tangled Feet
+Level: 10
+Mild Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tackle
+- Sand Attack
+- Gust
+
+Pidgeotto (F)
+IVs: 29 HP / 2 Atk / 13 Def / 23 SpA / 24 SpD / 18 Spe
+Ability: Tangled Feet
+Level: 7
+Modest Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Sand Attack
+- Gust
+
+Pidgeotto (M)
+IVs: 21 HP / 4 Atk / 24 Def / 27 SpA / 27 SpD / 0 Spe
+Ability: Tangled Feet
+Level: 17
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Sand Attack
+- Gust
+- Quick Attack
+- Whirlwind
+
+Pidgeotto (M)
+IVs: 12 HP / 27 Atk / 28 Def / 18 SpA / 25 SpD / 15 Spe
+Ability: Keen Eye
+Level: 17
+Serious Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Sand Attack
+- Gust
+- Quick Attack
+- Whirlwind
+
+Raticate (F)
+IVs: 6 HP / 0 Atk / 0 Def / 20 SpA / 29 SpD / 4 Spe
+Ability: Guts
+Level: 15
+Bold Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Quick Attack
+- Focus Energy
+- Bite
+- Pursuit
+
+Raticate (F)
+IVs: 12 HP / 3 Atk / 4 Def / 17 SpA / 13 SpD / 10 Spe
+Ability: Guts
+Level: 16
+Gentle Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Focus Energy
+- Bite
+- Pursuit
+- Hyper Fang
+
+Raticate (M)
+IVs: 20 HP / 7 Atk / 1 SpA / 26 SpD / 24 Spe
+Ability: Run Away
+Level: 15
+Impish Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Quick Attack
+- Focus Energy
+- Bite
+- Pursuit
+
+Raticate (F)
+IVs: 20 HP / 24 Def / 4 SpA / 25 SpD / 29 Spe
+Ability: Guts
+Level: 15
+Lonely Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Quick Attack
+- Focus Energy
+- Bite
+- Pursuit
+
+Raticate (F)
+IVs: 25 HP / 6 Atk / 25 Def / 28 SpA / 0 SpD / 21 Spe
+Ability: Run Away
+Level: 13
+Naive Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Quick Attack
+- Focus Energy
+- Bite
+- Pursuit
+
+Raticate (F)
+IVs: 8 HP / 22 Atk / 2 Def / 6 SpD / 9 Spe
+Ability: Run Away
+Level: 19
+Serious Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Bite
+- Pursuit
+- Hyper Fang
+- Sucker Punch
+
+Fearow (F)
+IVs: 28 HP / 14 Atk / 3 Def / 6 SpA / 21 SpD / 28 Spe
+Ability: Keen Eye
+Level: 15
+Calm Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Growl
+- Leer
+- Fury Attack
+- Pursuit
+
+Fearow (F)
+IVs: 1 HP / 6 Atk / 3 Def / 17 SpA / 19 SpD / 14 Spe
+Ability: Keen Eye
+Level: 18
+Careful Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Leer
+- Fury Attack
+- Pursuit
+- Aerial Ace
+
+Fearow (M)
+IVs: 9 HP / 5 Atk / 19 Def / 2 SpA / 13 SpD / 21 Spe
+Ability: Keen Eye
+Level: 7
+Docile Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Peck
+- Growl
+- Leer
+- Fury Attack
+
+Arbok (M)
+IVs: 9 HP / 20 Atk / 30 Def / 6 SpA / 22 SpD / 23 Spe
+Ability: Intimidate
+Level: 17
+Hardy Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Poison Sting
+- Bite
+- Glare
+- Screech
+
+Arbok (M)
+IVs: 14 HP / 29 Atk / 5 Def / 11 SpA / 8 SpD / 12 Spe
+Ability: Shed Skin
+Level: 10
+Naughty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Wrap
+- Leer
+- Poison Sting
+- Bite
+
+Arbok (M)
+IVs: 18 HP / 9 Atk / 2 Def / 29 SpA / 27 SpD / 6 Spe
+Ability: Shed Skin
+Level: 20
+Serious Nature
+Ball: Safari Ball
+~=Version=DP
+.Version=10
+- Bite
+- Glare
+- Screech
+- Acid
+
+Sandslash (M)
+IVs: 18 HP / 2 Atk / 23 Def / 16 SpA / 24 SpD / 26 Spe
+Ability: Sand Veil
+Level: 10
+Impish Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Scratch
+- Defense Curl
+- Sand Attack
+- Poison Sting
+
+Sandslash (F)
+IVs: 10 Atk / 30 Def / 24 SpA / 6 SpD / 25 Spe
+Ability: Sand Veil
+Level: 15
+Relaxed Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Sand Attack
+- Poison Sting
+- Rapid Spin
+- Swift
+
+Nidorina (F)
+IVs: 26 HP / 25 Atk / 0 Def / 5 SpA / 12 SpD / 23 Spe
+Ability: Rivalry
+Level: 15
+Quirky Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Scratch
+- Tail Whip
+- Double Kick
+- Poison Sting
+
+Nidorino (M)
+IVs: 6 HP / 25 Atk / 8 Def / 16 SpD / 8 Spe
+Ability: Rivalry
+Level: 15
+Quiet Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Peck
+- Focus Energy
+- Double Kick
+- Poison Sting
+
+Golbat (M)
+IVs: 12 HP / 26 Atk / 11 Def / 26 SpA / 2 SpD / 8 Spe
+Ability: Inner Focus
+Level: 17
+Docile Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Supersonic
+- Astonish
+- Bite
+- Wing Attack
+
+Golbat (F)
+IVs: 14 HP / 4 Atk / 19 Def / 13 SpA / 16 SpD / 29 Spe
+Ability: Inner Focus
+Level: 10
+Gentle Nature
+Ball: Master Ball
+~=Version=Pt
+- Screech
+- Leech Life
+- Supersonic
+- Astonish
+
+Golbat (M)
+IVs: 7 HP / 4 Atk / 20 Def / 30 SpA / 0 SpD / 10 Spe
+Ability: Inner Focus
+Level: 20
+Hardy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Supersonic
+- Astonish
+- Bite
+- Wing Attack
+
+Golbat (M)
+IVs: 13 HP / 3 Atk / 26 Def / 16 SpA / 0 SpD / 4 Spe
+Ability: Inner Focus
+Level: 17
+Hasty Nature
+Ball: Master Ball
+~=Version=Pt
+- Supersonic
+- Astonish
+- Bite
+- Wing Attack
+
+Golbat (F)
+IVs: 11 HP / 30 Atk / 28 Def / 10 SpA / 5 SpD / 17 Spe
+Ability: Inner Focus
+Level: 20
+Quirky Nature
+Ball: Master Ball
+~=Version=Pt
+- Supersonic
+- Astonish
+- Bite
+- Wing Attack
+
+Golbat (F)
+IVs: 4 HP / 18 Atk / 5 Def / 2 SpA / 4 SpD / 15 Spe
+Ability: Inner Focus
+Level: 21
+Relaxed Nature
+Ball: Master Ball
+~=Version=Pt
+- Astonish
+- Bite
+- Wing Attack
+- Confuse Ray
+
+Gloom (F)
+IVs: 30 HP / 30 Atk / 18 Def / 7 SpA / 2 SpD / 10 Spe
+Ability: Chlorophyll
+Level: 16
+Bashful Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Sweet Scent
+- Acid
+- Poison Powder
+- Stun Spore
+
+Gloom (F)
+IVs: 3 Atk / 1 Def / 21 SpA / 30 SpD / 24 Spe
+Ability: Chlorophyll
+Level: 15
+Lax Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Sweet Scent
+- Acid
+- Poison Powder
+- Stun Spore
+
+Vileplume (F)
+IVs: 30 HP / 8 Atk / 7 Def / 1 SpA / 3 SpD / 22 Spe
+Ability: Chlorophyll
+Level: 15
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Sweet Scent
+- Acid
+- Poison Powder
+- Stun Spore
+
+Venomoth (F) @ Shed Shell
+IVs: 30 HP / 30 Atk / 19 Def / 4 SpA / 11 SpD / 19 Spe
+Ability: Tinted Lens
+Level: 8
+Quiet Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Disable
+- Foresight
+- Supersonic
+
+Dugtrio (F)
+IVs: 19 HP / 2 Atk / 20 Def / 29 SpA / 29 SpD
+Ability: Arena Trap
+Level: 19
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Astonish
+- Magnitude
+- Mud-Slap
+- Dig
+
+Persian (F)
+IVs: 18 HP / 19 Atk / 8 Def / 14 SpD / 25 Spe
+Ability: Technician
+Level: 19
+Naughty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Bite
+- Fake Out
+- Fury Swipes
+- Screech
+
+Golduck (M)
+IVs: 17 HP / 19 Atk / 7 Def / 24 SpA / 1 SpD / 17 Spe
+Ability: Damp
+Level: 32
+Docile Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Confusion
+- Water Pulse
+- Fury Swipes
+- Screech
+
+Golduck (M)
+IVs: 2 HP / 4 Atk / 30 Def / 29 SpA / 15 SpD / 0 Spe
+Ability: Cloud Nine
+Level: 10
+Mild Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Water Sport
+- Scratch
+- Tail Whip
+- Water Gun
+
+Golduck (F)
+IVs: 30 HP / 27 Atk / 0 Def / 21 SpA / 28 Spe
+Ability: Damp
+Level: 17
+Modest Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Scratch
+- Tail Whip
+- Water Gun
+- Disable
+
+Golduck (F)
+IVs: 11 HP / 13 Atk / 4 Def / 19 SpA / 1 SpD / 15 Spe
+Ability: Damp
+Level: 20
+Quirky Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Tail Whip
+- Water Gun
+- Disable
+- Confusion
+
+Golduck (F)
+IVs: 25 HP / 22 Atk / 30 Def / 30 SpA / 19 SpD / 11 Spe
+Ability: Damp
+Level: 10
+Timid Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Water Sport
+- Scratch
+- Tail Whip
+- Water Gun
+
+Primeape (F)
+IVs: 26 HP / 24 Atk / 25 Def / 5 SpA / 19 SpD / 3 Spe
+Ability: Vital Spirit
+Level: 15
+Modest Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Leer
+- Focus Energy
+- Fury Swipes
+- Karate Chop
+
+Primeape (F)
+IVs: 4 HP / 29 Atk / 10 Def / 26 SpA / 24 SpD / 15 Spe
+Ability: Anger Point
+Level: 15
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Leer
+- Focus Energy
+- Fury Swipes
+- Karate Chop
+
+Poliwhirl (F)
+IVs: 28 Atk / 29 Def / 20 SpA / 5 SpD / 20 Spe
+Ability: Damp
+Level: 15
+Brave Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Bubble
+- Hypnosis
+- Water Gun
+- Double Slap
+
+Poliwhirl (F)
+IVs: 7 HP / 27 Atk / 13 Def / 15 SpA / 9 SpD / 25 Spe
+Ability: Water Absorb
+Level: 15
+Brave Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Bubble
+- Hypnosis
+- Water Gun
+- Double Slap
+
+Poliwhirl (M)
+IVs: 24 HP / 9 Atk / 4 Def / 11 SpD / 6 Spe
+Ability: Damp
+Level: 10
+Docile Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Water Sport
+- Bubble
+- Hypnosis
+
+Poliwrath (F)
+IVs: 11 HP / 16 Atk / 21 Def / 10 SpA / 14 SpD / 8 Spe
+Ability: Water Absorb
+Level: 15
+Calm Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Bubble
+- Hypnosis
+- Water Gun
+- Double Slap
+
+Poliwrath (M)
+IVs: 30 HP / 28 Def / 9 SpA / 8 SpD / 7 Spe
+Ability: Damp
+Level: 10
+Hasty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Water Sport
+- Bubble
+- Hypnosis
+
+Kadabra (M)
+IVs: 3 HP / 20 Atk / 7 Def / 26 SpA / 0 SpD / 14 Spe
+Ability: Synchronize
+Level: 15
+Calm Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Teleport
+- Kinesis
+- Confusion
+
+Alakazam (F)
+IVs: 19 HP / 13 Atk / 7 Def / 16 SpA / 21 Spe
+Ability: Synchronize
+Level: 15
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Teleport
+- Kinesis
+- Confusion
+
+Machoke (F)
+IVs: 5 HP / 15 Atk / 0 Def / 26 SpA / 28 SpD / 6 Spe
+Ability: Guts
+Level: 26
+Calm Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Foresight
+- Seismic Toss
+- Revenge
+- Vital Throw
+
+Machoke (M)
+IVs: 30 HP / 28 Atk / 25 Def / 19 SpD / 22 Spe
+Ability: No Guard
+Level: 17
+Gentle Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Leer
+- Focus Energy
+- Karate Chop
+- Foresight
+
+Machoke (M)
+IVs: 2 HP / 1 Atk / 27 Def / 27 SpA / 29 SpD / 13 Spe
+Ability: Guts
+Level: 14
+Jolly Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Leer
+- Focus Energy
+- Karate Chop
+- Foresight
+
+Machoke (M)
+IVs: 27 HP / 27 Atk / 16 Def / 3 SpA / 13 Spe
+Ability: No Guard
+Level: 22
+Serious Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Karate Chop
+- Foresight
+- Seismic Toss
+- Revenge
+
+Machamp (M)
+IVs: 8 HP / 28 Atk / 4 Def / 19 SpA / 2 SpD / 12 Spe
+Ability: No Guard
+Level: 26
+Bashful Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Foresight
+- Seismic Toss
+- Revenge
+- Vital Throw
+
+Machamp (M)
+IVs: 10 HP / 20 Atk / 0 Def / 24 SpA / 17 SpD / 17 Spe
+Ability: No Guard
+Level: 22
+Naughty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Karate Chop
+- Foresight
+- Seismic Toss
+- Revenge
+
+Weepinbell (M)
+IVs: 26 HP / 4 Atk / 25 Def / 19 SpA / 7 SpD / 20 Spe
+Ability: Chlorophyll
+Level: 10
+Gentle Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Vine Whip
+- Growth
+- Wrap
+
+Victreebel (M)
+IVs: 17 HP / 19 Atk / 16 Def / 5 SpA / 7 SpD / 30 Spe
+Ability: Chlorophyll
+Level: 10
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Vine Whip
+- Growth
+- Wrap
+
+Tentacruel (F)
+IVs: 22 HP / 3 Atk / 20 Def / 12 SpA / 0 SpD / 24 Spe
+Ability: Liquid Ooze
+Level: 15
+Bold Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Supersonic
+- Constrict
+- Acid
+- Toxic Spikes
+
+Tentacruel (F)
+IVs: 16 HP / 7 Atk / 4 Def / 22 SpA / 14 SpD / 8 Spe
+Ability: Liquid Ooze
+Level: 25
+Docile Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Acid
+- Toxic Spikes
+- Bubble Beam
+- Wrap
+
+Tentacruel (F)
+IVs: 2 HP / 1 Atk / 3 Def / 8 SpA / 25 SpD / 30 Spe
+Ability: Clear Body
+Level: 20
+Modest Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Constrict
+- Acid
+- Toxic Spikes
+- Bubble Beam
+
+Graveler (M)
+IVs: 28 Atk / 16 Def / 7 SpA / 3 SpD / 4 Spe
+Ability: Rock Head
+Level: 16
+Adamant Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Mud Sport
+- Rock Polish
+- Rock Throw
+- Magnitude
+
+Graveler (M) @ Everstone
+IVs: 18 HP / 2 Atk / 14 Def / 12 SpA / 24 SpD / 13 Spe
+Ability: Rock Head
+Level: 22
+Bashful Nature
+Ball: Master Ball
+~=Version=Pt
+- Rock Throw
+- Magnitude
+- Self-Destruct
+- Rollout
+
+Graveler (F)
+IVs: 5 HP / 17 Atk / 8 Def / 19 SpA / 10 SpD / 21 Spe
+Ability: Sturdy
+Level: 20
+Gentle Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Rock Polish
+- Rock Throw
+- Magnitude
+- Self-Destruct
+
+Graveler (M)
+IVs: 28 HP / 23 Atk / 26 Def / 30 SpA / 14 SpD / 28 Spe
+Ability: Sturdy
+Level: 23
+Lonely Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Rock Throw
+- Magnitude
+- Self-Destruct
+- Rollout
+
+Graveler (M)
+IVs: 7 HP / 4 Atk / 11 Def / 27 SpA
+Ability: Rock Head
+Level: 21
+Modest Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Rock Polish
+- Rock Throw
+- Magnitude
+- Self-Destruct
+
+Golem (M)
+IVs: 28 HP / 23 Atk / 26 Def / 30 SpA / 14 SpD / 28 Spe
+Ability: Sturdy
+Level: 23
+Lonely Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Rock Throw
+- Magnitude
+- Self-Destruct
+- Rollout
+
+Golem (M)
+IVs: 6 HP / 28 Atk / 0 Def / 28 SpA / 15 SpD / 26 Spe
+Ability: Rock Head
+Level: 22
+Sassy Nature
+Ball: Master Ball
+~=Version=Pt
+- Rock Throw
+- Magnitude
+- Self-Destruct
+- Rollout
+
+Slowbro (F)
+IVs: 3 HP / 13 Atk / 5 Def / 19 SpA / 0 SpD / 20 Spe
+Ability: Oblivious
+Level: 15
+Naughty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Growl
+- Water Gun
+- Confusion
+
+Slowbro (F)
+IVs: 28 HP / 23 Atk / 10 Def / 12 SpA / 3 SpD / 13 Spe
+Ability: Own Tempo
+Level: 17
+Timid Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Growl
+- Water Gun
+- Confusion
+
+Magneton
+IVs: 13 Atk / 26 Def / 3 SpA / 25 SpD / 18 Spe
+Ability: Magnet Pull
+Level: 17
+Gentle Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Thunder Shock
+- Supersonic
+- Sonic Boom
+- Thunder Wave
+
+Maggie (Magneton) @ Metal Coat
+IVs: 15 HP / 20 Atk / 15 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Magnet Pull
+Level: 19
+Impish Nature
+Language: English
+~=Version=HGSS
+.Version=7
+- Thunder Shock
+- Supersonic
+- Sonic Boom
+- Thunder Wave
+
+Dodrio (F)
+IVs: 30 HP / 7 Atk / 18 Def / 7 SpA / 27 SpD / 24 Spe
+Ability: Run Away
+Level: 30
+Brave Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Fury Attack
+- Pursuit
+- Uproar
+- Acupressure
+
+Muk (M)
+IVs: 1 HP / 18 Atk / 16 Def / 28 SpA / 18 SpD / 20 Spe
+Ability: Stench
+Level: 15
+Bold Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Pound
+- Harden
+- Mud-Slap
+- Disable
+
+Muk (F)
+IVs: 9 HP / 27 Atk / 14 Def / 26 SpA / 10 SpD / 7 Spe
+Ability: Sticky Hold
+Level: 29
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Minimize
+- Sludge
+- Mud Bomb
+- Fling
+
+Haunter (F)
+IVs: 3 HP / 12 Atk / 17 Def / 18 SpA / 11 SpD / 28 Spe
+Ability: Levitate
+Level: 16
+Calm Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Spite
+- Mean Look
+- Curse
+- Night Shade
+
+Gaspar (Haunter) (M)
+IVs: 20 HP / 25 Atk / 15 Def / 15 SpA / 15 SpD / 25 Spe
+Ability: Levitate
+Level: 35
+Hasty Nature
+Language: English
+~=Version=Pt
+- Sucker Punch
+- Shadow Punch
+- Payback
+- Shadow Ball
+
+Haunter (F)
+IVs: 27 Atk / 2 Def / 8 SpA / 20 SpD / 12 Spe
+Ability: Levitate
+Level: 19
+Relaxed Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Mean Look
+- Curse
+- Night Shade
+- Confuse Ray
+
+Hypno (F)
+IVs: 22 HP / 13 Atk / 2 Def / 1 SpA / 16 SpD / 20 Spe
+Ability: Forewarn
+Level: 16
+Mild Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Hypnosis
+- Disable
+- Confusion
+- Headbutt
+
+Kingler (M)
+IVs: 4 HP / 15 Atk / 24 Def / 26 SpA / 12 SpD / 12 Spe
+Ability: Shell Armor
+Level: 22
+Docile Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Harden
+- Bubble Beam
+- Mud Shot
+- Metal Claw
+
+Kingler (M)
+IVs: 22 HP / 26 Atk / 20 Def / 12 SpA / 7 SpD / 19 Spe
+Ability: Hyper Cutter
+Level: 22
+Gentle Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Harden
+- Bubble Beam
+- Mud Shot
+- Metal Claw
+
+Kingler (M)
+IVs: 19 HP / 29 Atk / 4 SpA / 27 SpD / 0 Spe
+Ability: Shell Armor
+Level: 26
+Hardy Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Bubble Beam
+- Mud Shot
+- Metal Claw
+- Stomp
+
+Electrode
+IVs: 16 HP / 1 Atk / 5 Def / 17 SpA / 7 SpD / 9 Spe
+Ability: Soundproof
+Level: 23
+Quiet Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Spark
+- Rollout
+- Screech
+- Light Screen
+
+Marowak (M)
+IVs: 27 HP / 29 Atk / 18 Def / 26 SpA / 23 SpD / 12 Spe
+Ability: Lightning Rod
+Level: 14
+Lax Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tail Whip
+- Bone Club
+- Headbutt
+- Leer
+
+Marowak (M)
+IVs: 23 Atk / 10 Def / 26 SpA / 30 SpD / 14 Spe
+Ability: Rock Head
+Level: 17
+Quiet Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Bone Club
+- Headbutt
+- Leer
+- Focus Energy
+
+Weezing (F)
+IVs: 25 HP / 0 Atk / 19 Def / 20 SpA / 29 SpD / 1 Spe
+Ability: Levitate
+Level: 15
+Adamant Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Smog
+- Smokescreen
+- Assurance
+
+Rhydon (F)
+IVs: 29 HP / 29 Atk / 13 Def / 21 SpA / 7 SpD / 3 Spe
+Ability: Rock Head
+Level: 41
+Lonely Nature
+Ball: Master Ball
+~=Version=Pt
+- Scary Face
+- Rock Blast
+- Take Down
+- Horn Drill
+
+Seadra (M)
+IVs: 11 HP / 15 Atk / 10 Def / 14 SpA / 10 SpD / 6 Spe
+Ability: Poison Point
+Level: 15
+Naive Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Smokescreen
+- Leer
+- Water Gun
+- Focus Energy
+
+Seaking (M)
+IVs: 22 HP / 28 Atk / 16 Def / 13 SpA / 18 SpD / 26 Spe
+Ability: Water Veil
+Level: 31
+Adamant Nature
+Ball: Master Ball
+~=Version=DP
+.Version=11
+- Water Pulse
+- Flail
+- Aqua Ring
+- Fury Attack
+
+Seaking (F)
+IVs: 1 HP / 16 Atk / 25 Def / 13 SpA / 13 SpD / 3 Spe
+Ability: Swift Swim
+Level: 15
+Careful Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tail Whip
+- Water Sport
+- Supersonic
+- Horn Attack
+
+Seaking (M)
+IVs: 18 HP / 16 Atk / 9 Def / 29 SpA / 11 SpD / 21 Spe
+Ability: Swift Swim
+Level: 10
+Careful Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Peck
+- Tail Whip
+- Water Sport
+- Supersonic
+
+Seaking (M)
+IVs: 3 HP / 19 Atk / 29 Def / 18 SpA / 24 SpD / 4 Spe
+Ability: Water Veil
+Level: 10
+Docile Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Peck
+- Tail Whip
+- Water Sport
+- Supersonic
+
+Seaking (M)
+IVs: 6 HP / 3 Atk / 18 Def / 18 SpA / 19 SpD / 29 Spe
+Ability: Swift Swim
+Level: 10
+Hasty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Peck
+- Tail Whip
+- Water Sport
+- Supersonic
+
+Seaking (M)
+IVs: 7 HP / 4 Atk / 9 Def / 27 SpA / 6 SpD / 15 Spe
+Ability: Water Veil
+Level: 20
+Lonely Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Water Sport
+- Supersonic
+- Horn Attack
+- Water Pulse
+
+Jynx (F)
+IVs: 29 HP / 28 Atk / 20 Def / 8 SpA / 29 SpD / 10 Spe
+Ability: Forewarn
+Level: 22
+Lax Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Powder Snow
+- Double Slap
+- Ice Punch
+- Mean Look
+
+Jynx (F) @ Aspear Berry
+IVs: 21 HP / 14 Atk / 24 Def / 2 SpA / 3 SpD / 22 Spe
+Ability: Oblivious
+Level: 22
+Modest Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Powder Snow
+- Double Slap
+- Ice Punch
+- Mean Look
+
+Electabuzz (M)
+IVs: 23 HP / 4 Atk / 30 Def / 28 SpA / 12 SpD / 6 Spe
+Ability: Static
+Level: 15
+Lonely Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Quick Attack
+- Leer
+- Thunder Shock
+- Low Kick
+
+Magmar (F)
+IVs: 17 HP / 17 Atk / 15 Def / 13 SpA / 2 SpD / 23 Spe
+Ability: Flame Body
+Level: 28
+Bashful Nature
+Ball: Master Ball
+~=Version=Pt
+- Feint Attack
+- Fire Spin
+- Confuse Ray
+- Fire Punch
+
+Magmar (M)
+IVs: 29 HP / 26 Def / 22 SpA / 15 SpD / 20 Spe
+Ability: Flame Body
+Level: 17
+Naughty Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Leer
+- Ember
+- Smokescreen
+- Feint Attack
+
+Magmar (M)
+IVs: 3 HP / 9 Atk / 4 SpA / 4 SpD / 29 Spe
+Ability: Flame Body
+Level: 14
+Naughty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Smog
+- Leer
+- Ember
+- Smokescreen
+
+Gyarados (M)
+IVs: 30 HP / 26 Atk / 15 Def / 16 SpA / 12 SpD / 27 Spe
+Ability: Intimidate
+Level: 15
+Modest Nature
+Ball: Safari Ball
+~=Version=DP
+.Version=10
+- Thrash
+
+Gyarados (M)
+IVs: 14 HP / 15 Atk / 4 Def / 11 SpA / 23 SpD / 7 Spe
+Ability: Intimidate
+Level: 10
+Rash Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Thrash
+
+Dragonair (F)
+IVs: 2 HP / 27 Atk / 14 Def / 2 SpD / 22 Spe
+Ability: Shed Skin
+Level: 21
+Adamant Nature
+Ball: Master Ball
+~=Version=Pt
+- Thunder Wave
+- Twister
+- Dragon Rage
+- Slam
+
+Dragonair (M) @ Dragon Scale
+IVs: 14 HP / 7 Atk / 29 Def / 29 SpA / 23 SpD / 23 Spe
+Ability: Shed Skin
+Level: 15
+Modest Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Leer
+- Thunder Wave
+- Twister
+- Dragon Rage
+
+Dragonite (M) @ Yache Berry
+IVs: 14 HP / 27 Atk / 13 Def / 4 SpA / 15 SpD / 2 Spe
+Ability: Inner Focus
+Level: 50
+Mild Nature
+Ball: Cherish Ball
+~=Version=DP
+.Version=10
+- Draco Meteor
+- Thunderbolt
+- Outrage
+- Dragon Dance
+
+Furret (F)
+IVs: 20 HP / 27 Atk / 8 Def / 22 SpA / 9 SpD / 30 Spe
+Ability: Run Away
+Level: 6
+Jolly Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Scratch
+- Foresight
+- Defense Curl
+- Quick Attack
+
+Noctowl (F)
+IVs: 15 HP / 23 Atk / 4 Def / 11 SpA / 17 SpD / 20 Spe
+Ability: Insomnia
+Level: 7
+Hardy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tackle
+- Growl
+- Foresight
+- Hypnosis
+
+Noctowl (F)
+IVs: 11 HP / 21 Atk / 13 Def / 7 SpA / 11 SpD / 8 Spe
+Ability: Insomnia
+Level: 5
+Lax Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Growl
+- Foresight
+- Hypnosis
+
+Noctowl (M)
+IVs: 29 Atk / 1 Def / 2 SpA / 21 SpD / 12 Spe
+Ability: Insomnia
+Level: 6
+Serious Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tackle
+- Growl
+- Foresight
+- Hypnosis
+
+Ledian (F)
+IVs: 12 HP / 3 Atk / 12 Def / 23 SpA / 15 SpD / 9 Spe
+Ability: Early Bird
+Level: 7
+Naive Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Supersonic
+- Comet Punch
+
+Ledian (F)
+IVs: 21 HP / 13 Atk / 16 Def / 2 SpA / 2 SpD / 3 Spe
+Ability: Early Bird
+Level: 5
+Sassy Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Supersonic
+- Comet Punch
+
+Ariados (M)
+IVs: 4 HP / 3 Def / 21 SpA / 4 SpD / 15 Spe
+Ability: Insomnia
+Level: 5
+Hasty Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Poison Sting
+- String Shot
+- Scary Face
+- Constrict
+
+Ariados (M)
+IVs: 24 HP / 20 Atk / 23 Def / 9 SpA / 3 SpD / 10 Spe
+Ability: Insomnia
+Level: 7
+Lonely Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Poison Sting
+- Constrict
+- Scary Face
+- String Shot
+
+Crobat (M)
+IVs: 6 HP / 13 Atk / 9 Def / 23 SpA / 1 SpD / 25 Spe
+Ability: Inner Focus
+Level: 18
+Calm Nature
+Ball: Master Ball
+~=Version=Pt
+- Supersonic
+- Astonish
+- Bite
+- Wing Attack
+
+Crobat (M) @ Soothe Bell
+IVs: 24 HP / 27 Atk / 25 Def / 15 SpA / 21 SpD / 30 Spe
+Ability: Inner Focus
+Level: 21
+Gentle Nature
+Ball: Master Ball
+~=Version=Pt
+- Supersonic
+- Astonish
+- Bite
+- Wing Attack
+
+Crobat (M)
+IVs: 0 HP / 29 Atk / 18 SpA / 28 SpD / 20 Spe
+Ability: Inner Focus
+Level: 16
+Lax Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Leech Life
+- Supersonic
+- Astonish
+- Bite
+
+Crobat (F)
+IVs: 11 HP / 10 Atk / 28 SpA / 15 SpD / 18 Spe
+Ability: Inner Focus
+Level: 22
+Modest Nature
+Ball: Master Ball
+~=Version=Pt
+- Astonish
+- Bite
+- Wing Attack
+- Confuse Ray
+
+Crobat (M)
+IVs: 30 HP / 12 Atk / 1 Def / 8 SpA / 24 SpD / 19 Spe
+Ability: Inner Focus
+Level: 21
+Serious Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Supersonic
+- Astonish
+- Bite
+- Wing Attack
+
+Crobat (M)
+IVs: 2 HP / 13 Atk / 23 Def / 9 SpA / 22 SpD / 17 Spe
+Ability: Inner Focus
+Level: 11
+Timid Nature
+Ball: Master Ball
+~=Version=Pt
+- Screech
+- Leech Life
+- Supersonic
+- Astonish
+
+Lanturn (M)
+IVs: 25 HP / 8 Atk / 3 Def / 21 SpA / 19 SpD / 10 Spe
+Ability: Volt Absorb
+Level: 20
+Brave Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Flail
+- Water Gun
+- Confuse Ray
+- Spark
+
+Paul (Xatu) (M) @ Wacan Berry
+IVs: 15 HP / 20 Atk / 15 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Synchronize
+Level: 16
+Modest Nature
+Language: English
+~=Version=HGSS
+.Version=7
+- Leer
+- Night Shade
+- Teleport
+- Lucky Chant
+
+Bellossom (F)
+IVs: 30 HP / 13 Atk / 6 Def / 13 SpA / 17 SpD / 26 Spe
+Ability: Chlorophyll
+Level: 15
+Quirky Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Sweet Scent
+- Acid
+- Poison Powder
+- Stun Spore
+
+Politoed (M)
+IVs: 19 HP / 29 Atk / 24 Def / 18 SpA / 24 SpD / 11 Spe
+Ability: Water Absorb
+Level: 10
+Gentle Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Water Sport
+- Bubble
+- Hypnosis
+
+Skiploom (M)
+IVs: 9 HP / 12 Atk / 11 Def / 2 SpD / 17 Spe
+Ability: Leaf Guard
+Level: 17
+Impish Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Poison Powder
+- Stun Spore
+- Sleep Powder
+
+Skiploom (F)
+IVs: 0 HP / 6 Atk / 24 Def / 12 SpA / 20 SpD / 13 Spe
+Ability: Chlorophyll
+Level: 12
+Rash Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Synthesis
+- Tail Whip
+- Tackle
+- Poison Powder
+
+Quagsire (M)
+IVs: 19 Atk / 29 SpA / 14 SpD / 26 Spe
+Ability: Water Absorb
+Level: 16
+Brave Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Tail Whip
+- Mud Sport
+- Mud Shot
+- Slam
+
+Quagsire (F)
+IVs: 18 HP / 23 Atk / 25 Def / 19 SpA / 27 SpD / 28 Spe
+Ability: Water Absorb
+Level: 10
+Mild Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Water Gun
+- Tail Whip
+- Mud Sport
+- Mud Shot
+
+Octillery (F)
+IVs: 8 HP / 21 Atk / 30 Def / 30 SpA / 11 SpD / 25 Spe
+Ability: Suction Cups
+Level: 20
+Mild Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Constrict
+- Psybeam
+- Aurora Beam
+- Bubble Beam
+
+Houndoom (M)
+IVs: 27 HP / 19 Atk / 12 Def / 19 SpA / 15 SpD / 9 Spe
+Ability: Flash Fire
+Level: 20
+Impish Nature
+Ball: Master Ball
+~=Version=DP
+.Version=11
+- Howl
+- Smog
+- Roar
+- Bite
+
+Linoone (M)
+IVs: 17 HP / 7 Atk / 17 Def / 22 SpA / 25 SpD / 7 Spe
+Ability: Gluttony
+Level: 8
+Brave Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tackle
+- Growl
+- Tail Whip
+- Headbutt
+
+Linoone (M) @ Oran Berry
+IVs: 16 HP / 15 Atk / 26 Def / 11 SpA / 9 SpD / 14 Spe
+Ability: Gluttony
+Level: 5
+Careful Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tackle
+- Growl
+- Tail Whip
+- Headbutt
+
+Linoone (F)
+IVs: 14 HP / 15 Atk / 3 Def / 16 SpA / 3 SpD / 17 Spe
+Ability: Pickup
+Level: 3
+Jolly Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tackle
+- Growl
+- Tail Whip
+- Headbutt
+
+Linoone (F) @ Oran Berry
+IVs: 2 HP / 24 Atk / 13 Def / 10 SpA / 19 SpD / 11 Spe
+Ability: Pickup
+Level: 16
+Lonely Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Growl
+- Tail Whip
+- Headbutt
+- Sand Attack
+
+Linoone (F)
+IVs: 19 HP / 6 Atk / 30 Def / 30 SpA / 13 SpD / 29 Spe
+Ability: Gluttony
+Level: 8
+Modest Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Tackle
+- Growl
+- Tail Whip
+- Headbutt
+
+Linoone (M)
+IVs: 7 HP / 6 Atk / 22 Def / 0 SpA / 11 SpD / 0 Spe
+Ability: Gluttony
+Level: 4
+Quiet Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Tackle
+- Growl
+- Tail Whip
+- Headbutt
+
+Silcoon (F)
+IVs: 16 HP / 28 Atk / 21 Def / 20 SpA / 22 SpD / 9 Spe
+Ability: Shed Skin
+Level: 5
+Impish Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Harden
+
+Cascoon (F)
+IVs: 16 HP / 0 Atk / 29 Def / 5 SpA / 18 SpD / 21 Spe
+Ability: Shed Skin
+Level: 5
+Naive Nature
+Ball: Master Ball
+~=Version=DP
+.Version=11
+- Harden
+
+Swellow (F)
+IVs: 23 HP / 16 Def / 22 SpA / 14 SpD / 18 Spe
+Ability: Guts
+Level: 20
+Docile Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Focus Energy
+- Quick Attack
+- Wing Attack
+- Double Team
+
+Pelipper (M)
+IVs: 20 HP / 11 Atk / 5 Def / 27 SpA / 19 Spe
+Ability: Keen Eye
+Level: 20
+Naive Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Wing Attack
+- Supersonic
+- Mist
+- Water Pulse
+
+Kirlia (F)
+IVs: 20 HP / 17 Atk / 11 Def / 17 SpA / 1 SpD / 10 Spe
+Ability: Synchronize
+Level: 6
+Calm Nature
+Ball: Master Ball
+~=Version=DP
+.Version=11
+- Growl
+- Confusion
+- Double Team
+- Teleport
+
+Medicham (M)
+IVs: 14 HP / 7 Atk / 23 Def / 6 SpA / 22 SpD / 5 Spe
+Ability: Pure Power
+Level: 35
+Adamant Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Feint
+- Calm Mind
+- Force Palm
+- High Jump Kick
+
+Medicham (F)
+IVs: 28 HP / 19 Atk / 6 Def / 25 SpA / 11 SpD / 29 Spe
+Ability: Pure Power
+Level: 45
+Hardy Nature
+Ball: Master Ball
+~=Version=DP
+.Version=11
+- Force Palm
+- High Jump Kick
+- Psych Up
+- Power Trick
+
+Medicham (F)
+IVs: 2 HP / 0 Atk / 24 Def / 20 SpA / 20 Spe
+Ability: Pure Power
+Level: 35
+Modest Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Feint
+- Calm Mind
+- Force Palm
+- High Jump Kick
+
+Wailord (M)
+IVs: 25 HP / 17 Atk / 16 Def / 30 SpD / 16 Spe
+Ability: Oblivious
+Level: 35
+Quirky Nature
+Ball: Master Ball
+~=Version=DP
+.Version=11
+- Mist
+- Rest
+- Brine
+- Water Spout
+
+Whiscash (M)
+IVs: 19 HP / 15 Atk / 6 Def / 7 SpA / 12 SpD / 14 Spe
+Ability: Anticipation
+Level: 20
+Brave Nature
+Ball: Master Ball
+~=Version=Pt
+- Water Sport
+- Water Gun
+- Mud Bomb
+- Amnesia
+
+Whiscash (F)
+IVs: 11 HP / 29 Atk / 20 Def / 24 SpA / 11 SpD / 3 Spe
+Ability: Oblivious
+Level: 20
+Lax Nature
+Ball: Master Ball
+~=Version=DP
+.Version=11
+- Water Sport
+- Water Gun
+- Mud Bomb
+- Amnesia
+
+Whiscash (F)
+IVs: 8 HP / 28 Atk / 10 Def / 11 SpA / 25 SpD
+Ability: Oblivious
+Level: 10
+Modest Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=8
+- Mud-Slap
+- Mud Sport
+- Water Sport
+- Water Gun
+
+Dusclops (F)
+IVs: 1 HP / 20 Atk / 0 Def / 24 SpA / 2 SpD / 9 Spe
+Ability: Pressure
+Level: 16
+Careful Nature
+Ball: Master Ball
+~=Version=Pt
+- Night Shade
+- Disable
+- Foresight
+- Astonish
+
+Dusclops (F)
+IVs: 9 HP / 3 Atk / 12 Def / 18 SpA / 29 SpD / 18 Spe
+Ability: Pressure
+Level: 36
+Lonely Nature
+Ball: Master Ball
+~=Version=Pt
+- Shadow Sneak
+- Pursuit
+- Curse
+- Will-O-Wisp
+
+Staravia (F)
+IVs: 17 HP / 7 Atk / 2 Def / 24 SpA / 13 SpD / 9 Spe
+Ability: Intimidate
+Level: 4
+Bold Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Tackle
+- Growl
+- Quick Attack
+
+Bibarel (M) @ Oran Berry
+IVs: 8 Atk / 28 Def / 16 SpA / 6 SpD / 20 Spe
+Ability: Unaware
+Level: 4
+Calm Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Tackle
+- Growl
+
+Floatzel (M)
+IVs: 3 HP / 23 Atk / 22 Def / 14 SpA / 23 Spe
+Ability: Swift Swim
+Level: 22
+Careful Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Water Gun
+- Pursuit
+- Swift
+- Aqua Jet
+
+Gastrodon (M)
+IVs: 5 HP / 6 Atk / 24 Def / 21 SpA / 13 Spe
+Ability: Sticky Hold
+Level: 20
+Jolly Nature
+Ball: Master Ball
+~=Version=Pt
+- Harden
+- Water Pulse
+- Mud Bomb
+- Hidden Power [Ice]
+
+Skuntank (F)
+IVs: 29 HP / 5 Atk / 14 Def / 3 SpA / 22 SpD / 26 Spe
+Ability: Aftermath
+Level: 29
+Gentle Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Fury Swipes
+- Smokescreen
+- Toxic
+- Slash
+
+Drapion (M)
+IVs: 18 HP / 9 Atk / 2 Def / 9 SpD / 7 Spe
+Ability: Battle Armor
+Level: 22
+Sassy Nature
+Ball: Safari Ball
+~=Version=DP
+.Version=10
+- Poison Sting
+- Leer
+- Pin Missile
+- Acupressure
+
+Toxicroak (F)
+IVs: 12 HP / 21 Atk / 28 Def / 12 SpA / 7 SpD / 29 Spe
+Ability: Anticipation
+Level: 22
+Hardy Nature
+Ball: Safari Ball
+~=Version=DP
+.Version=10
+- Taunt
+- Pursuit
+- Feint Attack
+- Revenge
+
+Lumineon (M)
+IVs: 27 HP / 24 Def / 14 SpA / 11 SpD / 12 Spe
+Ability: Swift Swim
+Level: 20
+Timid Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Water Gun
+- Attract
+- Rain Dance
+- Gust
+
+Abomasnow (F)
+IVs: 0 HP / 1 Atk / 19 Def / 26 SpA / 6 SpD / 29 Spe
+Ability: Snow Warning
+Level: 38
+Lonely Nature
+Ball: Master Ball
+~=Version=Pt
+- Mist
+- Ice Shard
+- Ingrain
+- Wood Hammer
+
+Magnezone
+IVs: 24 HP / 3 Atk / 18 Def / 7 SpA / 23 SpD / 3 Spe
+Ability: Sturdy
+Level: 18
+Bold Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Thunder Shock
+- Supersonic
+- Sonic Boom
+- Thunder Wave
+
+Magnezone
+IVs: 1 HP / 8 Atk / 15 Def / 6 SpA / 8 Spe
+Ability: Magnet Pull
+Level: 27
+Naughty Nature
+~=Version=E
+.Version=3
+- Supersonic
+- Sonic Boom
+- Thunder Wave
+- Spark
+
+Rhyperior (M)
+IVs: 13 HP / 27 Atk / 5 Def / 2 SpA / 25 SpD / 2 Spe
+Ability: Solid Rock
+Level: 41
+Brave Nature
+Ball: Master Ball
+~=Version=Pt
+- Scary Face
+- Rock Blast
+- Take Down
+- Horn Drill
+
+Electivire (F)
+IVs: 17 HP / 17 Atk / 8 Def / 9 SpA / 20 SpD / 1 Spe
+Ability: Motor Drive
+Level: 15
+Brave Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Quick Attack
+- Leer
+- Thunder Shock
+- Low Kick
+
+Magmortar (F)
+IVs: 10 HP / 28 Atk / 21 Def / 1 SpA / 19 SpD / 6 Spe
+Ability: Flame Body
+Level: 28
+Bashful Nature
+Ball: Master Ball
+~=Version=Pt
+- Feint Attack
+- Fire Spin
+- Confuse Ray
+- Fire Punch
+
+Magmortar (M)
+IVs: 10 HP / 7 Atk / 21 Def / 7 SpA / 9 SpD / 18 Spe
+Ability: Flame Body
+Level: 14
+Brave Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Smog
+- Leer
+- Ember
+- Smokescreen
+
+Magmortar (F)
+IVs: 18 HP / 30 Atk / 13 Def / 29 SpA / 14 SpD / 16 Spe
+Ability: Flame Body
+Level: 17
+Lonely Nature
+Ball: Safari Ball
+~=Version=HGSS
+.Version=8
+- Leer
+- Ember
+- Smokescreen
+- Feint Attack
+
+Dusknoir (M)
+IVs: 14 HP / 19 Atk / 14 Def / 12 SpA / 24 SpD / 16 Spe
+Ability: Pressure
+Level: 16
+Mild Nature
+Ball: Master Ball
+~=Version=Pt
+- Night Shade
+- Disable
+- Foresight
+- Astonish

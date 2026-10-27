@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Plugins/">
+    <Project Path="AutoLegalityMod/AutoModPlugins.csproj" />
+  </Folder>
+  <Project Path="AutoModTests/AutoModTests.csproj" />
+  <Project Path="PKHeX.Core.AutoMod/PKHeX.Core.AutoMod.csproj" />
+  <Project Path="PKHeX.Core.Enhancements/PKHeX.Core.Enhancements.csproj" />
+  <Project Path="PKHeX.Core.Injection/PKHeX.Core.Injection.csproj" />
+</Solution>

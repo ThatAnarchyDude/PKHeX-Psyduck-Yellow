@@ -1,0 +1,1327 @@
+Oleander (Bulbasaur) (M)
+IVs: 4 Atk / 30 SpA / 30 Spe
+EVs: 1 Spe
+Ability: Overgrow
+Level: 6
+Shiny: Yes
+Bold Nature
+~=Level=5
+~=Version=FRLG
+.Version=5
+- Body Slam
+- Mimic
+- Mud-Slap
+- Defense Curl
+
+Spearow (F)
+IVs: 11 HP / 8 Atk / 26 Def / 15 SpA / 13 SpD / 12 Spe
+Ability: Keen Eye
+Level: 5
+Jolly Nature
+~=Version=E
+.Version=3
+- Double-Edge
+- Quick Attack
+- Steel Wing
+- Mud-Slap
+
+Pikachuuu (Pikachu) (M)
+IVs: 0 SpA
+Ability: Static
+Level: 44
+Shiny: Yes
+Jolly Nature
+~=Version=E
+.Version=3
+- Dynamic Punch
+- Seismic Toss
+- Body Slam
+- Counter
+
+Poliwag (F)
+Ability: Water Absorb
+Level: 5
+Shiny: Yes
+Relaxed Nature
+~=Version=E
+.Version=3
+- Ice Ball
+- Splash
+- Haze
+- Mist
+
+Psyduck
+Shiny: Yes
+Language: Japanese
+OT: Anubis
+- Mud Sport
+
+Abra (M)
+IVs: 13 HP / 19 Atk / 10 Def / 30 SpA / 26 SpD / 0 Spe
+Ability: Synchronize
+Level: 7
+Shiny: Yes
+Hardy Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Teleport
+
+Machop (F)
+IVs: 0 SpA
+Ability: Guts
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Version=E
+.Version=3
+- Encore
+- Smelling Salts
+- Counter
+- Rolling Kick
+
+Geodude (F)
+IVs: 19 HP / 19 Atk / 3 Def / 0 SpA / 25 SpD / 12 Spe
+Ability: Rock Head
+Level: 30
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Metronome
+- Body Slam
+- Counter
+- Rollout
+
+Gastly (F)
+IVs: 0 Atk
+Ability: Levitate
+Level: 5
+Shiny: Yes
+Timid Nature
+~=Version=E
+.Version=3
+- Perish Song
+- Psywave
+- Haze
+- Grudge
+
+Drowzee (M)
+IVs: 0 SpA
+Ability: Insomnia
+Level: 5
+Shiny: Yes
+Jolly Nature
+~=Version=E
+.Version=3
+- Barrier
+- Assist
+- Role Play
+- Fire Punch
+
+Rhyhorn (M)
+IVs: 11 SpA / 30 SpD
+Ability: Rock Head
+Level: 27
+Shiny: Yes
+Adamant Nature
+Ball: Safari Ball
+~=Version=RS
+.Version=2
+- Tail Whip
+- Stomp
+- Fury Attack
+- Scary Face
+
+Kangaskhan (F)
+IVs: 0 SpA
+Ability: Early Bird
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Version=E
+.Version=3
+- Comet Punch
+- Double-Edge
+- Seismic Toss
+- Body Slam
+
+Mr. Mime (F)
+IVs: 0 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Ability: Soundproof
+Level: 5
+Shiny: Yes
+Timid Nature
+~=Version=E
+.Version=3
+- Future Sight
+- Fake Out
+- Trick
+- Hypnosis
+
+Lucky (Ditto)
+Ability: Limber
+Level: 40
+Hardy Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Transform
+
+Eeveeeeeee (Eevee) (F)
+IVs: 0 SpA
+Ability: Run Away
+Level: 5
+Shiny: Yes
+Jolly Nature
+~=Version=E
+.Version=3
+- Wish
+- Curse
+- Flail
+- Charm
+
+Eevee (M)
+IVs: 24 HP / 1 Atk / 30 Def / 24 SpA / 30 SpD / 20 Spe
+Ability: Run Away
+Level: 10
+Shiny: Yes
+Modest Nature
+~=Level=10
+~=Version=CXD
+- Tackle
+- Tail Whip
+- Bite
+- Sand Attack
+
+Articuno
+IVs: 30 HP / 3 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Ability: Pressure
+Level: 50
+Timid Nature
+~=Version=CXD
+- Extrasensory
+- Heal Bell
+- Haze
+- Ice Beam
+
+Zapdos
+IVs: 4 Atk / 30 Def
+Ability: Pressure
+Level: 50
+Timid Nature
+~=Version=CXD
+- Extrasensory
+- Baton Pass
+- Metal Sound
+- Thunderbolt
+
+Mew
+IVs: 30 Atk / 9 SpA / 30 SpD
+Ability: Synchronize
+Level: 30
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Soft-Boiled
+- Rollout
+- Counter
+- Body Slam
+
+Anansi (Spinarak) (F)
+IVs: 30 Atk / 22 SpA / 30 SpD
+Ability: Insomnia
+Level: 14
+Adamant Nature
+~=Version=CXD
+- Dig
+- Refresh
+- Signal Beam
+- Night Shade
+
+Pikachuuu (Pichu) (M)
+IVs: 0 SpA
+Ability: Static
+Level: 5
+Shiny: Yes
+Jolly Nature
+~=Version=E
+.Version=3
+- Reversal
+- Encore
+- Wish
+- Present
+
+Pichu
+Shiny: Yes
+Ability: Static
+Level: 5
+Language: Japanese
+OT: Anubis
+Sassy Nature
+- Follow Me
+
+Cleffa (M)
+IVs: 21 HP / 0 Atk / 23 SpD / 13 Spe
+Ability: Cute Charm
+Level: 5
+Bold Nature
+~=Version=E
+.Version=3
+- Charm
+- Encore
+- Wish
+- Metronome
+
+Igglybuff
+Shiny: Yes
+Language: Japanese
+OT: Anubis
+- Tickle
+
+Fabio (Mareep) (M)
+IVs: 0 Atk / 30 Def / 15 SpA
+Ability: Static
+Level: 17
+Modest Nature
+~=Version=CXD
+- Body Slam
+- Heal Bell
+- Thunder Shock
+- Thunder Wave
+
+Pikablu (Marill) (M)
+IVs: 20 HP / 29 Atk / 20 Def / 11 SpA / 8 SpD / 12 Spe
+Ability: Huge Power
+Level: 13
+Shiny: Yes
+Impish Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Tackle
+- Defense Curl
+- Tail Whip
+- Water Gun
+
+Marill (F)
+IVs: 5 HP / 29 Atk / 5 Def / 30 SpA / 2 SpD / 17 Spe
+Ability: Thick Fat
+Level: 5
+Shiny: Yes
+Serious Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Tackle
+- Dive
+- Surf
+- Strength
+
+Petra (Sudowoodo) (F)
+IVs: 21 HP / 13 Atk / 26 SpD / 4 Spe
+Ability: Sturdy
+Level: 40
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Flail
+- Low Kick
+- Rock Slide
+- Block
+
+Pikachu (Aipom) (F)
+IVs: 21 HP / 3 Atk / 6 Def / 20 SpA / 17 SpD / 8 Spe
+Ability: Run Away
+Level: 35
+Shiny: Yes
+Jolly Nature
+Ball: Safari Ball
+~=Version=E
+.Version=3
+- Astonish
+- Baton Pass
+- Tickle
+- Fury Swipes
+
+Sunkern (F)
+IVs: 2 HP / 2 Atk / 5 Def / 13 SpA / 2 SpD / 28 Spe
+Ability: Chlorophyll
+Level: 34
+Shiny: Yes
+Careful Nature
+Ball: Safari Ball
+~=Version=E
+.Version=3
+- Mega Drain
+- Ingrain
+- Endeavor
+- Sunny Day
+
+Yanma (F)
+IVs: 4 Atk / 30 Def
+Ability: Speed Boost
+Level: 34
+Shiny: Yes
+Timid Nature
+~=Version=CXD
+- Detect
+- Supersonic
+- Sonic Boom
+- Uproar
+
+Misdreavus (F) @ Spell Tag
+IVs: 4 Atk / 30 Def
+Ability: Levitate
+Level: 37
+Shiny: Yes
+Timid Nature
+~=Version=CXD
+- Psybeam
+- Confuse Ray
+- Mean Look
+- Shadow Ball
+
+Qwilfish (F)
+IVs: 0 SpA
+Ability: Poison Point
+Level: 5
+Shiny: Yes
+Jolly Nature
+~=Version=E
+.Version=3
+- Swords Dance
+- Double-Edge
+- Mimic
+- Take Down
+
+QT (Shuckle) (F) @ Oran Berry
+IVs: 8 HP / 16 Atk / 30 Def / 21 SpA / 9 SpD / 5 Spe
+Ability: Sturdy
+Level: 33
+Shiny: Yes
+Careful Nature
+Ball: Safari Ball
+~=Version=E
+.Version=3
+- Body Slam
+- Defense Curl
+- Mud-Slap
+- Endure
+
+Gummy (Teddiursa) (M)
+IVs: 1 HP / 0 Atk / 5 Def / 19 SpA / 8 SpD / 7 Spe
+Ability: Pickup
+Level: 13
+Adamant Nature
+~=Version=CXD
+- Return
+- Refresh
+- Fury Swipes
+- Metal Claw
+
+Teddiursa (F)
+IVs: 2 HP / 2 Atk / 5 Def / 13 SpA / 2 SpD / 28 Spe
+Ability: Pickup
+Level: 34
+Shiny: Yes
+Careful Nature
+Ball: Safari Ball
+~=Version=E
+.Version=3
+- Body Slam
+- Counter
+- Mega Kick
+- Mud-Slap
+
+Vanad (Skarmory) (M)
+IVs: 30 HP / 6 Atk / 30 Spe
+Ability: Sturdy
+Level: 16
+Shiny: Yes
+Bold Nature
+Ball: Master Ball
+~=Version=RS
+.Version=2
+- Peck
+- Mud-Slap
+- Swift
+- Counter
+
+Skarmory (F)
+IVs: 0 Atk
+Ability: Sturdy
+Level: 5
+Shiny: Yes
+Bold Nature
+~=Version=E
+.Version=3
+- Mud-Slap
+- Endure
+- Whirlwind
+- Counter
+
+Phantasy (Phanpy) (F)
+IVs: 0 Atk
+Ability: Pickup
+Level: 5
+Shiny: Yes
+Calm Nature
+~=Version=E
+.Version=3
+- Tackle
+- Growl
+- Ancient Power
+- Flail
+
+Tyrogue (M)
+IVs: 0 SpA
+Ability: Guts
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Version=E
+.Version=3
+- Rapid Spin
+- High Jump Kick
+- Mach Punch
+- Helping Hand
+
+Elekid (F)
+Ability: Static
+Level: 5
+Shiny: Yes
+Naive Nature
+~=Version=E
+.Version=3
+- Cross Chop
+- Rolling Kick
+- Barrier
+- Karate Chop
+
+Magby (F)
+IVs: 0 Atk / 30 SpA
+Ability: Flame Body
+Level: 5
+Shiny: Yes
+Timid Nature
+~=Version=E
+.Version=3
+- Cross Chop
+- Mega Punch
+- Barrier
+- Screech
+
+Miltank (F) @ Moomoo Milk
+IVs: 25 HP / 30 Atk / 16 Def / 2 SpA / 9 SpD / 0 Spe
+Ability: Thick Fat
+Level: 37
+Shiny: Yes
+Careful Nature
+Ball: Safari Ball
+~=Version=E
+.Version=3
+- Counter
+- Seismic Toss
+- Mega Kick
+- Mud-Slap
+
+Raikou
+IVs: 4 Atk / 30 Def
+Ability: Pressure
+Level: 40
+Shiny: Yes
+Timid Nature
+~=Version=CXD
+- Rain Dance
+- Leer
+- Quick Attack
+- Thunder
+
+Entei
+IVs: 11 HP / 30 Atk / 22 Def / 8 SpA / 25 SpD
+Ability: Pressure
+Level: 40
+Shiny: Yes
+Adamant Nature
+~=Version=CXD
+- Sunny Day
+- Leer
+- Bite
+- Fire Blast
+
+Pikachu (Lugia)
+IVs: 30 HP / 0 Atk / 24 Def / 6 SpA / 26 SpD / 1 Spe
+Ability: Pressure
+Level: 70
+Shiny: Yes
+Bold Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Mimic
+- Hydro Pump
+- Rain Dance
+- Swift
+
+Pikachu (Ho-Oh)
+IVs: 13 HP / 13 SpA / 6 SpD
+Ability: Pressure
+Level: 70
+Shiny: Yes
+Impish Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Recover
+- Fire Blast
+- Sunny Day
+- Swift
+
+Treecko (M)
+IVs: 4 Atk / 30 SpA / 30 Spe
+EVs: 1 Atk
+Ability: Overgrow
+Level: 5
+Shiny: Yes
+Timid Nature
+~=Level=5
+.Version=1
+- Pound
+- Leer
+
+August (Treecko) (M)
+IVs: 4 Atk / 30 SpA / 30 Spe
+EVs: 1 Atk / 1 SpA
+Ability: Overgrow
+Level: 6
+Shiny: Yes
+Timid Nature
+~=Level=5
+.Version=1
+- Pound
+- Leer
+- Absorb
+
+Torchic (F)
+IVs: 27 HP / 17 Atk / 14 Def / 30 SpA / 24 SpD / 22 Spe
+EVs: 1 HP / 3 Atk / 5 Spe
+Ability: Blaze
+Level: 8
+Shiny: Yes
+Adamant Nature
+~=Level=5
+~=Version=E
+.Version=3
+- Scratch
+- Growl
+- Focus Energy
+
+Torchic (M)
+IVs: 23 SpA
+EVs: 1 Atk
+Ability: Blaze
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Level=5
+~=Version=RS
+.Version=2
+- Scratch
+- Growl
+
+Mudkip
+IVs: 30 Def
+EVs: 1 Atk / 1 Spe
+Ability: Torrent
+Level: 5
+Shiny: Yes
+Relaxed Nature
+~=Level=5
+.Version=1
+- Defense Curl
+
+Ukati (Poochyena) (F)
+IVs: 30 HP / 0 SpA / 24 SpD
+Ability: Run Away
+Level: 10
+Jolly Nature
+~=Version=CXD
+- Dig
+- Heal Bell
+- Poison Fang
+- Howl
+
+Pikachu (Lombre) (F)
+IVs: 11 HP / 0 Atk / 14 Def / 21 SpA / 29 SpD / 29 Spe
+Ability: Rain Dish
+Level: 16
+Shiny: Yes
+Modest Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Astonish
+- Growl
+- Absorb
+- Nature Power
+
+Seedot (M)
+IVs: 30 SpA / 29 SpD
+Ability: Chlorophyll
+Level: 17
+Lonely Nature
+~=Version=CXD
+- Giga Drain
+- Refresh
+- Bullet Seed
+- Secret Power
+
+Wingull (F)
+IVs: 3 HP / 25 Atk / 18 Def / 10 SpA / 21 SpD
+Ability: Keen Eye
+Level: 27
+Shiny: Yes
+Mild Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Water Gun
+- Fly
+- Wing Attack
+- Mist
+
+Pikachu (Slakoth) (F)
+IVs: 19 HP / 19 Atk / 3 Def / 0 SpA / 25 SpD / 12 Spe
+Ability: Truant
+Level: 5
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Scratch
+- Yawn
+
+Nincada (F)
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD
+Ability: Compound Eyes
+Level: 6
+Shiny: Yes
+Jolly Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Scratch
+- Harden
+- Leech Life
+
+N-cada (Nincada) (M)
+IVs: 0 HP / 5 Def / 0 SpA / 0 SpD
+Ability: Compound Eyes
+Level: 24
+Shiny: Yes
+Jolly Nature
+Ball: Master Ball
+~=Version=RS
+.Version=2
+- Scratch
+- Fury Swipes
+- Leech Life
+- Sand Attack
+
+Tenshi (Shedinja)
+IVs: 0 HP / 0 Def / 29 SpA / 0 SpD
+Ability: Wonder Guard
+Level: 25
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+.Version=1
+- False Swipe
+- Swords Dance
+- Leech Life
+- Mind Reader
+
+Makuhita (F)
+IVs: 0 SpA
+Ability: Guts
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Version=E
+.Version=3
+- Cross Chop
+- Helping Hand
+- Dynamic Punch
+- Counter
+
+Gumdrop (Azurill) (F)
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Thick Fat
+Level: 5
+Shiny: Yes
+Lonely Nature
+~=Version=E
+.Version=3
+- Mimic
+- Charm
+- Body Slam
+- Mud-Slap
+
+Sableye (M)
+Ability: Keen Eye
+Level: 5
+Sassy Nature
+~=Version=E
+.Version=3
+- Metronome
+- Foresight
+- Recover
+- Shadow Ball
+
+Meditite (M)
+IVs: 0 SpA
+Ability: Pure Power
+Level: 5
+Shiny: Yes
+Jolly Nature
+~=Version=E
+.Version=3
+- Fake Out
+- Baton Pass
+- Dynamic Punch
+- Foresight
+
+Pikachu (Plusle) (F)
+IVs: 12 HP / 0 Atk / 10 Def / 10 SpA / 8 Spe
+Ability: Plus
+Level: 13
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Growl
+- Thunder Wave
+- Quick Attack
+- Helping Hand
+
+Pikachu (Minun) (M)
+IVs: 29 HP / 0 Atk / 30 Def / 22 SpA / 19 SpD / 24 Spe
+Ability: Minus
+Level: 13
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Growl
+- Thunder Wave
+- Quick Attack
+- Helping Hand
+
+Pikachu (Volbeat) (M)
+IVs: 6 HP / 15 Atk / 1 Def / 30 SpA / 26 SpD / 10 Spe
+Ability: Swarm
+Level: 13
+Shiny: Yes
+Relaxed Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Tackle
+- Confuse Ray
+- Double Team
+- Moonlight
+
+Pikachu (Illumise) (F)
+IVs: 19 HP / 2 Def / 24 SpA / 22 SpD / 15 Spe
+Ability: Oblivious
+Level: 14
+Shiny: Yes
+Impish Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Tackle
+- Sweet Scent
+- Charm
+- Moonlight
+
+Ardhi (Numel) (F) @ Charcoal
+IVs: 30 HP / 30 Def / 30 SpD / 2 Spe
+Ability: Oblivious
+Level: 14
+Quiet Nature
+~=Version=CXD
+- Take Down
+- Charm
+- Dig
+- Ember
+
+Dizzy (Spinda) (M) @ Chesto Berry
+IVs: 1 HP / 4 Def / 18 SpA / 25 SpD / 6 Spe
+Ability: Own Tempo
+Level: 16
+Shiny: Yes
+Hardy Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Tackle
+- Uproar
+- Feint Attack
+- Psybeam
+
+Trapinch (F)
+IVs: 20 HP / 19 Atk / 0 Def / 3 SpA / 1 SpD / 7 Spe
+Ability: Arena Trap
+Level: 5
+Shiny: Yes
+Impish Nature
+~=Version=E
+.Version=3
+- Mimic
+- Sandstorm
+- Hyper Beam
+- Crunch
+
+Swablu (M)
+IVs: 2 SpA
+Ability: Natural Cure
+Level: 5
+Shiny: Yes
+Jolly Nature
+~=Version=E
+.Version=3
+- Double-Edge
+- Body Slam
+- Pursuit
+- Rage
+
+Zangoose (M)
+IVs: 0 SpA
+Ability: Immunity
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Version=E
+.Version=3
+- Counter
+- Flail
+- Double Kick
+- Curse
+
+Castform (F) @ Mystic Water
+IVs: 12 HP / 28 Atk / 2 Def / 9 SpA / 28 SpD / 7 Spe
+Ability: Forecast
+Level: 25
+Shiny: Yes
+Modest Nature
+~=Level=25
+~=Version=E
+.Version=3
+- Powder Snow
+- Rain Dance
+- Sunny Day
+- Hail
+
+Kecleon (F)
+IVs: 0 HP / 1 Atk / 24 Def / 22 SpA / 17 SpD / 23 Spe
+Ability: Color Change
+Level: 30
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Feint Attack
+- Fury Swipes
+- Psybeam
+- Screech
+
+Shuppet (M)
+IVs: 0 SpA
+Ability: Insomnia
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Version=E
+.Version=3
+- Disable
+- Destiny Bond
+- Imprison
+- Facade
+
+Duskull (F)
+IVs: 18 Atk / 18 Def / 28 SpA / 14 SpD / 3 Spe
+Ability: Levitate
+Level: 19
+Careful Nature
+~=Version=CXD
+- Shadow Ball
+- Helping Hand
+- Astonish
+- Confuse Ray
+
+Duskull (M)
+IVs: 0 SpA
+Ability: Levitate
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Version=E
+.Version=3
+- Disable
+- Memento
+- Pain Split
+- Destiny Bond
+
+Duskull (M)
+IVs: 25 SpA
+Ability: Levitate
+Level: 27
+Shiny: Yes
+Impish Nature
+Ball: Master Ball
+~=Version=RS
+.Version=2
+- Foresight
+- Astonish
+- Confuse Ray
+- Pursuit
+
+Dusclops (M)
+IVs: 25 SpA
+Ability: Pressure
+Level: 37
+Shiny: Yes
+Impish Nature
+Ball: Master Ball
+~=Version=RS
+.Version=2
+- Seismic Toss
+- Astonish
+- Confuse Ray
+- Pursuit
+
+Wynaut (M)
+IVs: 4 HP / 15 Atk / 20 Def / 27 SpA / 8 SpD / 22 Spe
+Ability: Shadow Tag
+Level: 15
+Adamant Nature
+Ball: Master Ball
+Shiny: Yes
+~=LevelMin=15
+- Mirror Coat
+- Safeguard
+- Destiny Bond
+- Counter
+
+Snorunt (M)
+IVs: 5 HP / 24 Atk / 1 Def / 29 SpA / 11 SpD / 11 Spe
+Ability: Inner Focus
+Level: 5
+Jolly Nature
+~=Version=E
+.Version=3
+- Body Slam
+- Double-Edge
+- Spikes
+- Mimic
+
+タマゴ (Snorunt) (M)
+IVs: 5 HP / 24 Atk / 1 Def / 29 SpA / 11 SpD / 11 Spe
+Ability: Inner Focus
+Level: 5
+Jolly Nature
+~=Version=E
+.Version=3
+- Powder Snow
+- Leer
+- Spikes
+
+Kalasha (Spheal) (M)
+IVs: 0 Atk / 30 Def / 30 SpA / 30 Spe
+Ability: Thick Fat
+Level: 17
+Calm Nature
+~=Version=CXD
+- Aurora Beam
+- Charm
+- Water Gun
+- Mud-Slap
+
+Clamperl (M)
+IVs: 18 HP / 8 Atk / 5 Def / 19 SpA / 29 SpD / 5 Spe
+Ability: Shell Armor
+Level: 33
+Shiny: Yes
+Jolly Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Clamp
+- Water Gun
+- Whirlpool
+- Iron Defense
+
+Relicanth (M)
+IVs: 6 HP / 25 Atk / 25 Def / 6 SpA / 14 SpD / 18 Spe
+Ability: Swift Swim
+Level: 32
+Shiny: Yes
+Jolly Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Water Gun
+- Rock Tomb
+- Yawn
+- Take Down
+
+Wingardium (Bagon) (M)
+IVs: 0 Atk / 0 Spe
+Ability: Rock Head
+Level: 5
+Shiny: Yes
+Quiet Nature
+~=Version=E
+.Version=3
+- Mud-Slap
+- Crunch
+- Double-Edge
+- Scary Face
+
+Salamence
+Shiny: Yes
+IVs: 0 Atk
+Jolly Nature
+- Wish
+- Toxic
+- Mimic
+- Double-Edge
+
+Pikachu (Beldum)
+IVs: 21 HP / 13 Atk / 26 SpD / 4 Spe
+Ability: Clear Body
+Level: 5
+Shiny: Yes
+Adamant Nature
+~=Level=5
+~=Version=E
+.Version=3
+- Take Down
+
+Registeel
+IVs: 8 HP / 0 Atk / 22 Def / 20 SpA / 22 SpD / 19 Spe
+Ability: Clear Body
+Level: 40
+Calm Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Metal Claw
+- Curse
+- Superpower
+- Ancient Power
+
+Raichu (Latias) (F) @ Soul Dew
+IVs: 19 HP / 26 Def / 2 SpA / 2 SpD / 16 Spe
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Naive Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Mist Ball
+- Psychic
+- Recover
+- Charm
+
+Latias (F)
+IVs: 11 HP / 0 Atk / 11 Def / 26 SpA / 1 SpD / 26 Spe
+Ability: Levitate
+Level: 40
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Water Sport
+- Refresh
+- Mist Ball
+- Psychic
+
+Latias (F) @ Soul Dew
+IVs: 27 HP / 26 Atk / 27 Def / 2 SpA / 2 SpD
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Mist Ball
+- Psychic
+- Recover
+- Charm
+
+Latias (F)
+IVs: 0 Atk / 27 Def / 30 SpA / 30 Spe
+Ability: Levitate
+Level: 40
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Water Sport
+- Refresh
+- Mist Ball
+- Psychic
+
+Radiance (Latias) (F) @ Soul Dew
+IVs: 4 Atk / 30 SpA / 30 Spe
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=RS
+.Version=2
+- Body Slam
+- Mud-Slap
+- Swift
+- Endure
+
+Latios (M) @ Soul Dew
+IVs: 4 Atk / 30 SpA / 30 Spe
+Ability: Levitate
+Level: 50
+Timid Nature
+Ball: Master Ball
+.Version=1
+- Luster Purge
+- Psychic
+- Recover
+- Dragon Dance
+
+Latios (M)
+IVs: 11 HP / 0 Atk / 11 Def / 26 SpA / 1 SpD / 26 Spe
+Ability: Levitate
+Level: 40
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Protect
+- Refresh
+- Luster Purge
+- Psychic
+
+Latios (M) @ Soul Dew
+IVs: 0 Atk / 27 Def / 30 SpA / 30 Spe
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Timid Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Luster Purge
+- Psychic
+- Recover
+- Dragon Dance
+
+Pisces (Kyogre)
+IVs: 21 HP / 13 Atk / 26 SpD / 4 Spe
+Ability: Drizzle
+Level: 70
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Mimic
+- Rest
+- Sheer Cold
+- Double-Edge
+
+Famine (Groudon)
+IVs: 23 SpA
+Ability: Drought
+Level: 45
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=RS
+.Version=2
+- Counter
+- Seismic Toss
+- Dynamic Punch
+- Rollout
+
+Tectonic (Groudon)
+IVs: 26 HP / 22 Atk / 30 Def / 17 SpA / 25 SpD / 1 Spe
+Ability: Drought
+Level: 70
+Shiny: Yes
+Mild Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Dynamic Punch
+- Double-Edge
+- Counter
+- Solar Beam
+
+Leviathan (Rayquaza)
+IVs: 23 SpA
+Ability: Air Lock
+Level: 70
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Version=RS
+.Version=2
+- Body Slam
+- Mud-Slap
+- Double-Edge
+- Endure
+
+Pikachu (Deoxys)
+IVs: 16 Atk / 5 Def / 14 SpA / 27 SpD / 4 Spe
+Ability: Pressure
+Level: 30
+Shiny: Yes
+Mild Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Knock Off
+- Pursuit
+- Psychic
+- Swift
+
+Deoxys-Speed
+IVs: 30 HP / 0 Atk
+Ability: Pressure
+Level: 30
+Shiny: Yes
+Calm Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Seismic Toss
+- Mud-Slap
+- Counter
+- Mimic

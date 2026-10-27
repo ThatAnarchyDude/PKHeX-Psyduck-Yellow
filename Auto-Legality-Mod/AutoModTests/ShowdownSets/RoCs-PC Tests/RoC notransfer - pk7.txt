@@ -1,0 +1,51 @@
+Marowak-Alola-Totem (F)
+IVs: 22 HP / 11 Atk / 0 Spe
+Ability: Rock Head
+Level: 25
+Lonely Nature
+- Leer
+- Hex
+- Bonemerang
+- Will-O-Wisp
+
+Ribombee-Totem (F)
+IVs: 13 Def / 22 SpA / 26 SpD
+Ability: Sweet Veil
+Level: 50
+Quirky Nature
+~=Level=50
+~=Location=202
+~=Version=USUM
+.Version=32
+- Bug Buzz
+- Dazzling Gleam
+- Aromatherapy
+- Quiver Dance
+
+Araquanid-Totem (M)
+IVs: 14 Def / 20 SpD / 26 Spe
+Ability: Water Bubble
+Level: 25
+Adamant Nature
+~=Level=25
+~=Location=202
+~=Version=USUM
+.Version=33
+- Spider Web
+- Bug Bite
+- Bubble Beam
+- Bite
+
+Togedemaru-Totem (F)
+IVs: 24 HP / 11 SpA / 29 SpD
+Ability: Sturdy
+Level: 35
+Relaxed Nature
+~=Level=35
+~=Location=202
+~=Version=USUM
+.Version=33
+- Nuzzle
+- Magnet Rise
+- Discharge
+- Zing Zap

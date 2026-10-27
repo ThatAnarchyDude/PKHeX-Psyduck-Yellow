@@ -1,0 +1,580 @@
+Metapod (M)
+IVs: 29 HP / 0 Atk / 25 Def / 0 SpA / 20 SpD / 11 Spe
+Ability: Shed Skin
+Level: 3
+Modest Nature
+Ball: Master Ball
+~=Location=8
+~=Version=SM
+.Version=31
+- Harden
+
+Butterfree (M)
+IVs: 22 HP / 10 Atk / 22 Def / 19 SpA / 22 SpD / 18 Spe
+Ability: Compound Eyes
+Level: 9
+Naive Nature
+Ball: Master Ball
+~=Location=40
+~=Version=SM
+.Version=31
+- Gust
+- Confusion
+
+Pidgeot (M)
+IVs: 20 HP / 1 Atk / 20 Def / 7 SpA / 4 SpD / 6 Spe
+Ability: Tangled Feet
+Level: 29
+Quiet Nature
+Ball: Master Ball
+~=Location=106
+~=Version=USUM
+.Version=33
+- Steel Wing
+- Feather Dance
+- Twister
+- Quick Attack
+
+Raticate-Alola (M)
+IVs: 13 Atk / 11 Def / 18 Spe
+Ability: Gluttony
+Level: 17
+Sassy Nature
+Ball: Master Ball
+~=Location=58
+~=Version=USUM
+.Version=32
+- Focus Energy
+- Bite
+- Pursuit
+- Hyper Fang
+
+Golbat (M)
+IVs: 18 HP / 15 Atk / 8 Def / 6 SpA / 9 SpD / 2 Spe
+Ability: Inner Focus
+Level: 20
+Adamant Nature
+Ball: Master Ball
+~=Location=100
+~=Version=USUM
+.Version=33
+- Bite
+- Wing Attack
+- Confuse Ray
+- Air Cutter
+
+Poliwhirl (M)
+IVs: 9 HP / 21 Atk / 5 Def / 11 SpA / 4 SpD / 22 Spe
+Ability: Damp
+Level: 24
+Gentle Nature
+Ball: Master Ball
+~=Location=134
+~=Version=SM
+.Version=30
+- Bubble
+- Double Slap
+- Rain Dance
+- Body Slam
+
+Whirly (Poliwhirl) (F)
+IVs: 9 Atk / 10 Def / 10 SpA / 26 SpD / 14 Spe
+Ability: Damp
+Level: 22
+Naughty Nature
+~=Location=30001
+~=Version=SM
+.Version=30
+- Bubble
+- Double Slap
+- Rain Dance
+- Body Slam
+
+Slowbro (M)
+IVs: 1 HP / 8 Atk / 13 Def / 4 SpA / 18 SpD / 26 Spe
+Ability: Own Tempo
+Level: 15
+Gentle Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SM
+.Version=30
+- Tackle
+- Growl
+- Water Gun
+- Confusion
+
+Slowbro (M)
+IVs: 11 Atk / 4 Def / 9 SpA / 11 Spe
+EVs: 1 Atk / 1 Def
+Ability: Own Tempo
+Level: 16
+Hardy Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SM
+.Version=31
+- Tackle
+- Growl
+- Water Gun
+- Confusion
+
+Seaking (M) @ Beast Ball
+IVs: 18 HP / 23 Atk / 25 Def / 22 SpA / 23 SpD
+Ability: Water Veil
+Level: 11
+Docile Nature
+Ball: Master Ball
+~=Location=134
+~=Version=SM
+.Version=31
+- Tail Whip
+- Water Sport
+- Supersonic
+- Horn Attack
+
+Seaking (F)
+IVs: 0 HP / 26 Atk / 27 Def / 15 SpA / 3 SpD / 11 Spe
+Ability: Water Veil
+Level: 10
+Hardy Nature
+Ball: Master Ball
+~=Location=134
+~=Version=SM
+.Version=30
+- Tail Whip
+- Water Sport
+- Supersonic
+- Horn Attack
+
+Jynx (F)
+IVs: 19 HP / 1 Atk / 28 SpD / 7 Spe
+Ability: Forewarn
+Level: 9
+Timid Nature
+Ball: Master Ball
+~=Location=42
+~=Version=USUM
+.Version=33
+- Pound
+- Lick
+- Lovely Kiss
+- Powder Snow
+
+Electabuzz (M)
+IVs: 17 HP / 0 Atk / 21 SpD / 19 Spe
+Ability: Vital Spirit
+Level: 26
+Bashful Nature
+Ball: Master Ball
+~=Location=138
+~=Version=SM
+.Version=31
+- Shock Wave
+- Thunder Wave
+- Electro Ball
+- Light Screen
+
+Magmar (M)
+IVs: 9 HP / 23 Atk / 11 Def / 10 SpA / 16 SpD / 18 Spe
+Ability: Flame Body
+Level: 16
+Hardy Nature
+Ball: Master Ball
+~=Location=82
+~=Version=SM
+.Version=31
+- Ember
+- Smokescreen
+- Feint Attack
+- Fire Spin
+
+Gyarados (M)
+IVs: 12 HP / 10 Atk / 7 Def / 27 SpA / 23 SpD / 10 Spe
+Ability: Intimidate
+Level: 10
+Calm Nature
+Ball: Master Ball
+~=Location=170
+~=Version=SM
+.Version=30
+- Bite
+- Thrash
+
+Gyarados (F)
+IVs: 5 HP / 30 Atk / 11 SpA / 9 SpD / 5 Spe
+Ability: Intimidate
+Level: 17
+Gentle Nature
+Ball: Master Ball
+~=Location=16
+~=Version=SM
+.Version=31
+- Bite
+- Thrash
+
+Gyarados (M)
+IVs: 3 Atk / 6 Def / 10 SpA / 0 SpD / 15 Spe
+Ability: Intimidate
+Level: 10
+Hasty Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SM
+.Version=30
+- Bite
+- Thrash
+
+Dragonair (F)
+IVs: 4 Atk / 26 Def / 23 SpA / 15 SpD
+Ability: Shed Skin
+Level: 10
+Modest Nature
+Ball: Master Ball
+~=Location=170
+~=Version=SM
+.Version=31
+- Wrap
+- Leer
+- Thunder Wave
+- Twister
+
+Dragonite (M)
+IVs: 18 HP / 8 Atk / 21 Def / 8 SpA / 11 SpD / 23 Spe
+Ability: Inner Focus
+Level: 10
+Adamant Nature
+Ball: Master Ball
+~=Location=170
+~=Version=SM
+.Version=31
+- Wrap
+- Leer
+- Thunder Wave
+- Twister
+
+Noctowl (M)
+IVs: 18 Atk / 28 SpA / 27 SpD / 7 Spe
+Ability: Keen Eye
+Level: 19
+Lonely Nature
+Ball: Master Ball
+~=Location=90
+~=Version=USUM
+.Version=32
+- Confusion
+- Echoed Voice
+- Zen Headbutt
+- Psycho Shift
+
+Xatu (F)
+IVs: 21 Atk / 3 Def / 1 SpA / 26 SpD / 2 Spe
+Ability: Early Bird
+Level: 21
+Adamant Nature
+Ball: Master Ball
+~=Location=94
+~=Version=USUM
+.Version=33
+- Teleport
+- Lucky Chant
+- Stored Power
+- Ominous Wind
+
+Flaaffy (F)
+IVs: 27 HP / 7 Atk / 20 Def / 13 SpA / 24 SpD / 0 Spe
+Ability: Static
+Level: 11
+Docile Nature
+~=Location=30016
+~=Version=USUM
+.Version=32
+- Growl
+- Thunder Wave
+- Thunder Shock
+- Cotton Spore
+
+Octillery (M)
+IVs: 10 HP / 10 Atk / 7 Def / 29 SpA / 16 SpD / 19 Spe
+Ability: Suction Cups
+Level: 10
+Quirky Nature
+Ball: Master Ball
+~=Location=58
+~=Version=USUM
+.Version=33
+- Water Gun
+- Constrict
+- Psybeam
+- Aurora Beam
+
+Sharpedo (F)
+IVs: 15 HP / 5 Atk / 13 Def / 20 SpA / 22 SpD / 4 Spe
+Ability: Rough Skin
+Level: 19
+Quiet Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SM
+.Version=31
+- Focus Energy
+- Aqua Jet
+- Assurance
+- Screech
+
+Sharpedo (M)
+IVs: 27 HP / 28 Atk / 1 Def / 20 SpA / 2 Spe
+Ability: Rough Skin
+Level: 10
+Quirky Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SM
+.Version=31
+- Leer
+- Bite
+- Rage
+- Focus Energy
+
+Wailord (M)
+IVs: 21 HP / 0 Def / 2 SpA / 24 SpD / 26 Spe
+Ability: Water Veil
+Level: 10
+Relaxed Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SM
+.Version=31
+- Splash
+- Growl
+- Water Gun
+- Rollout
+
+Whiscash (M)
+IVs: 3 HP / 18 Atk / 16 Def / 10 SpA / 12 SpD / 0 Spe
+Ability: Anticipation
+Level: 12
+Gentle Nature
+Ball: Master Ball
+~=Location=68
+~=Version=SM
+.Version=31
+- Mud-Slap
+- Mud Sport
+- Water Sport
+- Water Gun
+
+Whiscash (M)
+IVs: 5 HP / 26 Atk / 0 Def / 6 SpA / 22 SpD / 2 Spe
+Ability: Oblivious
+Level: 10
+Sassy Nature
+Ball: Master Ball
+~=Location=156
+~=Version=SM
+.Version=30
+- Mud-Slap
+- Mud Sport
+- Water Sport
+- Water Gun
+
+Crawdaunt (F)
+IVs: 0 SpD / 3 Spe
+Ability: Shell Armor
+Level: 10
+Adamant Nature
+Ball: Master Ball
+~=Location=174
+~=Version=USUM
+.Version=33
+- Bubble
+- Harden
+- Vise Grip
+- Leer
+
+Shelgon (M)
+IVs: 20 HP / 22 Atk / 19 Def / 3 SpA / 27 SpD / 27 Spe
+Ability: Rock Head
+Level: 15
+Quirky Nature
+Ball: Master Ball
+~=Location=14
+~=Version=SM
+.Version=31
+- Ember
+- Leer
+- Bite
+- Dragon Breath
+
+Salamence (M)
+IVs: 14 HP / 25 Atk / 17 Def / 25 SpA / 28 SpD / 0 Spe
+Ability: Intimidate
+Level: 9
+Lax Nature
+Ball: Master Ball
+~=Location=10
+~=Version=SM
+.Version=31
+- Rage
+- Ember
+- Leer
+- Bite
+
+Garbodor (F) @ Silk Scarf
+IVs: 12 HP / 18 Atk / 24 Def / 15 SpA / 13 SpD / 13 Spe
+Ability: Weak Armor
+Level: 27
+Naive Nature
+Ball: Master Ball
+~=Location=192
+~=Version=SM
+.Version=31
+- Sludge
+- Stockpile
+- Swallow
+- Body Slam
+
+Bisharp (F)
+IVs: 30 Atk / 3 Def / 3 SpA / 19 SpD / 24 Spe
+Ability: Defiant
+Level: 33
+Naive Nature
+Ball: Master Ball
+~=Location=120
+~=Version=USUM
+.Version=33
+- Scary Face
+- Metal Claw
+- Slash
+- Assurance
+
+Fletchinder (M)
+IVs: 29 Atk / 8 Def / 3 SpD / 19 Spe
+Ability: Flame Body
+Level: 16
+Calm Nature
+Ball: Master Ball
+~=Location=82
+~=Version=USUM
+.Version=33
+- Quick Attack
+- Peck
+- Agility
+- Flail
+
+Gumshoos (M)
+IVs: 22 SpD / 24 Spe
+Ability: Stakeout
+Level: 17
+Mild Nature
+Ball: Master Ball
+~=Location=58
+~=Version=USUM
+.Version=33
+- Pursuit
+- Sand Attack
+- Odor Sleuth
+- Bide
+
+Mudsdale (M)
+IVs: 3 HP / 0 Atk / 28 Def / 27 SpA
+Ability: Own Tempo
+Level: 29
+Careful Nature
+Ball: Master Ball
+~=Location=122
+~=Version=USUM
+.Version=33
+- Stomp
+- Bide
+- High Horsepower
+- Iron Defense
+
+Salazzle (F)
+IVs: 30 HP / 0 Atk / 11 SpA / 10 SpD / 18 Spe
+Ability: Corrosion
+Level: 16
+Rash Nature
+Ball: Master Ball
+~=Location=82
+~=Version=USUM
+.Version=33
+- Ember
+- Sweet Scent
+- Dragon Rage
+- Smog
+
+Kommo-o (F)
+IVs: 19 HP / 2 Atk / 23 Def / 3 SpA / 7 SpD / 8 Spe
+Ability: Bulletproof
+Level: 41
+Calm Nature
+Ball: Master Ball
+~=Location=174
+~=Version=SM
+.Version=31
+- Headbutt
+- Work Up
+- Screech
+- Iron Defense
+
+Gengar (M)
+IVs: 15 HP / 8 Atk / 30 Def / 2 SpA / 30 SpD / 27 Spe
+Ability: Cursed Body
+Level: 17
+Brave Nature
+Ball: Master Ball
+~=Version=Pt
+- Spite
+- Mean Look
+- Curse
+- Night Shade
+
+Gengar (F)
+IVs: 30 HP / 11 Atk / 4 SpA / 27 SpD / 18 Spe
+Ability: Cursed Body
+Level: 16
+Gentle Nature
+Ball: Master Ball
+~=Version=DP
+.Version=10
+- Spite
+- Mean Look
+- Curse
+- Night Shade
+
+Gaspar (Gengar) (M)
+IVs: 20 HP / 25 Atk / 15 Def / 15 SpA / 15 SpD / 25 Spe
+Ability: Cursed Body
+Level: 35
+Hasty Nature
+~=Version=DPPt
+- Sucker Punch
+- Shadow Punch
+- Payback
+- Shadow Ball
+
+Gengar (M)
+IVs: 15 HP / 24 Def / 30 SpA / 3 SpD / 23 Spe
+Ability: Cursed Body
+Level: 19
+Mild Nature
+Ball: Master Ball
+~=Version=HGSS
+.Version=7
+- Mean Look
+- Curse
+- Night Shade
+- Confuse Ray
+
+Gengar (M)
+IVs: 7 HP / 6 Atk / 8 Def / 20 SpA / 21 SpD / 20 Spe
+Ability: Cursed Body
+Level: 17
+Sassy Nature
+Ball: Master Ball
+~=Version=Pt
+- Spite
+- Mean Look
+- Curse
+- Night Shade

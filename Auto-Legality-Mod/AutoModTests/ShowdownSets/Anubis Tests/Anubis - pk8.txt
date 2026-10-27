@@ -1,0 +1,879 @@
+Bulbasaur (M)
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Chlorophyll
+Level: 5
+Modest Nature
+~=Location=30018
+~=Version=SWSH
+.Version=44
+- Tackle
+- Growl
+- Vine Whip
+
+Inferno (Charmander) (M)
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Solar Power
+Level: 5
+Timid Nature
+~=Location=30018
+~=Version=SWSH
+.Version=44
+- Scratch
+- Growl
+- Ember
+
+Charmeleon (M) @ Timid Mint
+IVs: 0 HP / 16 SpA
+Ability: Solar Power
+Level: 65
+Shiny: Yes
+Jolly Nature
+~=Location=244
+~=Version=SWSH
+.Version=45
+- Fire Pledge
+- Dragon Pulse
+- Endure
+- Inferno
+
+Charizard (M)
+IVs: 10 HP / 2 Atk / 22 Def / 1 SpA / 8 SpD / 30 Spe
+Ability: Blaze
+Level: 50
+Adamant Nature
+Language: Korean
+~=Location=40003
+~=Version=SWSH
+.Version=44
+- Flamethrower
+- Dragon Tail
+- Slash
+- Seismic Toss
+
+Charizard (M)
+IVs: 8 Def / 20 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ability: Solar Power
+Gigantamax: Yes
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+.MetLocation=154
+~=Version=SWSH
+.Version=44
+- Flamethrower
+- Dragon Breath
+- Flare Blitz
+- Metal Claw
+
+かめ (Squirtle) (M)
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Rain Dish
+Level: 5
+Quiet Nature
+Language: Japanese
+~=Location=30018
+~=Version=SWSH
+.Version=44
+- Tackle
+- Tail Whip
+- Water Gun
+
+Pikachu (F) @ Light Ball
+IVs: 20 HP / 15 Atk / 1 Def / 2 SpA / 0 SpD / 16 Spe
+Ability: Lightning Rod
+Level: 25
+Bashful Nature
+Ball: Cherish Ball
+~=Location=40001
+~=Version=SWSH
+.Version=44
+- Sing
+- Encore
+- Celebrate
+- Electro Ball
+
+Pikachu (M)
+IVs: 22 HP / 4 Atk / 18 Def / 0 SpA / 19 SpD / 0 Spe
+Ability: Static
+Level: 5
+Serious Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40012
+~=Version=SWSH
+.Version=44
+- Celebrate
+- Play Nice
+- Thunder Shock
+- Quick Attack
+
+Pikachu (M)
+Ability: Static
+Level: 10
+Gigantamax: Yes
+Adamant Nature
+~=Level=10
+~=Location=156
+~=Version=SWSH
+.Version=45
+- Growl
+- Quick Attack
+- Thunder Wave
+- Double Team
+
+Pikachu (M) @ Light Ball
+EVs: 252 Atk / 6 SpD / 252 Spe
+Ability: Lightning Rod
+Gigantamax: Yes
+Shiny: Square
+Jolly Nature
+~=IsEgg=True
+~=Version=SWSH
+.Version=44
+- Brick Break
+- Play Rough
+- Volt Tackle
+- Fake Out
+
+Meowth (M)
+IVs: 6 HP / 1 SpD / 8 Spe
+Ability: Pickup
+Level: 5
+Gigantamax: Yes
+Bold Nature
+Ball: Cherish Ball
+~=Location=40044
+~=Version=SWSH
+.Version=45
+- Fake Out
+- Growl
+- Slash
+- Pay Day
+
+Meowth (M)
+IVs: 12 HP / 18 Atk
+Ability: Unnerve
+Level: 15
+Shiny: Yes
+Sassy Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=44
+- Feint
+- Scratch
+- Pay Day
+- Last Resort
+
+Persian-Alola (M)
+IVs: 11 Atk / 19 Def
+Ability: Fur Coat
+Level: 65
+Calm Nature
+~=Location=244
+~=Version=SWSH
+.Version=44
+- Assurance
+- Snarl
+- Feint
+- Quash
+
+Ponyta (M)
+IVs: 22 Def / 26 SpA / 1 SpD
+Ability: Flame Body
+Level: 15
+Shiny: Yes
+Docile Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=45
+- Tail Whip
+- Ember
+- Flame Charge
+- Morning Sun
+
+Farfetch’d (M)
+IVs: 29 Def / 12 SpA / 20 SpD
+Ability: Defiant
+Level: 15
+Shiny: Yes
+Bold Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=44
+- Leer
+- Fury Cutter
+- Cut
+- Quick Attack
+
+Exeggutor-Alola (M) @ Smoke Ball
+IVs: 24 HP / 25 Def / 18 SpA
+Ability: Frisk
+Level: 15
+Shiny: Square
+Relaxed Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=45
+- Hypnosis
+- Reflect
+- Leech Seed
+- Ancient Power
+
+Marowak-Alola (F)
+IVs: 23 HP / 5 SpA / 24 Spe
+Ability: Lightning Rod
+Level: 15
+Shiny: Yes
+Lonely Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=44
+- Tail Whip
+- Fire Spin
+- Flame Wheel
+- Curse
+
+Weezing (F)
+IVs: 14 HP / 14 Atk / 25 Def
+Ability: Neutralizing Gas
+Level: 15
+Shiny: Yes
+Modest Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=44
+- Smog
+- Smokescreen
+- Clear Smog
+- Pain Split
+
+Chansey (F) @ Ability Patch
+IVs: 28 HP / 19 Atk / 26 Def / 10 SpA / 22 SpD / 22 Spe
+Ability: Natural Cure
+Level: 7
+Calm Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40001
+~=Version=SWSH
+.Version=45
+- Present
+- Sweet Kiss
+- Charm
+- Soft-Boiled
+
+Eevee (F)
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Adaptability
+Level: 5
+Serious Nature
+~=Location=30018
+~=Version=SWSH
+.Version=44
+- Helping Hand
+- Tackle
+- Growl
+- Tail Whip
+
+Eevee (M) @ Gold Bottle Cap
+EVs: 39 HP / 150 Atk / 105 Def / 61 SpA / 63 SpD / 92 Spe
+Ability: Run Away
+Level: 74
+Gigantamax: Yes
+Bold Nature
+~=Level=10
+~=Location=156
+~=Version=SWSH
+.Version=44
+- Retaliate
+- Body Slam
+- Copycat
+- Quick Attack
+
+Mew @ Ability Patch
+IVs: 22 HP / 11 Def / 4 SpA
+Ability: Synchronize
+Level: 1
+Careful Nature
+~=Location=40085
+~=Version=SWSH
+.Version=45
+- Pound
+
+Corsola (F) @ Smoke Ball
+IVs: 2 HP / 12 Atk / 21 SpD
+Ability: Regenerator
+Level: 15
+Shiny: Yes
+Hasty Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=45
+- Water Gun
+- Aqua Ring
+- Endure
+- Head Smash
+
+Porygon2 @ Eviolite
+IVs: 0 Atk / 0 Def / 0 SpA / 4 SpD / 0 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+Ability: Download
+Level: 50
+Sassy Nature
+Ball: Cherish Ball
+~=Location=40038
+~=Version=SWSH
+.Version=44
+- Recover
+- Trick Room
+- Ice Beam
+- Thunderbolt
+
+Celebi
+IVs: 25 HP / 21 Def / 21 SpD / 15 Spe
+Ability: Natural Cure
+Level: 15
+Shiny: Square
+Bold Nature
+~=Location=30012
+~=Version=GO
+.Version=34
+- Confusion
+- Heal Bell
+- Magical Leaf
+
+Celebi @ Lucky Egg
+IVs: 13 HP / 17 SpD / 0 Spe
+Ability: Natural Cure
+Level: 60
+Shiny: Square
+Quirky Nature
+Ball: Cherish Ball
+~=Location=40006
+~=Version=SWSH
+.Version=45
+- Magical Leaf
+- Future Sight
+- Life Dew
+- Heal Bell
+
+Zigzagoon (F)
+IVs: 4 Atk / 18 Def / 0 SpD
+Ability: Quick Feet
+Level: 15
+Shiny: Yes
+Hardy Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=44
+- Covet
+- Headbutt
+- Baby-Doll Eyes
+- Extreme Speed
+
+BigWetBillyΩ (Wailord) (M)
+IVs: 25 SpA
+EVs: 252 HP / 252 Atk / 6 Def
+Ability: Oblivious
+Level: 69
+Shiny: Square
+Adamant Nature
+Ball: Master Ball
+.MetLocation=186
+~=Version=SWSH
+.Version=45
+- Avalanche
+- Liquidation
+- Aqua Ring
+- Curse
+
+Wailord (M) @ Leppa Berry
+IVs: 18 HP / 15 Atk / 3 Def / 13 SpA / 1 Spe
+Ability: Oblivious
+Level: 80
+Shiny: Square
+Sassy Nature
+Ball: Master Ball
+~=Location=186
+~=Version=SWSH
+.Version=44
+- Rest
+- Amnesia
+- Hydro Pump
+- Water Spout
+
+Feebas (M)
+IVs: 13 HP / 2 Atk / 21 Def / 25 SpA / 8 SpD / 14 Spe
+Ability: Swift Swim
+Level: 60
+Shiny: Square
+Quiet Nature
+Ball: Sport Ball
+~=Location=230
+~=Version=SWSH
+.Version=44
+- Splash
+- Tackle
+- Flail
+
+Gastrodon-East (F) @ Expert Belt
+IVs: 2 Atk / 0 Spe
+EVs: 152 HP / 94 Def / 252 SpA / 12 SpD
+Ability: Storm Drain
+Level: 50
+Quiet Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40039
+~=Version=SWSH
+.Version=45
+- Protect
+- Surf
+- Ice Beam
+- Earth Power
+
+Rotom
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Ability: Levitate
+Level: 5
+Timid Nature
+~=Location=30018
+~=Version=SWSH
+.Version=44
+- Thunder Shock
+- Astonish
+- Double Team
+
+Basculin (F) @ Bold Mint
+IVs: 21 HP / 29 Atk / 29 Def / 11 SpA / 16 SpD / 29 Spe
+Ability: Adaptability
+Level: 20
+Shiny: Square
+Jolly Nature
+Ball: Sport Ball
+~=Location=44
+~=Version=SWSH
+.Version=44
+- Flail
+- Aqua Jet
+- Bite
+- Scary Face
+
+Darumaka (F)
+IVs: 2 Atk / 23 Def / 18 Spe
+Ability: Inner Focus
+Level: 15
+Shiny: Yes
+Quirky Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=44
+- Taunt
+- Bite
+- Incinerate
+- Extrasensory
+
+Amoonguss (F) @ Focus Sash
+IVs: 0 Atk / 0 Spe
+EVs: 236 HP / 116 Def / 156 SpD
+Ability: Regenerator
+Shiny: Square
+Sassy Nature
+Ball: Cherish Ball
+Language: Korean
+~=Location=40039
+~=Version=SWSH
+.Version=44
+- Clear Smog
+- Spore
+- Protect
+- Rage Powder
+
+Stunfisk (F)
+IVs: 19 Atk / 10 SpD / 23 Spe
+Ability: Sand Veil
+Level: 15
+Shiny: Yes
+Modest Nature
+Language: English
+~=Location=30001
+~=Version=SWSH
+.Version=44
+- Endure
+- Mud Shot
+- Revenge
+- Yawn
+
+Stunfisk-Galar (M) @ Leppa Berry
+IVs: 4 HP / 17 Atk / 26 Def / 29 SpA / 27 SpD / 29 Spe
+Ability: Mimicry
+Level: 25
+Shiny: Square
+Careful Nature
+Ball: Master Ball
+~=Location=54
+~=Version=SWSH
+.Version=44
+- Sucker Punch
+- Metal Sound
+- Revenge
+- Mud Shot
+
+Genesect
+IVs: 19 HP / 27 Spe
+Ability: Download
+Level: 60
+Gentle Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40001
+~=Version=SWSH
+.Version=44
+- Techno Blast
+- X-Scissor
+- Metal Claw
+- Fell Stinger
+
+Genesect
+IVs: 25 HP / 23 Def / 23 SpD / 28 Spe
+Ability: Download
+Level: 20
+Shiny: Square
+Adamant Nature
+~=Location=30012
+~=Version=GO
+.Version=34
+- Fury Cutter
+- Quick Attack
+- Screech
+- Metal Claw
+
+Volcanion
+IVs: 7 HP / 11 Atk / 9 Spe
+Ability: Water Absorb
+Level: 60
+Brave Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40001
+~=Version=SWSH
+.Version=44
+- Steam Eruption
+- Flare Blitz
+- Incinerate
+- Haze
+
+Mantis (Lurantis) (M) @ Heavy-Duty Boots
+IVs: 30 SpA
+EVs: 252 HP / 252 Atk / 6 Spe
+Ability: Leaf Guard
+Shiny: Yes
+Adamant Nature
+Ball: Master Ball
+~=Location=164
+~=Version=SWSH
+.Version=44
+- Leaf Blade
+- Defog
+- Synthesis
+- Aromatherapy
+
+Passimian (M)
+IVs: 19 HP / 25 Atk / 5 Def / 3 SpA / 30 SpD / 21 Spe
+Ability: Receiver
+Level: 34
+Shiny: Square
+Adamant Nature
+Ball: Master Ball
+~=Location=76
+~=Version=SWSH
+.Version=44
+- Beat Up
+- Scary Face
+- Take Down
+- Fling
+
+Palossand (F)
+IVs: 14 HP / 28 Atk / 17 Def / 16 SpA / 16 SpD / 27 Spe
+EVs: 252 HP / 98 Def / 160 SpD
+Ability: Water Compaction
+Level: 62
+Shiny: Square
+Hasty Nature
+Ball: Master Ball
+~=Location=178
+~=Version=SWSH
+.Version=45
+- Shadow Ball
+- Earth Power
+- Shore Up
+- Sandstorm
+
+Marshadow
+IVs: 20 Def / 2 SpA
+Ability: Technician
+Level: 60
+Hardy Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40001
+~=Version=SWSH
+.Version=44
+- Spectral Thief
+- Drain Punch
+- Force Palm
+- Shadow Sneak
+
+Melmetal
+IVs: 0 Spe
+Ability: Iron Fist
+Gigantamax: Yes
+Brave Nature
+Ball: Cherish Ball
+~=Location=30018
+~=Version=SWSH
+.Version=44
+- Double Iron Bash
+- Hyper Beam
+- Dynamic Punch
+- Thunder Punch
+
+Cinderace (M) @ Quiet Mint
+IVs: 20 SpA
+EVs: 252 Atk / 1 SpD / 252 Spe
+Ability: Libero
+Gigantamax: Yes
+Shiny: Square
+Jolly Nature
+~=Location=30018
+~=Version=SWSH
+.Version=44
+- Iron Head
+- Pyro Ball
+- Sucker Punch
+- High Jump Kick
+
+Carkol (M) @ Leppa Berry
+IVs: 21 HP / 1 Atk / 28 Def / 0 SpA / 28 SpD / 0 Spe
+Ability: Steam Engine
+Level: 18
+Shiny: Square
+Modest Nature
+Ball: Master Ball
+~=Location=30
+~=Version=SWSH
+.Version=45
+- Flame Charge
+- Rock Polish
+- Rapid Spin
+- Tackle
+
+Applin (M)
+IVs: 23 HP / 22 Atk / 15 Def / 25 SpA / 8 SpD
+Ability: Gluttony
+Level: 60
+Shiny: Square
+Jolly Nature
+Ball: Master Ball
+~=Location=188
+~=Version=SWSH
+.Version=44
+- Withdraw
+- Astonish
+
+Toxtricity (M)
+IVs: 0 HP / 13 Atk / 13 Def / 30 SpA / 1 SpD / 7 Spe
+Ability: Punk Rock
+Level: 50
+Shiny: Square
+Rash Nature
+Ball: Cherish Ball
+~=Location=40001
+~=Version=SWSH
+.Version=44
+- Overdrive
+- Sludge Wave
+- Boomburst
+- Rising Voltage
+
+Sinistea-Antique
+IVs: 19 HP / 6 Atk / 26 Def / 13 SpA / 9 SpD
+Ability: Weak Armor
+Level: 61
+Shiny: Yes
+Serious Nature
+~=Version=SWSH
+.Version=44
+.RibbonMarkBlizzard=True
+- Nasty Plot
+- Shadow Ball
+- Memento
+- Shell Smash
+
+Phantump (F)
+IVs: 4 HP / 16 Atk / 22 Def / 7 SpA / 14 SpD / 21 Spe
+Ability: Natural Cure
+Level: 35
+Shiny: Yes
+Calm Nature
+~=Location=76
+.RibbonMarkCurry=True
+- Hex
+- Growth
+- Horn Leech
+- Curse
+
+Impidimp (M) @ Leppa Berry
+IVs: 6 HP / 25 Atk / 13 Def / 15 SpA / 14 SpD / 6 Spe
+Ability: Prankster
+Level: 31
+Shiny: Yes
+Rash Nature
+Ball: Master Ball
+~=Location=76
+~=Version=SWSH
+.Version=45
+- Torment
+- Sucker Punch
+- Swagger
+- Assurance
+
+Alcremie-Rainbow (F)
+IVs: 0 Atk
+.FormArgument=6
+Ability: Aroma Veil
+Level: 50
+Gigantamax: Yes
+Modest Nature
+~=Location=40012
+~=Version=SWSH
+.Version=44
+- Dazzling Gleam
+- Recover
+- Misty Terrain
+- Entrainment
+
+Arctovish
+IVs: 22 SpA
+Ability: Slush Rush
+Level: 58
+Shiny: Yes
+Careful Nature
+Ball: Master Ball
+~=Location=162
+~=Version=SWSH
+.Version=44
+- Freeze-Dry
+- Crunch
+- Bite
+- Icy Wind
+
+Zarude @ Leftovers
+IVs: 0 HP / 26 Def / 13 SpA
+Ability: Leaf Guard
+Level: 60
+Sassy Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40006
+~=Version=SWSH
+.Version=45
+- Close Combat
+- Power Whip
+- Swagger
+- Snarl
+
+Zarude @ Leftovers
+IVs: 28 HP / 16 SpD / 5 Spe
+Ability: Leaf Guard
+Level: 60
+Sassy Nature
+Ball: Cherish Ball
+~=Location=40001
+~=Version=SWSH
+.Version=45
+- Close Combat
+- Power Whip
+- Swagger
+- Snarl
+
+Zarude @ Leftovers
+IVs: 3 HP / 23 SpD / 20 Spe
+Ability: Leaf Guard
+Level: 60
+Sassy Nature
+Ball: Cherish Ball
+~=Location=40006
+~=Version=SWSH
+.Version=45
+- Close Combat
+- Power Whip
+- Swagger
+- Snarl
+
+Zarude-Dada @ Choice Scarf
+IVs: 3 HP / 4 Atk / 19 Spe
+Ability: Leaf Guard
+Level: 70
+Adamant Nature
+Ball: Cherish Ball
+Language: Japanese
+~=Location=40006
+~=Version=SWSH
+.Version=44
+- Jungle Healing
+- Hammer Arm
+- Power Whip
+- Energy Ball
+
+Pikachu (F)
+EVs: 43 HP / 117 Atk / 91 Def / 76 SpA / 77 SpD / 106 Spe
+Ability: Static
+Gigantamax: Yes
+Timid Nature
+~=Level=10
+~=Location=156
+~=Version=SWSH
+.Version=45
+- Discharge
+- Thunder
+- Thunderbolt
+- Volt Tackle
+
+Weezing-Galar (F)
+IVs: 0 Atk
+Ability: Levitate
+Level: 35
+Shiny: Square
+Dynamax Level: 0
+Bold Nature
+Ball: Master Ball
+~=Version=E
+.Version=3
+- Incinerate
+- Rollout
+- Shock Wave
+- Mimic
+
+Magatsuhi (Gengar) (M)
+IVs: 0 Atk
+EVs: 6 Def / 252 SpA / 252 Spe
+Ability: Cursed Body
+Shiny: Yes
+Timid Nature
+~=Version=SM
+.Version=31
+- Taunt
+- Destiny Bond
+- Focus Blast
+- Shadow Ball
