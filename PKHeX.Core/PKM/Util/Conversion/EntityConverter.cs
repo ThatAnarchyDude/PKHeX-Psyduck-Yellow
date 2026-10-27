@@ -88,6 +88,13 @@ public static class EntityConverter
             return pk;
         }
 
+        if (PsyduckYellowImport.Enabled && destType == typeof(PK4) && pk.Format > 4)
+        {
+            var imported = PsyduckYellowImport.TryConvert(pk);
+            result = imported is null ? NoTransferRoute : Success;
+            return imported;
+        }
+
         if (pk is PKH pkh)
         {
             if (TryConvertFromHOME(pkh, destType, out var x))

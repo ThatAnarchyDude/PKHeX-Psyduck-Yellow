@@ -764,6 +764,7 @@ public partial class Main : Form
         PKME_Tabs.Focus(); // flush any pending changes
         StoreLegalSaveGameData(sav);
         ParseSettings.InitFromSaveFileData(sav); // physical GB, no longer used in logic
+        PsyduckYellowImport.Enabled = sav is SAV4PY; // later-generation Pokémon can be brought into Psyduck Yellow only
         RecentTrainerCache.SetRecentTrainer(sav);
         SpriteUtil.Initialize(sav); // refresh sprite generator
         dragout.Size = ScaleSize(new Size(SpriteUtil.Spriter.Width, SpriteUtil.Spriter.Height), WholeWindowScale);
