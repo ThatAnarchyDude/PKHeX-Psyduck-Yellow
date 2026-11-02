@@ -1,8 +1,12 @@
+import sys
+sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(__file__)))
+from pathlib import Path as _P
+HERE=_P(__file__).resolve().parent;REPO=HERE.parents[1]  # <repo>/tools/psyduck-yellow
 from pathlib import Path
 import sys,json,struct,ndspy.rom,ndspy.narc
-sys.path.insert(0,'yellow-heartgold/tools');from prototype import decode_messages
-root=Path('private/PKHeX-PY-current/PKHeX.Core');out=Path('yellow-heartgold/build/0056-pkhex-v1');rom=ndspy.rom.NintendoDSRom.fromFile(sys.argv[1])
-text=ndspy.narc.NARC(rom.getFileByName('a/0/2/7'));mapping=json.loads(Path('yellow-heartgold/tools/text-map.json').read_text());chars={v:k for k,v in mapping.items()}
+from msgdecode import decode_messages
+root=(REPO/'PKHeX.Core');out=HERE/'out';out.mkdir(exist_ok=True);rom=ndspy.rom.NintendoDSRom.fromFile(sys.argv[1])
+text=ndspy.narc.NARC(rom.getFileByName('a/0/2/7'));mapping=json.loads((HERE/'text-map.json').read_text());chars={v:k for k,v in mapping.items()}
 def names(i):
  _,lines=decode_messages(text.files[i]);return [''.join(chars.get(v,'?' if v not in (0xffff,0xe000) else '') for v in row if v!=0xffff) for row in lines]
 personal=ndspy.narc.NARC(rom.getFileByName('a/0/0/2')).files;items=ndspy.narc.NARC(rom.getFileByName('a/0/1/7')).files;addons=ndspy.narc.NARC(rom.getFileByName('a/0/2/8')).files

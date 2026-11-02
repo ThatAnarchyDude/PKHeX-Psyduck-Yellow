@@ -1,9 +1,14 @@
 # Psyduck Yellow data generators
 
-These Python scripts (need `ndspy`) rebuild the game-derived resources from a Psyduck Yellow ROM you supply. They are run from the repository root, with the ROM path as the argument:
+Everything here is self-contained (Python 3 with `ndspy`, plus `Pillow` for the art tools). The scripts rebuild the game-derived resources from a Psyduck Yellow ROM you supply (the ROM is never part of this repository). Run them from the repository root; they find the repository from their own location:
 
-- `generate-pkhex-expanded-resources.py <rom.nds>`: species, move, item and ability names, personal data, item pockets.
-- `generate-pkhex-expanded-learnsets.py <rom.nds>`: level-up learnsets.
-- `generate-pkhex-expanded-encounters.py <rom.nds>`: Kanto wild encounters (grass, surf, rods, rock smash).
+```sh
+python -m pip install ndspy pillow
+python -I tools/psyduck-yellow/generate-pkhex-expanded-resources.py  <rom.nds>   # names, personal data, abilities, forms, item pockets -> PKHeX.Core/Editing/PsyduckYellowExpanded.Resources.cs + Resources/byte/personal/personal_psyduck_expanded
+python -I tools/psyduck-yellow/generate-pkhex-expanded-learnsets.py  <rom.nds>   # level-up learnsets -> Resources/byte/learnset_psyduck_expanded
+python -I tools/psyduck-yellow/generate-pkhex-expanded-encounters.py <rom.nds>   # Kanto wild encounters -> Resources/legality/wild/Gen4/encounter_py.pkl
+```
 
-The ROM itself is never part of this repository. The scripts expect the checkout to be at `private/PKHeX-PY-current`; edit the paths if yours differs.
+Run on the v7 ROM (build 0136) they reproduce the committed files byte for byte. `msgdecode.py` and `text-map.json` are the game's message-bank decoder and character table.
+
+`art/` holds the picture tools used for the custom species (box and artwork sprites for Brawleon, Venomeon, Duneon, Zephyreon, Chryseon, Strateon, Wraitheon, Wyrmeon, Ferreon and Stellareon): `eeveelution_art.py` (cut-outs of the concept boards into battle sprites) and `pkhex_icons.py` (68x56 box/artwork pictures, normal and shiny). They need the concept boards (repository Psyduck-Yellow-ExMons) and the `nitrogfx` tool (built from pokeheartgold's `tools/nitrogfx`); the resulting PNGs are already committed under `PKHeX.Drawing.PokeSprite/Resources/img/`, so they only matter if you want to change the art. See `BUILDING-PSYDUCK-YELLOW.md`.
