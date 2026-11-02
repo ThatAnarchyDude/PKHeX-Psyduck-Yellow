@@ -1,6 +1,10 @@
 """Export the expanded game's level-up learnsets (ROM a/0/3/3, 136 bytes per species) for PKHeX legality.
-Usage: python -I private/generate-pkhex-expanded-learnsets.py [rom.nds]
+Usage: python -I tools/psyduck-yellow/generate-pkhex-expanded-learnsets.py [rom.nds]
 Format of the output: u16 species count; per species: u8 n, n*u16 move, n*u8 level."""
+import sys
+sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(__file__)))
+from pathlib import Path as _P
+HERE=_P(__file__).resolve().parent;REPO=HERE.parents[1]  # <repo>/tools/psyduck-yellow
 import struct,sys
 from pathlib import Path
 import ndspy.rom,ndspy.narc
@@ -16,5 +20,5 @@ for sp in range(count):
         assert level<=100 and move<0x8000,(sp,move,level)
         rows.append((move,level))
     out+=struct.pack('<B',len(rows))+b''.join(struct.pack('<H',m) for m,_ in rows)+bytes(l for _,l in rows)
-dest=Path('private/PKHeX-PY-current/PKHeX.Core/Resources/byte/learnset_psyduck_expanded')
+dest=(REPO/'PKHeX.Core/Resources/byte/learnset_psyduck_expanded')
 dest.write_bytes(out);print(count,'species',len(out),'bytes ->',dest)

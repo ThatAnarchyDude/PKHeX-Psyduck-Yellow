@@ -1,9 +1,13 @@
 """Export the expanded game's Kanto wild encounters for PKHeX legality.
-Usage: python -I private/generate-pkhex-expanded-encounters.py <rom.nds> [--report]
+Usage: python -I tools/psyduck-yellow/generate-pkhex-expanded-encounters.py <rom.nds> [--report]
 Reads each Kanto map's wild table (ROM a/0/3/7, 196 bytes; id = map header byte 0, location = header byte 18) and writes
 PKHeX's encounter_py.pkl (BinLinker 'py'): per area u8 location, 0, u8 slot type, u8 rate, u16 ground tile, then 10-byte slots
 (u16 species, form, slot number, min, max, magnet-pull index/count, static index/count).
 Swarm and radio slots are skipped (the game replaces them with the area's own species). Headbutt trees are not exported."""
+import sys
+sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(__file__)))
+from pathlib import Path as _P
+HERE=_P(__file__).resolve().parent;REPO=HERE.parents[1]  # <repo>/tools/psyduck-yellow
 import struct,sys
 from pathlib import Path
 import ndspy.rom,ndspy.narc
@@ -16,7 +20,7 @@ STEEL,ELECTRIC=8,13  # game-stored type numbers
 def types(sp): return (personal[sp][6],personal[sp][7]) if sp<len(personal) else (0,0)
 # retail ground tiles by (location, slot type) from PKHeX's own HeartGold data
 retail={}
-d=Path('private/PKHeX-PY-current/PKHeX.Core/Resources/legality/wild/Gen4/encounter_hg.pkl').read_bytes()
+d=(REPO/'PKHeX.Core/Resources/legality/wild/Gen4/encounter_hg.pkl').read_bytes()
 cnt=struct.unpack_from('<H',d,2)[0];offs=struct.unpack_from('<%dI'%(cnt+1),d,4)
 for i in range(cnt):
     a=d[offs[i]:offs[i+1]];retail[(a[0],a[2])]=struct.unpack_from('<H',a,4)[0]
@@ -54,11 +58,24 @@ def areas_for(wid):
         rows=[(sp,i,lo,hi) for i,(lo,hi,sp) in enumerate(table(off,n)) if sp]
         if rows:yield typ,rate,slots_with_lures(rows)
 
+# Map header records: IDs below 540 are in ARM9 (24 bytes each); IDs 540+ are an extension table inside overlay 129.
+NATIVE=540;FUNC=0x3B268;TRAMP=struct.pack('<8H',0xB508,0x2187,0x0089,0x4288,0xD300|1,0x4901,0x1840,0xBD08)
+OV_SLOT=0x023D8000;OV_ORIG=25428;TABLE_RAM=0x020F6BE0
+if arm9[FUNC:FUNC+16]==TRAMP:ext_table=TABLE_RAM+(struct.unpack_from('<I',arm9,FUNC+16)[0]+NATIVE)*24
+else:ext_table=None
+ext=[]
+if ext_table:
+    ov=rom.loadArm9Overlays({129})[129];start=ext_table-ov.ramAddress
+    ext=[bytes(ov.data[start+24*i:start+24*i+24]) for i in range((len(ov.data)-start)//24)] if len(ov.data)>start else []
+def record(m):
+    if m<NATIVE:return arm9[TABLE+m*24:TABLE+m*24+24]
+    return ext[m-NATIVE] if m-NATIVE<len(ext) else None
+print('extension maps:',len(ext))
 result={};used=set()
-for m in range(0,720):
-    at=TABLE+m*24
-    if at+24>len(arm9) or not arm9[at+20]&1:continue
-    wid=arm9[at];loc=arm9[at+18]
+for m in range(0,NATIVE+len(ext)):
+    rec=record(m)
+    if rec is None or not rec[20]&1:continue
+    wid=rec[0];loc=rec[18]
     if wid>=len(wild) or loc==0:continue
     for typ,rate,slots in areas_for(wid):
         if any(struct.unpack_from('<H',s)[0]>493 for s in slots):
@@ -74,7 +91,7 @@ head=struct.pack('<2sH',b'py',len(items));pos=4+(len(items)+1)*4;offsets=[]
 for v in items:offsets.append(pos);pos+=len(v)
 offsets.append(pos)
 blob=head+struct.pack('<%dI'%len(offsets),*offsets)+b''.join(items)
-dest=Path('private/PKHeX-PY-current/PKHeX.Core/Resources/legality/wild/Gen4/encounter_py.pkl');dest.write_bytes(blob)
+dest=(REPO/'PKHeX.Core/Resources/legality/wild/Gen4/encounter_py.pkl');dest.write_bytes(blob)
 print(len(items),'areas',len(blob),'bytes ->',dest)
 if '--report' in sys.argv:
     from collections import Counter
