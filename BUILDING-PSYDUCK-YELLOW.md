@@ -15,9 +15,10 @@ The three `-p:` flags after the first line are needed with current SDK analyzers
 
 ## Build the Auto-Legality Mod plugin
 ```sh
-dotnet build Auto-Legality-Mod/PKHeX.Core.AutoMod/PKHeX.Core.AutoMod.csproj -c Release -p:EnableWindowsTargeting=true -p:TreatWarningsAsErrors=false
+dotnet build Auto-Legality-Mod/AutoLegalityMod/AutoModPlugins.csproj -c Release -p:EnableWindowsTargeting=true \
+  -p:TreatWarningsAsErrors=false -p:CodeAnalysisTreatWarningsAsErrors=false -p:EnforceCodeStyleInBuild=false
 ```
-(the solution file `Auto-Legality-Mod/PKHeX-Plugins.sln` builds the plugin set; the release ships `plugins/AutoModPlugins.dll`). Its Psyduck Yellow support is in `PsyduckYellowSupport.cs`.
+Output: `Auto-Legality-Mod/AutoLegalityMod/bin/Release/net10.0-windows/AutoModPlugins.dll`; the release ships it as `plugins/AutoModPlugins.dll`. Its Psyduck Yellow support is in `PsyduckYellowSupport.cs`.
 
 ## Release layout
 A release is the build output above in one folder named `PKHeX-Psyduck-Yellow-vN`, with `plugins/AutoModPlugins.dll`, `LICENSE.txt`, `CODE-SIGNING-POLICY.md` and `README-Psyduck-Yellow.txt`, zipped. No ROMs, saves or game files are included, ever.
