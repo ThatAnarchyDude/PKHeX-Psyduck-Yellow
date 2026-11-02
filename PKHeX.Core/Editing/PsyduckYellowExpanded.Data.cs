@@ -39,10 +39,16 @@ public static partial class PsyduckYellowExpanded
         for (int f = 1; f < names.Length; f++) { var index = FormMap[species * 32 + f - 1]; names[f] = index > 0 && index < SpeciesNames.Length ? $"{f}: {SpeciesNames[index]}" : $"Form {f}"; }
         return names;
     }
+    /// <summary>Species of the project without a national sprite: their pictures are b_py{index} / a_py{index} (see CustomSpriteBase).</summary>
+    public const ushort CustomSpriteBase = 20000;
+    public static readonly string[] CustomSpriteNames = ["Brawleon", "Venomeon", "Duneon", "Zephyreon", "Chryseon", "Strateon", "Wraitheon", "Wyrmeon", "Ferreon", "Stellareon"];
+
     public static ushort GetDisplaySpecies(ushort species)
     {
         if (species <= 493) return species;
         if (species >= SpeciesNames.Length) return 0;
+        var custom = Array.FindIndex(CustomSpriteNames, n => string.Equals(n, SpeciesNames[species], StringComparison.OrdinalIgnoreCase));
+        if (custom >= 0) return (ushort)(CustomSpriteBase + custom);
         var national = GameInfo.GetStrings("en").specieslist;
         for (ushort i = 1; i < national.Length; i++)
             if (string.Equals(national[i], SpeciesNames[species], StringComparison.OrdinalIgnoreCase)) return i;
