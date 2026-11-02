@@ -19,6 +19,17 @@ public static partial class PsyduckYellowExpanded
     /// <summary>Regular (non-starter) Novareon species slot.</summary>
     public const ushort Novareon = 500;
 
+    /// <summary>Starter Golduck (the starter Psyduck's evolution).</summary>
+    public const ushort StarterGolduck = 1535;
+    /// <summary>The nine new Eeveelutions (Brawleon, Venomeon, Duneon, Zephyreon, Chryseon, Strateon, Wraitheon, Wyrmeon, Ferreon): ordinary species, then the starter versions in the same order.</summary>
+    public const ushort NewOrdinaryFirst = 1536;
+    public const ushort NewStarterFirst = 1545;
+    public const int NewEeveelutionCount = 9;
+    /// <summary>Pokedex identities of the nine new Eeveelutions (ids 501-509; the ordinary Stellareon, id 500, is a real species).</summary>
+    public const ushort DexIdentityFirst = 501;
+    /// <summary>Mega rows of the starter versions (they carry the base species' name).</summary>
+    private static readonly ushort[] NewMegaSpecies = [1554, 1555, 1556, 1557, 1558, 1559, 1583, 1584, 1585];
+
     /// <summary>First and last of the starter Eevee line's species: for each Eeveelution a starter species followed by its Mega copy; the last pair is the Novareon stand-in.</summary>
     public const ushort StarterLineFirst = 1565;
     public const ushort StarterLineLast = 1582;
@@ -87,9 +98,17 @@ public static partial class PsyduckYellowExpanded
         for (int i = 0; i < StarterLineLast - StarterLineFirst + 1; i++)
         {
             var species = StarterLineFirst + i;
-            var name = species >= NovareonFirst ? "Novareon" : names[LineBases[i / 2]];
+            var name = species >= NovareonFirst ? "Stellareon" : names[LineBases[i / 2]];
             names[species] = name + (i % 2 == 0 ? " (Starter)" : " (Mega)");
         }
+        // Species added in the Eevee/Psyduck redesign: starter Golduck, the nine new Eeveelutions (ordinary 1536-1544, starter 1545-1553) and their Megas (1554-1559 and 1583-1585)
+        names[StarterGolduck] = "Golduck (Starter)";
+        for (int i = 0; i < NewEeveelutionCount; i++)
+            names[NewStarterFirst + i] = names[NewOrdinaryFirst + i] + " (Starter)";
+        foreach (var species in NewMegaSpecies)
+            names[species] = names[species] + " (Mega)";
+        for (int i = 0; i < NewEeveelutionCount; i++)
+            names[DexIdentityFirst + i] = string.Empty; // ids 501-509 are the Pokedex's own copies of the new Eeveelutions, never a Pokemon: hidden from the list
         return names;
     }
 
