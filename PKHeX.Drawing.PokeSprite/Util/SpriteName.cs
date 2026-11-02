@@ -30,6 +30,9 @@ public static class SpriteName
     /// </summary>
     public static string GetResourceStringSprite(ushort species, byte form, byte gender, uint formarg, EntityContext context = Latest.Context, bool shiny = false)
     {
+        if (species >= PsyduckYellowExpanded.CustomSpriteBase) // Psyduck Yellow's own species: b_py<n> / a_py<n>
+            return Separator + "py" + (species - PsyduckYellowExpanded.CustomSpriteBase) + (shiny && AllowShinySprite ? Shiny : string.Empty);
+
         if (SpeciesDefaultFormSprite.Contains(species)) // Species who show their default sprite regardless of Form
             form = 0;
 
