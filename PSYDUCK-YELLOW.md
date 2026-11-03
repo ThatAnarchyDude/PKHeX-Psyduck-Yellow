@@ -16,7 +16,7 @@ Party, 30 boxes, bag and item PC, Pokedex, trainer data, event flags and variabl
 
 The Encounter Database (Tools > Data) searches the game's own Kanto wild encounters and the three starter gifts. Pick a species and it lists where that species or its earlier evolutions can be found; View creates a Pokemon with a valid origin. A species the game has no source for yet (for example Scyther/Scizor, since the Safari Zone is not built) shows no results. The move filters are not applied for Psyduck Yellow saves. Clicking Current Moves suggests the game's own level-up moves.
 
-Saves from prototypes 0038 through 0098 have been opened. Game data was last checked against the 0105 build (no data changes since 0099). Not every editor window has been tested.
+Saves from prototypes 0038 through 0115 have been opened (the 0110 and 0115 saves load as Psyduck Yellow with the starter Eevee labelled). Game data was regenerated from ROM 0157 (BETA 0.1.57): 1587 species rows (adds Mega Typhlosion, listed as "Typhlosion (Mega)") and 3149 items (adds Typhlosionite); the Kanto wild encounters are unchanged. The save layout is unchanged from 0038 on. Not every editor window has been tested.
 
 ## Known limits
 

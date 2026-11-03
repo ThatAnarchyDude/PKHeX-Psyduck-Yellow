@@ -28,7 +28,9 @@ public static partial class PsyduckYellowExpanded
     /// <summary>Pokedex identities of the nine new Eeveelutions (ids 501-509; the ordinary Stellareon, id 500, is a real species).</summary>
     public const ushort DexIdentityFirst = 501;
     /// <summary>Mega rows of the starter versions (they carry the base species' name).</summary>
-    private static readonly ushort[] NewMegaSpecies = [1554, 1555, 1556, 1557, 1558, 1559, 1583, 1584, 1585];
+    private static readonly ushort[] NewMegaSpecies = [1554, 1555, 1556, 1557, 1558, 1559, 1583, 1584, 1585, MegaTyphlosion];
+    /// <summary>Row of the custom Mega Typhlosion (Typhlosionite, ROM 0140); it carries Typhlosion's name and sprite.</summary>
+    public const ushort MegaTyphlosion = 1586;
 
     /// <summary>First and last of the starter Eevee line's species: for each Eeveelution a starter species followed by its Mega copy; the last pair is the Novareon stand-in.</summary>
     public const ushort StarterLineFirst = 1565;
@@ -101,7 +103,7 @@ public static partial class PsyduckYellowExpanded
             var name = species >= NovareonFirst ? "Stellareon" : names[LineBases[i / 2]];
             names[species] = name + (i % 2 == 0 ? " (Starter)" : " (Mega)");
         }
-        // Species added in the Eevee/Psyduck redesign: starter Golduck, the nine new Eeveelutions (ordinary 1536-1544, starter 1545-1553) and their Megas (1554-1559 and 1583-1585)
+        // Species added in the Eevee/Psyduck redesign: starter Golduck, the nine new Eeveelutions (ordinary 1536-1544, starter 1545-1553) and their Megas (1554-1559 and 1583-1585), and Mega Typhlosion (1586)
         names[StarterGolduck] = "Golduck (Starter)";
         for (int i = 0; i < NewEeveelutionCount; i++)
             names[NewStarterFirst + i] = names[NewOrdinaryFirst + i] + " (Starter)";
@@ -122,6 +124,7 @@ public static partial class PsyduckYellowExpanded
         StarterEevee or MegaEevee => (ushort)Species.Eevee,
         StarterPsyduck or MegaPsyduck => (ushort)Species.Psyduck,
         >= StarterLineFirst and <= StarterLineLast => LineBases[(species - StarterLineFirst) / 2],
+        MegaTyphlosion => (ushort)Species.Typhlosion,
         Novareon => (ushort)Species.Umbreon, // the regular Novareon (Eevee + Sandwich), stat-wise an Umbreon stand-in
         _ => species,
     };
